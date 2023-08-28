@@ -8,9 +8,12 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - Intro lecture.qmd
-      - Course introduction.qmd
-
+      - href: Course introduction.qmd
+        text: Course introduction
+        target: "_blank"
+      - href: Intro lecture.qmd
+        text: Introduction to risk assessment with human and ecological endpoints
+        target: "_blank"
 format:
   html:
     theme: cosmo
