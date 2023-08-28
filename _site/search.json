@@ -1,0 +1,247 @@
+[
+  {
+    "objectID": "Intro lecture.html#the-first-risk-analysis",
+    "href": "Intro lecture.html#the-first-risk-analysis",
+    "title": "Introduction to risk assessment",
+    "section": "The “first” risk analysis",
+    "text": "The “first” risk analysis\nArnobius’ Risk analysis table was done to support the decision to accept Christianity or not.\n\nAn ancient risk analysis involving the existence of God.\n\n\nDecision\nGOD exist\nGOD does not exist\n\n\n\n\nAccept Christianity\nRisk low\nRisk low\n\n\nRemain a Pagan\nRisk high\nRisk low\n\n\n\n\nBased on dominance, the best decision is here to accept Christianity."
+  },
+  {
+    "objectID": "Intro lecture.html#a-modified-version-by-pascal",
+    "href": "Intro lecture.html#a-modified-version-by-pascal",
+    "title": "Introduction to risk assessment",
+    "section": "A modified version by Pascal",
+    "text": "A modified version by Pascal\n\nPascals risk analysis involving the existence of God.\n\n\n\nDecision\nGOD exist\nGOD does not exist\n\n\n\n\nBelieve\n\\(+\\infty\\)\n-1\n\n\nDon’t believe\n\\(-\\infty\\)\n1\n\n\n\n\nFinite losses and gains are dominated by the infinite ones\n\n\n\nSince not believing has a possibility of infinite loss, the rational decision is to believe in God."
+  },
+  {
+    "objectID": "Intro lecture.html#a-difficult-risk-analysis---amniocentesis",
+    "href": "Intro lecture.html#a-difficult-risk-analysis---amniocentesis",
+    "title": "Introduction to risk assessment",
+    "section": "A difficult risk analysis - amniocentesis",
+    "text": "A difficult risk analysis - amniocentesis\nDecision problems are difficult when there is no dominating option. This is where risk analysis is needed.\n\nLet us consider the decision problem if the parents are to make an amniocentesis (fostervattenprov) with the purpose to discover abnormal fetal conditions. A result from this test, might be used to justify an early abortion."
+  },
+  {
+    "objectID": "Intro lecture.html#a-difficult-risk-analysis---amniocentesis-table",
+    "href": "Intro lecture.html#a-difficult-risk-analysis---amniocentesis-table",
+    "title": "Introduction to risk assessment",
+    "section": "A difficult risk analysis - amniocentesis table",
+    "text": "A difficult risk analysis - amniocentesis table\n\nA (simplified) risk analysis of prenatal diagnosis.\n\n\nDecision\nFoetus is not normal\nFoetus is normal\n\n\n\n\nMake an amniocentesis\nRisk medium\nRisk medium\n\n\nDo nothing\nRisk high\nRisk low"
+  },
+  {
+    "objectID": "Intro lecture.html#a-difficult-risk-analysis---amniocentesis-details",
+    "href": "Intro lecture.html#a-difficult-risk-analysis---amniocentesis-details",
+    "title": "Introduction to risk assessment",
+    "section": "A difficult risk analysis - amniocentesis details",
+    "text": "A difficult risk analysis - amniocentesis details\nIn this problem,\n\nthe decision to make an amniocentesis depends on how the decision maker relates low, medium and high to each other.\nCareful assessment of the risks using methods which weight available evidence are in this case required to make a decision.\nIn addition, parents experience troubles in understanding the accuracy of the test, how to interpret test outcomes, and find it difficult to make a decision when they get a positive test result."
+  },
+  {
+    "objectID": "Intro lecture.html#a-difficult-risk-analysis---amniocentesis-ethical-dimensions",
+    "href": "Intro lecture.html#a-difficult-risk-analysis---amniocentesis-ethical-dimensions",
+    "title": "Introduction to risk assessment",
+    "section": "A difficult risk analysis - amniocentesis ethical dimensions",
+    "text": "A difficult risk analysis - amniocentesis ethical dimensions\nThis problem also have an ethical dimension:\n\nIs it ethical to do abortion?\nIs it ethical to put the foetus into danger by making a test, that itself can result in damage to the foetus?\nThe distinction into normal and not normal reflects values not shared by all."
+  },
+  {
+    "objectID": "Intro lecture.html#what-is-risk",
+    "href": "Intro lecture.html#what-is-risk",
+    "title": "Introduction to risk assessment",
+    "section": "What is risk?",
+    "text": "What is risk?\nISO 31000:2018 definition: Risk is the effect of uncertainty on objectives\n\n\nObjectives - Decision context\n\n\nUncertainty is considered the state, even partial, of deficiency of information related to, understanding or knowledge of, an event, its consequences or likelihood.\n\n\nUncertainty - limitations in knowledge or future events\n\nRetrospective vs Prospective risk\n\nEffects can be positive and negative"
+  },
+  {
+    "objectID": "Intro lecture.html#what-is-risk-analysis",
+    "href": "Intro lecture.html#what-is-risk-analysis",
+    "title": "Introduction to risk assessment",
+    "section": "What is risk analysis?",
+    "text": "What is risk analysis?\nWorking principles for risk analysis FAO/WHO Codex alimentarius\nA risk analysis should be:\n\napplied consistently\nopen, transparent and documented\nbe scientific\nevaluated and reviewed as appropriate in the light of new scientific data"
+  },
+  {
+    "objectID": "Intro lecture.html#what-is-risk-analysis-1",
+    "href": "Intro lecture.html#what-is-risk-analysis-1",
+    "title": "Introduction to risk assessment",
+    "section": "What is risk analysis?",
+    "text": "What is risk analysis?\nFAO/WHO Codex alimentarius\nThree main components\n\nrisk assessment\nrisk management\nrisk communication\n\nEffective communication and consultation with all interested parties should be ensured throughout the risk analysis."
+  },
+  {
+    "objectID": "Intro lecture.html#separate-assessment-and-management",
+    "href": "Intro lecture.html#separate-assessment-and-management",
+    "title": "Introduction to risk assessment",
+    "section": "Separate assessment and management",
+    "text": "Separate assessment and management\nFAO/WHO Codex alimentarius\n\nThere should be a functional separation of risk assessment and risk management, in order to ensure the scientific integrity of the risk assessment, to avoid confusion over the functions to be performed by risk assessors and risk managers and to reduce any conflict of interest.\n\n\nHowever, it is recognized that risk analysis is an iterative process, and interaction between risk managers and risk assessors is essential for practical application."
+  },
+  {
+    "objectID": "Intro lecture.html#what-is-risk-assessment",
+    "href": "Intro lecture.html#what-is-risk-assessment",
+    "title": "Introduction to risk assessment",
+    "section": "What is risk assessment?",
+    "text": "What is risk assessment?\nUS EPA as relevant example\nRisk is the chance of harmful effects to human health or to ecological systems…\n\n\n\n\nflowchart LR\n  A[Endpoint] --&gt; B(Ecological)\n  A --&gt; C(Human)\n\n\n\n\n\n\n…resulting from exposure to an environmental stressor.\n\nStressor: any physical, chemical, or biological entity that can induce an adverse effect in humans or ecosystems."
+  },
+  {
+    "objectID": "Intro lecture.html#risk-assessment",
+    "href": "Intro lecture.html#risk-assessment",
+    "title": "Introduction to risk assessment",
+    "section": "Risk assessment",
+    "text": "Risk assessment\n\n\nUS EPA\n\nPlanning\nProblem formulation\nAnalysis\nRisk characterisation\n\n\n\n\nInvolved in planning:\n\ndecision makers or risk managers\nrisk assessors and scientific experts\ninterested parties or stakeholders"
+  },
+  {
+    "objectID": "Intro lecture.html#ecological-risk-assessment",
+    "href": "Intro lecture.html#ecological-risk-assessment",
+    "title": "Introduction to risk assessment",
+    "section": "Ecological risk assessment",
+    "text": "Ecological risk assessment\n\n\n\n\nThe objective of the problem formulation phase is to:\n\nrefine the objectives for the risk assessment\ndetermine which ecological entities are at risk\ndetermine which characteristics are important to protect\n\nassessment endpoints"
+  },
+  {
+    "objectID": "Intro lecture.html#assessment-endpoints",
+    "href": "Intro lecture.html#assessment-endpoints",
+    "title": "Introduction to risk assessment",
+    "section": "Assessment endpoints",
+    "text": "Assessment endpoints\nAn ecological entity can be defined at one or more levels:\n\nA species \nA functional group of species \nA community \nAn ecosystem \nA specific valued habitat \n\nEcological relevant & Susceptible to stressors & Relevant to management goals"
+  },
+  {
+    "objectID": "Intro lecture.html#analysis-of-exposure-and-effects",
+    "href": "Intro lecture.html#analysis-of-exposure-and-effects",
+    "title": "Introduction to risk assessment",
+    "section": "Analysis of Exposure and Effects",
+    "text": "Analysis of Exposure and Effects\n\n\n\n\nEvaluate ecological responses to stressors under exposure conditions of interest\n\nExposure profile\nStressor-response profile or ecological effects analysis"
+  },
+  {
+    "objectID": "Intro lecture.html#risk-characterisation",
+    "href": "Intro lecture.html#risk-characterisation",
+    "title": "Introduction to risk assessment",
+    "section": "Risk characterisation",
+    "text": "Risk characterisation\n\n\n\n\nAssessors should\n\ndescribe risk\nindicate overall degree of confidence in risk estimates\nsummarise uncertainties\ncite evidence supporting assessment\ninterpret the adversity of ecological effects"
+  },
+  {
+    "objectID": "Intro lecture.html#framework-and-example",
+    "href": "Intro lecture.html#framework-and-example",
+    "title": "Introduction to risk assessment",
+    "section": "Framework and example",
+    "text": "Framework and example\n\n\n\n\n\nObjective: Prevent loss of biological diversity\nEndpoint: Viability of sensitive species\nStressors\n\nIntroduction of invasive species\nUse of chemicals in the environment"
+  },
+  {
+    "objectID": "Intro lecture.html#conceptual-models-and-frameworks",
+    "href": "Intro lecture.html#conceptual-models-and-frameworks",
+    "title": "Introduction to risk assessment",
+    "section": "Conceptual models and frameworks",
+    "text": "Conceptual models and frameworks\n\n\n\nDirection of cause and effect\nComplexity and system boundaries\nRetro- or prospective, or both"
+  },
+  {
+    "objectID": "Intro lecture.html#conceptual-models-and-frameworks-1",
+    "href": "Intro lecture.html#conceptual-models-and-frameworks-1",
+    "title": "Introduction to risk assessment",
+    "section": "Conceptual models and frameworks",
+    "text": "Conceptual models and frameworks\n\n\n\n\nWhat to assess?\nHow to characterise risk?\n\nQualitative\nQuantitative\n\nHow to assess it?\n\nExpert opinion\nData analysis\nSimulation modelling\n\n\n\n\n\nHolsman et al 2017"
+  },
+  {
+    "objectID": "Intro lecture.html#risk-perception---example-world-economic-forum",
+    "href": "Intro lecture.html#risk-perception---example-world-economic-forum",
+    "title": "Introduction to risk assessment",
+    "section": "Risk perception - example World Economic Forum",
+    "text": "Risk perception - example World Economic Forum\n\n\nFrom risk matrix to\n\n\n\n\n\nGlobal risk perception data"
+  },
+  {
+    "objectID": "Intro lecture.html#risk-assessment-as-a-scientific-method",
+    "href": "Intro lecture.html#risk-assessment-as-a-scientific-method",
+    "title": "Introduction to risk assessment",
+    "section": "Risk assessment as a scientific method",
+    "text": "Risk assessment as a scientific method\nAgreed guidelines and frameworks\n\nPrinciples to draw scientific conclusions given available data, evidence and expert knowledge considering limitations in this knowledge\n\nScientific assessment - assessment done by organisation providing scientific advice to risk managers and policy makers\n\nhazard, exposure, risk, vulnerability\ntransparency and impartially"
+  },
+  {
+    "objectID": "Intro lecture.html#introduction-to-case-studies",
+    "href": "Intro lecture.html#introduction-to-case-studies",
+    "title": "Introduction to risk assessment",
+    "section": "Introduction to case studies",
+    "text": "Introduction to case studies\nHuman health assessment:\n\nPer-and PolyFluoroalkyl Substances PFAS\n\nPlant pest assessment:\n\nNavel orangeworm Amyelois transitella\n\nHuman health assessment:\n\nArsenic in food\n\nEcological risk assessment:\n\nAtlantic Bluefin Tuna Thunnus thynnus"
+  },
+  {
+    "objectID": "Course introduction.html#welcome-to-risk-assessment-in-environment-and-public-health",
+    "href": "Course introduction.html#welcome-to-risk-assessment-in-environment-and-public-health",
+    "title": "Course introduction MVEN10",
+    "section": "Welcome to Risk Assessment in Environment and Public Health",
+    "text": "Welcome to Risk Assessment in Environment and Public Health\n\nCourse coordinator: Ullrika Sahlin\nCourse platform https://canvas.education.lu.se/courses/23481\nCourse syllabus\nStudy directors:\n\nHelena Hansson Environmental Science\nStefan Olin Applied Computational Science appliedcompsci@math.lu.se"
+  },
+  {
+    "objectID": "Course introduction.html#why-study-risk-assessment",
+    "href": "Course introduction.html#why-study-risk-assessment",
+    "title": "Course introduction MVEN10",
+    "section": "Why study risk assessment",
+    "text": "Why study risk assessment\n\n\nTo be competitive on the job market\n\nthere is a lot of experts, but fewer experts on risk assessment\n\nTo better understand what expertise is required when assessing risk\n\nmotivation to become an expert\nstrengthen your interdisciplinary perspective\n\nTo be able to contribute to better management, including assessment and communication, of risk\nTo become a better decision maker yourself"
+  },
+  {
+    "objectID": "Course introduction.html#lectures",
+    "href": "Course introduction.html#lectures",
+    "title": "Course introduction MVEN10",
+    "section": "Lectures",
+    "text": "Lectures\n\n10 lectures\nOccupational and Health Medicine\nCentre for Environmental and Climate Science\nRisk, Uncertainty and Decision Making (parallell course)"
+  },
+  {
+    "objectID": "Course introduction.html#exercises",
+    "href": "Course introduction.html#exercises",
+    "title": "Course introduction MVEN10",
+    "section": "Exercises",
+    "text": "Exercises\n\n28 carried out over 9 occasions (topics canvas)\nYou are expected to use your own computer (notify!)\nmaterial published on https://ullrika.github.io/MVEN10material/\nreporting according to instructions"
+  },
+  {
+    "objectID": "Course introduction.html#tools",
+    "href": "Course introduction.html#tools",
+    "title": "Course introduction MVEN10",
+    "section": "Tools",
+    "text": "Tools\n\nUse open source tools for scientific assessment\n\nExcel\nR\nQuarto"
+  },
+  {
+    "objectID": "Course introduction.html#literature-seminars",
+    "href": "Course introduction.html#literature-seminars",
+    "title": "Course introduction MVEN10",
+    "section": "Literature seminars",
+    "text": "Literature seminars\n\n2 seminars\n\n1 within an exercise\n\nCome prepared!"
+  },
+  {
+    "objectID": "Course introduction.html#book-seminars",
+    "href": "Course introduction.html#book-seminars",
+    "title": "Course introduction MVEN10",
+    "section": "Book seminars",
+    "text": "Book seminars\n\n5 book seminars (overview canvas)\nPresenter, Opponent, Reviewer with different roles"
+  },
+  {
+    "objectID": "Course introduction.html#case-studies",
+    "href": "Course introduction.html#case-studies",
+    "title": "Course introduction MVEN10",
+    "section": "Case studies",
+    "text": "Case studies\n\n4 groups with tutors\n2 sessions\nProblem Based Learning (canvas)\nCase studies (canvas)\nYou are expected to bring your own computer (Notify!)\nWritten reports per group that will be shared with all"
+  },
+  {
+    "objectID": "Course introduction.html#course-literature",
+    "href": "Course introduction.html#course-literature",
+    "title": "Course introduction MVEN10",
+    "section": "Course literature",
+    "text": "Course literature\n\nBurgman, Mark. Risks and decisions for conservation and environmental management. Cambridge University Press, 2005.\nLiterature for seminars\nOther material handed out during the course\nExplicit references from lectures"
+  },
+  {
+    "objectID": "Course introduction.html#non-scheduled-time",
+    "href": "Course introduction.html#non-scheduled-time",
+    "title": "Course introduction MVEN10",
+    "section": "Non-scheduled time",
+    "text": "Non-scheduled time\n\nThis course is 15 credits and assumes 100% study pace\nNon-scheduled time implies self studies"
+  },
+  {
+    "objectID": "Course introduction.html#grading-and-compulsory-assignments",
+    "href": "Course introduction.html#grading-and-compulsory-assignments",
+    "title": "Course introduction MVEN10",
+    "section": "Grading and compulsory assignments",
+    "text": "Grading and compulsory assignments\n\nParticipation in written assignments, exercises, project work and associated parts is compulsory\nReports from case studies, exercises and project work is failed or passed\nThe written examination is failed, passed or passed with distinction\nAn exam in class and a home exam"
+  },
+  {
+    "objectID": "Course introduction.html#todo",
+    "href": "Course introduction.html#todo",
+    "title": "Course introduction MVEN10",
+    "section": "Todo",
+    "text": "Todo\n\nChoose a course representative\nRemind to inform us if you need to borrow a computer during class\nModify groups for book seminars - if asked for\nModify groups for case studies - if asked for"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  }
+]

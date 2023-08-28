@@ -1,0 +1,117 @@
+---
+title: "Course introduction MVEN10"
+author: "Ullrika Sahlin"
+date: 2023 Aug 28
+format: 
+  revealjs:
+    theme: default
+editor: visual
+---
+
+## Welcome to Risk Assessment in Environment and Public Health
+
+- Course coordinator: Ullrika Sahlin
+
+- Course platform <https://canvas.education.lu.se/courses/23481>
+
+- Course syllabus
+
+- Study directors:
+  - Helena Hansson Environmental Science
+  - Stefan Olin Applied Computational Science appliedcompsci@math.lu.se 
+
+## Why study risk assessment
+
+::: {.incremental}
+
+- To be competitive on the job market
+  - there is a lot of experts, but fewer experts on risk assessment
+  
+- To better understand what expertise is required when assessing risk
+  - motivation to become an expert
+  - strengthen your interdisciplinary perspective
+  
+- To be able to contribute to better management, including assessment and communication, of risk
+
+- To become a better decision maker yourself
+
+:::
+
+
+## Lectures
+
+- 10 lectures
+- Occupational and Health Medicine
+- Centre for Environmental and Climate Science 
+- Risk, Uncertainty and Decision Making (parallell course)
+    
+    
+##  Exercises
+-   28 carried out over 9 occasions (topics canvas)
+- You are expected to use your own computer (notify!)
+-   material published on <https://ullrika.github.io/MVEN10material/>
+-   reporting according to instructions
+    
+## Tools
+
+- Use open source tools for scientific assessment
+  - Excel
+  - R
+  - Quarto
+
+##   Literature seminars
+- 2 seminars 
+- + 1 within an exercise
+- Come prepared!
+
+##  Book seminars
+- 5 book seminars (overview canvas)
+- Presenter, Opponent, Reviewer with different roles
+  
+
+##  Case studies
+
+- 4 groups with tutors
+- 2 sessions
+- Problem Based Learning (canvas)
+- Case studies (canvas)
+- You are expected to bring your own computer (Notify!)
+- Written reports per group that will be shared with all
+    
+## Course literature
+
+- Burgman, Mark. Risks and decisions for conservation and environmental management. Cambridge University Press, 2005.
+
+- Literature for seminars
+
+- Other material handed out during the course
+
+- Explicit references from lectures 
+
+## Non-scheduled time
+
+- This course is 15 credits and assumes 100% study pace
+  
+- Non-scheduled time implies self studies
+
+## Grading and compulsory assignments
+
+-   Participation in written assignments, exercises, project work and associated parts is compulsory
+
+-   Reports from case studies, exercises and project work is failed or passed
+
+-   The written examination is failed, passed or passed with distinction
+
+-   An exam in class and a home exam
+  
+## Todo
+
+1. Choose a course representative
+
+2. Remind to inform us if you need to borrow a computer during class
+
+3. Modify groups for book seminars - if asked for
+
+4. Modify groups for case studies - if asked for
+
+
