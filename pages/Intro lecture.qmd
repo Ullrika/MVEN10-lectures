@@ -13,34 +13,31 @@ editor: visual
 
 Arnobius' Risk analysis table was done to support the **decision** to accept Christianity or not.
 
-
 | Decision            | GOD exist | GOD does not exist |
 |---------------------|:----------|-------------------:|
-| Accept Christianity | Risk low  |          Risk low |
+| Accept Christianity | Risk low  |           Risk low |
 | Remain a Pagan      | Risk high |           Risk low |
 
 : An ancient risk analysis involving the existence of God.
 
-- Based on dominance, the best decision is here to accept Christianity.
+-   Based on dominance, the best decision is here to accept Christianity.
 
-## A modified version by Pascal  
+## A modified version by Pascal
 
 <!-- Pascal presented the same problem with losses and gains:  -->
 
 Pascals risk analysis involving the existence of God.
-
 
 | Decision      | GOD exist | GOD does not exist |
 |---------------|:----------|-------------------:|
 | Believe       | $+\infty$ |                 -1 |
 | Don't believe | $-\infty$ |                  1 |
 
-
-- Finite losses and gains are dominated by the infinite ones
+-   Finite losses and gains are dominated by the infinite ones
 
 <!-- Therefore, he argues that one should only look at the infinite outcomes.  -->
 
-- Since not believing has a possibility of infinite loss, the rational decision is to believe in God.
+-   Since not believing has a possibility of infinite loss, the rational decision is to believe in God.
 
 ## A difficult risk analysis - amniocentesis
 
@@ -59,23 +56,23 @@ Decision problems are difficult when there is no dominating option. This is wher
 
 ## A difficult risk analysis - amniocentesis details
 
-In this problem, 
+In this problem,
 
-- the decision to make an amniocentesis depends on how the decision maker relates *low*, *medium* and *high* to each other. 
+-   the decision to make an amniocentesis depends on how the decision maker relates *low*, *medium* and *high* to each other.
 
-- Careful assessment of the risks using methods which weight available evidence are in this case required to make a decision.
+-   Careful assessment of the risks using methods which weight available evidence are in this case required to make a decision.
 
-- In addition, parents experience troubles in understanding the accuracy of the test, how to interpret test outcomes, and find it difficult to make a decision when they get a positive test result. 
+-   In addition, parents experience troubles in understanding the accuracy of the test, how to interpret test outcomes, and find it difficult to make a decision when they get a positive test result.
 
 ## A difficult risk analysis - amniocentesis ethical dimensions
 
-This problem also have an ethical dimension: 
+This problem also have an ethical dimension:
 
-- Is it ethical to do abortion? 
+-   Is it ethical to do abortion?
 
-- Is it ethical to put the foetus into danger by making a test, that itself can result in damage to the foetus? 
+-   Is it ethical to put the foetus into danger by making a test, that itself can result in damage to the foetus?
 
--  The distinction into normal and not normal reflects values not shared by all.
+-   The distinction into normal and not normal reflects values not shared by all.
 
 <!--. Taken together, the reason to take a test can be questioned in the first place. -->
 
@@ -83,31 +80,26 @@ This problem also have an ethical dimension:
 
 ISO 31000:2018 definition: **Risk is the effect of uncertainty on objectives**
 
-::: {.incremental}
- 
-- Objectives - Decision context
+::: incremental
+-   Objectives - Decision context
 
-> Uncertainty is considered the state, even partial, of
-deficiency of information related to, understanding
-or knowledge of, an event, its consequences or
-likelihood.
+> Uncertainty is considered the state, even partial, of deficiency of information related to, understanding or knowledge of, an event, its consequences or likelihood.
 
-- Uncertainty - limitations in knowledge or future events
-  - Retrospective vs Prospective risk
+-   Uncertainty - limitations in knowledge or future events
+    -   Retrospective vs Prospective risk
+-   Effects can be positive and negative
+:::
 
-- Effects can be positive and negative 
-
-::: 
 ## What is risk analysis?
 
 Working principles for risk analysis [FAO/WHO Codex alimentarius](https://www.fao.org/3/y5817e/y5817e04.htm)
 
 A risk analysis should be:
 
-- applied consistently
-- open, transparent and documented
-- be scientific
-- evaluated and reviewed as appropriate in the light of new scientific data
+-   applied consistently
+-   open, transparent and documented
+-   be scientific
+-   evaluated and reviewed as appropriate in the light of new scientific data
 
 ## What is risk analysis?
 
@@ -115,11 +107,11 @@ A risk analysis should be:
 
 Three main components
 
-- risk assessment
+-   risk assessment
 
-- risk management
+-   risk management
 
-- risk communication
+-   risk communication
 
 Effective communication and consultation with all interested parties should be ensured throughout the risk analysis.
 
@@ -127,229 +119,192 @@ Effective communication and consultation with all interested parties should be e
 
 [FAO/WHO Codex alimentarius](https://www.fao.org/3/y5817e/y5817e04.htm)
 
-> There should be a functional separation of risk assessment and risk management, in order to ensure the scientific integrity of the risk assessment, to avoid confusion over the functions to be performed by risk assessors and risk managers and to reduce any conflict of interest. 
+> There should be a functional separation of risk assessment and risk management, in order to ensure the scientific integrity of the risk assessment, to avoid confusion over the functions to be performed by risk assessors and risk managers and to reduce any conflict of interest.
 
 > However, it is recognized that risk analysis is an iterative process, and interaction between risk managers and risk assessors is essential for practical application.
-
 
 ## What is risk assessment?
 
 [US EPA](https://www.epa.gov/risk/about-risk-assessment#whatisrisk) as relevant example
 
-Risk is the chance of harmful effects to human health or to ecological systems... 
+Risk is the chance of harmful effects to human health or to ecological systems...
 
 ```{mermaid}
 flowchart LR
   A[Endpoint] --> B(Ecological)
   A --> C(Human)
 
-```  
+```
 
 ...resulting from exposure to an environmental stressor.
 
-- Stressor: any physical, chemical, or biological entity that can induce an adverse effect in humans or ecosystems. 
-
-
+-   Stressor: any physical, chemical, or biological entity that can induce an adverse effect in humans or ecosystems.
 
 ## Risk assessment
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="40%"}
-
 [US EPA](https://www.epa.gov/risk/about-risk-assessment#whatisrisk)
 
+-   **Planning**
 
-- **Planning**
+-   Problem formulation
 
-- Problem formulation
+-   Analysis
 
-- Analysis
-
-- Risk characterisation
+-   Risk characterisation
 :::
 
 ::: {.column width="60%"}
-
 ![](/img/expert.jpg)
 
-::: {.incremental}
+::: incremental
 Involved in planning:
 
-- decision makers or risk managers
+-   decision makers or risk managers
 
-- risk assessors and scientific experts
+-   risk assessors and scientific experts
 
-- interested parties or stakeholders
-
+-   interested parties or stakeholders
 :::
 :::
-
-::::
+:::
 
 ## Ecological risk assessment
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="40%"}
 ![](/img/logo_hilight1sm_0.gif)
 :::
 
 ::: {.column width="60%"}
-
 The objective of the problem formulation phase is to:
 
-- refine the objectives for the risk assessment
+-   refine the objectives for the risk assessment
 
-- determine which ecological entities are at risk
+-   determine which ecological entities are at risk
 
-- determine which characteristics are important to protect
-  - *assessment endpoints*
+-   determine which characteristics are important to protect
+
+    -   *assessment endpoints*
 :::
-
-::::
+:::
 
 ## Assessment endpoints
 
-An ecological entity can be defined at one or more levels:  
+An ecological entity can be defined at one or more levels:
 
-- A species <!-- (e.g., endangered piping plover, key service provider such as honeybees). -->
+-   A species <!-- (e.g., endangered piping plover, key service provider such as honeybees). -->
 
-- A functional group of species <!--(e.g., fish eaters like pike or mink).-->
+-   A functional group of species <!--(e.g., fish eaters like pike or mink).-->
 
-- A community <!--(e.g., benthic invertebrates, soil microbial communities).-->
+-   A community <!--(e.g., benthic invertebrates, soil microbial communities).-->
 
-- An ecosystem <!--(e.g., wetland, lake, watershed, island).-->
+-   An ecosystem <!--(e.g., wetland, lake, watershed, island).-->
 
-- A specific valued habitat <!--(e.g., wet meadows, national wildlife refuge).-->
+-   A specific valued habitat <!--(e.g., wet meadows, national wildlife refuge).-->
 
-Ecological relevant &
-Susceptible to stressors &
-Relevant to management goals
+Ecological relevant & Susceptible to stressors & Relevant to management goals
 
 ## Analysis of Exposure and Effects
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="40%"}
 ![](/img/logo_hilight2sm.gif)
 :::
 
 ::: {.column width="60%"}
-
 Evaluate ecological responses to stressors under exposure conditions of interest
 
-- Exposure profile
+-   Exposure profile
 
-- Stressor-response profile or ecological effects analysis
+-   Stressor-response profile or ecological effects analysis
 :::
-
-::::
+:::
 
 ## Risk characterisation
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="40%"}
 ![](/img/logo_hilight3sm.gif)
 :::
 
 ::: {.column width="60%"}
-
 Assessors should
 
-- describe risk
-- indicate overall degree of confidence in risk estimates
-- summarise uncertainties
-- cite evidence supporting assessment
-- interpret the adversity of ecological effects
-
+-   describe risk
+-   indicate overall degree of confidence in risk estimates
+-   summarise uncertainties
+-   cite evidence supporting assessment
+-   interpret the adversity of ecological effects
 :::
-
-::::
+:::
 
 ## Framework and example
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="50%"}
 ![](/img/together.png)
 :::
 
 ::: {.column width="50%"}
+-   Objective: Prevent loss of biological diversity
 
-- Objective: Prevent loss of biological diversity 
+-   Endpoint: Viability of sensitive species
 
-- Endpoint: Viability of sensitive species
+-   Stressors
 
-- Stressors
-  - Introduction of invasive species
-  - Use of chemicals in the environment
+    -   Introduction of invasive species
+    -   Use of chemicals in the environment
 :::
-::::
+:::
 
 ## Conceptual models and frameworks
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="40%"}
+-   Direction of cause and effect
 
-- Direction of cause and effect 
+-   Complexity and system boundaries
 
-- Complexity and system boundaries
-
-- Retro- or prospective, or both
-
+-   Retro- or prospective, or both
 :::
 
 ::: {.column width="60%"}
-![Holsman et al 2017](/img/tehs_a_11879064_f0002_ob.png){width=70%}
-<!-- https://spj.science.org/doi/10.1002/ehs2.1256 -->
-
+![Holsman et al 2017](/img/tehs_a_11879064_f0002_ob.png){width="70%"} <!-- https://spj.science.org/doi/10.1002/ehs2.1256 -->
 :::
-
-::::
+:::
 
 ## Conceptual models and frameworks
 
-:::: {.columns}
+::: columns
+::: {.column width="50%"}
+::: incremental
+-   What to assess?
+
+-   How to characterise risk?
+
+    -   Qualitative
+    -   Quantitative
+
+-   How to assess it?
+
+    -   Expert opinion
+    -   Data analysis
+    -   Simulation modelling
+:::
+:::
 
 ::: {.column width="50%"}
-
-::: {.incremental}
-
-- What to assess?
-
-- How to characterise risk?
-
-  - Qualitative
-  - Quantitative
-
-- How to assess it?
-
-  - Expert opinion
-  - Data analysis
-  - Simulation modelling
-
-:::
- 
-:::
-  
-::: {.column width="50%"}
-
 ![](/img/tehs_a_11879064_f0001_ob.png)
 
 [Holsman et al 2017](https://spj.science.org/doi/10.1002/ehs2.1256)
-
 :::
-  
-::::
-
+:::
 
 ## Risk perception - example World Economic Forum
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="50%"}
 [From risk matrix to](https://en.wikipedia.org/wiki/Risk_matrix)
 
@@ -358,19 +313,14 @@ Assessors should
 <!-- Likelihood x Consequence -->
 
 <!-- Expert's perceptions aggregated -->
-
 :::
-  
+
 ::: {.column width="50%"}
-
-
 ![](/img/global2023.png)
 
 [Global risk perception data](https://www.weforum.org/reports/global-risks-report-2023/data-on-global-risk-perceptions-2023?_gl=1*1538zte*_up*MQ..&gclid=Cj0KCQjw6KunBhDxARIsAKFUGs-TmabFL3u8KiT_2-8dRvP8VvGuLAFY8vKykO2iEm6aHbrAGxULB0UaAiV4EALw_wcB#report-nav)
-
 :::
-  
-::::
+:::
 
 ## Risk assessment as a scientific method
 
@@ -380,27 +330,23 @@ Agreed guidelines and frameworks
 
 *Scientific assessment* - assessment done by organisation providing scientific advice to risk managers and policy makers
 
-  - hazard, exposure, risk, vulnerability
-  - transparency and impartially
+-   hazard, exposure, risk, vulnerability
+-   transparency and impartially
 
-## Introduction to case studies 
+## Introduction to case studies
 
 Human health assessment:
 
-- Per-and PolyFluoroalkyl Substances PFAS
+-   Per-and PolyFluoroalkyl Substances PFAS
 
 Plant pest assessment:
 
-- Navel orangeworm *Amyelois transitella*
+-   Navel orangeworm *Amyelois transitella*
 
 Human health assessment:
 
-- Arsenic in food
+-   Arsenic in food
 
 Ecological risk assessment:
 
-- Atlantic Bluefin Tuna *Thunnus thynnus*
-
-
-
-
+-   Atlantic Bluefin Tuna *Thunnus thynnus*

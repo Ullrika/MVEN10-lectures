@@ -1,19 +1,26 @@
 project:
   type: website
   output-dir: docs
-  
+
+ 
 website:
   title: "MVEN10-lectures"
-  navbar:
-    left:
+  sidebar:
+    style: "docked"
+    search: true
+    contents: 
       - href: index.qmd
         text: Home
-      - href: Course introduction.qmd
-        text: Course introduction
+      - href: pages/Course introduction.qmd
+        text: Course introduction          
         target: "_blank"
-      - href: Intro lecture.qmd
+      - href: pages/Intro lecture.qmd
         text: Introduction to risk assessment with human and ecological endpoints
         target: "_blank"
+      - href: pages/bs1.qmd          
+        text: Book seminar 1
+        target: "_blank"
+
 format:
   html:
     theme: cosmo
