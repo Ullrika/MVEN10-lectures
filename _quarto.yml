@@ -20,6 +20,9 @@ website:
       - href: pages/bs1.qmd          
         text: Book seminar 1
         target: "_blank"
+      - href: pages/probability_distribution.qmd          
+        text: Introduction to probability distributions
+        target: "_blank"
 
 format:
   html:
