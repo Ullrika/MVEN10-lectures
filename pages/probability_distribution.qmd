@@ -278,14 +278,13 @@ It is important that assessors distinguish uncertainty and variability because t
 
 ## Probability distributions
 
-Parametric probability distributions are defined by the Probability Density Function (PDF). The text below is just a starter to describe common distriubtions. We will learn more about them during the course. Wikipedia is a good sourse for the definition of distributions, focus on the graphs of the PDF and CDF, the definition of outcome space and parameters, and if the expected value and variance is a function of the parameters. 
+Parametric probability distributions are defined by the Probability Density Function (PDF). The text below is just a starter to describe common distriubtions. We will learn more about them during the course. Wikipedia is a good sourse for the definition of distributions, focus on the graphs of the PDF and CDF, the definition of outcome space and parameters, and if the expected value and variance is a function of the parameters.
 
 ### Uniform
 
 A quantity that takes any value in an interval with equal probability
 
 [wiki uniform](https://en.wikipedia.org/wiki/Continuous_uniform_distribution)
-
 
 ### Beta
 
@@ -295,7 +294,7 @@ A quantity that takes any value in an interval
 
 ### Normal
 
-A quantity taking values from $-\inf$ to $\inf$ with a symmteric and decaying probability from the central moment. 
+A quantity taking values from $-\inf$ to $\inf$ with a symmteric and decaying probability from the central moment.
 
 [wiki normal](https://en.wikipedia.org/wiki/Normal_distribution)
 
@@ -330,7 +329,6 @@ The number of in total N trials that are successful (falls into two categories)
 The number of in total N trials that falls into two or more categories
 
 [wiki multinomial](https://en.wikipedia.org/wiki/Multinomial_distribution)
-
 
 ## References
 
