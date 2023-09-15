@@ -23,6 +23,10 @@ website:
       - href: pages/probability_distribution.qmd          
         text: Introduction to probability distributions
         target: "_blank"
+      - href: pages/individual_projects.qmd          
+        text: Introduction to individual projects
+        target: "_blank"
+        
 
 format:
   html:
