@@ -1,262 +1,66 @@
 [
   {
-    "objectID": "pages/probability_distribution.html",
-    "href": "pages/probability_distribution.html",
-    "title": "Introduction to probability distributions",
+    "objectID": "pages/report_template.html",
+    "href": "pages/report_template.html",
+    "title": "Report template",
     "section": "",
-    "text": "Expert judgement are common in risk assessment. To ensure rigour of the assessment, these judgements should be collected in a structured way. Methods have been developed to reduce linguistic uncertainty and cognitive biases when experts make judgements, and to aggregate judgements by a group of experts.\nQuantitative judgements, e.g. judgements expressed by subjective probabilities are preferable over qualitative expressions of uncertainty. The reasons are that\n\nqualitative judgements have different meanings for different people, and\nquantitative judgements can be combined using probability rules (probability calculations)\n\nEFSA defines Expert Knowledge Elicitation as\n\nA systematic, documented and reviewable process to retrieve expert judgements from a group of experts, often in the form of a probability distribution.\n\nIn general, it is possible to make a quantitative judgement when the question asked to an expert is well-defined.\nThe expert should also feel that she has some basis to make his/her judgement.\n\nA good expert makes judgements where she has domain knowledge and is hesitant to make judgements for questions where she feels there is not enough basis for a judgement.\n\nIt is also important that experts receive training in making probabilistic judgements to ensure they understand them.\n\n\nThis mini-lecture introduces probability distributions for a binary event, a categorical quantity, a discrete quantity and a continuous quantity. The terms cumulative probability function, probability density function, and quantile and boxplot. The aim of the lecture is to that the student understand the terms quantile and percentile."
+    "text": "This is a reproduction of [write the name of the original assessment here] done as part of a course MVEN10 Risk assessment in environment and public health, Fall 2023.\nThe purpose of the project is to gain more understanding of the inputs and methodology of the original assessment, practice implementing and documenting a quantitative analysis, and practice performing a final assessment of overall uncertainty.\nThe results from this project should not be used as bases for decision making."
   },
   {
-    "objectID": "pages/probability_distribution.html#background",
-    "href": "pages/probability_distribution.html#background",
-    "title": "Introduction to probability distributions",
+    "objectID": "pages/report_template.html#disclaimer",
+    "href": "pages/report_template.html#disclaimer",
+    "title": "Report template",
     "section": "",
-    "text": "Expert judgement are common in risk assessment. To ensure rigour of the assessment, these judgements should be collected in a structured way. Methods have been developed to reduce linguistic uncertainty and cognitive biases when experts make judgements, and to aggregate judgements by a group of experts.\nQuantitative judgements, e.g. judgements expressed by subjective probabilities are preferable over qualitative expressions of uncertainty. The reasons are that\n\nqualitative judgements have different meanings for different people, and\nquantitative judgements can be combined using probability rules (probability calculations)\n\nEFSA defines Expert Knowledge Elicitation as\n\nA systematic, documented and reviewable process to retrieve expert judgements from a group of experts, often in the form of a probability distribution.\n\nIn general, it is possible to make a quantitative judgement when the question asked to an expert is well-defined.\nThe expert should also feel that she has some basis to make his/her judgement.\n\nA good expert makes judgements where she has domain knowledge and is hesitant to make judgements for questions where she feels there is not enough basis for a judgement.\n\nIt is also important that experts receive training in making probabilistic judgements to ensure they understand them.\n\n\nThis mini-lecture introduces probability distributions for a binary event, a categorical quantity, a discrete quantity and a continuous quantity. The terms cumulative probability function, probability density function, and quantile and boxplot. The aim of the lecture is to that the student understand the terms quantile and percentile."
+    "text": "This is a reproduction of [write the name of the original assessment here] done as part of a course MVEN10 Risk assessment in environment and public health, Fall 2023.\nThe purpose of the project is to gain more understanding of the inputs and methodology of the original assessment, practice implementing and documenting a quantitative analysis, and practice performing a final assessment of overall uncertainty.\nThe results from this project should not be used as bases for decision making."
   },
   {
-    "objectID": "pages/probability_distribution.html#probability-distributions",
-    "href": "pages/probability_distribution.html#probability-distributions",
-    "title": "Introduction to probability distributions",
-    "section": "Probability distributions",
-    "text": "Probability distributions\n\nA binary event\nThe simplest probability distribution is the probability for a binary event, which is an event having only two outcomes.\nLet us say that we have the events A and not A.\nIf the probability for A is \\(p\\), then the probability for not A is \\(1-p\\).\nWe can illustrate the probability distribution for a binary event as a bar chart\n\n\n\n\n\nAnother useful way is to think of binary events as sections taking up a certain area of the probability scale\n\n\n\n\n\n\n\nMore than two possible outcomes\nProbability is also used for quantities having “more than two possible outcomes”.\nThis can be quantities that are\n\ncategorical - with distinct classes that do not have to come in a particular order\ndiscrete - taking numerical integer values, usually obtained by counts\ncontinuous - taking numerical continuous values for which probability is expressed over ranges instead of specific numbers\n\nThe probabilities for quantities taking different values are summarised by a probability distribution.\nThere are different types of probability distributions depending on the characteristic of the outcome space, i.e. the full set of possible outcomes.\n\n\n\n\n\n\n\n\n\nType of outcome\nDescription of outcomes\nExamples outcome space\nExamples distributions\n\n\n\n\nBinary\ntwo outcomes\n0 or 1\nBernoulli\n\n\n\n\nA or not A\n\n\n\n\n\nTRUE or FALSE\n\n\n\nCategorical\ntwo or more categories\nAdult, Adolescent, Other children\n\n\n\nDiscrete\nwhole numbers\n0, 1, 2, 3, …\nPoisson\n\n\n\n\n0, 1, 2, …, n-1, n\nBinomial\n\n\n\n\nthe number of trials that falls into two or more categories\nMultinomial\n\n\nContinuous\nreal numbers \\(x \\in \\mathbb{R}\\)\n\\(-\\inf &lt; x &lt; \\inf\\)\nNormal\n\n\n\n\n\\(0&lt;x\\)\nExponential\n\n\n\n\n\\(0 &lt; x &lt; 1\\)\nUniform, Beta\n\n\n\nFootnote: The \\(x\\) in the table above is a notation for a random observation from the probability distribution."
+    "objectID": "pages/report_template.html#introduction",
+    "href": "pages/report_template.html#introduction",
+    "title": "Report template",
+    "section": "Introduction",
+    "text": "Introduction\nDescribe the context and background of the original assessment and the assessment questions.\nAdd a section why this is a relevant topic today and introduce the additional assessment question presented in the “At the end”-paragraphs for each project."
   },
   {
-    "objectID": "pages/probability_distribution.html#visualising-probability-distributions",
-    "href": "pages/probability_distribution.html#visualising-probability-distributions",
-    "title": "Introduction to probability distributions",
-    "section": "Visualising probability distributions",
-    "text": "Visualising probability distributions\nA probability distribution for a continuous quantity can be plotted in various formats:\n\nA Box plot\nA Probability Density Function (PDF)\nA Cumulative Probability Distribution (CDF)\n\nHere they are plotted together to show how they are related\n\n\n\n\n\nFigure 1: CDF, PDF and boxplot\n\n\n\n\n\nQuantiles\nTo summarise uncertainty, an assessor might want to find values that divide the range of the quantity into parts containing specified amounts of probability. Such values are known as quantiles.\nA quantile can be denoted with the letter P, together with the associated probability that the quantity would take a value below the quantile. For example, the value that divides a probability distribution into two parts with equal probabilities is the P50 quantile.\nThis value is also known as the median.\nQuartiles divide a probability distribution into four sections of equal probability. The first quartile is P25. The second quartile is the median P50. The third quartile is P75.\nA boxplot visualises quartiles.\nA percentile is another name for a quantile defined by the probability to the left of the quantile.\n\n\nProbability Density Function\nMost continuous quantities have a Probability Density Function (PDF).\nThe Probability Density Function express probabilities as area under its curve. The total area under the curve is 1, corresponding to 100% probability.\nThe area under the PDF curve to the left of the median is 50%.\nThe PDF can be thought of as a smooth histogram for a continuous quantity. Note that when used for a probability distribution, the area for the histogram should be 1.\n\n\nCumulative Distribution Function\nA probability distribution can be represented by its Cumulative Distribution Function (often abbreviated as CDF). The CDF gives the probability that the quantity is less than or equal to any specified value\nThe CDF contains all the information about probabilities for the quantity: for example, it can be used to calculate the probability that the quantity lies in any specified range of values.\nThis is a curve over the possible range of the quantity (on the x-axis) increasing from 0 to 100% probability (on the y-axis)."
+    "objectID": "pages/report_template.html#data-and-methodology",
+    "href": "pages/report_template.html#data-and-methodology",
+    "title": "Report template",
+    "section": "Data and methodology",
+    "text": "Data and methodology\n\nStructure and type of the original assessment\nDescribe the type and structure of the original assessment. Refer to relevant guidance documents for this type of assessments.\n\n\nQuantitative analysis\nDescribe the data and methods in the quantitative analysis that has been reproduced or added to the original assessment.\nAdd the code for the assessment as an appendix to the report.\n\n\nOverall uncertainty assessment\nDescribe the approach to assess overall uncertainty regarding the answer to the “At the end”-question.\nAdd a report for the expert elicitation of the overall uncertainty assessment as an appendix."
   },
   {
-    "objectID": "pages/probability_distribution.html#uncertainty-and-variability",
-    "href": "pages/probability_distribution.html#uncertainty-and-variability",
-    "title": "Introduction to probability distributions",
-    "section": "Uncertainty and variability",
-    "text": "Uncertainty and variability\nUncertainty refers to the state of knowledge, whereas variability refers to actual variation or heterogeneity in the real world.\nBoth uncertainty and variability can be represented by probability distributions\n\n\n\nUncertainty and variability figure from EFSA\n\n\nThe left you see a probability distribution for a non-variable quantity - Let us call it parameter P. It is a single true value which is uncertain, and the distribution represents uncertainty about P.\nIn the center, you see a probability distribution for a variable quantity. This variable V has multiple true values. The probability distribution represents variability of V.\nTo the right you see a probabilistic model for both variability and uncertainty. We use a probability distribution to represent variability in this variable, but the true distribution for variability is unknown and we use probability distributions to represent our uncertainty about it’s variability. This distribution is sometimes referred to as a spaghetti plot or two-dimensional distribution.\nUncertainty may be altered (either reduced or increased) by further research, because it results from limitations in knowledge.\nVariability cannot be altered by obtaining more knowledge, because it refers to real differences in the world or how the assessors choose to model the world.\nIt is important that assessors distinguish uncertainty and variability because they have different implications for decision-making: informing decisions about whether to invest resources in research aimed at reducing uncertainty or in management options aimed at influencing variability (e.g. to change exposures to subgroups of the population)."
+    "objectID": "pages/report_template.html#results",
+    "href": "pages/report_template.html#results",
+    "title": "Report template",
+    "section": "Results",
+    "text": "Results\n\nAssessment results\nPresent the results of the assessment questions, but replace the results from the orginal assessment with the results from the quantitative analysis.\n\n\nOverall uncertainty\nPresent the outcome of the overall uncertainty assessment."
   },
   {
-    "objectID": "pages/probability_distribution.html#probability-distributions-1",
-    "href": "pages/probability_distribution.html#probability-distributions-1",
-    "title": "Introduction to probability distributions",
-    "section": "Probability distributions",
-    "text": "Probability distributions\nParametric probability distributions are defined by the Probability Density Function (PDF). The text below is just a starter to describe common distriubtions. We will learn more about them during the course. Wikipedia is a good sourse for the definition of distributions, focus on the graphs of the PDF and CDF, the definition of outcome space and parameters, and if the expected value and variance is a function of the parameters.\n\nUniform\nA quantity that takes any value in an interval with equal probability\nwiki uniform\n\n\nBeta\nA quantity that takes any value in an interval\nwiki beta\n\n\nNormal\nA quantity taking values from \\(-\\inf\\) to \\(\\inf\\) with a symmteric and decaying probability from the central moment.\nwiki normal\n\n\nLogNormal\nA quantity that is normally distribution if you log it. It only takes positive values\nwiki lognormal\nI recommend to log the data and work with the normal distribution instead\n\n\nExponential\nThe time between independent events with equal intensity to occur, where the chance for an event to occur does not depend on when the previous event occurred\nwiki exponential\n\n\nPoisson\nThe number of independent events with equal intensity to occur, that you see during a time period\nwiki poisson\n\n\nBinomial\nThe number of in total N trials that are successful (falls into two categories)\nwiki binomial\n\n\nMultinomial\nThe number of in total N trials that falls into two or more categories\nwiki multinomial"
+    "objectID": "pages/report_template.html#conclusion",
+    "href": "pages/report_template.html#conclusion",
+    "title": "Report template",
+    "section": "Conclusion",
+    "text": "Conclusion\nMake a short summary of the conclusion of the assessment."
   },
   {
-    "objectID": "pages/probability_distribution.html#references-1",
-    "href": "pages/probability_distribution.html#references-1",
-    "title": "Introduction to probability distributions",
+    "objectID": "pages/report_template.html#discussion",
+    "href": "pages/report_template.html#discussion",
+    "title": "Report template",
+    "section": "Discussion",
+    "text": "Discussion\nDiscuss the following topics:\n\nChallenges you encountered in reproducing the original assessment\nSuggestions for making it easier to read a risk assessment and overcome some of the challenges encountered\nuantitative analysis"
+  },
+  {
+    "objectID": "pages/report_template.html#references",
+    "href": "pages/report_template.html#references",
+    "title": "Report template",
     "section": "References",
-    "text": "References\nEFSA Scientific Committee, 2018. Scientific Opinion on the principles and methods behind EFSA’s Guidance on Uncertainty Analysis in Scientific Assessment. EFSA Journal 2018;16(1):5122, 235 pp. https://doi.org/10.2903/j.efsa.2018.5122"
+    "text": "References\nAdd references using the APA 7 format."
   },
   {
-    "objectID": "pages/individual_projects.html",
-    "href": "pages/individual_projects.html",
-    "title": "Introduction to individual projects",
-    "section": "",
-    "text": "On Monday, you will be assigned one of the following risk assessments. The assignment will consider you preference, but all risk assessments must be chosen at the end as they represent material for the course.\nReproduce the indicated part of the assessment with your choice of modification.\nProduce a report on 2 - 10 pages (min 2 and max 10) including figures and tables.\nProvide your code for the assessment as an appendix.\nInclude references, including reference to suitable guidance documents for this type of risk assessment."
-  },
-  {
-    "objectID": "pages/individual_projects.html#general-instructions",
-    "href": "pages/individual_projects.html#general-instructions",
-    "title": "Introduction to individual projects",
-    "section": "",
-    "text": "On Monday, you will be assigned one of the following risk assessments. The assignment will consider you preference, but all risk assessments must be chosen at the end as they represent material for the course.\nReproduce the indicated part of the assessment with your choice of modification.\nProduce a report on 2 - 10 pages (min 2 and max 10) including figures and tables.\nProvide your code for the assessment as an appendix.\nInclude references, including reference to suitable guidance documents for this type of risk assessment."
-  },
-  {
-    "objectID": "pages/individual_projects.html#a-human-health-risk-assessment-from-chemicals-in-the-food-chain",
-    "href": "pages/individual_projects.html#a-human-health-risk-assessment-from-chemicals-in-the-food-chain",
-    "title": "Introduction to individual projects",
-    "section": "A human health risk assessment from chemicals in the food chain",
-    "text": "A human health risk assessment from chemicals in the food chain\nRisk assessment of N‐nitrosamines in food Link to the assessment\nThis is a typical risk assessment of risk to human health via dietary exposure from a chemical substance in food.\nThe task is to replicate the risk assessment with one of the following modifications\n\na new Benchmark Dose Modelling where you discuss the influence of choices made in the modelling\na quantitative uncertainty analysis on the exposure assessment\n\nAt the end, quantify the level of certainty that exposure of N‐nitrosamines can lead to adverse outcomes for different proportions of the EU population. Use expert judgement where you and two other persons act as experts."
-  },
-  {
-    "objectID": "pages/individual_projects.html#a-pest-categorisation-of-an-invasive-species",
-    "href": "pages/individual_projects.html#a-pest-categorisation-of-an-invasive-species",
-    "title": "Introduction to individual projects",
-    "section": "A pest categorisation of an invasive species",
-    "text": "A pest categorisation of an invasive species\nPest categorisation of the red fire ant Link to the assessment\nThe task is to replicate the assessment of pest potential for entry, establishment and spread in the EU (Section 3.4) with one of the following modifications\n\nmake your own assessment of climate matching e.g. by running the CLIMEX modelling with occurrence data that you retrieve from databases.\n\n\n\nAt the end, quantify the level of certainty that this species will be a problem in Sweden within 20 years from now using expert judgement where you and two other persons act as experts."
-  },
-  {
-    "objectID": "pages/individual_projects.html#an-evaluation-of-control-measures-for-a-disease",
-    "href": "pages/individual_projects.html#an-evaluation-of-control-measures-for-a-disease",
-    "title": "Introduction to individual projects",
-    "section": "An evaluation of control measures for a disease",
-    "text": "An evaluation of control measures for a disease\nThis assessment compares the efficiency of control measures for the African Swine Fever Link to the assessment\nThe task is to replicate the assessment of the Minimum radius of restricted zones and duration of the disease control measures in restricted zones (ToR 3) with the following modifications\n\n\n\n\n\n\nwith a quantitative uncertainty analysis considering the impact of uncertainty in parameters of the kernel model and the impact of uncertainty in the model structure by model averaging\n\nAt the end, quantify the level of certainty that the control measures taken for the outbreak in Sweden will succeed in containing the outbreak. Use expert judgement where you and two other persons act as experts."
-  },
-  {
-    "objectID": "pages/individual_projects.html#a-population-viability-assessment",
-    "href": "pages/individual_projects.html#a-population-viability-assessment",
-    "title": "Introduction to individual projects",
-    "section": "A Population Viability Assessment",
-    "text": "A Population Viability Assessment\nThis is an assessment of conservation status based on a Population Viability Assessment of the polar bear Link to the assessment\nYou can find a description of the PVA in the Supplementary material for Ursus maritimus Red List assessment\nReplicate the risk assessment for two scenarios and two subpopulations with the following modifications\n\nconsider uncertainty in generation length by a probability distribution instead of the mean and P95\n\nAt the end, quantify the level of certainty that there will be a decline in at least one of the subpopulations. Use expert judgement where you and two other persons act as experts."
-  },
-  {
-    "objectID": "pages/individual_projects.html#an-environmental-risk-assessment-from-the-use-of-a-chemical-product",
-    "href": "pages/individual_projects.html#an-environmental-risk-assessment-from-the-use-of-a-chemical-product",
-    "title": "Introduction to individual projects",
-    "section": "An environmental risk assessment from the use of a chemical product",
-    "text": "An environmental risk assessment from the use of a chemical product\nThis is an Environmental Risk Assessment of the medicine Felodipine Link to the assessment\nReplicate the risk assessment with one of the following modifications\n\nperform the exposure assessment with a quantitative uncertainty analysis\napply species sensitivity distribution on the ecotoxicological measurements\n\nUseful documents\nERA for medicines\nECHA Guidance. Characterisation of dose[concentration]-response for environment\n\n\n\n\nAt the end, quantify the level of certainty that release of Felodipine into the environment will result in adverse impact on ecosystems. Use expert judgement where you and two other persons act as experts."
-  },
-  {
-    "objectID": "pages/bs1.html#risk-aversion---lottery",
-    "href": "pages/bs1.html#risk-aversion---lottery",
-    "title": "Book seminar 1",
-    "section": "Risk aversion - lottery",
-    "text": "Risk aversion - lottery\n\nThe probability of winning is \\(p\\).\nA lottery ticket costs \\(1\\) SEK.\nIf you win you get \\(100\\) SEK.\n\nThe expected utility is: \\[ EU = p \\cdot 100 - 1 \\]\nWould you buy a ticket in this lottery?\n\nIf no, why? If yes, why?\n\n\nUtility is measured as Swedish kronor (SEK).\nIf no, you are risk averse If yes, you might enjoy the risk. In reality we do not have the fortune to be able to choose, it is rather about preventing bad things from happening.\nWould you answer change if the ticket was free and you would win 99 SEK"
-  },
-  {
-    "objectID": "pages/bs1.html#two-doors",
-    "href": "pages/bs1.html#two-doors",
-    "title": "Book seminar 1",
-    "section": "Two doors",
-    "text": "Two doors\nIn this case you are to choose one out of two doors. Behind every door there is a chance of winning \\(X\\) with probability \\(p\\). Thus, each door is a lottery with the expected utility \\(X\\cdot p\\).\n\nWhich lottery do you prefer in the three situations A, B and C?"
-  },
-  {
-    "objectID": "pages/bs1.html#expected-utilities",
-    "href": "pages/bs1.html#expected-utilities",
-    "title": "Book seminar 1",
-    "section": "Expected utilities",
-    "text": "Expected utilities\n\nA: \\(0.25\\cdot 100 = 25\\) vs \\(0.25\\cdot 10 = 2.5\\)\nB: \\(0.05\\cdot 100 = 5\\) vs \\(0.75\\cdot 10 = 7.5\\)\nC: \\(0.05\\cdot 100 = 5\\) vs \\(0.5\\cdot 10 = 5\\)"
-  },
-  {
-    "objectID": "pages/bs1.html#linquistic-uncertainty",
-    "href": "pages/bs1.html#linquistic-uncertainty",
-    "title": "Book seminar 1",
-    "section": "Linquistic uncertainty",
-    "text": "Linquistic uncertainty\n\nImpact on biodiversity is high\n\n\nThere is a 30% probability of rain tomorrow\n\n\nProminent in qualitative risk assessment due to the use of qualitative expressions\nCan be avoided by using well defined questions, quantities and outcomes and meaningful scales"
-  },
-  {
-    "objectID": "pages/bs1.html#subjective-risk-assessment",
-    "href": "pages/bs1.html#subjective-risk-assessment",
-    "title": "Book seminar 1",
-    "section": "Subjective Risk Assessment",
-    "text": "Subjective Risk Assessment\nA tool from Mark and his colleagues to reduce linguistic uncertainty\nSRA tool manual\n\nLikelihood and impact scales"
-  },
-  {
-    "objectID": "pages/bs1.html#subjective-risk-assessment-1",
-    "href": "pages/bs1.html#subjective-risk-assessment-1",
-    "title": "Book seminar 1",
-    "section": "Subjective Risk Assessment",
-    "text": "Subjective Risk Assessment\nRain - Rain tomorrow\nRocket - Next moon rocket crash on earth\nTrump - Trump becomes the next president of USA\n\nUse these likelihood and impact scalesMake judgements with single scores e.g. 3 or ranges, e.g. 2-4"
-  },
-  {
-    "objectID": "pages/bs1.html#delphi-process-to-aggregate-judgements-from-a-group-of-experts",
-    "href": "pages/bs1.html#delphi-process-to-aggregate-judgements-from-a-group-of-experts",
-    "title": "Book seminar 1",
-    "section": "Delphi process to aggregate judgements from a group of experts",
-    "text": "Delphi process to aggregate judgements from a group of experts\n\nMake individual judgements\nCompare where there are large differences in judgements. - Discuss and resolve the reason for differences. Here is where linguistic uncertainties can be reduced.\nRedo individual judgements\nAggregate the judgements"
-  },
-  {
-    "objectID": "pages/bs1.html#interpretation-of-probability",
-    "href": "pages/bs1.html#interpretation-of-probability",
-    "title": "Book seminar 1",
-    "section": "Interpretation of probability",
-    "text": "Interpretation of probability\nTutorial on uncertainty where Ullrika explains probability distribution\n\nthe frequency with which sampled values arise within a specified range or for a specified category\n\n\na quantification of a judgement on the likelihood of a particular range or category\n\n\n\n\n\n\n\nNote\n\n\nThe mathematical theory for probability is the same for both interpretations!"
-  },
-  {
-    "objectID": "pages/bs1.html#probability-distributions",
-    "href": "pages/bs1.html#probability-distributions",
-    "title": "Book seminar 1",
-    "section": "Probability distributions",
-    "text": "Probability distributions\nVisualising probability distributions"
-  },
-  {
-    "objectID": "pages/bs1.html#uncertainty-and-variability",
-    "href": "pages/bs1.html#uncertainty-and-variability",
-    "title": "Book seminar 1",
-    "section": "Uncertainty and variability",
-    "text": "Uncertainty and variability"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "pages/Course introduction.html#welcome-to-risk-assessment-in-environment-and-public-health",
-    "href": "pages/Course introduction.html#welcome-to-risk-assessment-in-environment-and-public-health",
-    "title": "Course introduction MVEN10",
-    "section": "Welcome to Risk Assessment in Environment and Public Health",
-    "text": "Welcome to Risk Assessment in Environment and Public Health\n\nCourse coordinator: Ullrika Sahlin\nCourse platform https://canvas.education.lu.se/courses/23481\nCourse syllabus\nStudy directors:\n\nHelena Hansson Environmental Science\nStefan Olin Applied Computational Science appliedcompsci@math.lu.se"
-  },
-  {
-    "objectID": "pages/Course introduction.html#why-study-risk-assessment",
-    "href": "pages/Course introduction.html#why-study-risk-assessment",
-    "title": "Course introduction MVEN10",
-    "section": "Why study risk assessment",
-    "text": "Why study risk assessment\n\n\nTo be competitive on the job market\n\nthere is a lot of experts, but fewer experts on risk assessment\n\nTo better understand what expertise is required when assessing risk\n\nmotivation to become an expert\nstrengthen your interdisciplinary perspective\n\nTo be able to contribute to better management, including assessment and communication, of risk\nTo become a better decision maker yourself"
-  },
-  {
-    "objectID": "pages/Course introduction.html#lectures",
-    "href": "pages/Course introduction.html#lectures",
-    "title": "Course introduction MVEN10",
-    "section": "Lectures",
-    "text": "Lectures\n\n10 lectures\nOccupational and Health Medicine\nCentre for Environmental and Climate Science\nRisk, Uncertainty and Decision Making (parallell course)"
-  },
-  {
-    "objectID": "pages/Course introduction.html#exercises",
-    "href": "pages/Course introduction.html#exercises",
-    "title": "Course introduction MVEN10",
-    "section": "Exercises",
-    "text": "Exercises\n\n28 carried out over 9 occasions (topics canvas)\nYou are expected to use your own computer (notify!)\nmaterial published on https://ullrika.github.io/MVEN10material/\nreporting according to instructions"
-  },
-  {
-    "objectID": "pages/Course introduction.html#tools",
-    "href": "pages/Course introduction.html#tools",
-    "title": "Course introduction MVEN10",
-    "section": "Tools",
-    "text": "Tools\n\nUse open source tools for scientific assessment\n\nExcel\nR\nQuarto"
-  },
-  {
-    "objectID": "pages/Course introduction.html#literature-seminars",
-    "href": "pages/Course introduction.html#literature-seminars",
-    "title": "Course introduction MVEN10",
-    "section": "Literature seminars",
-    "text": "Literature seminars\n\n2 seminars\n\n1 within an exercise\n\nCome prepared!"
-  },
-  {
-    "objectID": "pages/Course introduction.html#book-seminars",
-    "href": "pages/Course introduction.html#book-seminars",
-    "title": "Course introduction MVEN10",
-    "section": "Book seminars",
-    "text": "Book seminars\n\n5 book seminars (overview canvas)\nPresenter, Opponent, Reviewer with different roles"
-  },
-  {
-    "objectID": "pages/Course introduction.html#case-studies",
-    "href": "pages/Course introduction.html#case-studies",
-    "title": "Course introduction MVEN10",
-    "section": "Case studies",
-    "text": "Case studies\n\n4 groups with tutors\n2 sessions\nProblem Based Learning (canvas)\nCase studies (canvas)\nYou are expected to bring your own computer (Notify!)\nWritten reports per group that will be shared with all"
-  },
-  {
-    "objectID": "pages/Course introduction.html#course-literature",
-    "href": "pages/Course introduction.html#course-literature",
-    "title": "Course introduction MVEN10",
-    "section": "Course literature",
-    "text": "Course literature\n\nBurgman, Mark. Risks and decisions for conservation and environmental management. Cambridge University Press, 2005.\nLiterature for seminars\nOther material handed out during the course\nExplicit references from lectures"
-  },
-  {
-    "objectID": "pages/Course introduction.html#non-scheduled-time",
-    "href": "pages/Course introduction.html#non-scheduled-time",
-    "title": "Course introduction MVEN10",
-    "section": "Non-scheduled time",
-    "text": "Non-scheduled time\n\nThis course is 15 credits and assumes 100% study pace\nNon-scheduled time implies self studies"
-  },
-  {
-    "objectID": "pages/Course introduction.html#grading-and-compulsory-assignments",
-    "href": "pages/Course introduction.html#grading-and-compulsory-assignments",
-    "title": "Course introduction MVEN10",
-    "section": "Grading and compulsory assignments",
-    "text": "Grading and compulsory assignments\n\nParticipation in written assignments, exercises, project work and associated parts is compulsory\nReports from case studies, exercises and project work is failed or passed\nThe written examination is failed, passed or passed with distinction\nAn exam in class and a home exam"
-  },
-  {
-    "objectID": "pages/Course introduction.html#todo",
-    "href": "pages/Course introduction.html#todo",
-    "title": "Course introduction MVEN10",
-    "section": "Todo",
-    "text": "Todo\n\nChoose a course representative\nRemind to inform us if you need to borrow a computer during class\nModify groups for book seminars - if asked for\nModify groups for case studies - if asked for"
+    "objectID": "pages/report_template.html#appendices",
+    "href": "pages/report_template.html#appendices",
+    "title": "Report template",
+    "section": "Appendices",
+    "text": "Appendices\n\nAppendix A. Code for the assessment\nThis appendix should contain the data and code for all calculations and simulations. Preferably as a rendered qmd document or attached Excel file with explanatory text.\n\n\nAppendix B. Report of the Expert Eliciation of overall uncertainty\nWho were the experts\nDescription of the procedure which should at least consist of\n\nAgreement on the question asked to the experts\nIndividual judgements expressed quantitatively\nComparison and discussion of the individual judgments\n\n\n\n\nExpert\nJudgement\n\n\n\n\nA\n\n\n\nB\n\n\n\nC\n\n\n\nConsensus\n\n\n\n\n\nConsensus judgement\nCollection of the experts justifications for lower and higher probability\n\n\n\n\n\n\n\n\nJustifications for a lower probability\nJustifications for a higher probability"
   },
   {
     "objectID": "pages/Intro lecture.html#the-first-risk-analysis",
@@ -411,5 +215,264 @@
     "title": "Introduction to risk assessment",
     "section": "Introduction to case studies",
     "text": "Introduction to case studies\nHuman health assessment:\n\nPer-and PolyFluoroalkyl Substances PFAS\n\nPlant pest assessment:\n\nNavel orangeworm Amyelois transitella\n\nHuman health assessment:\n\nArsenic in food\n\nEcological risk assessment:\n\nAtlantic Bluefin Tuna Thunnus thynnus"
+  },
+  {
+    "objectID": "pages/Course introduction.html#welcome-to-risk-assessment-in-environment-and-public-health",
+    "href": "pages/Course introduction.html#welcome-to-risk-assessment-in-environment-and-public-health",
+    "title": "Course introduction MVEN10",
+    "section": "Welcome to Risk Assessment in Environment and Public Health",
+    "text": "Welcome to Risk Assessment in Environment and Public Health\n\nCourse coordinator: Ullrika Sahlin\nCourse platform https://canvas.education.lu.se/courses/23481\nCourse syllabus\nStudy directors:\n\nHelena Hansson Environmental Science\nStefan Olin Applied Computational Science appliedcompsci@math.lu.se"
+  },
+  {
+    "objectID": "pages/Course introduction.html#why-study-risk-assessment",
+    "href": "pages/Course introduction.html#why-study-risk-assessment",
+    "title": "Course introduction MVEN10",
+    "section": "Why study risk assessment",
+    "text": "Why study risk assessment\n\n\nTo be competitive on the job market\n\nthere is a lot of experts, but fewer experts on risk assessment\n\nTo better understand what expertise is required when assessing risk\n\nmotivation to become an expert\nstrengthen your interdisciplinary perspective\n\nTo be able to contribute to better management, including assessment and communication, of risk\nTo become a better decision maker yourself"
+  },
+  {
+    "objectID": "pages/Course introduction.html#lectures",
+    "href": "pages/Course introduction.html#lectures",
+    "title": "Course introduction MVEN10",
+    "section": "Lectures",
+    "text": "Lectures\n\n10 lectures\nOccupational and Health Medicine\nCentre for Environmental and Climate Science\nRisk, Uncertainty and Decision Making (parallell course)"
+  },
+  {
+    "objectID": "pages/Course introduction.html#exercises",
+    "href": "pages/Course introduction.html#exercises",
+    "title": "Course introduction MVEN10",
+    "section": "Exercises",
+    "text": "Exercises\n\n28 carried out over 9 occasions (topics canvas)\nYou are expected to use your own computer (notify!)\nmaterial published on https://ullrika.github.io/MVEN10material/\nreporting according to instructions"
+  },
+  {
+    "objectID": "pages/Course introduction.html#tools",
+    "href": "pages/Course introduction.html#tools",
+    "title": "Course introduction MVEN10",
+    "section": "Tools",
+    "text": "Tools\n\nUse open source tools for scientific assessment\n\nExcel\nR\nQuarto"
+  },
+  {
+    "objectID": "pages/Course introduction.html#literature-seminars",
+    "href": "pages/Course introduction.html#literature-seminars",
+    "title": "Course introduction MVEN10",
+    "section": "Literature seminars",
+    "text": "Literature seminars\n\n2 seminars\n\n1 within an exercise\n\nCome prepared!"
+  },
+  {
+    "objectID": "pages/Course introduction.html#book-seminars",
+    "href": "pages/Course introduction.html#book-seminars",
+    "title": "Course introduction MVEN10",
+    "section": "Book seminars",
+    "text": "Book seminars\n\n5 book seminars (overview canvas)\nPresenter, Opponent, Reviewer with different roles"
+  },
+  {
+    "objectID": "pages/Course introduction.html#case-studies",
+    "href": "pages/Course introduction.html#case-studies",
+    "title": "Course introduction MVEN10",
+    "section": "Case studies",
+    "text": "Case studies\n\n4 groups with tutors\n2 sessions\nProblem Based Learning (canvas)\nCase studies (canvas)\nYou are expected to bring your own computer (Notify!)\nWritten reports per group that will be shared with all"
+  },
+  {
+    "objectID": "pages/Course introduction.html#course-literature",
+    "href": "pages/Course introduction.html#course-literature",
+    "title": "Course introduction MVEN10",
+    "section": "Course literature",
+    "text": "Course literature\n\nBurgman, Mark. Risks and decisions for conservation and environmental management. Cambridge University Press, 2005.\nLiterature for seminars\nOther material handed out during the course\nExplicit references from lectures"
+  },
+  {
+    "objectID": "pages/Course introduction.html#non-scheduled-time",
+    "href": "pages/Course introduction.html#non-scheduled-time",
+    "title": "Course introduction MVEN10",
+    "section": "Non-scheduled time",
+    "text": "Non-scheduled time\n\nThis course is 15 credits and assumes 100% study pace\nNon-scheduled time implies self studies"
+  },
+  {
+    "objectID": "pages/Course introduction.html#grading-and-compulsory-assignments",
+    "href": "pages/Course introduction.html#grading-and-compulsory-assignments",
+    "title": "Course introduction MVEN10",
+    "section": "Grading and compulsory assignments",
+    "text": "Grading and compulsory assignments\n\nParticipation in written assignments, exercises, project work and associated parts is compulsory\nReports from case studies, exercises and project work is failed or passed\nThe written examination is failed, passed or passed with distinction\nAn exam in class and a home exam"
+  },
+  {
+    "objectID": "pages/Course introduction.html#todo",
+    "href": "pages/Course introduction.html#todo",
+    "title": "Course introduction MVEN10",
+    "section": "Todo",
+    "text": "Todo\n\nChoose a course representative\nRemind to inform us if you need to borrow a computer during class\nModify groups for book seminars - if asked for\nModify groups for case studies - if asked for"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "pages/bs1.html#risk-aversion---lottery",
+    "href": "pages/bs1.html#risk-aversion---lottery",
+    "title": "Book seminar 1",
+    "section": "Risk aversion - lottery",
+    "text": "Risk aversion - lottery\n\nThe probability of winning is \\(p\\).\nA lottery ticket costs \\(1\\) SEK.\nIf you win you get \\(100\\) SEK.\n\nThe expected utility is: \\[ EU = p \\cdot 100 - 1 \\]\nWould you buy a ticket in this lottery?\n\nIf no, why? If yes, why?\n\n\nUtility is measured as Swedish kronor (SEK).\nIf no, you are risk averse If yes, you might enjoy the risk. In reality we do not have the fortune to be able to choose, it is rather about preventing bad things from happening.\nWould you answer change if the ticket was free and you would win 99 SEK"
+  },
+  {
+    "objectID": "pages/bs1.html#two-doors",
+    "href": "pages/bs1.html#two-doors",
+    "title": "Book seminar 1",
+    "section": "Two doors",
+    "text": "Two doors\nIn this case you are to choose one out of two doors. Behind every door there is a chance of winning \\(X\\) with probability \\(p\\). Thus, each door is a lottery with the expected utility \\(X\\cdot p\\).\n\nWhich lottery do you prefer in the three situations A, B and C?"
+  },
+  {
+    "objectID": "pages/bs1.html#expected-utilities",
+    "href": "pages/bs1.html#expected-utilities",
+    "title": "Book seminar 1",
+    "section": "Expected utilities",
+    "text": "Expected utilities\n\nA: \\(0.25\\cdot 100 = 25\\) vs \\(0.25\\cdot 10 = 2.5\\)\nB: \\(0.05\\cdot 100 = 5\\) vs \\(0.75\\cdot 10 = 7.5\\)\nC: \\(0.05\\cdot 100 = 5\\) vs \\(0.5\\cdot 10 = 5\\)"
+  },
+  {
+    "objectID": "pages/bs1.html#linquistic-uncertainty",
+    "href": "pages/bs1.html#linquistic-uncertainty",
+    "title": "Book seminar 1",
+    "section": "Linquistic uncertainty",
+    "text": "Linquistic uncertainty\n\nImpact on biodiversity is high\n\n\nThere is a 30% probability of rain tomorrow\n\n\nProminent in qualitative risk assessment due to the use of qualitative expressions\nCan be avoided by using well defined questions, quantities and outcomes and meaningful scales"
+  },
+  {
+    "objectID": "pages/bs1.html#subjective-risk-assessment",
+    "href": "pages/bs1.html#subjective-risk-assessment",
+    "title": "Book seminar 1",
+    "section": "Subjective Risk Assessment",
+    "text": "Subjective Risk Assessment\nA tool from Mark and his colleagues to reduce linguistic uncertainty\nSRA tool manual\n\nLikelihood and impact scales"
+  },
+  {
+    "objectID": "pages/bs1.html#subjective-risk-assessment-1",
+    "href": "pages/bs1.html#subjective-risk-assessment-1",
+    "title": "Book seminar 1",
+    "section": "Subjective Risk Assessment",
+    "text": "Subjective Risk Assessment\nRain - Rain tomorrow\nRocket - Next moon rocket crash on earth\nTrump - Trump becomes the next president of USA\n\nUse these likelihood and impact scalesMake judgements with single scores e.g. 3 or ranges, e.g. 2-4"
+  },
+  {
+    "objectID": "pages/bs1.html#delphi-process-to-aggregate-judgements-from-a-group-of-experts",
+    "href": "pages/bs1.html#delphi-process-to-aggregate-judgements-from-a-group-of-experts",
+    "title": "Book seminar 1",
+    "section": "Delphi process to aggregate judgements from a group of experts",
+    "text": "Delphi process to aggregate judgements from a group of experts\n\nMake individual judgements\nCompare where there are large differences in judgements. - Discuss and resolve the reason for differences. Here is where linguistic uncertainties can be reduced.\nRedo individual judgements\nAggregate the judgements"
+  },
+  {
+    "objectID": "pages/bs1.html#interpretation-of-probability",
+    "href": "pages/bs1.html#interpretation-of-probability",
+    "title": "Book seminar 1",
+    "section": "Interpretation of probability",
+    "text": "Interpretation of probability\nTutorial on uncertainty where Ullrika explains probability distribution\n\nthe frequency with which sampled values arise within a specified range or for a specified category\n\n\na quantification of a judgement on the likelihood of a particular range or category\n\n\n\n\n\n\n\nNote\n\n\nThe mathematical theory for probability is the same for both interpretations!"
+  },
+  {
+    "objectID": "pages/bs1.html#probability-distributions",
+    "href": "pages/bs1.html#probability-distributions",
+    "title": "Book seminar 1",
+    "section": "Probability distributions",
+    "text": "Probability distributions\nVisualising probability distributions"
+  },
+  {
+    "objectID": "pages/bs1.html#uncertainty-and-variability",
+    "href": "pages/bs1.html#uncertainty-and-variability",
+    "title": "Book seminar 1",
+    "section": "Uncertainty and variability",
+    "text": "Uncertainty and variability"
+  },
+  {
+    "objectID": "pages/individual_projects.html",
+    "href": "pages/individual_projects.html",
+    "title": "Introduction to individual projects",
+    "section": "",
+    "text": "On Monday, you will be assigned one of the following risk assessments. The assignment will consider you preference, but all risk assessments must be chosen at the end as they represent material for the course.\nReproduce the indicated part of the assessment with your choice of modification.\nProduce a report on 2 - 10 pages (min 2 and max 10) including figures and tables.\nProvide your code for the assessment as an appendix.\nInclude references, including reference to suitable guidance documents for this type of risk assessment.\nRefer to sections, figures and tables in the original assessment the when using it as reference.\nSee the template report for further info"
+  },
+  {
+    "objectID": "pages/individual_projects.html#general-instructions",
+    "href": "pages/individual_projects.html#general-instructions",
+    "title": "Introduction to individual projects",
+    "section": "",
+    "text": "On Monday, you will be assigned one of the following risk assessments. The assignment will consider you preference, but all risk assessments must be chosen at the end as they represent material for the course.\nReproduce the indicated part of the assessment with your choice of modification.\nProduce a report on 2 - 10 pages (min 2 and max 10) including figures and tables.\nProvide your code for the assessment as an appendix.\nInclude references, including reference to suitable guidance documents for this type of risk assessment.\nRefer to sections, figures and tables in the original assessment the when using it as reference.\nSee the template report for further info"
+  },
+  {
+    "objectID": "pages/individual_projects.html#a-human-health-risk-assessment-from-chemicals-in-the-food-chain",
+    "href": "pages/individual_projects.html#a-human-health-risk-assessment-from-chemicals-in-the-food-chain",
+    "title": "Introduction to individual projects",
+    "section": "A human health risk assessment from chemicals in the food chain",
+    "text": "A human health risk assessment from chemicals in the food chain\nRisk assessment of N‐nitrosamines in food Link to the assessment\nThis is a typical risk assessment of risk to human health via dietary exposure from a chemical substance in food.\nThe task is to replicate the risk assessment with one of the following modifications\n\na new Benchmark Dose Modelling where you discuss the influence of choices made in the modelling\na quantitative uncertainty analysis on the exposure assessment\n\nAt the end, quantify the level of certainty that exposure of N‐nitrosamines can lead to adverse outcomes for different proportions of the EU population. Use expert judgement where you and two other persons act as experts."
+  },
+  {
+    "objectID": "pages/individual_projects.html#a-pest-categorisation-of-an-invasive-species",
+    "href": "pages/individual_projects.html#a-pest-categorisation-of-an-invasive-species",
+    "title": "Introduction to individual projects",
+    "section": "A pest categorisation of an invasive species",
+    "text": "A pest categorisation of an invasive species\nPest categorisation of the red fire ant Link to the assessment\nThe task is to replicate the assessment of pest potential for entry, establishment and spread in the EU (Section 3.4) with one of the following modifications\n\nmake your own assessment of climate matching e.g. by running the CLIMEX modelling with occurrence data that you retrieve from databases.\n\n\n\nAt the end, quantify the level of certainty that this species will be a problem in Sweden within 20 years from now using expert judgement where you and two other persons act as experts."
+  },
+  {
+    "objectID": "pages/individual_projects.html#an-evaluation-of-control-measures-for-a-disease",
+    "href": "pages/individual_projects.html#an-evaluation-of-control-measures-for-a-disease",
+    "title": "Introduction to individual projects",
+    "section": "An evaluation of control measures for a disease",
+    "text": "An evaluation of control measures for a disease\nThis assessment compares the efficiency of control measures for the African Swine Fever Link to the assessment\nThe task is to replicate the assessment of the Minimum radius of restricted zones and duration of the disease control measures in restricted zones (ToR 3) with the following modifications\n\n\n\n\n\n\nwith a quantitative uncertainty analysis considering the impact of uncertainty in parameters of the kernel model and the impact of uncertainty in the model structure by model averaging\n\nAt the end, quantify the level of certainty that the control measures taken for the outbreak in Sweden will succeed in containing the outbreak. Use expert judgement where you and two other persons act as experts."
+  },
+  {
+    "objectID": "pages/individual_projects.html#a-population-viability-assessment",
+    "href": "pages/individual_projects.html#a-population-viability-assessment",
+    "title": "Introduction to individual projects",
+    "section": "A Population Viability Assessment",
+    "text": "A Population Viability Assessment\nThis is an assessment of conservation status based on a Population Viability Assessment of the polar bear Link to the assessment\nYou can find a description of the PVA in the Supplementary material for Ursus maritimus Red List assessment\nReplicate the risk assessment for two scenarios and two subpopulations with the following modifications\n\nconsider uncertainty in generation length by a probability distribution instead of the mean and P95\n\nAt the end, quantify the level of certainty that there will be a decline in at least one of the subpopulations. Use expert judgement where you and two other persons act as experts."
+  },
+  {
+    "objectID": "pages/individual_projects.html#an-environmental-risk-assessment-from-the-use-of-a-chemical-product",
+    "href": "pages/individual_projects.html#an-environmental-risk-assessment-from-the-use-of-a-chemical-product",
+    "title": "Introduction to individual projects",
+    "section": "An environmental risk assessment from the use of a chemical product",
+    "text": "An environmental risk assessment from the use of a chemical product\nThis is an Environmental Risk Assessment of the medicine Felodipine Link to the assessment\nReplicate the risk assessment with one of the following modifications\n\nperform the exposure assessment with a quantitative uncertainty analysis\napply species sensitivity distribution on the ecotoxicological measurements\n\nUseful documents\nERA for medicines\nECHA Guidance. Characterisation of dose[concentration]-response for environment\n\n\n\n\nAt the end, quantify the level of certainty that release of Felodipine into the environment will result in adverse impact on ecosystems. Use expert judgement where you and two other persons act as experts."
+  },
+  {
+    "objectID": "pages/probability_distribution.html",
+    "href": "pages/probability_distribution.html",
+    "title": "Introduction to probability distributions",
+    "section": "",
+    "text": "Expert judgement are common in risk assessment. To ensure rigour of the assessment, these judgements should be collected in a structured way. Methods have been developed to reduce linguistic uncertainty and cognitive biases when experts make judgements, and to aggregate judgements by a group of experts.\nQuantitative judgements, e.g. judgements expressed by subjective probabilities are preferable over qualitative expressions of uncertainty. The reasons are that\n\nqualitative judgements have different meanings for different people, and\nquantitative judgements can be combined using probability rules (probability calculations)\n\nEFSA defines Expert Knowledge Elicitation as\n\nA systematic, documented and reviewable process to retrieve expert judgements from a group of experts, often in the form of a probability distribution.\n\nIn general, it is possible to make a quantitative judgement when the question asked to an expert is well-defined.\nThe expert should also feel that she has some basis to make his/her judgement.\n\nA good expert makes judgements where she has domain knowledge and is hesitant to make judgements for questions where she feels there is not enough basis for a judgement.\n\nIt is also important that experts receive training in making probabilistic judgements to ensure they understand them.\n\n\nThis mini-lecture introduces probability distributions for a binary event, a categorical quantity, a discrete quantity and a continuous quantity. The terms cumulative probability function, probability density function, and quantile and boxplot. The aim of the lecture is to that the student understand the terms quantile and percentile."
+  },
+  {
+    "objectID": "pages/probability_distribution.html#background",
+    "href": "pages/probability_distribution.html#background",
+    "title": "Introduction to probability distributions",
+    "section": "",
+    "text": "Expert judgement are common in risk assessment. To ensure rigour of the assessment, these judgements should be collected in a structured way. Methods have been developed to reduce linguistic uncertainty and cognitive biases when experts make judgements, and to aggregate judgements by a group of experts.\nQuantitative judgements, e.g. judgements expressed by subjective probabilities are preferable over qualitative expressions of uncertainty. The reasons are that\n\nqualitative judgements have different meanings for different people, and\nquantitative judgements can be combined using probability rules (probability calculations)\n\nEFSA defines Expert Knowledge Elicitation as\n\nA systematic, documented and reviewable process to retrieve expert judgements from a group of experts, often in the form of a probability distribution.\n\nIn general, it is possible to make a quantitative judgement when the question asked to an expert is well-defined.\nThe expert should also feel that she has some basis to make his/her judgement.\n\nA good expert makes judgements where she has domain knowledge and is hesitant to make judgements for questions where she feels there is not enough basis for a judgement.\n\nIt is also important that experts receive training in making probabilistic judgements to ensure they understand them.\n\n\nThis mini-lecture introduces probability distributions for a binary event, a categorical quantity, a discrete quantity and a continuous quantity. The terms cumulative probability function, probability density function, and quantile and boxplot. The aim of the lecture is to that the student understand the terms quantile and percentile."
+  },
+  {
+    "objectID": "pages/probability_distribution.html#probability-distributions",
+    "href": "pages/probability_distribution.html#probability-distributions",
+    "title": "Introduction to probability distributions",
+    "section": "Probability distributions",
+    "text": "Probability distributions\n\nA binary event\nThe simplest probability distribution is the probability for a binary event, which is an event having only two outcomes.\nLet us say that we have the events A and not A.\nIf the probability for A is \\(p\\), then the probability for not A is \\(1-p\\).\nWe can illustrate the probability distribution for a binary event as a bar chart\n\n\n\n\n\nAnother useful way is to think of binary events as sections taking up a certain area of the probability scale\n\n\n\n\n\n\n\nMore than two possible outcomes\nProbability is also used for quantities having “more than two possible outcomes”.\nThis can be quantities that are\n\ncategorical - with distinct classes that do not have to come in a particular order\ndiscrete - taking numerical integer values, usually obtained by counts\ncontinuous - taking numerical continuous values for which probability is expressed over ranges instead of specific numbers\n\nThe probabilities for quantities taking different values are summarised by a probability distribution.\nThere are different types of probability distributions depending on the characteristic of the outcome space, i.e. the full set of possible outcomes.\n\n\n\n\n\n\n\n\n\nType of outcome\nDescription of outcomes\nExamples outcome space\nExamples distributions\n\n\n\n\nBinary\ntwo outcomes\n0 or 1\nBernoulli\n\n\n\n\nA or not A\n\n\n\n\n\nTRUE or FALSE\n\n\n\nCategorical\ntwo or more categories\nAdult, Adolescent, Other children\n\n\n\nDiscrete\nwhole numbers\n0, 1, 2, 3, …\nPoisson\n\n\n\n\n0, 1, 2, …, n-1, n\nBinomial\n\n\n\n\nthe number of trials that falls into two or more categories\nMultinomial\n\n\nContinuous\nreal numbers \\(x \\in \\mathbb{R}\\)\n\\(-\\inf &lt; x &lt; \\inf\\)\nNormal\n\n\n\n\n\\(0&lt;x\\)\nExponential\n\n\n\n\n\\(0 &lt; x &lt; 1\\)\nUniform, Beta\n\n\n\nFootnote: The \\(x\\) in the table above is a notation for a random observation from the probability distribution."
+  },
+  {
+    "objectID": "pages/probability_distribution.html#visualising-probability-distributions",
+    "href": "pages/probability_distribution.html#visualising-probability-distributions",
+    "title": "Introduction to probability distributions",
+    "section": "Visualising probability distributions",
+    "text": "Visualising probability distributions\nA probability distribution for a continuous quantity can be plotted in various formats:\n\nA Box plot\nA Probability Density Function (PDF)\nA Cumulative Probability Distribution (CDF)\n\nHere they are plotted together to show how they are related\n\n\n\n\n\nFigure 1: CDF, PDF and boxplot\n\n\n\n\n\nQuantiles\nTo summarise uncertainty, an assessor might want to find values that divide the range of the quantity into parts containing specified amounts of probability. Such values are known as quantiles.\nA quantile can be denoted with the letter P, together with the associated probability that the quantity would take a value below the quantile. For example, the value that divides a probability distribution into two parts with equal probabilities is the P50 quantile.\nThis value is also known as the median.\nQuartiles divide a probability distribution into four sections of equal probability. The first quartile is P25. The second quartile is the median P50. The third quartile is P75.\nA boxplot visualises quartiles.\nA percentile is another name for a quantile defined by the probability to the left of the quantile.\n\n\nProbability Density Function\nMost continuous quantities have a Probability Density Function (PDF).\nThe Probability Density Function express probabilities as area under its curve. The total area under the curve is 1, corresponding to 100% probability.\nThe area under the PDF curve to the left of the median is 50%.\nThe PDF can be thought of as a smooth histogram for a continuous quantity. Note that when used for a probability distribution, the area for the histogram should be 1.\n\n\nCumulative Distribution Function\nA probability distribution can be represented by its Cumulative Distribution Function (often abbreviated as CDF). The CDF gives the probability that the quantity is less than or equal to any specified value\nThe CDF contains all the information about probabilities for the quantity: for example, it can be used to calculate the probability that the quantity lies in any specified range of values.\nThis is a curve over the possible range of the quantity (on the x-axis) increasing from 0 to 100% probability (on the y-axis)."
+  },
+  {
+    "objectID": "pages/probability_distribution.html#uncertainty-and-variability",
+    "href": "pages/probability_distribution.html#uncertainty-and-variability",
+    "title": "Introduction to probability distributions",
+    "section": "Uncertainty and variability",
+    "text": "Uncertainty and variability\nUncertainty refers to the state of knowledge, whereas variability refers to actual variation or heterogeneity in the real world.\nBoth uncertainty and variability can be represented by probability distributions\n\n\n\nUncertainty and variability figure from EFSA\n\n\nThe left you see a probability distribution for a non-variable quantity - Let us call it parameter P. It is a single true value which is uncertain, and the distribution represents uncertainty about P.\nIn the center, you see a probability distribution for a variable quantity. This variable V has multiple true values. The probability distribution represents variability of V.\nTo the right you see a probabilistic model for both variability and uncertainty. We use a probability distribution to represent variability in this variable, but the true distribution for variability is unknown and we use probability distributions to represent our uncertainty about it’s variability. This distribution is sometimes referred to as a spaghetti plot or two-dimensional distribution.\nUncertainty may be altered (either reduced or increased) by further research, because it results from limitations in knowledge.\nVariability cannot be altered by obtaining more knowledge, because it refers to real differences in the world or how the assessors choose to model the world.\nIt is important that assessors distinguish uncertainty and variability because they have different implications for decision-making: informing decisions about whether to invest resources in research aimed at reducing uncertainty or in management options aimed at influencing variability (e.g. to change exposures to subgroups of the population)."
+  },
+  {
+    "objectID": "pages/probability_distribution.html#probability-distributions-1",
+    "href": "pages/probability_distribution.html#probability-distributions-1",
+    "title": "Introduction to probability distributions",
+    "section": "Probability distributions",
+    "text": "Probability distributions\nParametric probability distributions are defined by the Probability Density Function (PDF). The text below is just a starter to describe common distriubtions. We will learn more about them during the course. Wikipedia is a good sourse for the definition of distributions, focus on the graphs of the PDF and CDF, the definition of outcome space and parameters, and if the expected value and variance is a function of the parameters.\n\nUniform\nA quantity that takes any value in an interval with equal probability\nwiki uniform\n\n\nBeta\nA quantity that takes any value in an interval\nwiki beta\n\n\nNormal\nA quantity taking values from \\(-\\inf\\) to \\(\\inf\\) with a symmteric and decaying probability from the central moment.\nwiki normal\n\n\nLogNormal\nA quantity that is normally distribution if you log it. It only takes positive values\nwiki lognormal\nI recommend to log the data and work with the normal distribution instead\n\n\nExponential\nThe time between independent events with equal intensity to occur, where the chance for an event to occur does not depend on when the previous event occurred\nwiki exponential\n\n\nPoisson\nThe number of independent events with equal intensity to occur, that you see during a time period\nwiki poisson\n\n\nBinomial\nThe number of in total N trials that are successful (falls into two categories)\nwiki binomial\n\n\nMultinomial\nThe number of in total N trials that falls into two or more categories\nwiki multinomial"
+  },
+  {
+    "objectID": "pages/probability_distribution.html#references-1",
+    "href": "pages/probability_distribution.html#references-1",
+    "title": "Introduction to probability distributions",
+    "section": "References",
+    "text": "References\nEFSA Scientific Committee, 2018. Scientific Opinion on the principles and methods behind EFSA’s Guidance on Uncertainty Analysis in Scientific Assessment. EFSA Journal 2018;16(1):5122, 235 pp. https://doi.org/10.2903/j.efsa.2018.5122"
   }
 ]

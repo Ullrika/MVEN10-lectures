@@ -1,0 +1,100 @@
+---
+title: "Report template"
+author: "your name"
+date: today
+---
+
+## Disclaimer
+
+This is a reproduction of \[write the name of the original assessment here\] done as part of a course MVEN10 Risk assessment in environment and public health, Fall 2023.
+
+The purpose of the project is to gain more understanding of the inputs and methodology of the original assessment, practice implementing and documenting a quantitative analysis, and practice performing a final assessment of overall uncertainty.
+
+The results from this project should not be used as bases for decision making.
+
+## Introduction
+
+Describe the context and background of the original assessment and the assessment questions.
+
+Add a section why this is a relevant topic today and introduce the additional assessment question presented in the "At the end"-paragraphs for each project.
+
+## Data and methodology
+
+### Structure and type of the original assessment
+
+Describe the type and structure of the original assessment. Refer to relevant guidance documents for this type of assessments.
+
+### Quantitative analysis
+
+Describe the data and methods in the quantitative analysis that has been reproduced or added to the original assessment.
+
+Add the code for the assessment as an appendix to the report.
+
+### Overall uncertainty assessment
+
+Describe the approach to assess overall uncertainty regarding the answer to the "At the end"-question.
+
+Add a report for the expert elicitation of the overall uncertainty assessment as an appendix.
+
+## Results
+
+### Assessment results
+
+Present the results of the assessment questions, but replace the results from the orginal assessment with the results from the quantitative analysis.
+
+### Overall uncertainty
+
+Present the outcome of the overall uncertainty assessment.
+
+## Conclusion
+
+Make a short summary of the conclusion of the assessment.
+
+## Discussion
+
+Discuss the following topics:
+
+-   Challenges you encountered in reproducing the original assessment
+
+-   Suggestions for making it easier to read a risk assessment and overcome some of the challenges encountered
+
+-   uantitative analysis
+
+## References
+
+Add references using the APA 7 format.
+
+## Appendices
+
+### Appendix A. Code for the assessment
+
+This appendix should contain the data and code for all calculations and simulations. Preferably as a rendered qmd document or attached Excel file with explanatory text.
+
+### Appendix B. Report of the Expert Eliciation of overall uncertainty
+
+Who were the experts
+
+Description of the procedure which should at least consist of
+
+(@) Agreement on the question asked to the experts
+
+(@) Individual judgements expressed quantitatively
+
+(@) Comparison and discussion of the individual judgments
+
+| Expert    | Judgement |
+|-----------|-----------|
+| A         |           |
+| B         |           |
+| C         |           |
+| Consensus |           |
+
+(@) Consensus judgement 
+
+(@) Collection of the experts justifications for lower and higher probability
+
+| Justifications for a lower probability | Justifications for a higher probability |
+|----------------------------------------|-----------------------------------------|
+|                                        |                                         |
+|                                        |                                         |
+|                                        |                                         |

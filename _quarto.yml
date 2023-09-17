@@ -26,6 +26,9 @@ website:
       - href: pages/individual_projects.qmd          
         text: Introduction to individual projects
         target: "_blank"
+      - href: pages/report_template.qmd          
+        text: Template for individual report
+        target: "_blank"
         
 
 format:
