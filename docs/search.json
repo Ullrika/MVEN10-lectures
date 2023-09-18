@@ -46,7 +46,7 @@
     "href": "pages/report_template.html#discussion",
     "title": "Report template",
     "section": "Discussion",
-    "text": "Discussion\nDiscuss the following topics:\n\nChallenges you encountered in reproducing the original assessment\nSuggestions for making it easier to read a risk assessment and overcome some of the challenges encountered\nuantitative analysis"
+    "text": "Discussion\nDiscuss the following topics:\n\nChallenges you encountered in reproducing the original assessment\nSuggestions for making it easier to read a risk assessment and overcome some of the challenges encountered\nYour view on the benefit and challenges in performing the assessment of overall uncertainty.\n\n\n\n\n\n\n\nTip\n\n\n\nThe assessment of overall uncertainty is the final main step of uncertainty analysis and is well described in the EFSA guidance for uncertainty analysis.\nTake a moment to view section on overall uncertainty in the EFSA tutorial on uncertainty"
   },
   {
     "objectID": "pages/report_template.html#references",
@@ -60,7 +60,7 @@
     "href": "pages/report_template.html#appendices",
     "title": "Report template",
     "section": "Appendices",
-    "text": "Appendices\n\nAppendix A. Code for the assessment\nThis appendix should contain the data and code for all calculations and simulations. Preferably as a rendered qmd document or attached Excel file with explanatory text.\n\n\nAppendix B. Report of the Expert Eliciation of overall uncertainty\nWho were the experts\nDescription of the procedure which should at least consist of\n\nAgreement on the question asked to the experts\nIndividual judgements expressed quantitatively\nComparison and discussion of the individual judgments\n\n\n\n\nExpert\nJudgement\n\n\n\n\nA\n\n\n\nB\n\n\n\nC\n\n\n\nConsensus\n\n\n\n\n\nConsensus judgement\nCollection of the experts justifications for lower and higher probability\n\n\n\n\n\n\n\n\nJustifications for a lower probability\nJustifications for a higher probability"
+    "text": "Appendices\n\nAppendix A. Code for the assessment\nThis appendix should contain the data and code for all calculations and simulations. Preferably as a rendered qmd document or attached Excel file with explanatory text.\n\n\nAppendix B. Report of the Expert Eliciation of overall uncertainty\nWho were the experts\nDescription of the procedure which should at least consist of\n\nAgreement on the question asked to the experts\nIndividual judgements expressed quantitatively\nComparison and discussion of the individual judgements\n\n\n\n\nExpert\nJudgement\n\n\n\n\nA\n\n\n\nB\n\n\n\nC\n\n\n\nConsensus\n\n\n\n\n\nConsensus judgement\nCollection of the experts justifications for lower and higher probability\n\n\n\n\n\n\n\n\nJustifications for a lower probability\nJustifications for a higher probability"
   },
   {
     "objectID": "pages/Intro lecture.html#the-first-risk-analysis",

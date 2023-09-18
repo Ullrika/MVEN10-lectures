@@ -58,7 +58,14 @@ Discuss the following topics:
 
 -   Suggestions for making it easier to read a risk assessment and overcome some of the challenges encountered
 
--   uantitative analysis
+-   Your view on the benefit and challenges in performing the assessment of overall uncertainty. 
+
+:::{.callout-tip}
+The assessment of overall uncertainty is the final main step of uncertainty analysis and is well described in the EFSA guidance for uncertainty analysis. 
+
+Take a moment to view section on [overall uncertainty in the EFSA tutorial on uncertainty](https://multimedia.efsa.europa.eu/uncertainty-tutorial/uncertainty-analysis/overall.html)
+
+:::
 
 ## References
 
@@ -80,7 +87,7 @@ Description of the procedure which should at least consist of
 
 (@) Individual judgements expressed quantitatively
 
-(@) Comparison and discussion of the individual judgments
+(@) Comparison and discussion of the individual judgements
 
 | Expert    | Judgement |
 |-----------|-----------|
