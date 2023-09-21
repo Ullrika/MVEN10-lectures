@@ -14,6 +14,9 @@ website:
       - href: pages/Course introduction.qmd
         text: Course introduction          
         target: "_blank"
+      - href: pages/course_overview.qmd
+        text: Course content - syllabus with details (to come)           
+        target: "_blank"
       - href: pages/Intro lecture.qmd
         text: Introduction to risk assessment with human and ecological endpoints
         target: "_blank"

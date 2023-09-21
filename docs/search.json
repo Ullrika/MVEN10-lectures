@@ -217,6 +217,111 @@
     "text": "Introduction to case studies\nHuman health assessment:\n\nPer-and PolyFluoroalkyl Substances PFAS\n\nPlant pest assessment:\n\nNavel orangeworm Amyelois transitella\n\nHuman health assessment:\n\nArsenic in food\n\nEcological risk assessment:\n\nAtlantic Bluefin Tuna Thunnus thynnus"
   },
   {
+    "objectID": "pages/course_overview.html",
+    "href": "pages/course_overview.html",
+    "title": "Course content",
+    "section": "",
+    "text": "BELOW IS THE TEXT FROM THE COURSE SYLLABUS. I WILL ADD DETAILS ON HOW THE COURSE IS ADDRESSING THE DIFFERENT LEARNING GOALS OR SPECIFIED CONTENT"
+  },
+  {
+    "objectID": "pages/course_overview.html#course-syllabus",
+    "href": "pages/course_overview.html#course-syllabus",
+    "title": "Course content",
+    "section": "Course Syllabus",
+    "text": "Course Syllabus\nThe general aim of the course is that the student, on completion of the course, should have advanced principles and methods to identify and assess risks in the fields of environment, nature and health. The course includes risks for humans and other organisms connected to exposure to chemicals and causes and risks connected to the extinction of species. Insights into and understanding of need of scientifically based risk communication to different target groups and the importance of knowledge about risk perception to create relevant risk assessments and communication of risks in society are included as important components. The student should be able to understand on completion of the course describe and work with common risk models or tools that are used in the areas of nature, environment and health and have an understanding of how they are used to inform decision-making.\n\nKnowledge and understanding\nOn completion of the course, the student should be able to:\n\ngive an account of and independently apply principles and methods for risk analysis and common risk assessment models in environment, nature and health\ngive an account of needs and examples of scientifically based risk communicationin society and its relation to risk perception\ngive an account of research and development for risk assessment in nature,environment and health\n\n\n\nCompetence and skills\nOn completion of the course, the student should be able to:\n\nuse common methods for risk assessment in the fields of nature, environment and health to within given time frames, and in collaboration with experts,identify and analyse risks\npresent result of risk assessments in different applications\ndiscuss different forms of communication of risks and uncertainty in society\n\n\n\nJudgement and approach\nOn completion of the course, the student should be able to:\n\ncritically reflect on the possibilities and limitations of risk assessments and its rolein risk management in society\ndiscuss ethical aspects at assessment, management and communication of risks\nsuggest needs of additional knowledge to carry out risk assessments in environment, nature and health and take responsibility for their development of knowledge"
+  },
+  {
+    "objectID": "pages/course_overview.html#course-content",
+    "href": "pages/course_overview.html#course-content",
+    "title": "Course content",
+    "section": "Course content",
+    "text": "Course content\nThe course deals with:\n\nidentification, assessment, evaluation and management of risks connected to human and other organisms’ exposure to chemicals and risks connected to extinction of species\nmethods in risk analysis such as problem formulation, hazard assessment, statistical modelling, exposure modelling, dose-response modelling, modelling of dispersion of diseases (epidemiology), modelling of uptake, renewal, distributions and secretion of poisons in living organisms (toxicokinetics) and expert assessment and principles and methods for uncertainty analysis\nrisk evaluation, which includes how to in a structured way can evaluate andmake tradeoffs to support decision-making\nrisk management, which includes how different societal actors prevent risks, sets regulatory thresholds and communicate risks. In addition the importance to connect risk perception in risk management and communication of risks is included."
+  },
+  {
+    "objectID": "pages/course_overview.html#subcourses-in-mven10",
+    "href": "pages/course_overview.html#subcourses-in-mven10",
+    "title": "Course content",
+    "section": "Subcourses in MVEN10",
+    "text": "Subcourses in MVEN10\n\n“Examination”\n7.5 hp Grading scale: Fail, Pass, Pass with distinction\n\n\nExercises and Assignments\n4.5 hp Grading scale: Fail, Pass\n\n\nProject work\n3.0 hp Grading scale: Fail, Pass"
+  },
+  {
+    "objectID": "pages/bs1.html#risk-aversion---lottery",
+    "href": "pages/bs1.html#risk-aversion---lottery",
+    "title": "Book seminar 1",
+    "section": "Risk aversion - lottery",
+    "text": "Risk aversion - lottery\n\nThe probability of winning is \\(p\\).\nA lottery ticket costs \\(1\\) SEK.\nIf you win you get \\(100\\) SEK.\n\nThe expected utility is: \\[ EU = p \\cdot 100 - 1 \\]\nWould you buy a ticket in this lottery?\n\nIf no, why? If yes, why?\n\n\nUtility is measured as Swedish kronor (SEK).\nIf no, you are risk averse If yes, you might enjoy the risk. In reality we do not have the fortune to be able to choose, it is rather about preventing bad things from happening.\nWould you answer change if the ticket was free and you would win 99 SEK"
+  },
+  {
+    "objectID": "pages/bs1.html#two-doors",
+    "href": "pages/bs1.html#two-doors",
+    "title": "Book seminar 1",
+    "section": "Two doors",
+    "text": "Two doors\nIn this case you are to choose one out of two doors. Behind every door there is a chance of winning \\(X\\) with probability \\(p\\). Thus, each door is a lottery with the expected utility \\(X\\cdot p\\).\n\nWhich lottery do you prefer in the three situations A, B and C?"
+  },
+  {
+    "objectID": "pages/bs1.html#expected-utilities",
+    "href": "pages/bs1.html#expected-utilities",
+    "title": "Book seminar 1",
+    "section": "Expected utilities",
+    "text": "Expected utilities\n\nA: \\(0.25\\cdot 100 = 25\\) vs \\(0.25\\cdot 10 = 2.5\\)\nB: \\(0.05\\cdot 100 = 5\\) vs \\(0.75\\cdot 10 = 7.5\\)\nC: \\(0.05\\cdot 100 = 5\\) vs \\(0.5\\cdot 10 = 5\\)"
+  },
+  {
+    "objectID": "pages/bs1.html#linquistic-uncertainty",
+    "href": "pages/bs1.html#linquistic-uncertainty",
+    "title": "Book seminar 1",
+    "section": "Linquistic uncertainty",
+    "text": "Linquistic uncertainty\n\nImpact on biodiversity is high\n\n\nThere is a 30% probability of rain tomorrow\n\n\nProminent in qualitative risk assessment due to the use of qualitative expressions\nCan be avoided by using well defined questions, quantities and outcomes and meaningful scales"
+  },
+  {
+    "objectID": "pages/bs1.html#subjective-risk-assessment",
+    "href": "pages/bs1.html#subjective-risk-assessment",
+    "title": "Book seminar 1",
+    "section": "Subjective Risk Assessment",
+    "text": "Subjective Risk Assessment\nA tool from Mark and his colleagues to reduce linguistic uncertainty\nSRA tool manual\n\nLikelihood and impact scales"
+  },
+  {
+    "objectID": "pages/bs1.html#subjective-risk-assessment-1",
+    "href": "pages/bs1.html#subjective-risk-assessment-1",
+    "title": "Book seminar 1",
+    "section": "Subjective Risk Assessment",
+    "text": "Subjective Risk Assessment\nRain - Rain tomorrow\nRocket - Next moon rocket crash on earth\nTrump - Trump becomes the next president of USA\n\nUse these likelihood and impact scalesMake judgements with single scores e.g. 3 or ranges, e.g. 2-4"
+  },
+  {
+    "objectID": "pages/bs1.html#delphi-process-to-aggregate-judgements-from-a-group-of-experts",
+    "href": "pages/bs1.html#delphi-process-to-aggregate-judgements-from-a-group-of-experts",
+    "title": "Book seminar 1",
+    "section": "Delphi process to aggregate judgements from a group of experts",
+    "text": "Delphi process to aggregate judgements from a group of experts\n\nMake individual judgements\nCompare where there are large differences in judgements. - Discuss and resolve the reason for differences. Here is where linguistic uncertainties can be reduced.\nRedo individual judgements\nAggregate the judgements"
+  },
+  {
+    "objectID": "pages/bs1.html#interpretation-of-probability",
+    "href": "pages/bs1.html#interpretation-of-probability",
+    "title": "Book seminar 1",
+    "section": "Interpretation of probability",
+    "text": "Interpretation of probability\nTutorial on uncertainty where Ullrika explains probability distribution\n\nthe frequency with which sampled values arise within a specified range or for a specified category\n\n\na quantification of a judgement on the likelihood of a particular range or category\n\n\n\n\n\n\n\nNote\n\n\nThe mathematical theory for probability is the same for both interpretations!"
+  },
+  {
+    "objectID": "pages/bs1.html#probability-distributions",
+    "href": "pages/bs1.html#probability-distributions",
+    "title": "Book seminar 1",
+    "section": "Probability distributions",
+    "text": "Probability distributions\nVisualising probability distributions"
+  },
+  {
+    "objectID": "pages/bs1.html#uncertainty-and-variability",
+    "href": "pages/bs1.html#uncertainty-and-variability",
+    "title": "Book seminar 1",
+    "section": "Uncertainty and variability",
+    "text": "Uncertainty and variability"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
     "objectID": "pages/Course introduction.html#welcome-to-risk-assessment-in-environment-and-public-health",
     "href": "pages/Course introduction.html#welcome-to-risk-assessment-in-environment-and-public-health",
     "title": "Course introduction MVEN10",
@@ -299,83 +404,6 @@
     "title": "Course introduction MVEN10",
     "section": "Todo",
     "text": "Todo\n\nChoose a course representative\nRemind to inform us if you need to borrow a computer during class\nModify groups for book seminars - if asked for\nModify groups for case studies - if asked for"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "pages/bs1.html#risk-aversion---lottery",
-    "href": "pages/bs1.html#risk-aversion---lottery",
-    "title": "Book seminar 1",
-    "section": "Risk aversion - lottery",
-    "text": "Risk aversion - lottery\n\nThe probability of winning is \\(p\\).\nA lottery ticket costs \\(1\\) SEK.\nIf you win you get \\(100\\) SEK.\n\nThe expected utility is: \\[ EU = p \\cdot 100 - 1 \\]\nWould you buy a ticket in this lottery?\n\nIf no, why? If yes, why?\n\n\nUtility is measured as Swedish kronor (SEK).\nIf no, you are risk averse If yes, you might enjoy the risk. In reality we do not have the fortune to be able to choose, it is rather about preventing bad things from happening.\nWould you answer change if the ticket was free and you would win 99 SEK"
-  },
-  {
-    "objectID": "pages/bs1.html#two-doors",
-    "href": "pages/bs1.html#two-doors",
-    "title": "Book seminar 1",
-    "section": "Two doors",
-    "text": "Two doors\nIn this case you are to choose one out of two doors. Behind every door there is a chance of winning \\(X\\) with probability \\(p\\). Thus, each door is a lottery with the expected utility \\(X\\cdot p\\).\n\nWhich lottery do you prefer in the three situations A, B and C?"
-  },
-  {
-    "objectID": "pages/bs1.html#expected-utilities",
-    "href": "pages/bs1.html#expected-utilities",
-    "title": "Book seminar 1",
-    "section": "Expected utilities",
-    "text": "Expected utilities\n\nA: \\(0.25\\cdot 100 = 25\\) vs \\(0.25\\cdot 10 = 2.5\\)\nB: \\(0.05\\cdot 100 = 5\\) vs \\(0.75\\cdot 10 = 7.5\\)\nC: \\(0.05\\cdot 100 = 5\\) vs \\(0.5\\cdot 10 = 5\\)"
-  },
-  {
-    "objectID": "pages/bs1.html#linquistic-uncertainty",
-    "href": "pages/bs1.html#linquistic-uncertainty",
-    "title": "Book seminar 1",
-    "section": "Linquistic uncertainty",
-    "text": "Linquistic uncertainty\n\nImpact on biodiversity is high\n\n\nThere is a 30% probability of rain tomorrow\n\n\nProminent in qualitative risk assessment due to the use of qualitative expressions\nCan be avoided by using well defined questions, quantities and outcomes and meaningful scales"
-  },
-  {
-    "objectID": "pages/bs1.html#subjective-risk-assessment",
-    "href": "pages/bs1.html#subjective-risk-assessment",
-    "title": "Book seminar 1",
-    "section": "Subjective Risk Assessment",
-    "text": "Subjective Risk Assessment\nA tool from Mark and his colleagues to reduce linguistic uncertainty\nSRA tool manual\n\nLikelihood and impact scales"
-  },
-  {
-    "objectID": "pages/bs1.html#subjective-risk-assessment-1",
-    "href": "pages/bs1.html#subjective-risk-assessment-1",
-    "title": "Book seminar 1",
-    "section": "Subjective Risk Assessment",
-    "text": "Subjective Risk Assessment\nRain - Rain tomorrow\nRocket - Next moon rocket crash on earth\nTrump - Trump becomes the next president of USA\n\nUse these likelihood and impact scalesMake judgements with single scores e.g. 3 or ranges, e.g. 2-4"
-  },
-  {
-    "objectID": "pages/bs1.html#delphi-process-to-aggregate-judgements-from-a-group-of-experts",
-    "href": "pages/bs1.html#delphi-process-to-aggregate-judgements-from-a-group-of-experts",
-    "title": "Book seminar 1",
-    "section": "Delphi process to aggregate judgements from a group of experts",
-    "text": "Delphi process to aggregate judgements from a group of experts\n\nMake individual judgements\nCompare where there are large differences in judgements. - Discuss and resolve the reason for differences. Here is where linguistic uncertainties can be reduced.\nRedo individual judgements\nAggregate the judgements"
-  },
-  {
-    "objectID": "pages/bs1.html#interpretation-of-probability",
-    "href": "pages/bs1.html#interpretation-of-probability",
-    "title": "Book seminar 1",
-    "section": "Interpretation of probability",
-    "text": "Interpretation of probability\nTutorial on uncertainty where Ullrika explains probability distribution\n\nthe frequency with which sampled values arise within a specified range or for a specified category\n\n\na quantification of a judgement on the likelihood of a particular range or category\n\n\n\n\n\n\n\nNote\n\n\nThe mathematical theory for probability is the same for both interpretations!"
-  },
-  {
-    "objectID": "pages/bs1.html#probability-distributions",
-    "href": "pages/bs1.html#probability-distributions",
-    "title": "Book seminar 1",
-    "section": "Probability distributions",
-    "text": "Probability distributions\nVisualising probability distributions"
-  },
-  {
-    "objectID": "pages/bs1.html#uncertainty-and-variability",
-    "href": "pages/bs1.html#uncertainty-and-variability",
-    "title": "Book seminar 1",
-    "section": "Uncertainty and variability",
-    "text": "Uncertainty and variability"
   },
   {
     "objectID": "pages/individual_projects.html",

@@ -1,0 +1,70 @@
+---
+title: "Course content"
+subtitle: "MVEN10 Risk Assessment in Environment and Public Health"
+author: "Ullrika Sahlin"
+date: today
+---
+
+
+BELOW IS THE TEXT FROM THE COURSE SYLLABUS. I WILL ADD DETAILS ON HOW THE COURSE IS ADDRESSING THE DIFFERENT LEARNING GOALS OR SPECIFIED CONTENT
+
+## Course Syllabus
+
+The general aim of the course is that the student, on completion of the course, should have advanced principles and methods to identify and assess risks in the fields of environment, nature and health. The course includes risks for humans and other organisms connected to exposure to chemicals and causes and risks connected to the extinction of species. Insights into and understanding of need of scientifically based risk communication to different target groups and the importance of knowledge about risk perception to create relevant risk assessments and communication of risks in society are included as important components. The student should be able to understand on completion of the course describe and work with common risk models or tools that are used in the areas of nature, environment and health and have an understanding of how they are used to inform decision-making.
+
+
+### Knowledge and understanding
+On completion of the course, the student should be able to:
+
+- give an account of and independently apply principles and methods for risk analysis and common risk assessment models in environment, nature and health
+
+- give an account of needs and examples of scientifically based risk communicationin society and its relation to risk perception
+
+- give an account of research and development for risk assessment in nature,environment and health
+
+### Competence and skills
+
+On completion of the course, the student should be able to:
+
+- use common methods for risk assessment in the fields of nature, environment and health to within given time frames, and in collaboration with experts,identify and analyse risks
+
+- present result of risk assessments in different applications
+
+- discuss different forms of communication of risks and uncertainty in society
+
+### Judgement and approach
+On completion of the course, the student should be able to:
+
+- critically reflect on the possibilities and limitations of risk assessments and its rolein risk management in society
+
+- discuss ethical aspects at assessment, management and communication of risks
+
+- suggest needs of additional knowledge to carry out risk assessments in environment, nature and health and take responsibility for their development of knowledge
+
+
+## Course content
+
+The course deals with:
+
+- identification, assessment, evaluation and management of risks connected to human and other organisms' exposure to chemicals and risks connected to extinction of species
+
+- methods in risk analysis such as problem formulation, hazard assessment, statistical modelling, exposure modelling, dose-response modelling, modelling of dispersion of diseases (epidemiology), modelling of uptake, renewal, distributions and secretion of poisons in living organisms (toxicokinetics) and expert assessment and principles and methods for uncertainty analysis
+
+- risk evaluation, which includes how to in a structured way can evaluate andmake tradeoffs to support decision-making
+
+- risk management, which includes how different societal actors prevent risks, sets regulatory thresholds and communicate risks. In addition the importance to connect risk perception in risk management and communication of risks is included.
+
+
+## Subcourses in MVEN10
+
+### "Examination"
+
+7.5 hp Grading scale: Fail, Pass, Pass with distinction
+
+### Exercises and Assignments
+
+4.5 hp Grading scale: Fail, Pass
+
+### Project work
+
+3.0 hp Grading scale: Fail, Pass
