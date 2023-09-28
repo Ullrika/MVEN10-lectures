@@ -63,6 +63,258 @@
     "text": "Appendices\n\nAppendix A. Code for the assessment\nThis appendix should contain the data and code for all calculations and simulations. Preferably as a rendered qmd document or attached Excel file with explanatory text.\n\n\nAppendix B. Report of the Expert Eliciation of overall uncertainty\nWho were the experts\nDescription of the procedure which should at least consist of\n\nAgreement on the question asked to the experts\nIndividual judgements expressed quantitatively\nComparison and discussion of the individual judgements\n\n\n\n\nExpert\nJudgement\n\n\n\n\nA\n\n\n\nB\n\n\n\nC\n\n\n\nConsensus\n\n\n\n\n\nConsensus judgement\nCollection of the experts justifications for lower and higher probability\n\n\n\n\n\n\n\n\nJustifications for a lower probability\nJustifications for a higher probability"
   },
   {
+    "objectID": "pages/kernelmodels.html",
+    "href": "pages/kernelmodels.html",
+    "title": "sf",
+    "section": "",
+    "text": "kern &lt;- function(x,d0,alpha){\n  (1+(x/d0)^alpha)^-1\n}\n\ninv_kern &lt;- function(prob,d0,alpha){\n  (1/prob-1)^(1/alpha)*d0\n} \n\n\none_iter &lt;- function(i){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\nget_ma &lt;- function(x){\n  ma_prob3=w[1]*kern(x,d0_ba,alpha_ba) + \n  w[2]*kern(x,d0_bo,alpha_bo) + \n  w[3]*kern(x,d0_ga,alpha_ga)\n}\n\nx = seq(0,30,by=1)\ndata.frame(x = x,\ny=sapply(x,get_ma),iter=i)\n}\n\n\ndo.call('rbind',lapply(1:20,function(i){one_iter(i)})) %&gt;%\n  ggplot(aes(x=x,y=y,group=iter))+\n  geom_line(alpha=0.2)\n\n\n\n\n\nmc_one_iter &lt;- function(){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\n\ndata.frame(ma_prob3=w[1]*kern(3,d0_ba,alpha_ba) + \n  w[2]*kern(3,d0_bo,alpha_bo) + \n  w[3]*kern(3,d0_ga,alpha_ga), \n\nma_prob10=w[1]*kern(10,d0_ba,alpha_ba) + \n  w[2]*kern(10,d0_bo,alpha_bo) + \n  w[3]*kern(10,d0_ga,alpha_ga), \n\nma_P05 = w[1]*inv_kern(0.05,d0_ba,alpha_ba) + \n  w[2]*inv_kern(0.05,d0_bo,alpha_bo) + \n  w[3]*inv_kern(0.05,d0_ga,alpha_ga) \n)\n}\n\n\nniter = 10^4\noutput &lt;- do.call('rbind',lapply(1:niter,function(i){mc_one_iter()}))\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob3)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob10)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\nquantile(output$ma_P05,probs=0.95)\n\n     95% \n9.458235 \n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_P05)) +\n  geom_density() +\n  geom_vline(xintercept=3,col='red')+\n  geom_vline(xintercept=10,col='red') +\nscale_x_log10()"
+  },
+  {
+    "objectID": "pages/kernelmodels.html#create-kernel-functions",
+    "href": "pages/kernelmodels.html#create-kernel-functions",
+    "title": "sf",
+    "section": "",
+    "text": "kern &lt;- function(x,d0,alpha){\n  (1+(x/d0)^alpha)^-1\n}\n\ninv_kern &lt;- function(prob,d0,alpha){\n  (1/prob-1)^(1/alpha)*d0\n} \n\n\none_iter &lt;- function(i){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\nget_ma &lt;- function(x){\n  ma_prob3=w[1]*kern(x,d0_ba,alpha_ba) + \n  w[2]*kern(x,d0_bo,alpha_bo) + \n  w[3]*kern(x,d0_ga,alpha_ga)\n}\n\nx = seq(0,30,by=1)\ndata.frame(x = x,\ny=sapply(x,get_ma),iter=i)\n}\n\n\ndo.call('rbind',lapply(1:20,function(i){one_iter(i)})) %&gt;%\n  ggplot(aes(x=x,y=y,group=iter))+\n  geom_line(alpha=0.2)\n\n\n\n\n\nmc_one_iter &lt;- function(){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\n\ndata.frame(ma_prob3=w[1]*kern(3,d0_ba,alpha_ba) + \n  w[2]*kern(3,d0_bo,alpha_bo) + \n  w[3]*kern(3,d0_ga,alpha_ga), \n\nma_prob10=w[1]*kern(10,d0_ba,alpha_ba) + \n  w[2]*kern(10,d0_bo,alpha_bo) + \n  w[3]*kern(10,d0_ga,alpha_ga), \n\nma_P05 = w[1]*inv_kern(0.05,d0_ba,alpha_ba) + \n  w[2]*inv_kern(0.05,d0_bo,alpha_bo) + \n  w[3]*inv_kern(0.05,d0_ga,alpha_ga) \n)\n}\n\n\nniter = 10^4\noutput &lt;- do.call('rbind',lapply(1:niter,function(i){mc_one_iter()}))\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob3)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob10)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\nquantile(output$ma_P05,probs=0.95)\n\n     95% \n9.458235 \n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_P05)) +\n  geom_density() +\n  geom_vline(xintercept=3,col='red')+\n  geom_vline(xintercept=10,col='red') +\nscale_x_log10()"
+  },
+  {
+    "objectID": "pages/individual_projects.html",
+    "href": "pages/individual_projects.html",
+    "title": "Introduction to individual projects",
+    "section": "",
+    "text": "On Monday, you will be assigned one of the following risk assessments. The assignment will consider you preference, but all risk assessments must be chosen at the end as they represent material for the course.\nReproduce the indicated part of the assessment with your choice of modification.\nProduce a report on 2 - 10 pages (min 2 and max 10) including figures and tables.\nProvide your code for the assessment as an appendix.\nInclude references, including reference to suitable guidance documents for this type of risk assessment.\nRefer to sections, figures and tables in the original assessment the when using it as reference.\nSee the template report for further info"
+  },
+  {
+    "objectID": "pages/individual_projects.html#general-instructions",
+    "href": "pages/individual_projects.html#general-instructions",
+    "title": "Introduction to individual projects",
+    "section": "",
+    "text": "On Monday, you will be assigned one of the following risk assessments. The assignment will consider you preference, but all risk assessments must be chosen at the end as they represent material for the course.\nReproduce the indicated part of the assessment with your choice of modification.\nProduce a report on 2 - 10 pages (min 2 and max 10) including figures and tables.\nProvide your code for the assessment as an appendix.\nInclude references, including reference to suitable guidance documents for this type of risk assessment.\nRefer to sections, figures and tables in the original assessment the when using it as reference.\nSee the template report for further info"
+  },
+  {
+    "objectID": "pages/individual_projects.html#a-human-health-risk-assessment-from-chemicals-in-the-food-chain",
+    "href": "pages/individual_projects.html#a-human-health-risk-assessment-from-chemicals-in-the-food-chain",
+    "title": "Introduction to individual projects",
+    "section": "A human health risk assessment from chemicals in the food chain",
+    "text": "A human health risk assessment from chemicals in the food chain\nRisk assessment of N‐nitrosamines in food Link to the assessment\nThis is a typical risk assessment of risk to human health via dietary exposure from a chemical substance in food.\nThe task is to replicate the risk assessment with one of the following modifications\n\na new Benchmark Dose Modelling where you discuss the influence of choices made in the modelling\na quantitative uncertainty analysis on the exposure assessment\n\nAt the end, quantify the level of certainty that exposure of N‐nitrosamines can lead to adverse outcomes for different proportions of the EU population. Use expert judgement where you and two other persons act as experts."
+  },
+  {
+    "objectID": "pages/individual_projects.html#a-pest-categorisation-of-an-invasive-species",
+    "href": "pages/individual_projects.html#a-pest-categorisation-of-an-invasive-species",
+    "title": "Introduction to individual projects",
+    "section": "A pest categorisation of an invasive species",
+    "text": "A pest categorisation of an invasive species\nPest categorisation of the red fire ant Link to the assessment\nThe task is to replicate the assessment of pest potential for entry, establishment and spread in the EU (Section 3.4) with one of the following modifications\n\nmake your own assessment of climate matching e.g. by running the CLIMEX modelling with occurrence data that you retrieve from databases.\n\n\n\nAt the end, quantify the level of certainty that this species will be a problem in Sweden within 20 years from now using expert judgement where you and two other persons act as experts."
+  },
+  {
+    "objectID": "pages/individual_projects.html#an-evaluation-of-control-measures-for-a-disease",
+    "href": "pages/individual_projects.html#an-evaluation-of-control-measures-for-a-disease",
+    "title": "Introduction to individual projects",
+    "section": "An evaluation of control measures for a disease",
+    "text": "An evaluation of control measures for a disease\nThis assessment compares the efficiency of control measures for the Classical Swine Fever Link to the assessment\nThe task is to replicate the assessment of the Minimum radius of restricted zones and duration of the disease control measures in restricted zones (ToR 3) with the following modifications\n\n\n\n\n\n\nwith a quantitative uncertainty analysis considering the impact of uncertainty in parameters of the kernel model and the impact of uncertainty in the model structure by model averaging\n\nAt the end, quantify the level of certainty that the control measures taken for the outbreak of African Swine Fever in Sweden will succeed in containing the outbreak. Consider similarities and differences between AFS and CSF. Use expert judgement where you and two other persons act as experts."
+  },
+  {
+    "objectID": "pages/individual_projects.html#a-red-list-assessment-of-conservation-status",
+    "href": "pages/individual_projects.html#a-red-list-assessment-of-conservation-status",
+    "title": "Introduction to individual projects",
+    "section": "A Red list assessment of conservation status",
+    "text": "A Red list assessment of conservation status\n\nI altered the heading for this assessment after consultation with the students, considering that population viability analysis is one alternative to assess conservation status\n\nThis is an assessment of conservation status based on an population analysis of the polar bear Link to the assessment\nYou can find a description of the assessment in the Supplementary material for Ursus maritimus Red List assessment\nGuidelines for conducting a red list assessment\nReplicate the risk assessment for two scenarios and two subpopulations with the following modifications\n\nconsider uncertainty in generation length by a probability distribution instead of the mean and P95\n\nAt the end, quantify the level of certainty that there will be a decline in at least one of the subpopulations. Use expert judgement where you and two other persons act as experts."
+  },
+  {
+    "objectID": "pages/individual_projects.html#an-environmental-risk-assessment-from-the-use-of-a-chemical-product",
+    "href": "pages/individual_projects.html#an-environmental-risk-assessment-from-the-use-of-a-chemical-product",
+    "title": "Introduction to individual projects",
+    "section": "An environmental risk assessment from the use of a chemical product",
+    "text": "An environmental risk assessment from the use of a chemical product\nThis is an Environmental Risk Assessment of the medicine Felodipine Link to the assessment\nReplicate the risk assessment with one of the following modifications\n\nperform the exposure assessment with a quantitative uncertainty analysis\napply species sensitivity distribution on the ecotoxicological measurements\n\nUseful documents\nERA for medicines\nECHA Guidance. Characterisation of dose[concentration]-response for environment\n\n\n\n\nAt the end, quantify the level of certainty that release of Felodipine into the environment will result in adverse impact on ecosystems. Use expert judgement where you and two other persons act as experts."
+  },
+  {
+    "objectID": "pages/Course introduction.html#welcome-to-risk-assessment-in-environment-and-public-health",
+    "href": "pages/Course introduction.html#welcome-to-risk-assessment-in-environment-and-public-health",
+    "title": "Course introduction MVEN10",
+    "section": "Welcome to Risk Assessment in Environment and Public Health",
+    "text": "Welcome to Risk Assessment in Environment and Public Health\n\nCourse coordinator: Ullrika Sahlin\nCourse platform https://canvas.education.lu.se/courses/23481\nCourse syllabus\nStudy directors:\n\nHelena Hansson Environmental Science\nStefan Olin Applied Computational Science appliedcompsci@math.lu.se"
+  },
+  {
+    "objectID": "pages/Course introduction.html#why-study-risk-assessment",
+    "href": "pages/Course introduction.html#why-study-risk-assessment",
+    "title": "Course introduction MVEN10",
+    "section": "Why study risk assessment",
+    "text": "Why study risk assessment\n\n\nTo be competitive on the job market\n\nthere is a lot of experts, but fewer experts on risk assessment\n\nTo better understand what expertise is required when assessing risk\n\nmotivation to become an expert\nstrengthen your interdisciplinary perspective\n\nTo be able to contribute to better management, including assessment and communication, of risk\nTo become a better decision maker yourself"
+  },
+  {
+    "objectID": "pages/Course introduction.html#lectures",
+    "href": "pages/Course introduction.html#lectures",
+    "title": "Course introduction MVEN10",
+    "section": "Lectures",
+    "text": "Lectures\n\n10 lectures\nOccupational and Health Medicine\nCentre for Environmental and Climate Science\nRisk, Uncertainty and Decision Making (parallell course)"
+  },
+  {
+    "objectID": "pages/Course introduction.html#exercises",
+    "href": "pages/Course introduction.html#exercises",
+    "title": "Course introduction MVEN10",
+    "section": "Exercises",
+    "text": "Exercises\n\n28 carried out over 9 occasions (topics canvas)\nYou are expected to use your own computer (notify!)\nmaterial published on https://ullrika.github.io/MVEN10material/\nreporting according to instructions"
+  },
+  {
+    "objectID": "pages/Course introduction.html#tools",
+    "href": "pages/Course introduction.html#tools",
+    "title": "Course introduction MVEN10",
+    "section": "Tools",
+    "text": "Tools\n\nUse open source tools for scientific assessment\n\nExcel\nR\nQuarto"
+  },
+  {
+    "objectID": "pages/Course introduction.html#literature-seminars",
+    "href": "pages/Course introduction.html#literature-seminars",
+    "title": "Course introduction MVEN10",
+    "section": "Literature seminars",
+    "text": "Literature seminars\n\n2 seminars\n\n1 within an exercise\n\nCome prepared!"
+  },
+  {
+    "objectID": "pages/Course introduction.html#book-seminars",
+    "href": "pages/Course introduction.html#book-seminars",
+    "title": "Course introduction MVEN10",
+    "section": "Book seminars",
+    "text": "Book seminars\n\n5 book seminars (overview canvas)\nPresenter, Opponent, Reviewer with different roles"
+  },
+  {
+    "objectID": "pages/Course introduction.html#case-studies",
+    "href": "pages/Course introduction.html#case-studies",
+    "title": "Course introduction MVEN10",
+    "section": "Case studies",
+    "text": "Case studies\n\n4 groups with tutors\n2 sessions\nProblem Based Learning (canvas)\nCase studies (canvas)\nYou are expected to bring your own computer (Notify!)\nWritten reports per group that will be shared with all"
+  },
+  {
+    "objectID": "pages/Course introduction.html#course-literature",
+    "href": "pages/Course introduction.html#course-literature",
+    "title": "Course introduction MVEN10",
+    "section": "Course literature",
+    "text": "Course literature\n\nBurgman, Mark. Risks and decisions for conservation and environmental management. Cambridge University Press, 2005.\nLiterature for seminars\nOther material handed out during the course\nExplicit references from lectures"
+  },
+  {
+    "objectID": "pages/Course introduction.html#non-scheduled-time",
+    "href": "pages/Course introduction.html#non-scheduled-time",
+    "title": "Course introduction MVEN10",
+    "section": "Non-scheduled time",
+    "text": "Non-scheduled time\n\nThis course is 15 credits and assumes 100% study pace\nNon-scheduled time implies self studies"
+  },
+  {
+    "objectID": "pages/Course introduction.html#grading-and-compulsory-assignments",
+    "href": "pages/Course introduction.html#grading-and-compulsory-assignments",
+    "title": "Course introduction MVEN10",
+    "section": "Grading and compulsory assignments",
+    "text": "Grading and compulsory assignments\n\nParticipation in written assignments, exercises, project work and associated parts is compulsory\nReports from case studies, exercises and project work is failed or passed\nThe written examination is failed, passed or passed with distinction\nAn exam in class and a home exam"
+  },
+  {
+    "objectID": "pages/Course introduction.html#todo",
+    "href": "pages/Course introduction.html#todo",
+    "title": "Course introduction MVEN10",
+    "section": "Todo",
+    "text": "Todo\n\nChoose a course representative\nRemind to inform us if you need to borrow a computer during class\nModify groups for book seminars - if asked for\nModify groups for case studies - if asked for"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "pages/bs1.html#risk-aversion---lottery",
+    "href": "pages/bs1.html#risk-aversion---lottery",
+    "title": "Book seminar 1",
+    "section": "Risk aversion - lottery",
+    "text": "Risk aversion - lottery\n\nThe probability of winning is \\(p\\).\nA lottery ticket costs \\(1\\) SEK.\nIf you win you get \\(100\\) SEK.\n\nThe expected utility is: \\[ EU = p \\cdot 100 - 1 \\]\nWould you buy a ticket in this lottery?\n\nIf no, why? If yes, why?\n\n\nUtility is measured as Swedish kronor (SEK).\nIf no, you are risk averse If yes, you might enjoy the risk. In reality we do not have the fortune to be able to choose, it is rather about preventing bad things from happening.\nWould you answer change if the ticket was free and you would win 99 SEK"
+  },
+  {
+    "objectID": "pages/bs1.html#two-doors",
+    "href": "pages/bs1.html#two-doors",
+    "title": "Book seminar 1",
+    "section": "Two doors",
+    "text": "Two doors\nIn this case you are to choose one out of two doors. Behind every door there is a chance of winning \\(X\\) with probability \\(p\\). Thus, each door is a lottery with the expected utility \\(X\\cdot p\\).\n\nWhich lottery do you prefer in the three situations A, B and C?"
+  },
+  {
+    "objectID": "pages/bs1.html#expected-utilities",
+    "href": "pages/bs1.html#expected-utilities",
+    "title": "Book seminar 1",
+    "section": "Expected utilities",
+    "text": "Expected utilities\n\nA: \\(0.25\\cdot 100 = 25\\) vs \\(0.25\\cdot 10 = 2.5\\)\nB: \\(0.05\\cdot 100 = 5\\) vs \\(0.75\\cdot 10 = 7.5\\)\nC: \\(0.05\\cdot 100 = 5\\) vs \\(0.5\\cdot 10 = 5\\)"
+  },
+  {
+    "objectID": "pages/bs1.html#linquistic-uncertainty",
+    "href": "pages/bs1.html#linquistic-uncertainty",
+    "title": "Book seminar 1",
+    "section": "Linquistic uncertainty",
+    "text": "Linquistic uncertainty\n\nImpact on biodiversity is high\n\n\nThere is a 30% probability of rain tomorrow\n\n\nProminent in qualitative risk assessment due to the use of qualitative expressions\nCan be avoided by using well defined questions, quantities and outcomes and meaningful scales"
+  },
+  {
+    "objectID": "pages/bs1.html#subjective-risk-assessment",
+    "href": "pages/bs1.html#subjective-risk-assessment",
+    "title": "Book seminar 1",
+    "section": "Subjective Risk Assessment",
+    "text": "Subjective Risk Assessment\nA tool from Mark and his colleagues to reduce linguistic uncertainty\nSRA tool manual\n\nLikelihood and impact scales"
+  },
+  {
+    "objectID": "pages/bs1.html#subjective-risk-assessment-1",
+    "href": "pages/bs1.html#subjective-risk-assessment-1",
+    "title": "Book seminar 1",
+    "section": "Subjective Risk Assessment",
+    "text": "Subjective Risk Assessment\nRain - Rain tomorrow\nRocket - Next moon rocket crash on earth\nTrump - Trump becomes the next president of USA\n\nUse these likelihood and impact scalesMake judgements with single scores e.g. 3 or ranges, e.g. 2-4"
+  },
+  {
+    "objectID": "pages/bs1.html#delphi-process-to-aggregate-judgements-from-a-group-of-experts",
+    "href": "pages/bs1.html#delphi-process-to-aggregate-judgements-from-a-group-of-experts",
+    "title": "Book seminar 1",
+    "section": "Delphi process to aggregate judgements from a group of experts",
+    "text": "Delphi process to aggregate judgements from a group of experts\n\nMake individual judgements\nCompare where there are large differences in judgements. - Discuss and resolve the reason for differences. Here is where linguistic uncertainties can be reduced.\nRedo individual judgements\nAggregate the judgements"
+  },
+  {
+    "objectID": "pages/bs1.html#interpretation-of-probability",
+    "href": "pages/bs1.html#interpretation-of-probability",
+    "title": "Book seminar 1",
+    "section": "Interpretation of probability",
+    "text": "Interpretation of probability\nTutorial on uncertainty where Ullrika explains probability distribution\n\nthe frequency with which sampled values arise within a specified range or for a specified category\n\n\na quantification of a judgement on the likelihood of a particular range or category\n\n\n\n\n\n\n\nNote\n\n\nThe mathematical theory for probability is the same for both interpretations!"
+  },
+  {
+    "objectID": "pages/bs1.html#probability-distributions",
+    "href": "pages/bs1.html#probability-distributions",
+    "title": "Book seminar 1",
+    "section": "Probability distributions",
+    "text": "Probability distributions\nVisualising probability distributions"
+  },
+  {
+    "objectID": "pages/bs1.html#uncertainty-and-variability",
+    "href": "pages/bs1.html#uncertainty-and-variability",
+    "title": "Book seminar 1",
+    "section": "Uncertainty and variability",
+    "text": "Uncertainty and variability"
+  },
+  {
+    "objectID": "pages/course_overview.html",
+    "href": "pages/course_overview.html",
+    "title": "Course content",
+    "section": "",
+    "text": "BELOW IS THE TEXT FROM THE COURSE SYLLABUS. I WILL ADD DETAILS ON HOW THE COURSE IS ADDRESSING THE DIFFERENT LEARNING GOALS OR SPECIFIED CONTENT"
+  },
+  {
+    "objectID": "pages/course_overview.html#course-syllabus",
+    "href": "pages/course_overview.html#course-syllabus",
+    "title": "Course content",
+    "section": "Course Syllabus",
+    "text": "Course Syllabus\nThe general aim of the course is that the student, on completion of the course, should have advanced principles and methods to identify and assess risks in the fields of environment, nature and health. The course includes risks for humans and other organisms connected to exposure to chemicals and causes and risks connected to the extinction of species. Insights into and understanding of need of scientifically based risk communication to different target groups and the importance of knowledge about risk perception to create relevant risk assessments and communication of risks in society are included as important components. The student should be able to understand on completion of the course describe and work with common risk models or tools that are used in the areas of nature, environment and health and have an understanding of how they are used to inform decision-making.\n\nKnowledge and understanding\nOn completion of the course, the student should be able to:\n\ngive an account of and independently apply principles and methods for risk analysis and common risk assessment models in environment, nature and health\ngive an account of needs and examples of scientifically based risk communicationin society and its relation to risk perception\ngive an account of research and development for risk assessment in nature,environment and health\n\n\n\nCompetence and skills\nOn completion of the course, the student should be able to:\n\nuse common methods for risk assessment in the fields of nature, environment and health to within given time frames, and in collaboration with experts,identify and analyse risks\npresent result of risk assessments in different applications\ndiscuss different forms of communication of risks and uncertainty in society\n\n\n\nJudgement and approach\nOn completion of the course, the student should be able to:\n\ncritically reflect on the possibilities and limitations of risk assessments and its rolein risk management in society\ndiscuss ethical aspects at assessment, management and communication of risks\nsuggest needs of additional knowledge to carry out risk assessments in environment, nature and health and take responsibility for their development of knowledge"
+  },
+  {
+    "objectID": "pages/course_overview.html#course-content",
+    "href": "pages/course_overview.html#course-content",
+    "title": "Course content",
+    "section": "Course content",
+    "text": "Course content\nThe course deals with:\n\nidentification, assessment, evaluation and management of risks connected to human and other organisms’ exposure to chemicals and risks connected to extinction of species\nmethods in risk analysis such as problem formulation, hazard assessment, statistical modelling, exposure modelling, dose-response modelling, modelling of dispersion of diseases (epidemiology), modelling of uptake, renewal, distributions and secretion of poisons in living organisms (toxicokinetics) and expert assessment and principles and methods for uncertainty analysis\nrisk evaluation, which includes how to in a structured way can evaluate andmake tradeoffs to support decision-making\nrisk management, which includes how different societal actors prevent risks, sets regulatory thresholds and communicate risks. In addition the importance to connect risk perception in risk management and communication of risks is included."
+  },
+  {
+    "objectID": "pages/course_overview.html#subcourses-in-mven10",
+    "href": "pages/course_overview.html#subcourses-in-mven10",
+    "title": "Course content",
+    "section": "Subcourses in MVEN10",
+    "text": "Subcourses in MVEN10\n\n“Examination”\n7.5 hp Grading scale: Fail, Pass, Pass with distinction\n\n\nExercises and Assignments\n4.5 hp Grading scale: Fail, Pass\n\n\nProject work\n3.0 hp Grading scale: Fail, Pass"
+  },
+  {
     "objectID": "pages/Intro lecture.html#the-first-risk-analysis",
     "href": "pages/Intro lecture.html#the-first-risk-analysis",
     "title": "Introduction to risk assessment",
@@ -215,244 +467,6 @@
     "title": "Introduction to risk assessment",
     "section": "Introduction to case studies",
     "text": "Introduction to case studies\nHuman health assessment:\n\nPer-and PolyFluoroalkyl Substances PFAS\n\nPlant pest assessment:\n\nNavel orangeworm Amyelois transitella\n\nHuman health assessment:\n\nArsenic in food\n\nEcological risk assessment:\n\nAtlantic Bluefin Tuna Thunnus thynnus"
-  },
-  {
-    "objectID": "pages/course_overview.html",
-    "href": "pages/course_overview.html",
-    "title": "Course content",
-    "section": "",
-    "text": "BELOW IS THE TEXT FROM THE COURSE SYLLABUS. I WILL ADD DETAILS ON HOW THE COURSE IS ADDRESSING THE DIFFERENT LEARNING GOALS OR SPECIFIED CONTENT"
-  },
-  {
-    "objectID": "pages/course_overview.html#course-syllabus",
-    "href": "pages/course_overview.html#course-syllabus",
-    "title": "Course content",
-    "section": "Course Syllabus",
-    "text": "Course Syllabus\nThe general aim of the course is that the student, on completion of the course, should have advanced principles and methods to identify and assess risks in the fields of environment, nature and health. The course includes risks for humans and other organisms connected to exposure to chemicals and causes and risks connected to the extinction of species. Insights into and understanding of need of scientifically based risk communication to different target groups and the importance of knowledge about risk perception to create relevant risk assessments and communication of risks in society are included as important components. The student should be able to understand on completion of the course describe and work with common risk models or tools that are used in the areas of nature, environment and health and have an understanding of how they are used to inform decision-making.\n\nKnowledge and understanding\nOn completion of the course, the student should be able to:\n\ngive an account of and independently apply principles and methods for risk analysis and common risk assessment models in environment, nature and health\ngive an account of needs and examples of scientifically based risk communicationin society and its relation to risk perception\ngive an account of research and development for risk assessment in nature,environment and health\n\n\n\nCompetence and skills\nOn completion of the course, the student should be able to:\n\nuse common methods for risk assessment in the fields of nature, environment and health to within given time frames, and in collaboration with experts,identify and analyse risks\npresent result of risk assessments in different applications\ndiscuss different forms of communication of risks and uncertainty in society\n\n\n\nJudgement and approach\nOn completion of the course, the student should be able to:\n\ncritically reflect on the possibilities and limitations of risk assessments and its rolein risk management in society\ndiscuss ethical aspects at assessment, management and communication of risks\nsuggest needs of additional knowledge to carry out risk assessments in environment, nature and health and take responsibility for their development of knowledge"
-  },
-  {
-    "objectID": "pages/course_overview.html#course-content",
-    "href": "pages/course_overview.html#course-content",
-    "title": "Course content",
-    "section": "Course content",
-    "text": "Course content\nThe course deals with:\n\nidentification, assessment, evaluation and management of risks connected to human and other organisms’ exposure to chemicals and risks connected to extinction of species\nmethods in risk analysis such as problem formulation, hazard assessment, statistical modelling, exposure modelling, dose-response modelling, modelling of dispersion of diseases (epidemiology), modelling of uptake, renewal, distributions and secretion of poisons in living organisms (toxicokinetics) and expert assessment and principles and methods for uncertainty analysis\nrisk evaluation, which includes how to in a structured way can evaluate andmake tradeoffs to support decision-making\nrisk management, which includes how different societal actors prevent risks, sets regulatory thresholds and communicate risks. In addition the importance to connect risk perception in risk management and communication of risks is included."
-  },
-  {
-    "objectID": "pages/course_overview.html#subcourses-in-mven10",
-    "href": "pages/course_overview.html#subcourses-in-mven10",
-    "title": "Course content",
-    "section": "Subcourses in MVEN10",
-    "text": "Subcourses in MVEN10\n\n“Examination”\n7.5 hp Grading scale: Fail, Pass, Pass with distinction\n\n\nExercises and Assignments\n4.5 hp Grading scale: Fail, Pass\n\n\nProject work\n3.0 hp Grading scale: Fail, Pass"
-  },
-  {
-    "objectID": "pages/bs1.html#risk-aversion---lottery",
-    "href": "pages/bs1.html#risk-aversion---lottery",
-    "title": "Book seminar 1",
-    "section": "Risk aversion - lottery",
-    "text": "Risk aversion - lottery\n\nThe probability of winning is \\(p\\).\nA lottery ticket costs \\(1\\) SEK.\nIf you win you get \\(100\\) SEK.\n\nThe expected utility is: \\[ EU = p \\cdot 100 - 1 \\]\nWould you buy a ticket in this lottery?\n\nIf no, why? If yes, why?\n\n\nUtility is measured as Swedish kronor (SEK).\nIf no, you are risk averse If yes, you might enjoy the risk. In reality we do not have the fortune to be able to choose, it is rather about preventing bad things from happening.\nWould you answer change if the ticket was free and you would win 99 SEK"
-  },
-  {
-    "objectID": "pages/bs1.html#two-doors",
-    "href": "pages/bs1.html#two-doors",
-    "title": "Book seminar 1",
-    "section": "Two doors",
-    "text": "Two doors\nIn this case you are to choose one out of two doors. Behind every door there is a chance of winning \\(X\\) with probability \\(p\\). Thus, each door is a lottery with the expected utility \\(X\\cdot p\\).\n\nWhich lottery do you prefer in the three situations A, B and C?"
-  },
-  {
-    "objectID": "pages/bs1.html#expected-utilities",
-    "href": "pages/bs1.html#expected-utilities",
-    "title": "Book seminar 1",
-    "section": "Expected utilities",
-    "text": "Expected utilities\n\nA: \\(0.25\\cdot 100 = 25\\) vs \\(0.25\\cdot 10 = 2.5\\)\nB: \\(0.05\\cdot 100 = 5\\) vs \\(0.75\\cdot 10 = 7.5\\)\nC: \\(0.05\\cdot 100 = 5\\) vs \\(0.5\\cdot 10 = 5\\)"
-  },
-  {
-    "objectID": "pages/bs1.html#linquistic-uncertainty",
-    "href": "pages/bs1.html#linquistic-uncertainty",
-    "title": "Book seminar 1",
-    "section": "Linquistic uncertainty",
-    "text": "Linquistic uncertainty\n\nImpact on biodiversity is high\n\n\nThere is a 30% probability of rain tomorrow\n\n\nProminent in qualitative risk assessment due to the use of qualitative expressions\nCan be avoided by using well defined questions, quantities and outcomes and meaningful scales"
-  },
-  {
-    "objectID": "pages/bs1.html#subjective-risk-assessment",
-    "href": "pages/bs1.html#subjective-risk-assessment",
-    "title": "Book seminar 1",
-    "section": "Subjective Risk Assessment",
-    "text": "Subjective Risk Assessment\nA tool from Mark and his colleagues to reduce linguistic uncertainty\nSRA tool manual\n\nLikelihood and impact scales"
-  },
-  {
-    "objectID": "pages/bs1.html#subjective-risk-assessment-1",
-    "href": "pages/bs1.html#subjective-risk-assessment-1",
-    "title": "Book seminar 1",
-    "section": "Subjective Risk Assessment",
-    "text": "Subjective Risk Assessment\nRain - Rain tomorrow\nRocket - Next moon rocket crash on earth\nTrump - Trump becomes the next president of USA\n\nUse these likelihood and impact scalesMake judgements with single scores e.g. 3 or ranges, e.g. 2-4"
-  },
-  {
-    "objectID": "pages/bs1.html#delphi-process-to-aggregate-judgements-from-a-group-of-experts",
-    "href": "pages/bs1.html#delphi-process-to-aggregate-judgements-from-a-group-of-experts",
-    "title": "Book seminar 1",
-    "section": "Delphi process to aggregate judgements from a group of experts",
-    "text": "Delphi process to aggregate judgements from a group of experts\n\nMake individual judgements\nCompare where there are large differences in judgements. - Discuss and resolve the reason for differences. Here is where linguistic uncertainties can be reduced.\nRedo individual judgements\nAggregate the judgements"
-  },
-  {
-    "objectID": "pages/bs1.html#interpretation-of-probability",
-    "href": "pages/bs1.html#interpretation-of-probability",
-    "title": "Book seminar 1",
-    "section": "Interpretation of probability",
-    "text": "Interpretation of probability\nTutorial on uncertainty where Ullrika explains probability distribution\n\nthe frequency with which sampled values arise within a specified range or for a specified category\n\n\na quantification of a judgement on the likelihood of a particular range or category\n\n\n\n\n\n\n\nNote\n\n\nThe mathematical theory for probability is the same for both interpretations!"
-  },
-  {
-    "objectID": "pages/bs1.html#probability-distributions",
-    "href": "pages/bs1.html#probability-distributions",
-    "title": "Book seminar 1",
-    "section": "Probability distributions",
-    "text": "Probability distributions\nVisualising probability distributions"
-  },
-  {
-    "objectID": "pages/bs1.html#uncertainty-and-variability",
-    "href": "pages/bs1.html#uncertainty-and-variability",
-    "title": "Book seminar 1",
-    "section": "Uncertainty and variability",
-    "text": "Uncertainty and variability"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "pages/Course introduction.html#welcome-to-risk-assessment-in-environment-and-public-health",
-    "href": "pages/Course introduction.html#welcome-to-risk-assessment-in-environment-and-public-health",
-    "title": "Course introduction MVEN10",
-    "section": "Welcome to Risk Assessment in Environment and Public Health",
-    "text": "Welcome to Risk Assessment in Environment and Public Health\n\nCourse coordinator: Ullrika Sahlin\nCourse platform https://canvas.education.lu.se/courses/23481\nCourse syllabus\nStudy directors:\n\nHelena Hansson Environmental Science\nStefan Olin Applied Computational Science appliedcompsci@math.lu.se"
-  },
-  {
-    "objectID": "pages/Course introduction.html#why-study-risk-assessment",
-    "href": "pages/Course introduction.html#why-study-risk-assessment",
-    "title": "Course introduction MVEN10",
-    "section": "Why study risk assessment",
-    "text": "Why study risk assessment\n\n\nTo be competitive on the job market\n\nthere is a lot of experts, but fewer experts on risk assessment\n\nTo better understand what expertise is required when assessing risk\n\nmotivation to become an expert\nstrengthen your interdisciplinary perspective\n\nTo be able to contribute to better management, including assessment and communication, of risk\nTo become a better decision maker yourself"
-  },
-  {
-    "objectID": "pages/Course introduction.html#lectures",
-    "href": "pages/Course introduction.html#lectures",
-    "title": "Course introduction MVEN10",
-    "section": "Lectures",
-    "text": "Lectures\n\n10 lectures\nOccupational and Health Medicine\nCentre for Environmental and Climate Science\nRisk, Uncertainty and Decision Making (parallell course)"
-  },
-  {
-    "objectID": "pages/Course introduction.html#exercises",
-    "href": "pages/Course introduction.html#exercises",
-    "title": "Course introduction MVEN10",
-    "section": "Exercises",
-    "text": "Exercises\n\n28 carried out over 9 occasions (topics canvas)\nYou are expected to use your own computer (notify!)\nmaterial published on https://ullrika.github.io/MVEN10material/\nreporting according to instructions"
-  },
-  {
-    "objectID": "pages/Course introduction.html#tools",
-    "href": "pages/Course introduction.html#tools",
-    "title": "Course introduction MVEN10",
-    "section": "Tools",
-    "text": "Tools\n\nUse open source tools for scientific assessment\n\nExcel\nR\nQuarto"
-  },
-  {
-    "objectID": "pages/Course introduction.html#literature-seminars",
-    "href": "pages/Course introduction.html#literature-seminars",
-    "title": "Course introduction MVEN10",
-    "section": "Literature seminars",
-    "text": "Literature seminars\n\n2 seminars\n\n1 within an exercise\n\nCome prepared!"
-  },
-  {
-    "objectID": "pages/Course introduction.html#book-seminars",
-    "href": "pages/Course introduction.html#book-seminars",
-    "title": "Course introduction MVEN10",
-    "section": "Book seminars",
-    "text": "Book seminars\n\n5 book seminars (overview canvas)\nPresenter, Opponent, Reviewer with different roles"
-  },
-  {
-    "objectID": "pages/Course introduction.html#case-studies",
-    "href": "pages/Course introduction.html#case-studies",
-    "title": "Course introduction MVEN10",
-    "section": "Case studies",
-    "text": "Case studies\n\n4 groups with tutors\n2 sessions\nProblem Based Learning (canvas)\nCase studies (canvas)\nYou are expected to bring your own computer (Notify!)\nWritten reports per group that will be shared with all"
-  },
-  {
-    "objectID": "pages/Course introduction.html#course-literature",
-    "href": "pages/Course introduction.html#course-literature",
-    "title": "Course introduction MVEN10",
-    "section": "Course literature",
-    "text": "Course literature\n\nBurgman, Mark. Risks and decisions for conservation and environmental management. Cambridge University Press, 2005.\nLiterature for seminars\nOther material handed out during the course\nExplicit references from lectures"
-  },
-  {
-    "objectID": "pages/Course introduction.html#non-scheduled-time",
-    "href": "pages/Course introduction.html#non-scheduled-time",
-    "title": "Course introduction MVEN10",
-    "section": "Non-scheduled time",
-    "text": "Non-scheduled time\n\nThis course is 15 credits and assumes 100% study pace\nNon-scheduled time implies self studies"
-  },
-  {
-    "objectID": "pages/Course introduction.html#grading-and-compulsory-assignments",
-    "href": "pages/Course introduction.html#grading-and-compulsory-assignments",
-    "title": "Course introduction MVEN10",
-    "section": "Grading and compulsory assignments",
-    "text": "Grading and compulsory assignments\n\nParticipation in written assignments, exercises, project work and associated parts is compulsory\nReports from case studies, exercises and project work is failed or passed\nThe written examination is failed, passed or passed with distinction\nAn exam in class and a home exam"
-  },
-  {
-    "objectID": "pages/Course introduction.html#todo",
-    "href": "pages/Course introduction.html#todo",
-    "title": "Course introduction MVEN10",
-    "section": "Todo",
-    "text": "Todo\n\nChoose a course representative\nRemind to inform us if you need to borrow a computer during class\nModify groups for book seminars - if asked for\nModify groups for case studies - if asked for"
-  },
-  {
-    "objectID": "pages/individual_projects.html",
-    "href": "pages/individual_projects.html",
-    "title": "Introduction to individual projects",
-    "section": "",
-    "text": "On Monday, you will be assigned one of the following risk assessments. The assignment will consider you preference, but all risk assessments must be chosen at the end as they represent material for the course.\nReproduce the indicated part of the assessment with your choice of modification.\nProduce a report on 2 - 10 pages (min 2 and max 10) including figures and tables.\nProvide your code for the assessment as an appendix.\nInclude references, including reference to suitable guidance documents for this type of risk assessment.\nRefer to sections, figures and tables in the original assessment the when using it as reference.\nSee the template report for further info"
-  },
-  {
-    "objectID": "pages/individual_projects.html#general-instructions",
-    "href": "pages/individual_projects.html#general-instructions",
-    "title": "Introduction to individual projects",
-    "section": "",
-    "text": "On Monday, you will be assigned one of the following risk assessments. The assignment will consider you preference, but all risk assessments must be chosen at the end as they represent material for the course.\nReproduce the indicated part of the assessment with your choice of modification.\nProduce a report on 2 - 10 pages (min 2 and max 10) including figures and tables.\nProvide your code for the assessment as an appendix.\nInclude references, including reference to suitable guidance documents for this type of risk assessment.\nRefer to sections, figures and tables in the original assessment the when using it as reference.\nSee the template report for further info"
-  },
-  {
-    "objectID": "pages/individual_projects.html#a-human-health-risk-assessment-from-chemicals-in-the-food-chain",
-    "href": "pages/individual_projects.html#a-human-health-risk-assessment-from-chemicals-in-the-food-chain",
-    "title": "Introduction to individual projects",
-    "section": "A human health risk assessment from chemicals in the food chain",
-    "text": "A human health risk assessment from chemicals in the food chain\nRisk assessment of N‐nitrosamines in food Link to the assessment\nThis is a typical risk assessment of risk to human health via dietary exposure from a chemical substance in food.\nThe task is to replicate the risk assessment with one of the following modifications\n\na new Benchmark Dose Modelling where you discuss the influence of choices made in the modelling\na quantitative uncertainty analysis on the exposure assessment\n\nAt the end, quantify the level of certainty that exposure of N‐nitrosamines can lead to adverse outcomes for different proportions of the EU population. Use expert judgement where you and two other persons act as experts."
-  },
-  {
-    "objectID": "pages/individual_projects.html#a-pest-categorisation-of-an-invasive-species",
-    "href": "pages/individual_projects.html#a-pest-categorisation-of-an-invasive-species",
-    "title": "Introduction to individual projects",
-    "section": "A pest categorisation of an invasive species",
-    "text": "A pest categorisation of an invasive species\nPest categorisation of the red fire ant Link to the assessment\nThe task is to replicate the assessment of pest potential for entry, establishment and spread in the EU (Section 3.4) with one of the following modifications\n\nmake your own assessment of climate matching e.g. by running the CLIMEX modelling with occurrence data that you retrieve from databases.\n\n\n\nAt the end, quantify the level of certainty that this species will be a problem in Sweden within 20 years from now using expert judgement where you and two other persons act as experts."
-  },
-  {
-    "objectID": "pages/individual_projects.html#an-evaluation-of-control-measures-for-a-disease",
-    "href": "pages/individual_projects.html#an-evaluation-of-control-measures-for-a-disease",
-    "title": "Introduction to individual projects",
-    "section": "An evaluation of control measures for a disease",
-    "text": "An evaluation of control measures for a disease\nThis assessment compares the efficiency of control measures for the Classical Swine Fever Link to the assessment\nThe task is to replicate the assessment of the Minimum radius of restricted zones and duration of the disease control measures in restricted zones (ToR 3) with the following modifications\n\n\n\n\n\n\nwith a quantitative uncertainty analysis considering the impact of uncertainty in parameters of the kernel model and the impact of uncertainty in the model structure by model averaging\n\nAt the end, quantify the level of certainty that the control measures taken for the outbreak of African Swine Fever in Sweden will succeed in containing the outbreak. Consider similarities and differences between AFS and CSF. Use expert judgement where you and two other persons act as experts."
-  },
-  {
-    "objectID": "pages/individual_projects.html#a-population-viability-assessment",
-    "href": "pages/individual_projects.html#a-population-viability-assessment",
-    "title": "Introduction to individual projects",
-    "section": "A Population Viability Assessment",
-    "text": "A Population Viability Assessment\nThis is an assessment of conservation status based on a Population Viability Assessment of the polar bear Link to the assessment\nYou can find a description of the PVA in the Supplementary material for Ursus maritimus Red List assessment\nReplicate the risk assessment for two scenarios and two subpopulations with the following modifications\n\nconsider uncertainty in generation length by a probability distribution instead of the mean and P95\n\nAt the end, quantify the level of certainty that there will be a decline in at least one of the subpopulations. Use expert judgement where you and two other persons act as experts."
-  },
-  {
-    "objectID": "pages/individual_projects.html#an-environmental-risk-assessment-from-the-use-of-a-chemical-product",
-    "href": "pages/individual_projects.html#an-environmental-risk-assessment-from-the-use-of-a-chemical-product",
-    "title": "Introduction to individual projects",
-    "section": "An environmental risk assessment from the use of a chemical product",
-    "text": "An environmental risk assessment from the use of a chemical product\nThis is an Environmental Risk Assessment of the medicine Felodipine Link to the assessment\nReplicate the risk assessment with one of the following modifications\n\nperform the exposure assessment with a quantitative uncertainty analysis\napply species sensitivity distribution on the ecotoxicological measurements\n\nUseful documents\nERA for medicines\nECHA Guidance. Characterisation of dose[concentration]-response for environment\n\n\n\n\nAt the end, quantify the level of certainty that release of Felodipine into the environment will result in adverse impact on ecosystems. Use expert judgement where you and two other persons act as experts."
   },
   {
     "objectID": "pages/probability_distribution.html",

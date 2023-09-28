@@ -1,0 +1,125 @@
+---
+title: "sf"
+---
+
+
+```{r}
+#| message: false
+#| echo: false
+
+library(ggplot2)
+library(dplyr)
+```
+
+## create kernel functions
+
+```{r}
+kern <- function(x,d0,alpha){
+  (1+(x/d0)^alpha)^-1
+}
+
+inv_kern <- function(prob,d0,alpha){
+  (1/prob-1)^(1/alpha)*d0
+} 
+```
+
+
+```{r}
+one_iter <- function(i){
+d0_ba = rnorm(1,1,0.1)
+alpha_ba = rnorm(1,2.2,0.2)
+
+d0_bo = rnorm(1,0.55,(0.73-0.55)/2)
+alpha_bo = rnorm(1,2.27,(2.4-2.27)/2)
+
+d0_ga = rlnorm(1,-1.2,1.29)
+alpha_ga = rlnorm(1,0.545,0.402)
+
+w = c(1,1,1)
+w = w/sum(w)
+get_ma <- function(x){
+  ma_prob3=w[1]*kern(x,d0_ba,alpha_ba) + 
+  w[2]*kern(x,d0_bo,alpha_bo) + 
+  w[3]*kern(x,d0_ga,alpha_ga)
+}
+
+x = seq(0,30,by=1)
+data.frame(x = x,
+y=sapply(x,get_ma),iter=i)
+}
+```
+
+```{r}
+do.call('rbind',lapply(1:20,function(i){one_iter(i)})) %>%
+  ggplot(aes(x=x,y=y,group=iter))+
+  geom_line(alpha=0.2)
+```
+
+
+```{r}
+mc_one_iter <- function(){
+d0_ba = rnorm(1,1,0.1)
+alpha_ba = rnorm(1,2.2,0.2)
+
+d0_bo = rnorm(1,0.55,(0.73-0.55)/2)
+alpha_bo = rnorm(1,2.27,(2.4-2.27)/2)
+
+d0_ga = rlnorm(1,-1.2,1.29)
+alpha_ga = rlnorm(1,0.545,0.402)
+
+w = c(1,1,1)
+w = w/sum(w)
+
+data.frame(ma_prob3=w[1]*kern(3,d0_ba,alpha_ba) + 
+  w[2]*kern(3,d0_bo,alpha_bo) + 
+  w[3]*kern(3,d0_ga,alpha_ga), 
+
+ma_prob10=w[1]*kern(10,d0_ba,alpha_ba) + 
+  w[2]*kern(10,d0_bo,alpha_bo) + 
+  w[3]*kern(10,d0_ga,alpha_ga), 
+
+ma_P05 = w[1]*inv_kern(0.05,d0_ba,alpha_ba) + 
+  w[2]*inv_kern(0.05,d0_bo,alpha_bo) + 
+  w[3]*inv_kern(0.05,d0_ga,alpha_ga) 
+)
+}
+```
+
+
+```{r}
+niter = 10^4
+output <- do.call('rbind',lapply(1:niter,function(i){mc_one_iter()}))
+```
+
+
+```{r}
+output %>% 
+  ggplot(aes(x=ma_prob3)) +
+  geom_density() +
+  geom_vline(xintercept=0.05,col='red')
+
+```
+
+```{r}
+output %>% 
+  ggplot(aes(x=ma_prob10)) +
+  geom_density() +
+  geom_vline(xintercept=0.05,col='red')
+
+```
+
+
+```{r}
+quantile(output$ma_P05,probs=0.95)
+```
+
+```{r}
+output %>% 
+  ggplot(aes(x=ma_P05)) +
+  geom_density() +
+  geom_vline(xintercept=3,col='red')+
+  geom_vline(xintercept=10,col='red') +
+scale_x_log10()
+
+```
+
