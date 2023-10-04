@@ -77,7 +77,7 @@ Add references using the APA 7 format.
 
 This appendix should contain the data and code for all calculations and simulations. Preferably as a rendered qmd document or attached Excel file with explanatory text.
 
-### Appendix B. Report of the Expert Eliciation of overall uncertainty
+### Appendix B. Report of the Expert Elicitation of overall uncertainty
 
 Who were the experts
 
