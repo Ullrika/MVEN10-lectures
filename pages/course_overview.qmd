@@ -15,7 +15,7 @@ On completion of the course, the student should be able to:
 
 -   give an account of and independently apply principles and methods for risk analysis and common risk assessment models in environment, nature and health
 
--   give an account of needs and examples of scientifically based risk communicationin society and its relation to risk perception
+-   give an account of needs and examples of scientifically based risk communication in society and its relation to risk perception
 
 -   give an account of research and development for risk assessment in nature,environment and health
 
@@ -33,7 +33,7 @@ On completion of the course, the student should be able to:
 
 On completion of the course, the student should be able to:
 
--   critically reflect on the possibilities and limitations of risk assessments and its rolein risk management in society
+-   critically reflect on the possibilities and limitations of risk assessments and its role in risk management in society
 
 -   discuss ethical aspects at assessment, management and communication of risks
 
@@ -47,7 +47,7 @@ The course deals with:
 
 -   methods in risk analysis such as problem formulation, hazard assessment, statistical modelling, exposure modelling, dose-response modelling, modelling of dispersion of diseases (epidemiology), modelling of uptake, renewal, distributions and secretion of poisons in living organisms (toxicokinetics) and expert assessment and principles and methods for uncertainty analysis
 
--   risk evaluation, which includes how to in a structured way can evaluate andmake tradeoffs to support decision-making
+-   risk evaluation, which includes how to in a structured way can evaluate and make tradeoffs to support decision-making
 
 -   risk management, which includes how different societal actors prevent risks, sets regulatory thresholds and communicate risks. In addition the importance to connect risk perception in risk management and communication of risks is included.
 
@@ -75,13 +75,13 @@ All material from the course book by Burgman covered at the book seminars. This 
 
 Here I extracted the terms from the glossary in the book that is applicable for the course:
 
-ADI, acute effect, ALARP principle, algorithm, ambiguity, anchoring, AUC, assessment endpoints, averaging, Bayesian analysis, Bayesian credible intervals, behavioural aggregation, belief, bechmark dose, benefit-cost analysis, beta distribution, binomial distribution, bioconcentration factor, bounded rationality, bounds (statistical), calibration, calibration of models, carrying capacity, central tendency, chance, chronic effects, coefficient of variation, cognitive availability, conceptual models, conditional probabilities (statistics), confidence, confidence intervals, confusion matrix, consensus, context, convergence, correlation (statistical), correlation coefficient, cost-benefit analysis, credibility, credible intervals, cumulative probabilities, decision, decision tables, Delphi technique, demographic variation, demographic stochasticity, density dependence, dependency of a variable (statistical), detectable effect sizes, deterministic model, deterministic sensitivity, dichotomoy, disagreement, dispersal, EC50, ecotoxicology, effect size, endpoints, environmental aspect, environmental effect, environmental uncertainty (in PVAs), enzyme, epistemic uncertainty, equipossible/equiprobable, evidence, expected dose, expected utility, expert, exponential distribution, exposure pathway, false negative/false positive, fecundity (PVA), final acute value, fixed probability, fixed value, free-riding, frequentist statistics, fugacity, goodness of fit, hazard, hazard index, hazard matrices, hazard probability rank, hazard quotient, hedonic pricing, hormesis, hydrolysis, hypothesis, illusofy certainty, incertitude, indeterminacy, indicators, information disagreement, interval arithmetic, interval probabilities, kent scales, LCxx, likelihood, linguistic uncertainty, LOAEL/LOEL, LOEC, management goals, MaxiMin strategy, measurement endpoint, measurement error, median, metapopulation, minimum expected population size, minimum viable population, mixing or averaging probabilities, model averaging, model uncertainty, monitoring, Monte Carlo analysis, motivational bias, multi-criteria decision analysis, natural death (in behavioural aggregation), natural variation, negotiation, NOEL/NOEC, normal distribution, normative expertise, normative theories (of rational consensus), numerical aggregation, odds ration, partitioning coefficient, paternalistic model for stakeholder involvement, photolysis, plausibility, point estiamtes, Poisson distribution, Poisson process, Population viability analysis, possibility, posterior probabilities, power (statistical), precautionary principle, prediction intervals, principle of insufficient reason, prior probabilities, probability, probability density function, problem formulation, procedures guide (for expert elicitation), process model, prosecutor's fallacy
+ADI, acute effect, ALARP principle, algorithm, ambiguity, anchoring, AUC, assessment endpoints, averaging, Bayesian analysis, Bayesian credible intervals, behavioural aggregation, belief, benchmark dose, benefit-cost analysis, beta distribution, binomial distribution, bioconcentration factor, bounded rationality, bounds (statistical), calibration, calibration of models, carrying capacity, central tendency, chance, chronic effects, coefficient of variation, cognitive availability, conceptual models, conditional probabilities (statistics), confidence, confidence intervals, confusion matrix, consensus, context, convergence, correlation (statistical), correlation coefficient, cost-benefit analysis, credibility, credible intervals, cumulative probabilities, decision, decision tables, Delphi technique, demographic variation, demographic stochasticity, density dependence, dependency of a variable (statistical), detectable effect sizes, deterministic model, deterministic sensitivity, dichotomoy, disagreement, dispersal, EC50, ecotoxicology, effect size, endpoints, environmental aspect, environmental effect, environmental uncertainty (in PVAs), enzyme, epistemic uncertainty, equipossible/equiprobable, evidence, expected dose, expected utility, expert, exponential distribution, exposure pathway, false negative/false positive, fecundity (PVA), final acute value, fixed probability, fixed value, free-riding, frequentist statistics, fugacity, goodness of fit, hazard, hazard index, hazard matrices, hazard probability rank, hazard quotient, hedonic pricing, hormesis, hydrolysis, hypothesis, illusofy certainty, incertitude, indeterminacy, indicators, information disagreement, interval arithmetic, interval probabilities, kent scales, LCxx, likelihood, linguistic uncertainty, LOAEL/LOEL, LOEC, management goals, MaxiMin strategy, measurement endpoint, measurement error, median, metapopulation, minimum expected population size, minimum viable population, mixing or averaging probabilities, model averaging, model uncertainty, monitoring, Monte Carlo analysis, motivational bias, multi-criteria decision analysis, natural death (in behavioural aggregation), natural variation, negotiation, NOEL/NOEC, normal distribution, normative expertise, normative theories (of rational consensus), numerical aggregation, odds ration, partitioning coefficient, paternalistic model for stakeholder involvement, photolysis, plausibility, point estiamtes, Poisson distribution, Poisson process, Population viability analysis, possibility, posterior probabilities, power (statistical), precautionary principle, prediction intervals, principle of insufficient reason, prior probabilities, probability, probability density function, problem formulation, procedures guide (for expert elicitation), process model, prosecutor's fallacy
 public participation, QSAR, quantiles, quartiles, range (statisical), rank correlations, rational consensus, reasonable maximum exposure, reference dose, reference lottery, regret, relative risk, risk, risk analysis, risk assessment, risk aversion, risk efficiency, risk equity, risk ranking, robust decisions, ROC, scenario analysis, scenarios, semantic disagreement, sensitivity analysis (for models), sigmodial curve, snowballing, Spearman rank correlation, stakeholder, stakeholder expert, stochastic models, strategic risk managment, stressors, SAR, subjective belief, substantive expertise, sure bounds, systematic error, tendency, theory-based inference, transformation, triangular distribution, type I/type II errors, underspecificity, uniform distribution, utilities, utility function, utility-based criteria, vagueness, validation/verification (of a model), variability, volatilization, zero risk strategies.
 
 
 #### Material from exercises 
 
-Principles and methods for uncertainty analysis that we have worked with during exercises. Go back and read the excerises. 
+Principles and methods for uncertainty analysis that we have worked with during exercises. Go back and read the exercises. 
 
 #### Additional lecture material provided by Ullrika during the course 
 
@@ -126,3 +126,28 @@ In this course environmental risk assessment covers
 - Relevant material from the general parts 
 
 TO BE FURTHER UPDATED
+
+## Guiding study questions
+
+NOTE: THIS IS NOT AN EXHAUSTIVE LIST OF POSSIBLE QUESTIONS THAT CAN BE ASKED AT THE EXAM. 
+
+This list of guiding study questions has been constructed from the course syllabus (kursplanen)
+
+
+
+- Give an account of (i.e. describe or explain) **a principle or method brought up during the course**, e.g. EC50, MOET, Model averaging or Monte Carlo simulation!
+
+- Give an account of common risk assessment models used for **any of the types of assessments covered in the course** (Human risk assessment related to exposure to chemicals, Ecological risk assessment, Pest risk assessment, Red list assessment)!
+
+- Give an account of factors explaining differences in risk perception!
+
+- Give an account of recommendations to guide risk communication!
+
+- Give an account of challenges in implementing uncertainty analysis, ensuring public trust and applying the precautionary principle!
+
+- Evaluate **an application of an assessment** (material will be provided) in light of guidance for that assessment! Were guidelines followed? Reflect on limitations of the assessment. Suggest possible modifications of the assessment. 
+
+- Evaluate on the presentation of result of **an application of an assessment** (material will be provided) in light of recommendations for communication. Were guidelines/recommendations followed. Suggest improvements for communicating results in the assessment. Suggestion communication to the public. 
+
+- Comment on the role of **an application of an assessment** (material will be provided) to support a particular risk management decision. How is information from the assessment used to support the decision making? What is the decision problem. Suggest how to handle uncertainty in this particular decision problem. 
+
