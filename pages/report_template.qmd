@@ -10,7 +10,7 @@ This is a reproduction of \[write the name of the original assessment here\] don
 
 The purpose of the project is to gain more understanding of the inputs and methodology of the original assessment, practice implementing and documenting a quantitative analysis, and practice performing a final assessment of overall uncertainty.
 
-The results from this project should not be used as bases for decision making.
+The results from this project should not be used to inform decision making.
 
 ## Introduction
 
@@ -40,7 +40,7 @@ Add a report for the expert elicitation of the overall uncertainty assessment as
 
 ### Assessment results
 
-Present the results of the assessment questions, but replace the results from the orginal assessment with the results from the quantitative analysis.
+Present the results of the assessment questions, but replace the results from the original assessment with the results from the quantitative analysis.
 
 ### Overall uncertainty
 
