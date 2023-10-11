@@ -69,7 +69,7 @@ At the end, quantify the level of certainty that the control measures taken for 
 
 ## A Red list assessment of conservation status
 
-- I altered the heading for this assessment after consultation with the students, considering that population viability analysis is one alternative to assess conservation status
+-   I altered the heading for this assessment after consultation with the students, considering that population viability analysis is one alternative to assess conservation status
 
 This is an assessment of conservation status based on an population analysis of the polar bear [Link to the assessment](https://www.iucnredlist.org/species/22823/14871490#assessment-information)
 
