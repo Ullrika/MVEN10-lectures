@@ -83,25 +83,21 @@ Principles and methods for uncertainty analysis that we have worked with during 
 
 #### Additional lecture material provided by Ullrika during the course
 
-TO BE FURTHER UPDATED
+See page on canvas Lecture Types of assessment
 
 #### Lectures about risk, uncertainty and decision making
 
-Go over the lectures, they were recorded and you have access to presentations and your notes. 
+Go over the lectures, they were recorded and you have access to presentations and your notes.
 
-Individual decision making - how does it work? what is a good choice? How is risk perception linked with individual decision making? Mention some factors explaining differences in risk perception. 
+Individual decision making - how does it work? what is a good choice? How is risk perception linked with individual decision making? Mention some factors explaining differences in risk perception.
 
-Societal decision making - what is the difference to individual decision making? 
+Societal decision making - what is the difference to individual decision making?
 
-Rational and bounded rationality - difference? 
+Rational and bounded rationality - difference?
 
 When and how to consider uncertainty in assessments - what did they say about this?
 
 When and how to consider uncertainty in decision making - what did they say about this? What did you learn from the akrylamid case study regarding risk communication?
-
-
-
-
 
 #### Actual risk assessments
 
@@ -124,7 +120,6 @@ This includes assessment on human endpoints. In the course, we primary focus is 
 -   Material from lectures and literature seminars
 
 -   Health risk assessment exercise
-
 
 ### Environmental risk assessment
 
