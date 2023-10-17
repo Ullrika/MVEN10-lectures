@@ -87,7 +87,21 @@ TO BE FURTHER UPDATED
 
 #### Lectures about risk, uncertainty and decision making
 
-TO BE FURTHER UPDATED
+Go over the lectures, they were recorded and you have access to presentations and your notes. 
+
+Individual decision making - how does it work? what is a good choice? How is risk perception linked with individual decision making? Mention some factors explaining differences in risk perception. 
+
+Societal decision making - what is the difference to individual decision making? 
+
+Rational and bounded rationality - difference? 
+
+When and how to consider uncertainty in assessments - what did they say about this?
+
+When and how to consider uncertainty in decision making - what did they say about this? What did you learn from the akrylamid case study regarding risk communication?
+
+
+
+
 
 #### Actual risk assessments
 
@@ -111,7 +125,6 @@ This includes assessment on human endpoints. In the course, we primary focus is 
 
 -   Health risk assessment exercise
 
-TO BE FURTHER UPDATED
 
 ### Environmental risk assessment
 
@@ -125,7 +138,7 @@ In this course environmental risk assessment covers
 
 -   Relevant material from the general parts
 
-TO BE FURTHER UPDATED
+See page on canvas Lecture Types of assessment
 
 ## Guiding study questions
 
@@ -133,9 +146,9 @@ NOTE: THIS IS NOT AN EXHAUSTIVE LIST OF POSSIBLE QUESTIONS THAT CAN BE ASKED AT 
 
 This list of guiding study questions has been constructed from the course syllabus (kursplanen)
 
--   Give an account of (i.e. describe or explain) **a principle or method brought up during the course**, e.g. EC50, MOET, Model averaging or Monte Carlo simulation!
+-   Give an account of (i.e. describe or explain) **a principle or method brought up during the course**, e.g. EC50, MOET, model averaging or Monte Carlo simulation!
 
--   Give an account of common risk assessment models used for **any of the types of assessments covered in the course** (Human risk assessment related to exposure to chemicals, Ecological risk assessment, Pest risk assessment, Red list assessment)!
+-   Give an account of common risk assessment models used for **any of the types of assessments covered in the course** (Human risk assessment related to exposure to chemicals, Ecological/Environmental risk assessment, Pest risk assessment, Red list assessment)!
 
 -   Give an account of factors explaining differences in risk perception!
 

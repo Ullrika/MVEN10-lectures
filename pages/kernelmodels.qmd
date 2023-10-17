@@ -2,7 +2,6 @@
 title: "sf"
 ---
 
-
 ```{r}
 #| message: false
 #| echo: false
@@ -22,7 +21,6 @@ inv_kern <- function(prob,d0,alpha){
   (1/prob-1)^(1/alpha)*d0
 } 
 ```
-
 
 ```{r}
 one_iter <- function(i){
@@ -55,7 +53,6 @@ do.call('rbind',lapply(1:20,function(i){one_iter(i)})) %>%
   geom_line(alpha=0.2)
 ```
 
-
 ```{r}
 mc_one_iter <- function(){
 d0_ba = rnorm(1,1,0.1)
@@ -85,12 +82,10 @@ ma_P05 = w[1]*inv_kern(0.05,d0_ba,alpha_ba) +
 }
 ```
 
-
 ```{r}
 niter = 10^4
 output <- do.call('rbind',lapply(1:niter,function(i){mc_one_iter()}))
 ```
-
 
 ```{r}
 output %>% 
@@ -108,7 +103,6 @@ output %>%
 
 ```
 
-
 ```{r}
 quantile(output$ma_P05,probs=0.95)
 ```
@@ -122,4 +116,3 @@ output %>%
 scale_x_log10()
 
 ```
-
