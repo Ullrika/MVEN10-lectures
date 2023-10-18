@@ -43,7 +43,7 @@ editor: visual
 -   10 lectures
 -   Occupational and Health Medicine
 -   Centre for Environmental and Climate Science
--   Risk, Uncertainty and Decision Making (parallell course)
+-   Risk, Uncertainty and Decision Making (parallel course)
 
 ## Exercises
 
@@ -63,12 +63,12 @@ editor: visual
 
 -   2 seminars
 -   
-    -   1 within an exercise
+    -   1 within an exercise (cancelled)
 -   Come prepared!
 
 ## Book seminars
 
--   5 book seminars (overview canvas)
+-   5 book seminars (overview canvas) (one was cancelled)
 -   Presenter, Opponent, Reviewer with different roles
 
 ## Case studies

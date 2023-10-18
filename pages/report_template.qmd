@@ -16,7 +16,7 @@ The results from this project should not be used to inform decision making.
 
 Describe the context and background of the original assessment and the assessment questions.
 
-Add a section why this is a relevant topic today and introduce the additional assessment question presented in the "At the end"-paragraphs for each project.
+Add a section why this is a relevant topic today and introduce the additional ~~assessment question~~ **task** presented in the "At the end"-paragraphs for each project.
 
 ## Data and methodology
 

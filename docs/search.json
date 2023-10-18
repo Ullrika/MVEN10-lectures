@@ -18,7 +18,7 @@
     "href": "pages/report_template.html#introduction",
     "title": "Report template",
     "section": "Introduction",
-    "text": "Introduction\nDescribe the context and background of the original assessment and the assessment questions.\nAdd a section why this is a relevant topic today and introduce the additional assessment question presented in the “At the end”-paragraphs for each project."
+    "text": "Introduction\nDescribe the context and background of the original assessment and the assessment questions.\nAdd a section why this is a relevant topic today and introduce the additional assessment question task presented in the “At the end”-paragraphs for each project."
   },
   {
     "objectID": "pages/report_template.html#data-and-methodology",
@@ -67,14 +67,14 @@
     "href": "pages/kernelmodels.html",
     "title": "sf",
     "section": "",
-    "text": "kern &lt;- function(x,d0,alpha){\n  (1+(x/d0)^alpha)^-1\n}\n\ninv_kern &lt;- function(prob,d0,alpha){\n  (1/prob-1)^(1/alpha)*d0\n} \n\n\none_iter &lt;- function(i){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\nget_ma &lt;- function(x){\n  ma_prob3=w[1]*kern(x,d0_ba,alpha_ba) + \n  w[2]*kern(x,d0_bo,alpha_bo) + \n  w[3]*kern(x,d0_ga,alpha_ga)\n}\n\nx = seq(0,30,by=1)\ndata.frame(x = x,\ny=sapply(x,get_ma),iter=i)\n}\n\n\ndo.call('rbind',lapply(1:20,function(i){one_iter(i)})) %&gt;%\n  ggplot(aes(x=x,y=y,group=iter))+\n  geom_line(alpha=0.2)\n\n\n\n\n\nmc_one_iter &lt;- function(){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\n\ndata.frame(ma_prob3=w[1]*kern(3,d0_ba,alpha_ba) + \n  w[2]*kern(3,d0_bo,alpha_bo) + \n  w[3]*kern(3,d0_ga,alpha_ga), \n\nma_prob10=w[1]*kern(10,d0_ba,alpha_ba) + \n  w[2]*kern(10,d0_bo,alpha_bo) + \n  w[3]*kern(10,d0_ga,alpha_ga), \n\nma_P05 = w[1]*inv_kern(0.05,d0_ba,alpha_ba) + \n  w[2]*inv_kern(0.05,d0_bo,alpha_bo) + \n  w[3]*inv_kern(0.05,d0_ga,alpha_ga) \n)\n}\n\n\nniter = 10^4\noutput &lt;- do.call('rbind',lapply(1:niter,function(i){mc_one_iter()}))\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob3)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob10)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\nquantile(output$ma_P05,probs=0.95)\n\n     95% \n9.495713 \n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_P05)) +\n  geom_density() +\n  geom_vline(xintercept=3,col='red')+\n  geom_vline(xintercept=10,col='red') +\nscale_x_log10()"
+    "text": "kern &lt;- function(x,d0,alpha){\n  (1+(x/d0)^alpha)^-1\n}\n\ninv_kern &lt;- function(prob,d0,alpha){\n  (1/prob-1)^(1/alpha)*d0\n} \n\n\none_iter &lt;- function(i){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\nget_ma &lt;- function(x){\n  ma_prob3=w[1]*kern(x,d0_ba,alpha_ba) + \n  w[2]*kern(x,d0_bo,alpha_bo) + \n  w[3]*kern(x,d0_ga,alpha_ga)\n}\n\nx = seq(0,30,by=1)\ndata.frame(x = x,\ny=sapply(x,get_ma),iter=i)\n}\n\n\ndo.call('rbind',lapply(1:20,function(i){one_iter(i)})) %&gt;%\n  ggplot(aes(x=x,y=y,group=iter))+\n  geom_line(alpha=0.2)\n\n\n\n\n\nmc_one_iter &lt;- function(){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\n\ndata.frame(ma_prob3=w[1]*kern(3,d0_ba,alpha_ba) + \n  w[2]*kern(3,d0_bo,alpha_bo) + \n  w[3]*kern(3,d0_ga,alpha_ga), \n\nma_prob10=w[1]*kern(10,d0_ba,alpha_ba) + \n  w[2]*kern(10,d0_bo,alpha_bo) + \n  w[3]*kern(10,d0_ga,alpha_ga), \n\nma_P05 = w[1]*inv_kern(0.05,d0_ba,alpha_ba) + \n  w[2]*inv_kern(0.05,d0_bo,alpha_bo) + \n  w[3]*inv_kern(0.05,d0_ga,alpha_ga) \n)\n}\n\n\nniter = 10^4\noutput &lt;- do.call('rbind',lapply(1:niter,function(i){mc_one_iter()}))\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob3)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob10)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\nquantile(output$ma_P05,probs=0.95)\n\n     95% \n10.13185 \n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_P05)) +\n  geom_density() +\n  geom_vline(xintercept=3,col='red')+\n  geom_vline(xintercept=10,col='red') +\nscale_x_log10()"
   },
   {
     "objectID": "pages/kernelmodels.html#create-kernel-functions",
     "href": "pages/kernelmodels.html#create-kernel-functions",
     "title": "sf",
     "section": "",
-    "text": "kern &lt;- function(x,d0,alpha){\n  (1+(x/d0)^alpha)^-1\n}\n\ninv_kern &lt;- function(prob,d0,alpha){\n  (1/prob-1)^(1/alpha)*d0\n} \n\n\none_iter &lt;- function(i){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\nget_ma &lt;- function(x){\n  ma_prob3=w[1]*kern(x,d0_ba,alpha_ba) + \n  w[2]*kern(x,d0_bo,alpha_bo) + \n  w[3]*kern(x,d0_ga,alpha_ga)\n}\n\nx = seq(0,30,by=1)\ndata.frame(x = x,\ny=sapply(x,get_ma),iter=i)\n}\n\n\ndo.call('rbind',lapply(1:20,function(i){one_iter(i)})) %&gt;%\n  ggplot(aes(x=x,y=y,group=iter))+\n  geom_line(alpha=0.2)\n\n\n\n\n\nmc_one_iter &lt;- function(){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\n\ndata.frame(ma_prob3=w[1]*kern(3,d0_ba,alpha_ba) + \n  w[2]*kern(3,d0_bo,alpha_bo) + \n  w[3]*kern(3,d0_ga,alpha_ga), \n\nma_prob10=w[1]*kern(10,d0_ba,alpha_ba) + \n  w[2]*kern(10,d0_bo,alpha_bo) + \n  w[3]*kern(10,d0_ga,alpha_ga), \n\nma_P05 = w[1]*inv_kern(0.05,d0_ba,alpha_ba) + \n  w[2]*inv_kern(0.05,d0_bo,alpha_bo) + \n  w[3]*inv_kern(0.05,d0_ga,alpha_ga) \n)\n}\n\n\nniter = 10^4\noutput &lt;- do.call('rbind',lapply(1:niter,function(i){mc_one_iter()}))\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob3)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob10)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\nquantile(output$ma_P05,probs=0.95)\n\n     95% \n9.495713 \n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_P05)) +\n  geom_density() +\n  geom_vline(xintercept=3,col='red')+\n  geom_vline(xintercept=10,col='red') +\nscale_x_log10()"
+    "text": "kern &lt;- function(x,d0,alpha){\n  (1+(x/d0)^alpha)^-1\n}\n\ninv_kern &lt;- function(prob,d0,alpha){\n  (1/prob-1)^(1/alpha)*d0\n} \n\n\none_iter &lt;- function(i){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\nget_ma &lt;- function(x){\n  ma_prob3=w[1]*kern(x,d0_ba,alpha_ba) + \n  w[2]*kern(x,d0_bo,alpha_bo) + \n  w[3]*kern(x,d0_ga,alpha_ga)\n}\n\nx = seq(0,30,by=1)\ndata.frame(x = x,\ny=sapply(x,get_ma),iter=i)\n}\n\n\ndo.call('rbind',lapply(1:20,function(i){one_iter(i)})) %&gt;%\n  ggplot(aes(x=x,y=y,group=iter))+\n  geom_line(alpha=0.2)\n\n\n\n\n\nmc_one_iter &lt;- function(){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\n\ndata.frame(ma_prob3=w[1]*kern(3,d0_ba,alpha_ba) + \n  w[2]*kern(3,d0_bo,alpha_bo) + \n  w[3]*kern(3,d0_ga,alpha_ga), \n\nma_prob10=w[1]*kern(10,d0_ba,alpha_ba) + \n  w[2]*kern(10,d0_bo,alpha_bo) + \n  w[3]*kern(10,d0_ga,alpha_ga), \n\nma_P05 = w[1]*inv_kern(0.05,d0_ba,alpha_ba) + \n  w[2]*inv_kern(0.05,d0_bo,alpha_bo) + \n  w[3]*inv_kern(0.05,d0_ga,alpha_ga) \n)\n}\n\n\nniter = 10^4\noutput &lt;- do.call('rbind',lapply(1:niter,function(i){mc_one_iter()}))\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob3)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob10)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\nquantile(output$ma_P05,probs=0.95)\n\n     95% \n10.13185 \n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_P05)) +\n  geom_density() +\n  geom_vline(xintercept=3,col='red')+\n  geom_vline(xintercept=10,col='red') +\nscale_x_log10()"
   },
   {
     "objectID": "pages/individual_projects.html",
@@ -144,7 +144,7 @@
     "href": "pages/Course introduction.html#lectures",
     "title": "Course introduction MVEN10",
     "section": "Lectures",
-    "text": "Lectures\n\n10 lectures\nOccupational and Health Medicine\nCentre for Environmental and Climate Science\nRisk, Uncertainty and Decision Making (parallell course)"
+    "text": "Lectures\n\n10 lectures\nOccupational and Health Medicine\nCentre for Environmental and Climate Science\nRisk, Uncertainty and Decision Making (parallel course)"
   },
   {
     "objectID": "pages/Course introduction.html#exercises",
@@ -165,14 +165,14 @@
     "href": "pages/Course introduction.html#literature-seminars",
     "title": "Course introduction MVEN10",
     "section": "Literature seminars",
-    "text": "Literature seminars\n\n2 seminars\n\n1 within an exercise\n\nCome prepared!"
+    "text": "Literature seminars\n\n2 seminars\n\n1 within an exercise (cancelled)\n\nCome prepared!"
   },
   {
     "objectID": "pages/Course introduction.html#book-seminars",
     "href": "pages/Course introduction.html#book-seminars",
     "title": "Course introduction MVEN10",
     "section": "Book seminars",
-    "text": "Book seminars\n\n5 book seminars (overview canvas)\nPresenter, Opponent, Reviewer with different roles"
+    "text": "Book seminars\n\n5 book seminars (overview canvas) (one was cancelled)\nPresenter, Opponent, Reviewer with different roles"
   },
   {
     "objectID": "pages/Course introduction.html#case-studies",
