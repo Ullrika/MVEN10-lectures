@@ -1,25 +1,17 @@
 ---
 title: "Course introduction MVEN10"
 author: "Ullrika Sahlin"
-date: 2023 Aug 28
-format: 
-  revealjs:
-    theme: default
-editor: visual
+date: 2024 Sept 2
+format: revealjs
 ---
 
 ## Welcome to Risk Assessment in Environment and Public Health
 
 -   Course coordinator: Ullrika Sahlin
 
--   Course platform <https://canvas.education.lu.se/courses/23481>
+-   Course platform <https://canvas.education.lu.se/courses/29367>
 
--   Course syllabus
-
--   Study directors:
-
-    -   Helena Hansson Environmental Science
-    -   Stefan Olin Applied Computational Science appliedcompsci\@math.lu.se
+-   Course syllabus <https://kursplaner.lu.se/pdf/kurs/en/MVEN10/1>
 
 ## Why study risk assessment
 
@@ -33,52 +25,72 @@ editor: visual
     -   motivation to become an expert
     -   strengthen your interdisciplinary perspective
 
--   To be able to contribute to better management, including assessment and communication, of risk
+-   To be able to contribute to better management, including assessment and communication, of things that matter
 
--   To become a better decision maker yourself
+-   To become a better decision maker
 :::
+
+## Risk assessment types
+
+-   Human health Risk Assessment (HRA)
+
+-   Environmental/Ecological Risk Assessment (ERA)
+
+-   Red List Assessment (RLA)
+
+-   Pest Risk Assessment (PRA)
 
 ## Lectures
 
--   10 lectures
+-   Eleven lectures
 -   Occupational and Health Medicine
--   Centre for Environmental and Climate Science
--   Risk, Uncertainty and Decision Making (parallel course)
+-   Environmental Science (CEC)
+-   Biology
+
+## Book and literature seminars
+
+-   Three book seminars
+-   Two literature seminars
+-   Seminars are compulsory
+-   Report according to instructions
+-   Come prepared!
 
 ## Exercises
 
--   28 carried out over 9 occasions (topics canvas)
+-   Ten exercise occasions
 -   You are expected to use your own computer (notify!)
--   material published on <https://ullrika.github.io/MVEN10material/>
--   reporting according to instructions
+-   Material published on canvas
+-   Exercises are compulsory
+-   Report according to instructions
+
+## Team Based Learning and Case studies
+
+-   Case studies: Risk assessments of the four different types
+
+-   First TBL activity in class:
+
+    -   Become familiar with four assessment types
+    -   Report reflections on your own learning
+
+-   Second TBL activity:
+
+    -   Deepened your understanding of one of the assessment types
+    -   Report as a presentation and written report to be shared with all students
+    -   Padlet
+
+## Individual project
+
+-   Reproduce parts of an existing risk assessment, but with a slight modification.
+-   Assess uncertainty in the conclusion by expert judgement for communication to risk managers
+-   Written report
+-   Student peer-review
 
 ## Tools
 
--   Use open source tools for scientific assessment
+-   Open source tools for scientific assessment
     -   Excel
     -   R
-    -   Quarto
-
-## Literature seminars
-
--   2 seminars
--   
-    -   1 within an exercise (cancelled)
--   Come prepared!
-
-## Book seminars
-
--   5 book seminars (overview canvas) (one was cancelled)
--   Presenter, Opponent, Reviewer with different roles
-
-## Case studies
-
--   4 groups with tutors
--   2 sessions
--   Problem Based Learning (canvas)
--   Case studies (canvas)
--   You are expected to bring your own computer (Notify!)
--   Written reports per group that will be shared with all
+    -   Tool of your own choice
 
 ## Course literature
 
@@ -94,24 +106,25 @@ editor: visual
 
 -   This course is 15 credits and assumes 100% study pace
 
+-   8 hours per day
+
 -   Non-scheduled time implies self studies
 
-## Grading and compulsory assignments
+## Grading and compulsory work
+
+-   Written exam corresponding to 7.5 hp, Grading scale: Fail, Pass, Pass with distinction
+
+-   Exercises and Assignments corresponding to 4.5 hp, Grading scale: Fail, Pass
+
+-   Project work corresponding to 3.0 hp, Grading scale: Fail, Pass
 
 -   Participation in written assignments, exercises, project work and associated parts is compulsory
 
--   Reports from case studies, exercises and project work is failed or passed
-
--   The written examination is failed, passed or passed with distinction
-
--   An exam in class and a home exam
+    -   Seminars and literature seminars are compulsory
+    -   Lectures are not compulsory, but highly recommended
 
 ## Todo
 
 1.  Choose a course representative
 
-2.  Remind to inform us if you need to borrow a computer during class
-
-3.  Modify groups for book seminars - if asked for
-
-4.  Modify groups for case studies - if asked for
+2.  Inform me if you need to borrow a computer during class

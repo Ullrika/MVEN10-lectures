@@ -2,7 +2,7 @@
 title: "Introduction to risk assessment"
 subtitle: "with human and ecological endpoints"
 author: "Ullrika Sahlin and Erika Norén"
-date: 2023 Aug 28
+date: 2024 Sept 2
 format: 
   revealjs:
     theme: beige
@@ -170,6 +170,9 @@ Involved in planning:
 :::
 :::
 
+
+
+
 ## Ecological risk assessment
 
 ::: columns
@@ -275,6 +278,85 @@ Assessors should
 :::
 :::
 
+
+## Risk Assessment with Human Endpoints
+
+![](/img/erika1.png)
+
+## 
+
+![](/img/erika2.png)
+
+## 
+
+![](/img/erika3.png)
+
+## 
+
+![](/img/erika4.png)
+
+## 
+
+![](/img/erika5.png)
+
+## 
+
+![](/img/erika6.png)
+
+## 
+
+![](/img/erika7.png)
+
+## 
+
+![](/img/erika8.png)
+
+## 
+
+![](/img/erika9.png)
+
+## 
+
+![](/img/erika10.png)
+
+## 
+
+![](/img/erika11.png)
+
+## 
+
+![](/img/erika12.png)
+
+## 
+
+![](/img/erika13.png)
+
+## 
+
+![](/img/erika14.png)
+
+## 
+
+![](/img/erika15.png)
+
+
+## Risk assessments with ecological endpoints
+
+Environmental/Ecological Risk Assessment
+
+Chemical stressor(s) -\> Ecological systems Manage stressors
+
+Red List Assessment Multiple stressors -\> Species Conservation of threatened species, Reduce loss of biodiversity
+
+Pest Risk Assessment Spread of invasive species or pests affecting ecological systems
+
+## Risk assessments with human endpoints
+
+Human Health Risk Assessment Chemical stressor(s) -\> human health
+
+Pest Risk Assessment Spread of pests or diseases -\> human health
+
+
 ## Conceptual models and frameworks
 
 ::: columns
@@ -332,21 +414,3 @@ Agreed guidelines and frameworks
 
 -   hazard, exposure, risk, vulnerability
 -   transparency and impartially
-
-## Introduction to case studies
-
-Human health assessment:
-
--   Per-and PolyFluoroalkyl Substances PFAS
-
-Plant pest assessment:
-
--   Navel orangeworm *Amyelois transitella*
-
-Human health assessment:
-
--   Arsenic in food
-
-Ecological risk assessment:
-
--   Atlantic Bluefin Tuna *Thunnus thynnus*

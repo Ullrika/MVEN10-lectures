@@ -4,19 +4,17 @@ format: html
 editor: visual
 ---
 
-
-- What we want to know
-$$P(A|+)$$
-- Likelihood - how much to we trust data
+-   What we want to know $$P(A|+)$$
+-   Likelihood - how much to we trust data
 
 $$P(+|A)$$
 
 $$P(-|A)$$
 
-- Bayesian updating
+-   Bayesian updating
 
 $$P(A|+)=\frac{P(+|A)P(A)}{P(+)}$$
 
-- To make it work we need to express our uncertainty before seeing the data - the prior
+-   To make it work we need to express our uncertainty before seeing the data - the prior
 
 $$P(A)$$

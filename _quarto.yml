@@ -8,30 +8,41 @@ website:
   sidebar:
     style: "docked"
     search: true
-    contents: 
-      - href: index.qmd
-        text: Home
-      - href: pages/Course introduction.qmd
-        text: Course introduction          
-        target: "_blank"
-      - href: pages/course_overview.qmd
-        text: Course content - syllabus with details       
-        target: "_blank"
-      - href: pages/Intro lecture.qmd
-        text: Introduction to risk assessment with human and ecological endpoints
-        target: "_blank"
-      - href: pages/bs1.qmd          
-        text: Book seminar 1
-        target: "_blank"
-      - href: pages/probability_distribution.qmd          
-        text: Introduction to probability distributions
-        target: "_blank"
-      - href: pages/individual_projects.qmd          
-        text: Introduction to individual projects
-        target: "_blank"
-      - href: pages/report_template.qmd          
-        text: Template for individual report
-        target: "_blank"
+    contents:
+      - section: "Sept 2"
+        contents:
+        - href: pages/Course introduction.qmd
+          text: Course introduction          
+          target: "_blank"
+      #- href: pages/course_overview.qmd
+      #  text: Course content - syllabus with details       
+      #  target: "_blank"
+        - href: pages/Intro lecture.qmd
+          text: Introduction to risk assessment with human and ecological endpoints
+          target: "_blank"
+        - href: pages/intro_case_studies.qmd
+          text: Introduction to case studies
+          target: "_blank"
+      - section: "Later"
+        contents:
+        - href: pages/lottery_utility.qmd          
+          text: Risk, Lottery and Utility
+          target: "_blank"
+        - href: pages/risk_ranking.qmd          
+          text: Risk ranking, Linguistic uncertainty and subjective risk assessment
+          target: "_blank"
+        - href: pages/probability_distribution.qmd          
+          text: Introduction to probability distributions
+          target: "_blank"
+      #- href: pages/individual_projects.qmd          
+      #  text: Introduction to individual projects
+      #  target: "_blank"
+      #- href: pages/report_template.qmd          
+      #  text: Template for individual report
+      #  target: "_blank"
+      #- href: pages/exam_environ_conserv.qmd          
+      #  text: Exam 26 October 2023
+      #  target: "_blank"
         
 
 format:

@@ -10,9 +10,9 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.450">
 
-  <meta name="author" content="Ullrika Sahlin and Erika Norén">
-  <meta name="dcterms.date" content="2024-09-02">
-  <title>MVEN10-lectures - Introduction to risk assessment</title>
+  <meta name="author" content="Ullrika Sahlin">
+  <meta name="dcterms.date" content="2024-09-01">
+  <title>MVEN10-lectures - Risk ranking and subjective risk assessment</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -320,456 +320,92 @@
       margin-right: 0; 
     }
   </style>
-  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Introduction to risk assessment</h1>
-  <p class="subtitle">with human and ecological endpoints</p>
+  <h1 class="title">Risk ranking and subjective risk assessment</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Ullrika Sahlin and Erika Norén 
+Ullrika Sahlin 
 </div>
 </div>
 </div>
 
-  <p class="date">2024-09-02</p>
+  <p class="date">2024-09-01</p>
 </section>
-<section id="the-first-risk-analysis" class="slide level2">
-<h2>The “first” risk analysis</h2>
-<p>Arnobius’ Risk analysis table was done to support the <strong>decision</strong> to accept Christianity or not.</p>
-<table>
-<caption>An ancient risk analysis involving the existence of God.</caption>
-<thead>
-<tr class="header">
-<th>Decision</th>
-<th style="text-align: left;">GOD exist</th>
-<th style="text-align: right;">GOD does not exist</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Accept Christianity</td>
-<td style="text-align: left;">Risk low</td>
-<td style="text-align: right;">Risk low</td>
-</tr>
-<tr class="even">
-<td>Remain a Pagan</td>
-<td style="text-align: left;">Risk high</td>
-<td style="text-align: right;">Risk low</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Based on dominance, the best decision is here to accept Christianity.</li>
-</ul>
-</section>
-<section id="a-modified-version-by-pascal" class="slide level2">
-<h2>A modified version by Pascal</h2>
-<!-- Pascal presented the same problem with losses and gains:  -->
-<p>Pascals risk analysis involving the existence of God.</p>
-<table>
-<thead>
-<tr class="header">
-<th>Decision</th>
-<th style="text-align: left;">GOD exist</th>
-<th style="text-align: right;">GOD does not exist</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Believe</td>
-<td style="text-align: left;"><span class="math inline">\(+\infty\)</span></td>
-<td style="text-align: right;">-1</td>
-</tr>
-<tr class="even">
-<td>Don’t believe</td>
-<td style="text-align: left;"><span class="math inline">\(-\infty\)</span></td>
-<td style="text-align: right;">1</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Finite losses and gains are dominated by the infinite ones</li>
-</ul>
-<!-- Therefore, he argues that one should only look at the infinite outcomes.  -->
-<ul>
-<li>Since not believing has a possibility of infinite loss, the rational decision is to believe in God.</li>
-</ul>
-</section>
-<section id="a-difficult-risk-analysis---amniocentesis" class="slide level2">
-<h2>A difficult risk analysis - amniocentesis</h2>
-<p>Decision problems are difficult when there is no dominating option. This is where risk analysis is needed.</p>
+<section id="linquistic-uncertainty" class="slide level2">
+<h2>Linquistic uncertainty</h2>
 <blockquote>
-<p>Let us consider the decision problem if the parents are to make an amniocentesis (<em>fostervattenprov</em>) with the purpose to discover abnormal fetal conditions. A result from this test, might be used to justify an early abortion.</p>
-</blockquote>
-</section>
-<section id="a-difficult-risk-analysis---amniocentesis-table" class="slide level2">
-<h2>A difficult risk analysis - amniocentesis table</h2>
-<table>
-<caption>A (simplified) risk analysis of prenatal diagnosis.</caption>
-<thead>
-<tr class="header">
-<th>Decision</th>
-<th style="text-align: left;">Foetus is not normal</th>
-<th style="text-align: right;">Foetus is normal</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Make an amniocentesis</td>
-<td style="text-align: left;">Risk medium</td>
-<td style="text-align: right;">Risk medium</td>
-</tr>
-<tr class="even">
-<td>Do nothing</td>
-<td style="text-align: left;">Risk high</td>
-<td style="text-align: right;">Risk low</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="a-difficult-risk-analysis---amniocentesis-details" class="slide level2">
-<h2>A difficult risk analysis - amniocentesis details</h2>
-<p>In this problem,</p>
-<ul>
-<li><p>the decision to make an amniocentesis depends on how the decision maker relates <em>low</em>, <em>medium</em> and <em>high</em> to each other.</p></li>
-<li><p>Careful assessment of the risks using methods which weight available evidence are in this case required to make a decision.</p></li>
-<li><p>In addition, parents experience troubles in understanding the accuracy of the test, how to interpret test outcomes, and find it difficult to make a decision when they get a positive test result.</p></li>
-</ul>
-</section>
-<section id="a-difficult-risk-analysis---amniocentesis-ethical-dimensions" class="slide level2">
-<h2>A difficult risk analysis - amniocentesis ethical dimensions</h2>
-<p>This problem also have an ethical dimension:</p>
-<ul>
-<li><p>Is it ethical to do abortion?</p></li>
-<li><p>Is it ethical to put the foetus into danger by making a test, that itself can result in damage to the foetus?</p></li>
-<li><p>The distinction into normal and not normal reflects values not shared by all.</p></li>
-</ul>
-<!--. Taken together, the reason to take a test can be questioned in the first place. -->
-</section>
-<section id="what-is-risk" class="slide level2">
-<h2>What is risk?</h2>
-<p>ISO 31000:2018 definition: <strong>Risk is the effect of uncertainty on objectives</strong></p>
-<div>
-<ul>
-<li class="fragment">Objectives - Decision context</li>
-</ul>
-<blockquote>
-<p>Uncertainty is considered the state, even partial, of deficiency of information related to, understanding or knowledge of, an event, its consequences or likelihood.</p>
-</blockquote>
-<ul>
-<li class="fragment">Uncertainty - limitations in knowledge or future events
-<ul>
-<li class="fragment">Retrospective vs Prospective risk</li>
-</ul></li>
-<li class="fragment">Effects can be positive and negative</li>
-</ul>
-</div>
-</section>
-<section id="what-is-risk-analysis" class="slide level2">
-<h2>What is risk analysis?</h2>
-<p>Working principles for risk analysis <a href="https://www.fao.org/3/y5817e/y5817e04.htm">FAO/WHO Codex alimentarius</a></p>
-<p>A risk analysis should be:</p>
-<ul>
-<li>applied consistently</li>
-<li>open, transparent and documented</li>
-<li>be scientific</li>
-<li>evaluated and reviewed as appropriate in the light of new scientific data</li>
-</ul>
-</section>
-<section id="what-is-risk-analysis-1" class="slide level2">
-<h2>What is risk analysis?</h2>
-<p><a href="https://www.fao.org/3/y5817e/y5817e04.htm">FAO/WHO Codex alimentarius</a></p>
-<p>Three main components</p>
-<ul>
-<li><p>risk assessment</p></li>
-<li><p>risk management</p></li>
-<li><p>risk communication</p></li>
-</ul>
-<p>Effective communication and consultation with all interested parties should be ensured throughout the risk analysis.</p>
-</section>
-<section id="separate-assessment-and-management" class="slide level2">
-<h2>Separate assessment and management</h2>
-<p><a href="https://www.fao.org/3/y5817e/y5817e04.htm">FAO/WHO Codex alimentarius</a></p>
-<blockquote>
-<p>There should be a functional separation of risk assessment and risk management, in order to ensure the scientific integrity of the risk assessment, to avoid confusion over the functions to be performed by risk assessors and risk managers and to reduce any conflict of interest.</p>
+<p>Impact on biodiversity is high</p>
 </blockquote>
 <blockquote>
-<p>However, it is recognized that risk analysis is an iterative process, and interaction between risk managers and risk assessors is essential for practical application.</p>
+<p>There is a 30% probability of rain tomorrow</p>
 </blockquote>
-</section>
-<section id="what-is-risk-assessment" class="slide level2">
-<h2>What is risk assessment?</h2>
-<p><a href="https://www.epa.gov/risk/about-risk-assessment#whatisrisk">US EPA</a> as relevant example</p>
-<p>Risk is the chance of harmful effects to human health or to ecological systems…</p>
-<div class="cell" data-reveal="true">
-<div class="cell-output-display">
-<div>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-  A[Endpoint] --&gt; B(Ecological)
-  A --&gt; C(Human)
-
-</pre>
-</div>
-</div>
-</div>
-</div>
-<p>…resulting from exposure to an environmental stressor.</p>
 <ul>
-<li>Stressor: any physical, chemical, or biological entity that can induce an adverse effect in humans or ecosystems.</li>
+<li><p>Prominent in qualitative risk assessment due to the use of qualitative expressions</p></li>
+<li><p>Can be avoided by using well defined questions, quantities and outcomes and meaningful scales</p></li>
 </ul>
 </section>
-<section id="risk-assessment" class="slide level2">
-<h2>Risk assessment</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><a href="https://www.epa.gov/risk/about-risk-assessment#whatisrisk">US EPA</a></p>
+<section id="subjective-risk-assessment" class="slide level2">
+<h2>Subjective Risk Assessment</h2>
+<p>A tool from Mark and his colleagues to reduce linguistic uncertainty</p>
+<p><a href="https://cebra.unimelb.edu.au/__data/assets/pdf_file/0007/2488507/SRA3-manual-sra_ver.3_manual.pdf">SRA tool manual</a></p>
+
+<img data-src="../img/aus_standards.png" class="r-stretch quarto-figure-center"><p class="caption">Likelihood and impact scales</p></section>
+<section id="subjective-risk-assessment-1" class="slide level2">
+<h2>Subjective Risk Assessment</h2>
+<p>Rain - Rain tomorrow</p>
+<p>Rocket - Next moon rocket crash on earth</p>
+<p>Trump - Trump becomes the next president of USA</p>
+
+<img data-src="../img/aus_standards.png" class="r-stretch quarto-figure-center"><p class="caption">Use these likelihood and impact scales</p><p>Make judgements with single scores e.g.&nbsp;3 or ranges, e.g.&nbsp;2-4</p>
+</section>
+<section id="delphi-process-to-aggregate-judgements-from-a-group-of-experts" class="slide level2">
+<h2>Delphi process to aggregate judgements from a group of experts</h2>
 <ul>
-<li><p><strong>Planning</strong></p></li>
-<li><p>Problem formulation</p></li>
-<li><p>Analysis</p></li>
-<li><p>Risk characterisation</p></li>
+<li>Make individual judgements</li>
+<li>Compare where there are large differences in judgements. - Discuss and resolve the reason for differences. Here is where linguistic uncertainties can be reduced.</li>
+<li>Redo individual judgements</li>
+<li>Aggregate the judgements</li>
 </ul>
-</div><div class="column" style="width:60%;">
-<p><img data-src="..\img/expert.jpg"></p>
-<div>
-<p>Involved in planning:</p>
-<ul>
-<li class="fragment"><p>decision makers or risk managers</p></li>
-<li class="fragment"><p>risk assessors and scientific experts</p></li>
-<li class="fragment"><p>interested parties or stakeholders</p></li>
-</ul>
-</div>
-</div>
-</div>
 </section>
-<section id="ecological-risk-assessment" class="slide level2">
-<h2>Ecological risk assessment</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><img data-src="..\img/logo_hilight1sm_0.gif"></p>
-</div><div class="column" style="width:60%;">
-<p>The objective of the problem formulation phase is to:</p>
-<ul>
-<li><p>refine the objectives for the risk assessment</p></li>
-<li><p>determine which ecological entities are at risk</p></li>
-<li><p>determine which characteristics are important to protect</p>
-<ul>
-<li><em>assessment endpoints</em></li>
-</ul></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="assessment-endpoints" class="slide level2">
-<h2>Assessment endpoints</h2>
-<p>An ecological entity can be defined at one or more levels:</p>
-<ul>
-<li><p>A species <!-- (e.g., endangered piping plover, key service provider such as honeybees). --></p></li>
-<li><p>A functional group of species <!--(e.g., fish eaters like pike or mink).--></p></li>
-<li><p>A community <!--(e.g., benthic invertebrates, soil microbial communities).--></p></li>
-<li><p>An ecosystem <!--(e.g., wetland, lake, watershed, island).--></p></li>
-<li><p>A specific valued habitat <!--(e.g., wet meadows, national wildlife refuge).--></p></li>
-</ul>
-<p>Ecological relevant &amp; Susceptible to stressors &amp; Relevant to management goals</p>
-</section>
-<section id="analysis-of-exposure-and-effects" class="slide level2">
-<h2>Analysis of Exposure and Effects</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><img data-src="..\img/logo_hilight2sm.gif"></p>
-</div><div class="column" style="width:60%;">
-<p>Evaluate ecological responses to stressors under exposure conditions of interest</p>
-<ul>
-<li><p>Exposure profile</p></li>
-<li><p>Stressor-response profile or ecological effects analysis</p></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="risk-characterisation" class="slide level2">
-<h2>Risk characterisation</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><img data-src="..\img/logo_hilight3sm.gif"></p>
-</div><div class="column" style="width:60%;">
-<p>Assessors should</p>
-<ul>
-<li>describe risk</li>
-<li>indicate overall degree of confidence in risk estimates</li>
-<li>summarise uncertainties</li>
-<li>cite evidence supporting assessment</li>
-<li>interpret the adversity of ecological effects</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="framework-and-example" class="slide level2">
-<h2>Framework and example</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="..\img/together.png"></p>
-</div><div class="column" style="width:50%;">
-<ul>
-<li><p>Objective: Prevent loss of biological diversity</p></li>
-<li><p>Endpoint: Viability of sensitive species</p></li>
-<li><p>Stressors</p>
-<ul>
-<li>Introduction of invasive species</li>
-<li>Use of chemicals in the environment</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="conceptual-models-and-frameworks" class="slide level2">
-<h2>Conceptual models and frameworks</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<ul>
-<li><p>Direction of cause and effect</p></li>
-<li><p>Complexity and system boundaries</p></li>
-<li><p>Retro- or prospective, or both</p></li>
-</ul>
-</div><div class="column" style="width:60%;">
-<p><img data-src="..\img/tehs_a_11879064_f0002_ob.png" style="width:70.0%" alt="Holsman et al 2017"> <!-- https://spj.science.org/doi/10.1002/ehs2.1256 --></p>
-</div>
-</div>
-</section>
-<section id="risk-assessment-with-human-endpoints" class="slide level2">
-<h2>Risk Assessment with Human Endpoints</h2>
-
-<img data-src="..\img/erika1.png" class="r-stretch"></section>
-<section id="section" class="slide level2">
-<h2></h2>
-
-<img data-src="..\img/erika2.png" class="r-stretch"></section>
-<section id="section-1" class="slide level2">
-<h2></h2>
-
-<img data-src="..\img/erika3.png" class="r-stretch"></section>
-<section id="section-2" class="slide level2">
-<h2></h2>
-
-<img data-src="..\img/erika4.png" class="r-stretch"></section>
-<section id="section-3" class="slide level2">
-<h2></h2>
-
-<img data-src="..\img/erika5.png" class="r-stretch"></section>
-<section id="section-4" class="slide level2">
-<h2></h2>
-
-<img data-src="..\img/erika6.png" class="r-stretch"></section>
-<section id="section-5" class="slide level2">
-<h2></h2>
-
-<img data-src="..\img/erika7.png" class="r-stretch"></section>
-<section id="section-6" class="slide level2">
-<h2></h2>
-
-<img data-src="..\img/erika8.png" class="r-stretch"></section>
-<section id="section-7" class="slide level2">
-<h2></h2>
-
-<img data-src="..\img/erika9.png" class="r-stretch"></section>
-<section id="section-8" class="slide level2">
-<h2></h2>
-
-<img data-src="..\img/erika10.png" class="r-stretch"></section>
-<section id="section-9" class="slide level2">
-<h2></h2>
-
-<img data-src="..\img/erika11.png" class="r-stretch"></section>
-<section id="section-10" class="slide level2">
-<h2></h2>
-
-<img data-src="..\img/erika12.png" class="r-stretch"></section>
-<section id="section-11" class="slide level2">
-<h2></h2>
-
-<img data-src="..\img/erika13.png" class="r-stretch"></section>
-<section id="section-12" class="slide level2">
-<h2></h2>
-
-<img data-src="..\img/erika14.png" class="r-stretch"></section>
-<section id="section-13" class="slide level2">
-<h2></h2>
-
-<img data-src="..\img/erika15.png" class="r-stretch"></section>
-<section id="risk-assessments-with-ecological-endpoints" class="slide level2">
-<h2>Risk assessments with ecological endpoints</h2>
-<p>Environmental/Ecological Risk Assessment</p>
-<p>Chemical stressor(s) -&gt; Ecological systems Manage stressors</p>
-<p>Red List Assessment Multiple stressors -&gt; Species Conservation of threatened species, Reduce loss of biodiversity</p>
-<p>Pest Risk Assessment Spread of invasive species or pests affecting ecological systems</p>
-</section>
-<section id="risk-assessments-with-human-endpoints" class="slide level2">
-<h2>Risk assessments with human endpoints</h2>
-<p>Human Health Risk Assessment Chemical stressor(s) -&gt; human health</p>
-<p>Pest Risk Assessment Spread of pests or diseases -&gt; human health</p>
-</section>
-<section id="conceptual-models-and-frameworks-1" class="slide level2">
-<h2>Conceptual models and frameworks</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div>
-<ul>
-<li class="fragment"><p>What to assess?</p></li>
-<li class="fragment"><p>How to characterise risk?</p>
-<ul>
-<li class="fragment">Qualitative</li>
-<li class="fragment">Quantitative</li>
-</ul></li>
-<li class="fragment"><p>How to assess it?</p>
-<ul>
-<li class="fragment">Expert opinion</li>
-<li class="fragment">Data analysis</li>
-<li class="fragment">Simulation modelling</li>
-</ul></li>
-</ul>
-</div>
-</div><div class="column" style="width:50%;">
-<p><img data-src="..\img/tehs_a_11879064_f0001_ob.png"></p>
-<p><a href="https://spj.science.org/doi/10.1002/ehs2.1256">Holsman et al 2017</a></p>
-</div>
-</div>
-</section>
-<section id="risk-perception---example-world-economic-forum" class="slide level2">
-<h2>Risk perception - example World Economic Forum</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><a href="https://en.wikipedia.org/wiki/Risk_matrix">From risk matrix to</a></p>
-<p><img data-src="..\img/global2021.png"></p>
-<!-- Likelihood x Consequence -->
-<!-- Expert's perceptions aggregated -->
-</div><div class="column" style="width:50%;">
-<p><img data-src="..\img/global2023.png"></p>
-<p><a href="https://www.weforum.org/reports/global-risks-report-2023/data-on-global-risk-perceptions-2023?_gl=1*1538zte*_up*MQ..&amp;gclid=Cj0KCQjw6KunBhDxARIsAKFUGs-TmabFL3u8KiT_2-8dRvP8VvGuLAFY8vKykO2iEm6aHbrAGxULB0UaAiV4EALw_wcB#report-nav">Global risk perception data</a></p>
-</div>
-</div>
-</section>
-<section id="risk-assessment-as-a-scientific-method" class="slide level2">
-<h2>Risk assessment as a scientific method</h2>
-<p>Agreed guidelines and frameworks</p>
+<section id="interpretation-of-probability" class="slide level2">
+<h2>Interpretation of probability</h2>
+<p><a href="https://multimedia.efsa.europa.eu/uncertainty-tutorial/uncertainty-communication/expressions-distribution.html">Tutorial on uncertainty where Ullrika explains probability distribution</a></p>
 <blockquote>
-<p>Principles to draw scientific conclusions given available data, evidence and expert knowledge considering limitations in this knowledge</p>
+<p>the frequency with which sampled values arise within a specified range or for a specified category</p>
 </blockquote>
-<p><em>Scientific assessment</em> - assessment done by organisation providing scientific advice to risk managers and policy makers</p>
-<ul>
-<li>hazard, exposure, risk, vulnerability</li>
-<li>transparency and impartially</li>
-</ul>
+<blockquote>
+<p>a quantification of a judgement on the likelihood of a particular range or category</p>
+</blockquote>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>The mathematical theory for probability is the same for both interpretations!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="probability-distributions" class="slide level2">
+<h2>Probability distributions</h2>
+<p><a href="https://multimedia.efsa.europa.eu/uncertainty-tutorial/uncertainty-communication/expressions-distribution.html#communicating-uncertainty-about-a-quantity-of-interest-by-a-probability-distribution">Visualising probability distributions</a></p>
+</section>
+<section id="uncertainty-and-variability" class="slide level2">
+<h2>Uncertainty and variability</h2>
 
-<div class="footer footer-default">
+
+<img data-src="../img/uncvar.png" class="r-stretch"><div class="footer footer-default">
 
 </div>
 </section>

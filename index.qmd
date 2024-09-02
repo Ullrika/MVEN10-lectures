@@ -3,3 +3,5 @@ title: "MVEN10 lectures"
 author: "Ullrika"
 date: today
 ---
+
+This is a webpage for sharing information from lectures and other things for the course in Risk assessment fall 2024

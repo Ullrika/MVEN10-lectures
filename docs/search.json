@@ -1,339 +1,115 @@
 [
   {
-    "objectID": "pages/report_template.html",
-    "href": "pages/report_template.html",
-    "title": "Report template",
+    "objectID": "pages/risk_ranking.html#linquistic-uncertainty",
+    "href": "pages/risk_ranking.html#linquistic-uncertainty",
+    "title": "Risk ranking and subjective risk assessment",
+    "section": "Linquistic uncertainty",
+    "text": "Linquistic uncertainty\n\nImpact on biodiversity is high\n\n\nThere is a 30% probability of rain tomorrow\n\n\nProminent in qualitative risk assessment due to the use of qualitative expressions\nCan be avoided by using well defined questions, quantities and outcomes and meaningful scales"
+  },
+  {
+    "objectID": "pages/risk_ranking.html#subjective-risk-assessment",
+    "href": "pages/risk_ranking.html#subjective-risk-assessment",
+    "title": "Risk ranking and subjective risk assessment",
+    "section": "Subjective Risk Assessment",
+    "text": "Subjective Risk Assessment\nA tool from Mark and his colleagues to reduce linguistic uncertainty\nSRA tool manual\n\nLikelihood and impact scales"
+  },
+  {
+    "objectID": "pages/risk_ranking.html#subjective-risk-assessment-1",
+    "href": "pages/risk_ranking.html#subjective-risk-assessment-1",
+    "title": "Risk ranking and subjective risk assessment",
+    "section": "Subjective Risk Assessment",
+    "text": "Subjective Risk Assessment\nRain - Rain tomorrow\nRocket - Next moon rocket crash on earth\nTrump - Trump becomes the next president of USA\n\nUse these likelihood and impact scalesMake judgements with single scores e.g. 3 or ranges, e.g. 2-4"
+  },
+  {
+    "objectID": "pages/risk_ranking.html#delphi-process-to-aggregate-judgements-from-a-group-of-experts",
+    "href": "pages/risk_ranking.html#delphi-process-to-aggregate-judgements-from-a-group-of-experts",
+    "title": "Risk ranking and subjective risk assessment",
+    "section": "Delphi process to aggregate judgements from a group of experts",
+    "text": "Delphi process to aggregate judgements from a group of experts\n\nMake individual judgements\nCompare where there are large differences in judgements. - Discuss and resolve the reason for differences. Here is where linguistic uncertainties can be reduced.\nRedo individual judgements\nAggregate the judgements"
+  },
+  {
+    "objectID": "pages/risk_ranking.html#interpretation-of-probability",
+    "href": "pages/risk_ranking.html#interpretation-of-probability",
+    "title": "Risk ranking and subjective risk assessment",
+    "section": "Interpretation of probability",
+    "text": "Interpretation of probability\nTutorial on uncertainty where Ullrika explains probability distribution\n\nthe frequency with which sampled values arise within a specified range or for a specified category\n\n\na quantification of a judgement on the likelihood of a particular range or category\n\n\n\n\n\n\n\nNote\n\n\nThe mathematical theory for probability is the same for both interpretations!"
+  },
+  {
+    "objectID": "pages/risk_ranking.html#probability-distributions",
+    "href": "pages/risk_ranking.html#probability-distributions",
+    "title": "Risk ranking and subjective risk assessment",
+    "section": "Probability distributions",
+    "text": "Probability distributions\nVisualising probability distributions"
+  },
+  {
+    "objectID": "pages/risk_ranking.html#uncertainty-and-variability",
+    "href": "pages/risk_ranking.html#uncertainty-and-variability",
+    "title": "Risk ranking and subjective risk assessment",
+    "section": "Uncertainty and variability",
+    "text": "Uncertainty and variability"
+  },
+  {
+    "objectID": "pages/probability_distribution.html",
+    "href": "pages/probability_distribution.html",
+    "title": "Introduction to probability distributions",
     "section": "",
-    "text": "This is a reproduction of [write the name of the original assessment here] done as part of a course MVEN10 Risk assessment in environment and public health, Fall 2023.\nThe purpose of the project is to gain more understanding of the inputs and methodology of the original assessment, practice implementing and documenting a quantitative analysis, and practice performing a final assessment of overall uncertainty.\nThe results from this project should not be used to inform decision making."
+    "text": "Expert judgement are common in risk assessment. To ensure rigour of the assessment, these judgements should be collected in a structured way. Methods have been developed to reduce linguistic uncertainty and cognitive biases when experts make judgements, and to aggregate judgements by a group of experts.\nQuantitative judgements, e.g. judgements expressed by subjective probabilities are preferable over qualitative expressions of uncertainty. The reasons are that\n\nqualitative judgements have different meanings for different people, and\nquantitative judgements can be combined using probability rules (probability calculations)\n\nEFSA defines Expert Knowledge Elicitation as\n\nA systematic, documented and reviewable process to retrieve expert judgements from a group of experts, often in the form of a probability distribution.\n\nIn general, it is possible to make a quantitative judgement when the question asked to an expert is well-defined.\nThe expert should also feel that she has some basis to make his/her judgement.\n\nA good expert makes judgements where she has domain knowledge and is hesitant to make judgements for questions where she feels there is not enough basis for a judgement.\n\nIt is also important that experts receive training in making probabilistic judgements to ensure they understand them.\n\n\nThis mini-lecture introduces probability distributions for a binary event, a categorical quantity, a discrete quantity and a continuous quantity. The terms cumulative probability function, probability density function, and quantile and boxplot. The aim of the lecture is to that the student understand the terms quantile and percentile."
   },
   {
-    "objectID": "pages/report_template.html#disclaimer",
-    "href": "pages/report_template.html#disclaimer",
-    "title": "Report template",
+    "objectID": "pages/probability_distribution.html#background",
+    "href": "pages/probability_distribution.html#background",
+    "title": "Introduction to probability distributions",
     "section": "",
-    "text": "This is a reproduction of [write the name of the original assessment here] done as part of a course MVEN10 Risk assessment in environment and public health, Fall 2023.\nThe purpose of the project is to gain more understanding of the inputs and methodology of the original assessment, practice implementing and documenting a quantitative analysis, and practice performing a final assessment of overall uncertainty.\nThe results from this project should not be used to inform decision making."
+    "text": "Expert judgement are common in risk assessment. To ensure rigour of the assessment, these judgements should be collected in a structured way. Methods have been developed to reduce linguistic uncertainty and cognitive biases when experts make judgements, and to aggregate judgements by a group of experts.\nQuantitative judgements, e.g. judgements expressed by subjective probabilities are preferable over qualitative expressions of uncertainty. The reasons are that\n\nqualitative judgements have different meanings for different people, and\nquantitative judgements can be combined using probability rules (probability calculations)\n\nEFSA defines Expert Knowledge Elicitation as\n\nA systematic, documented and reviewable process to retrieve expert judgements from a group of experts, often in the form of a probability distribution.\n\nIn general, it is possible to make a quantitative judgement when the question asked to an expert is well-defined.\nThe expert should also feel that she has some basis to make his/her judgement.\n\nA good expert makes judgements where she has domain knowledge and is hesitant to make judgements for questions where she feels there is not enough basis for a judgement.\n\nIt is also important that experts receive training in making probabilistic judgements to ensure they understand them.\n\n\nThis mini-lecture introduces probability distributions for a binary event, a categorical quantity, a discrete quantity and a continuous quantity. The terms cumulative probability function, probability density function, and quantile and boxplot. The aim of the lecture is to that the student understand the terms quantile and percentile."
   },
   {
-    "objectID": "pages/report_template.html#introduction",
-    "href": "pages/report_template.html#introduction",
-    "title": "Report template",
-    "section": "Introduction",
-    "text": "Introduction\nDescribe the context and background of the original assessment and the assessment questions.\nAdd a section why this is a relevant topic today and introduce the additional assessment question task presented in the “At the end”-paragraphs for each project."
+    "objectID": "pages/probability_distribution.html#probability-distributions",
+    "href": "pages/probability_distribution.html#probability-distributions",
+    "title": "Introduction to probability distributions",
+    "section": "Probability distributions",
+    "text": "Probability distributions\n\nA binary event\nThe simplest probability distribution is the probability for a binary event, which is an event having only two outcomes.\nLet us say that we have the events A and not A.\nIf the probability for A is \\(p\\), then the probability for not A is \\(1-p\\).\nWe can illustrate the probability distribution for a binary event as a bar chart\n\n\n\n\n\nAnother useful way is to think of binary events as sections taking up a certain area of the probability scale\n\n\n\n\n\n\n\nMore than two possible outcomes\nProbability is also used for quantities having “more than two possible outcomes”.\nThis can be quantities that are\n\ncategorical - with distinct classes that do not have to come in a particular order\ndiscrete - taking numerical integer values, usually obtained by counts\ncontinuous - taking numerical continuous values for which probability is expressed over ranges instead of specific numbers\n\nThe probabilities for quantities taking different values are summarised by a probability distribution.\nThere are different types of probability distributions depending on the characteristic of the outcome space, i.e. the full set of possible outcomes.\n\n\n\n\n\n\n\n\n\nType of outcome\nDescription of outcomes\nExamples outcome space\nExamples distributions\n\n\n\n\nBinary\ntwo outcomes\n0 or 1\nBernoulli\n\n\n\n\nA or not A\n\n\n\n\n\nTRUE or FALSE\n\n\n\nCategorical\ntwo or more categories\nAdult, Adolescent, Other children\n\n\n\nDiscrete\nwhole numbers\n0, 1, 2, 3, …\nPoisson\n\n\n\n\n0, 1, 2, …, n-1, n\nBinomial\n\n\n\n\nthe number of trials that falls into two or more categories\nMultinomial\n\n\nContinuous\nreal numbers \\(x \\in \\mathbb{R}\\)\n\\(-\\inf &lt; x &lt; \\inf\\)\nNormal\n\n\n\n\n\\(0&lt;x\\)\nExponential\n\n\n\n\n\\(0 &lt; x &lt; 1\\)\nUniform, Beta\n\n\n\nFootnote: The \\(x\\) in the table above is a notation for a random observation from the probability distribution."
   },
   {
-    "objectID": "pages/report_template.html#data-and-methodology",
-    "href": "pages/report_template.html#data-and-methodology",
-    "title": "Report template",
-    "section": "Data and methodology",
-    "text": "Data and methodology\n\nStructure and type of the original assessment\nDescribe the type and structure of the original assessment. Refer to relevant guidance documents for this type of assessments.\n\n\nQuantitative analysis\nDescribe the data and methods in the quantitative analysis that has been reproduced or added to the original assessment.\nAdd the code for the assessment as an appendix to the report.\n\n\nOverall uncertainty assessment\nDescribe the approach to assess overall uncertainty regarding the answer to the “At the end”-question.\nAdd a report for the expert elicitation of the overall uncertainty assessment as an appendix."
+    "objectID": "pages/probability_distribution.html#visualising-probability-distributions",
+    "href": "pages/probability_distribution.html#visualising-probability-distributions",
+    "title": "Introduction to probability distributions",
+    "section": "Visualising probability distributions",
+    "text": "Visualising probability distributions\nA probability distribution for a continuous quantity can be plotted in various formats:\n\nA Box plot\nA Probability Density Function (PDF)\nA Cumulative Probability Distribution (CDF)\n\nHere they are plotted together to show how they are related\n\n\n\n\n\nFigure 1: CDF, PDF and boxplot\n\n\n\n\n\nQuantiles\nTo summarise uncertainty, an assessor might want to find values that divide the range of the quantity into parts containing specified amounts of probability. Such values are known as quantiles.\nA quantile can be denoted with the letter P, together with the associated probability that the quantity would take a value below the quantile. For example, the value that divides a probability distribution into two parts with equal probabilities is the P50 quantile.\nThis value is also known as the median.\nQuartiles divide a probability distribution into four sections of equal probability. The first quartile is P25. The second quartile is the median P50. The third quartile is P75.\nA boxplot visualises quartiles.\nA percentile is another name for a quantile defined by the probability to the left of the quantile.\n\n\nProbability Density Function\nMost continuous quantities have a Probability Density Function (PDF).\nThe Probability Density Function express probabilities as area under its curve. The total area under the curve is 1, corresponding to 100% probability.\nThe area under the PDF curve to the left of the median is 50%.\nThe PDF can be thought of as a smooth histogram for a continuous quantity. Note that when used for a probability distribution, the area for the histogram should be 1.\n\n\nCumulative Distribution Function\nA probability distribution can be represented by its Cumulative Distribution Function (often abbreviated as CDF). The CDF gives the probability that the quantity is less than or equal to any specified value\nThe CDF contains all the information about probabilities for the quantity: for example, it can be used to calculate the probability that the quantity lies in any specified range of values.\nThis is a curve over the possible range of the quantity (on the x-axis) increasing from 0 to 100% probability (on the y-axis)."
   },
   {
-    "objectID": "pages/report_template.html#results",
-    "href": "pages/report_template.html#results",
-    "title": "Report template",
-    "section": "Results",
-    "text": "Results\n\nAssessment results\nPresent the results of the assessment questions, but replace the results from the original assessment with the results from the quantitative analysis.\n\n\nOverall uncertainty\nPresent the outcome of the overall uncertainty assessment."
+    "objectID": "pages/probability_distribution.html#uncertainty-and-variability",
+    "href": "pages/probability_distribution.html#uncertainty-and-variability",
+    "title": "Introduction to probability distributions",
+    "section": "Uncertainty and variability",
+    "text": "Uncertainty and variability\nUncertainty refers to the state of knowledge, whereas variability refers to actual variation or heterogeneity in the real world.\nBoth uncertainty and variability can be represented by probability distributions\n\n\n\nUncertainty and variability figure from EFSA\n\n\nThe left you see a probability distribution for a non-variable quantity - Let us call it parameter P. It is a single true value which is uncertain, and the distribution represents uncertainty about P.\nIn the center, you see a probability distribution for a variable quantity. This variable V has multiple true values. The probability distribution represents variability of V.\nTo the right you see a probabilistic model for both variability and uncertainty. We use a probability distribution to represent variability in this variable, but the true distribution for variability is unknown and we use probability distributions to represent our uncertainty about it’s variability. This distribution is sometimes referred to as a spaghetti plot or two-dimensional distribution.\nUncertainty may be altered (either reduced or increased) by further research, because it results from limitations in knowledge.\nVariability cannot be altered by obtaining more knowledge, because it refers to real differences in the world or how the assessors choose to model the world.\nIt is important that assessors distinguish uncertainty and variability because they have different implications for decision-making: informing decisions about whether to invest resources in research aimed at reducing uncertainty or in management options aimed at influencing variability (e.g. to change exposures to subgroups of the population)."
   },
   {
-    "objectID": "pages/report_template.html#conclusion",
-    "href": "pages/report_template.html#conclusion",
-    "title": "Report template",
-    "section": "Conclusion",
-    "text": "Conclusion\nMake a short summary of the conclusion of the assessment."
+    "objectID": "pages/probability_distribution.html#probability-distributions-1",
+    "href": "pages/probability_distribution.html#probability-distributions-1",
+    "title": "Introduction to probability distributions",
+    "section": "Probability distributions",
+    "text": "Probability distributions\nParametric probability distributions are defined by the Probability Density Function (PDF). The text below is just a starter to describe common distriubtions. We will learn more about them during the course. Wikipedia is a good sourse for the definition of distributions, focus on the graphs of the PDF and CDF, the definition of outcome space and parameters, and if the expected value and variance is a function of the parameters.\n\nUniform\nA quantity that takes any value in an interval with equal probability\nwiki uniform\n\n\nBeta\nA quantity that takes any value in an interval\nwiki beta\n\n\nNormal\nA quantity taking values from \\(-\\inf\\) to \\(\\inf\\) with a symmteric and decaying probability from the central moment.\nwiki normal\n\n\nLogNormal\nA quantity that is normally distribution if you log it. It only takes positive values\nwiki lognormal\nI recommend to log the data and work with the normal distribution instead\n\n\nExponential\nThe time between independent events with equal intensity to occur, where the chance for an event to occur does not depend on when the previous event occurred\nwiki exponential\n\n\nPoisson\nThe number of independent events with equal intensity to occur, that you see during a time period\nwiki poisson\n\n\nBinomial\nThe number of in total N trials that are successful (falls into two categories)\nwiki binomial\n\n\nMultinomial\nThe number of in total N trials that falls into two or more categories\nwiki multinomial"
   },
   {
-    "objectID": "pages/report_template.html#discussion",
-    "href": "pages/report_template.html#discussion",
-    "title": "Report template",
-    "section": "Discussion",
-    "text": "Discussion\nDiscuss the following topics:\n\nChallenges you encountered in reproducing the original assessment\nSuggestions for making it easier to read a risk assessment and overcome some of the challenges encountered\nYour view on the benefit and challenges in performing the assessment of overall uncertainty.\n\n\n\n\n\n\n\nTip\n\n\n\nThe assessment of overall uncertainty is the final main step of uncertainty analysis and is well described in the EFSA guidance for uncertainty analysis.\nTake a moment to view section on overall uncertainty in the EFSA tutorial on uncertainty"
-  },
-  {
-    "objectID": "pages/report_template.html#references",
-    "href": "pages/report_template.html#references",
-    "title": "Report template",
+    "objectID": "pages/probability_distribution.html#references-1",
+    "href": "pages/probability_distribution.html#references-1",
+    "title": "Introduction to probability distributions",
     "section": "References",
-    "text": "References\nAdd references using the APA 7 format."
-  },
-  {
-    "objectID": "pages/report_template.html#appendices",
-    "href": "pages/report_template.html#appendices",
-    "title": "Report template",
-    "section": "Appendices",
-    "text": "Appendices\n\nAppendix A. Code for the assessment\nThis appendix should contain the data and code for all calculations and simulations. Preferably as a rendered qmd document or attached Excel file with explanatory text.\n\n\nAppendix B. Report of the Expert Elicitation of overall uncertainty\nWho were the experts\nDescription of the procedure which should at least consist of\n\nAgreement on the question asked to the experts\nIndividual judgements expressed quantitatively\nComparison and discussion of the individual judgements\n\n\n\n\nExpert\nJudgement\n\n\n\n\nA\n\n\n\nB\n\n\n\nC\n\n\n\nConsensus\n\n\n\n\n\nConsensus judgement\nCollection of the experts justifications for lower and higher probability\n\n\n\n\n\n\n\n\nJustifications for a lower probability\nJustifications for a higher probability"
+    "text": "References\nEFSA Scientific Committee, 2018. Scientific Opinion on the principles and methods behind EFSA’s Guidance on Uncertainty Analysis in Scientific Assessment. EFSA Journal 2018;16(1):5122, 235 pp. https://doi.org/10.2903/j.efsa.2018.5122"
   },
   {
     "objectID": "pages/kernelmodels.html",
     "href": "pages/kernelmodels.html",
     "title": "sf",
     "section": "",
-    "text": "kern &lt;- function(x,d0,alpha){\n  (1+(x/d0)^alpha)^-1\n}\n\ninv_kern &lt;- function(prob,d0,alpha){\n  (1/prob-1)^(1/alpha)*d0\n} \n\n\none_iter &lt;- function(i){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\nget_ma &lt;- function(x){\n  ma_prob3=w[1]*kern(x,d0_ba,alpha_ba) + \n  w[2]*kern(x,d0_bo,alpha_bo) + \n  w[3]*kern(x,d0_ga,alpha_ga)\n}\n\nx = seq(0,30,by=1)\ndata.frame(x = x,\ny=sapply(x,get_ma),iter=i)\n}\n\n\ndo.call('rbind',lapply(1:20,function(i){one_iter(i)})) %&gt;%\n  ggplot(aes(x=x,y=y,group=iter))+\n  geom_line(alpha=0.2)\n\n\n\n\n\nmc_one_iter &lt;- function(){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\n\ndata.frame(ma_prob3=w[1]*kern(3,d0_ba,alpha_ba) + \n  w[2]*kern(3,d0_bo,alpha_bo) + \n  w[3]*kern(3,d0_ga,alpha_ga), \n\nma_prob10=w[1]*kern(10,d0_ba,alpha_ba) + \n  w[2]*kern(10,d0_bo,alpha_bo) + \n  w[3]*kern(10,d0_ga,alpha_ga), \n\nma_P05 = w[1]*inv_kern(0.05,d0_ba,alpha_ba) + \n  w[2]*inv_kern(0.05,d0_bo,alpha_bo) + \n  w[3]*inv_kern(0.05,d0_ga,alpha_ga) \n)\n}\n\n\nniter = 10^4\noutput &lt;- do.call('rbind',lapply(1:niter,function(i){mc_one_iter()}))\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob3)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob10)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\nquantile(output$ma_P05,probs=0.95)\n\n     95% \n10.13185 \n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_P05)) +\n  geom_density() +\n  geom_vline(xintercept=3,col='red')+\n  geom_vline(xintercept=10,col='red') +\nscale_x_log10()"
+    "text": "kern &lt;- function(x,d0,alpha){\n  (1+(x/d0)^alpha)^-1\n}\n\ninv_kern &lt;- function(prob,d0,alpha){\n  (1/prob-1)^(1/alpha)*d0\n} \n\n\none_iter &lt;- function(i){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\nget_ma &lt;- function(x){\n  ma_prob3=w[1]*kern(x,d0_ba,alpha_ba) + \n  w[2]*kern(x,d0_bo,alpha_bo) + \n  w[3]*kern(x,d0_ga,alpha_ga)\n}\n\nx = seq(0,30,by=1)\ndata.frame(x = x,\ny=sapply(x,get_ma),iter=i)\n}\n\n\ndo.call('rbind',lapply(1:20,function(i){one_iter(i)})) %&gt;%\n  ggplot(aes(x=x,y=y,group=iter))+\n  geom_line(alpha=0.2)\n\n\n\n\n\nmc_one_iter &lt;- function(){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\n\ndata.frame(ma_prob3=w[1]*kern(3,d0_ba,alpha_ba) + \n  w[2]*kern(3,d0_bo,alpha_bo) + \n  w[3]*kern(3,d0_ga,alpha_ga), \n\nma_prob10=w[1]*kern(10,d0_ba,alpha_ba) + \n  w[2]*kern(10,d0_bo,alpha_bo) + \n  w[3]*kern(10,d0_ga,alpha_ga), \n\nma_P05 = w[1]*inv_kern(0.05,d0_ba,alpha_ba) + \n  w[2]*inv_kern(0.05,d0_bo,alpha_bo) + \n  w[3]*inv_kern(0.05,d0_ga,alpha_ga) \n)\n}\n\n\nniter = 10^4\noutput &lt;- do.call('rbind',lapply(1:niter,function(i){mc_one_iter()}))\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob3)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob10)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\nquantile(output$ma_P05,probs=0.95)\n\n     95% \n9.500937 \n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_P05)) +\n  geom_density() +\n  geom_vline(xintercept=3,col='red')+\n  geom_vline(xintercept=10,col='red') +\nscale_x_log10()"
   },
   {
     "objectID": "pages/kernelmodels.html#create-kernel-functions",
     "href": "pages/kernelmodels.html#create-kernel-functions",
     "title": "sf",
     "section": "",
-    "text": "kern &lt;- function(x,d0,alpha){\n  (1+(x/d0)^alpha)^-1\n}\n\ninv_kern &lt;- function(prob,d0,alpha){\n  (1/prob-1)^(1/alpha)*d0\n} \n\n\none_iter &lt;- function(i){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\nget_ma &lt;- function(x){\n  ma_prob3=w[1]*kern(x,d0_ba,alpha_ba) + \n  w[2]*kern(x,d0_bo,alpha_bo) + \n  w[3]*kern(x,d0_ga,alpha_ga)\n}\n\nx = seq(0,30,by=1)\ndata.frame(x = x,\ny=sapply(x,get_ma),iter=i)\n}\n\n\ndo.call('rbind',lapply(1:20,function(i){one_iter(i)})) %&gt;%\n  ggplot(aes(x=x,y=y,group=iter))+\n  geom_line(alpha=0.2)\n\n\n\n\n\nmc_one_iter &lt;- function(){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\n\ndata.frame(ma_prob3=w[1]*kern(3,d0_ba,alpha_ba) + \n  w[2]*kern(3,d0_bo,alpha_bo) + \n  w[3]*kern(3,d0_ga,alpha_ga), \n\nma_prob10=w[1]*kern(10,d0_ba,alpha_ba) + \n  w[2]*kern(10,d0_bo,alpha_bo) + \n  w[3]*kern(10,d0_ga,alpha_ga), \n\nma_P05 = w[1]*inv_kern(0.05,d0_ba,alpha_ba) + \n  w[2]*inv_kern(0.05,d0_bo,alpha_bo) + \n  w[3]*inv_kern(0.05,d0_ga,alpha_ga) \n)\n}\n\n\nniter = 10^4\noutput &lt;- do.call('rbind',lapply(1:niter,function(i){mc_one_iter()}))\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob3)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob10)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\nquantile(output$ma_P05,probs=0.95)\n\n     95% \n10.13185 \n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_P05)) +\n  geom_density() +\n  geom_vline(xintercept=3,col='red')+\n  geom_vline(xintercept=10,col='red') +\nscale_x_log10()"
-  },
-  {
-    "objectID": "pages/individual_projects.html",
-    "href": "pages/individual_projects.html",
-    "title": "Introduction to individual projects",
-    "section": "",
-    "text": "On Monday, you will be assigned one of the following risk assessments. The assignment will consider you preference, but all risk assessments must be chosen at the end as they represent material for the course.\nReproduce the indicated part of the assessment with your choice of modification.\nProduce a report on 2 - 10 pages (min 2 and max 10) including figures and tables.\nProvide your code for the assessment as an appendix.\nInclude references, including reference to suitable guidance documents for this type of risk assessment.\nRefer to sections, figures and tables in the original assessment the when using it as reference.\nSee the template report for further info"
-  },
-  {
-    "objectID": "pages/individual_projects.html#general-instructions",
-    "href": "pages/individual_projects.html#general-instructions",
-    "title": "Introduction to individual projects",
-    "section": "",
-    "text": "On Monday, you will be assigned one of the following risk assessments. The assignment will consider you preference, but all risk assessments must be chosen at the end as they represent material for the course.\nReproduce the indicated part of the assessment with your choice of modification.\nProduce a report on 2 - 10 pages (min 2 and max 10) including figures and tables.\nProvide your code for the assessment as an appendix.\nInclude references, including reference to suitable guidance documents for this type of risk assessment.\nRefer to sections, figures and tables in the original assessment the when using it as reference.\nSee the template report for further info"
-  },
-  {
-    "objectID": "pages/individual_projects.html#a-human-health-risk-assessment-from-chemicals-in-the-food-chain",
-    "href": "pages/individual_projects.html#a-human-health-risk-assessment-from-chemicals-in-the-food-chain",
-    "title": "Introduction to individual projects",
-    "section": "A human health risk assessment from chemicals in the food chain",
-    "text": "A human health risk assessment from chemicals in the food chain\nRisk assessment of N‐nitrosamines in food Link to the assessment\nThis is a typical risk assessment of risk to human health via dietary exposure from a chemical substance in food.\nThe task is to replicate the risk assessment with one of the following modifications\n\na new Benchmark Dose Modelling where you discuss the influence of choices made in the modelling\na quantitative uncertainty analysis on the exposure assessment\n\nAt the end, quantify the level of certainty that exposure of N‐nitrosamines can lead to adverse outcomes for different proportions of the EU population. Use expert judgement where you and two other persons act as experts."
-  },
-  {
-    "objectID": "pages/individual_projects.html#a-pest-categorisation-of-an-invasive-species",
-    "href": "pages/individual_projects.html#a-pest-categorisation-of-an-invasive-species",
-    "title": "Introduction to individual projects",
-    "section": "A pest categorisation of an invasive species",
-    "text": "A pest categorisation of an invasive species\nPest categorisation of the red fire ant Link to the assessment\nThe task is to replicate the assessment of pest potential for entry, establishment and spread in the EU (Section 3.4) with one of the following modifications\n\nmake your own assessment of climate matching e.g. by running the CLIMEX modelling with occurrence data that you retrieve from databases.\n\n\n\nAt the end, quantify the level of certainty that this species will be a problem in Sweden within 20 years from now using expert judgement where you and two other persons act as experts."
-  },
-  {
-    "objectID": "pages/individual_projects.html#an-evaluation-of-control-measures-for-a-disease",
-    "href": "pages/individual_projects.html#an-evaluation-of-control-measures-for-a-disease",
-    "title": "Introduction to individual projects",
-    "section": "An evaluation of control measures for a disease",
-    "text": "An evaluation of control measures for a disease\nThis assessment compares the efficiency of control measures for the Classical Swine Fever Link to the assessment\nThe task is to replicate the assessment of the Minimum radius of restricted zones and duration of the disease control measures in restricted zones (ToR 3) with the following modifications\n\n\n\n\n\n\nwith a quantitative uncertainty analysis considering the impact of uncertainty in parameters of the kernel model and the impact of uncertainty in the model structure by model averaging\n\nAt the end, quantify the level of certainty that the control measures taken for the outbreak of African Swine Fever in Sweden will succeed in containing the outbreak. Consider similarities and differences between AFS and CSF. Use expert judgement where you and two other persons act as experts."
-  },
-  {
-    "objectID": "pages/individual_projects.html#a-red-list-assessment-of-conservation-status",
-    "href": "pages/individual_projects.html#a-red-list-assessment-of-conservation-status",
-    "title": "Introduction to individual projects",
-    "section": "A Red list assessment of conservation status",
-    "text": "A Red list assessment of conservation status\n\nI altered the heading for this assessment after consultation with the students, considering that population viability analysis is one alternative to assess conservation status\n\nThis is an assessment of conservation status based on an population analysis of the polar bear Link to the assessment\nYou can find a description of the assessment in the Supplementary material for Ursus maritimus Red List assessment\nGuidelines for conducting a red list assessment\nReplicate the risk assessment for two scenarios and two subpopulations with the following modifications\n\nconsider uncertainty in generation length by a probability distribution instead of the mean and P95\n\nAt the end, quantify the level of certainty that there will be a decline in at least one of the subpopulations. Use expert judgement where you and two other persons act as experts."
-  },
-  {
-    "objectID": "pages/individual_projects.html#an-environmental-risk-assessment-from-the-use-of-a-chemical-product",
-    "href": "pages/individual_projects.html#an-environmental-risk-assessment-from-the-use-of-a-chemical-product",
-    "title": "Introduction to individual projects",
-    "section": "An environmental risk assessment from the use of a chemical product",
-    "text": "An environmental risk assessment from the use of a chemical product\nThis is an Environmental Risk Assessment of the medicine Felodipine Link to the assessment\nReplicate the risk assessment with one of the following modifications\n\nperform the exposure assessment with a quantitative uncertainty analysis\napply species sensitivity distribution on the ecotoxicological measurements\n\nUseful documents\nERA for medicines\nECHA Guidance. Characterisation of dose[concentration]-response for environment\n\n\n\n\nAt the end, quantify the level of certainty that release of Felodipine into the environment will result in adverse impact on ecosystems. Use expert judgement where you and two other persons act as experts."
-  },
-  {
-    "objectID": "pages/Course introduction.html#welcome-to-risk-assessment-in-environment-and-public-health",
-    "href": "pages/Course introduction.html#welcome-to-risk-assessment-in-environment-and-public-health",
-    "title": "Course introduction MVEN10",
-    "section": "Welcome to Risk Assessment in Environment and Public Health",
-    "text": "Welcome to Risk Assessment in Environment and Public Health\n\nCourse coordinator: Ullrika Sahlin\nCourse platform https://canvas.education.lu.se/courses/23481\nCourse syllabus\nStudy directors:\n\nHelena Hansson Environmental Science\nStefan Olin Applied Computational Science appliedcompsci@math.lu.se"
-  },
-  {
-    "objectID": "pages/Course introduction.html#why-study-risk-assessment",
-    "href": "pages/Course introduction.html#why-study-risk-assessment",
-    "title": "Course introduction MVEN10",
-    "section": "Why study risk assessment",
-    "text": "Why study risk assessment\n\n\nTo be competitive on the job market\n\nthere is a lot of experts, but fewer experts on risk assessment\n\nTo better understand what expertise is required when assessing risk\n\nmotivation to become an expert\nstrengthen your interdisciplinary perspective\n\nTo be able to contribute to better management, including assessment and communication, of risk\nTo become a better decision maker yourself"
-  },
-  {
-    "objectID": "pages/Course introduction.html#lectures",
-    "href": "pages/Course introduction.html#lectures",
-    "title": "Course introduction MVEN10",
-    "section": "Lectures",
-    "text": "Lectures\n\n10 lectures\nOccupational and Health Medicine\nCentre for Environmental and Climate Science\nRisk, Uncertainty and Decision Making (parallel course)"
-  },
-  {
-    "objectID": "pages/Course introduction.html#exercises",
-    "href": "pages/Course introduction.html#exercises",
-    "title": "Course introduction MVEN10",
-    "section": "Exercises",
-    "text": "Exercises\n\n28 carried out over 9 occasions (topics canvas)\nYou are expected to use your own computer (notify!)\nmaterial published on https://ullrika.github.io/MVEN10material/\nreporting according to instructions"
-  },
-  {
-    "objectID": "pages/Course introduction.html#tools",
-    "href": "pages/Course introduction.html#tools",
-    "title": "Course introduction MVEN10",
-    "section": "Tools",
-    "text": "Tools\n\nUse open source tools for scientific assessment\n\nExcel\nR\nQuarto"
-  },
-  {
-    "objectID": "pages/Course introduction.html#literature-seminars",
-    "href": "pages/Course introduction.html#literature-seminars",
-    "title": "Course introduction MVEN10",
-    "section": "Literature seminars",
-    "text": "Literature seminars\n\n2 seminars\n\n1 within an exercise (cancelled)\n\nCome prepared!"
-  },
-  {
-    "objectID": "pages/Course introduction.html#book-seminars",
-    "href": "pages/Course introduction.html#book-seminars",
-    "title": "Course introduction MVEN10",
-    "section": "Book seminars",
-    "text": "Book seminars\n\n5 book seminars (overview canvas) (one was cancelled)\nPresenter, Opponent, Reviewer with different roles"
-  },
-  {
-    "objectID": "pages/Course introduction.html#case-studies",
-    "href": "pages/Course introduction.html#case-studies",
-    "title": "Course introduction MVEN10",
-    "section": "Case studies",
-    "text": "Case studies\n\n4 groups with tutors\n2 sessions\nProblem Based Learning (canvas)\nCase studies (canvas)\nYou are expected to bring your own computer (Notify!)\nWritten reports per group that will be shared with all"
-  },
-  {
-    "objectID": "pages/Course introduction.html#course-literature",
-    "href": "pages/Course introduction.html#course-literature",
-    "title": "Course introduction MVEN10",
-    "section": "Course literature",
-    "text": "Course literature\n\nBurgman, Mark. Risks and decisions for conservation and environmental management. Cambridge University Press, 2005.\nLiterature for seminars\nOther material handed out during the course\nExplicit references from lectures"
-  },
-  {
-    "objectID": "pages/Course introduction.html#non-scheduled-time",
-    "href": "pages/Course introduction.html#non-scheduled-time",
-    "title": "Course introduction MVEN10",
-    "section": "Non-scheduled time",
-    "text": "Non-scheduled time\n\nThis course is 15 credits and assumes 100% study pace\nNon-scheduled time implies self studies"
-  },
-  {
-    "objectID": "pages/Course introduction.html#grading-and-compulsory-assignments",
-    "href": "pages/Course introduction.html#grading-and-compulsory-assignments",
-    "title": "Course introduction MVEN10",
-    "section": "Grading and compulsory assignments",
-    "text": "Grading and compulsory assignments\n\nParticipation in written assignments, exercises, project work and associated parts is compulsory\nReports from case studies, exercises and project work is failed or passed\nThe written examination is failed, passed or passed with distinction\nAn exam in class and a home exam"
-  },
-  {
-    "objectID": "pages/Course introduction.html#todo",
-    "href": "pages/Course introduction.html#todo",
-    "title": "Course introduction MVEN10",
-    "section": "Todo",
-    "text": "Todo\n\nChoose a course representative\nRemind to inform us if you need to borrow a computer during class\nModify groups for book seminars - if asked for\nModify groups for case studies - if asked for"
-  },
-  {
-    "objectID": "pages/bi.html",
-    "href": "pages/bi.html",
-    "title": "MVEN10-lectures",
-    "section": "",
-    "text": "What we want to know \\[P(A|+)\\]\nLikelihood - how much to we trust data\n\n\\[P(+|A)\\]\n\\[P(-|A)\\]\n\nBayesian updating\n\n\\[P(A|+)=\\frac{P(+|A)P(A)}{P(+)}\\]\n\nTo make it work we need to express our uncertainty before seeing the data - the prior\n\n\\[P(A)\\]"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "pages/bs1.html#risk-aversion---lottery",
-    "href": "pages/bs1.html#risk-aversion---lottery",
-    "title": "Book seminar 1",
-    "section": "Risk aversion - lottery",
-    "text": "Risk aversion - lottery\n\nThe probability of winning is \\(p\\).\nA lottery ticket costs \\(1\\) SEK.\nIf you win you get \\(100\\) SEK.\n\nThe expected utility is: \\[ EU = p \\cdot 100 - 1 \\]\nWould you buy a ticket in this lottery?\n\nIf no, why? If yes, why?\n\n\nUtility is measured as Swedish kronor (SEK).\nIf no, you are risk averse If yes, you might enjoy the risk. In reality we do not have the fortune to be able to choose, it is rather about preventing bad things from happening.\nWould you answer change if the ticket was free and you would win 99 SEK"
-  },
-  {
-    "objectID": "pages/bs1.html#two-doors",
-    "href": "pages/bs1.html#two-doors",
-    "title": "Book seminar 1",
-    "section": "Two doors",
-    "text": "Two doors\nIn this case you are to choose one out of two doors. Behind every door there is a chance of winning \\(X\\) with probability \\(p\\). Thus, each door is a lottery with the expected utility \\(X\\cdot p\\).\n\nWhich lottery do you prefer in the three situations A, B and C?"
-  },
-  {
-    "objectID": "pages/bs1.html#expected-utilities",
-    "href": "pages/bs1.html#expected-utilities",
-    "title": "Book seminar 1",
-    "section": "Expected utilities",
-    "text": "Expected utilities\n\nA: \\(0.25\\cdot 100 = 25\\) vs \\(0.25\\cdot 10 = 2.5\\)\nB: \\(0.05\\cdot 100 = 5\\) vs \\(0.75\\cdot 10 = 7.5\\)\nC: \\(0.05\\cdot 100 = 5\\) vs \\(0.5\\cdot 10 = 5\\)"
-  },
-  {
-    "objectID": "pages/bs1.html#linquistic-uncertainty",
-    "href": "pages/bs1.html#linquistic-uncertainty",
-    "title": "Book seminar 1",
-    "section": "Linquistic uncertainty",
-    "text": "Linquistic uncertainty\n\nImpact on biodiversity is high\n\n\nThere is a 30% probability of rain tomorrow\n\n\nProminent in qualitative risk assessment due to the use of qualitative expressions\nCan be avoided by using well defined questions, quantities and outcomes and meaningful scales"
-  },
-  {
-    "objectID": "pages/bs1.html#subjective-risk-assessment",
-    "href": "pages/bs1.html#subjective-risk-assessment",
-    "title": "Book seminar 1",
-    "section": "Subjective Risk Assessment",
-    "text": "Subjective Risk Assessment\nA tool from Mark and his colleagues to reduce linguistic uncertainty\nSRA tool manual\n\nLikelihood and impact scales"
-  },
-  {
-    "objectID": "pages/bs1.html#subjective-risk-assessment-1",
-    "href": "pages/bs1.html#subjective-risk-assessment-1",
-    "title": "Book seminar 1",
-    "section": "Subjective Risk Assessment",
-    "text": "Subjective Risk Assessment\nRain - Rain tomorrow\nRocket - Next moon rocket crash on earth\nTrump - Trump becomes the next president of USA\n\nUse these likelihood and impact scalesMake judgements with single scores e.g. 3 or ranges, e.g. 2-4"
-  },
-  {
-    "objectID": "pages/bs1.html#delphi-process-to-aggregate-judgements-from-a-group-of-experts",
-    "href": "pages/bs1.html#delphi-process-to-aggregate-judgements-from-a-group-of-experts",
-    "title": "Book seminar 1",
-    "section": "Delphi process to aggregate judgements from a group of experts",
-    "text": "Delphi process to aggregate judgements from a group of experts\n\nMake individual judgements\nCompare where there are large differences in judgements. - Discuss and resolve the reason for differences. Here is where linguistic uncertainties can be reduced.\nRedo individual judgements\nAggregate the judgements"
-  },
-  {
-    "objectID": "pages/bs1.html#interpretation-of-probability",
-    "href": "pages/bs1.html#interpretation-of-probability",
-    "title": "Book seminar 1",
-    "section": "Interpretation of probability",
-    "text": "Interpretation of probability\nTutorial on uncertainty where Ullrika explains probability distribution\n\nthe frequency with which sampled values arise within a specified range or for a specified category\n\n\na quantification of a judgement on the likelihood of a particular range or category\n\n\n\n\n\n\n\nNote\n\n\nThe mathematical theory for probability is the same for both interpretations!"
-  },
-  {
-    "objectID": "pages/bs1.html#probability-distributions",
-    "href": "pages/bs1.html#probability-distributions",
-    "title": "Book seminar 1",
-    "section": "Probability distributions",
-    "text": "Probability distributions\nVisualising probability distributions"
-  },
-  {
-    "objectID": "pages/bs1.html#uncertainty-and-variability",
-    "href": "pages/bs1.html#uncertainty-and-variability",
-    "title": "Book seminar 1",
-    "section": "Uncertainty and variability",
-    "text": "Uncertainty and variability"
-  },
-  {
-    "objectID": "pages/course_overview.html",
-    "href": "pages/course_overview.html",
-    "title": "Course content",
-    "section": "",
-    "text": "The general aim of the course is that the student, on completion of the course, should have advanced principles and methods to identify and assess risks in the fields of environment, nature and health. The course includes risks for humans and other organisms connected to exposure to chemicals and causes and risks connected to the extinction of species. Insights into and understanding of need of scientifically based risk communication to different target groups and the importance of knowledge about risk perception to create relevant risk assessments and communication of risks in society are included as important components. The student should be able to understand on completion of the course describe and work with common risk models or tools that are used in the areas of nature, environment and health and have an understanding of how they are used to inform decision-making.\n\n\nOn completion of the course, the student should be able to:\n\ngive an account of and independently apply principles and methods for risk analysis and common risk assessment models in environment, nature and health\ngive an account of needs and examples of scientifically based risk communication in society and its relation to risk perception\ngive an account of research and development for risk assessment in nature,environment and health\n\n\n\n\nOn completion of the course, the student should be able to:\n\nuse common methods for risk assessment in the fields of nature, environment and health to within given time frames, and in collaboration with experts,identify and analyse risks\npresent result of risk assessments in different applications\ndiscuss different forms of communication of risks and uncertainty in society\n\n\n\n\nOn completion of the course, the student should be able to:\n\ncritically reflect on the possibilities and limitations of risk assessments and its role in risk management in society\ndiscuss ethical aspects at assessment, management and communication of risks\nsuggest needs of additional knowledge to carry out risk assessments in environment, nature and health and take responsibility for their development of knowledge"
-  },
-  {
-    "objectID": "pages/course_overview.html#course-syllabus",
-    "href": "pages/course_overview.html#course-syllabus",
-    "title": "Course content",
-    "section": "",
-    "text": "The general aim of the course is that the student, on completion of the course, should have advanced principles and methods to identify and assess risks in the fields of environment, nature and health. The course includes risks for humans and other organisms connected to exposure to chemicals and causes and risks connected to the extinction of species. Insights into and understanding of need of scientifically based risk communication to different target groups and the importance of knowledge about risk perception to create relevant risk assessments and communication of risks in society are included as important components. The student should be able to understand on completion of the course describe and work with common risk models or tools that are used in the areas of nature, environment and health and have an understanding of how they are used to inform decision-making.\n\n\nOn completion of the course, the student should be able to:\n\ngive an account of and independently apply principles and methods for risk analysis and common risk assessment models in environment, nature and health\ngive an account of needs and examples of scientifically based risk communication in society and its relation to risk perception\ngive an account of research and development for risk assessment in nature,environment and health\n\n\n\n\nOn completion of the course, the student should be able to:\n\nuse common methods for risk assessment in the fields of nature, environment and health to within given time frames, and in collaboration with experts,identify and analyse risks\npresent result of risk assessments in different applications\ndiscuss different forms of communication of risks and uncertainty in society\n\n\n\n\nOn completion of the course, the student should be able to:\n\ncritically reflect on the possibilities and limitations of risk assessments and its role in risk management in society\ndiscuss ethical aspects at assessment, management and communication of risks\nsuggest needs of additional knowledge to carry out risk assessments in environment, nature and health and take responsibility for their development of knowledge"
-  },
-  {
-    "objectID": "pages/course_overview.html#course-content",
-    "href": "pages/course_overview.html#course-content",
-    "title": "Course content",
-    "section": "Course content",
-    "text": "Course content\nThe course deals with:\n\nidentification, assessment, evaluation and management of risks connected to human and other organisms’ exposure to chemicals and risks connected to extinction of species\nmethods in risk analysis such as problem formulation, hazard assessment, statistical modelling, exposure modelling, dose-response modelling, modelling of dispersion of diseases (epidemiology), modelling of uptake, renewal, distributions and secretion of poisons in living organisms (toxicokinetics) and expert assessment and principles and methods for uncertainty analysis\nrisk evaluation, which includes how to in a structured way can evaluate and make tradeoffs to support decision-making\nrisk management, which includes how different societal actors prevent risks, sets regulatory thresholds and communicate risks. In addition the importance to connect risk perception in risk management and communication of risks is included."
-  },
-  {
-    "objectID": "pages/course_overview.html#subcourses-in-mven10",
-    "href": "pages/course_overview.html#subcourses-in-mven10",
-    "title": "Course content",
-    "section": "Subcourses in MVEN10",
-    "text": "Subcourses in MVEN10\n\n“Examination”\n7.5 hp Grading scale: Fail, Pass, Pass with distinction\n\n\nExercises and Assignments\n4.5 hp Grading scale: Fail, Pass\n\n\nProject work\n3.0 hp Grading scale: Fail, Pass"
-  },
-  {
-    "objectID": "pages/course_overview.html#course-material",
-    "href": "pages/course_overview.html#course-material",
-    "title": "Course content",
-    "section": "Course material",
-    "text": "Course material\n\nGeneral about risk and risk assessment\n\nBurgman/Book seminars\nAll material from the course book by Burgman covered at the book seminars. This means that you should skip the chapters that we did not cover in the seminars.\nHere I extracted the terms from the glossary in the book that is applicable for the course:\nADI, acute effect, ALARP principle, algorithm, ambiguity, anchoring, AUC, assessment endpoints, averaging, Bayesian analysis, Bayesian credible intervals, behavioural aggregation, belief, benchmark dose, benefit-cost analysis, beta distribution, binomial distribution, bioconcentration factor, bounded rationality, bounds (statistical), calibration, calibration of models, carrying capacity, central tendency, chance, chronic effects, coefficient of variation, cognitive availability, conceptual models, conditional probabilities (statistics), confidence, confidence intervals, confusion matrix, consensus, context, convergence, correlation (statistical), correlation coefficient, cost-benefit analysis, credibility, credible intervals, cumulative probabilities, decision, decision tables, Delphi technique, demographic variation, demographic stochasticity, density dependence, dependency of a variable (statistical), detectable effect sizes, deterministic model, deterministic sensitivity, dichotomoy, disagreement, dispersal, EC50, ecotoxicology, effect size, endpoints, environmental aspect, environmental effect, environmental uncertainty (in PVAs), enzyme, epistemic uncertainty, equipossible/equiprobable, evidence, expected dose, expected utility, expert, exponential distribution, exposure pathway, false negative/false positive, fecundity (PVA), final acute value, fixed probability, fixed value, free-riding, frequentist statistics, fugacity, goodness of fit, hazard, hazard index, hazard matrices, hazard probability rank, hazard quotient, hedonic pricing, hormesis, hydrolysis, hypothesis, illusofy certainty, incertitude, indeterminacy, indicators, information disagreement, interval arithmetic, interval probabilities, kent scales, LCxx, likelihood, linguistic uncertainty, LOAEL/LOEL, LOEC, management goals, MaxiMin strategy, measurement endpoint, measurement error, median, metapopulation, minimum expected population size, minimum viable population, mixing or averaging probabilities, model averaging, model uncertainty, monitoring, Monte Carlo analysis, motivational bias, multi-criteria decision analysis, natural death (in behavioural aggregation), natural variation, negotiation, NOEL/NOEC, normal distribution, normative expertise, normative theories (of rational consensus), numerical aggregation, odds ration, partitioning coefficient, paternalistic model for stakeholder involvement, photolysis, plausibility, point estiamtes, Poisson distribution, Poisson process, Population viability analysis, possibility, posterior probabilities, power (statistical), precautionary principle, prediction intervals, principle of insufficient reason, prior probabilities, probability, probability density function, problem formulation, procedures guide (for expert elicitation), process model, prosecutor’s fallacy public participation, QSAR, quantiles, quartiles, range (statisical), rank correlations, rational consensus, reasonable maximum exposure, reference dose, reference lottery, regret, relative risk, risk, risk analysis, risk assessment, risk aversion, risk efficiency, risk equity, risk ranking, robust decisions, ROC, scenario analysis, scenarios, semantic disagreement, sensitivity analysis (for models), sigmodial curve, snowballing, Spearman rank correlation, stakeholder, stakeholder expert, stochastic models, strategic risk managment, stressors, SAR, subjective belief, substantive expertise, sure bounds, systematic error, tendency, theory-based inference, transformation, triangular distribution, type I/type II errors, underspecificity, uniform distribution, utilities, utility function, utility-based criteria, vagueness, validation/verification (of a model), variability, volatilization, zero risk strategies.\n\n\nMaterial from exercises\nPrinciples and methods for uncertainty analysis that we have worked with during exercises. Go back and read the exercises.\n\n\nAdditional lecture material provided by Ullrika during the course\nSee page on canvas Lecture Types of assessment\n\n\nLectures about risk, uncertainty and decision making\nGo over the lectures, they were recorded and you have access to presentations and your notes.\nIndividual decision making - how does it work? what is a good choice? How is risk perception linked with individual decision making? Mention some factors explaining differences in risk perception.\nSocietal decision making - what is the difference to individual decision making?\nRational and bounded rationality - difference?\nWhen and how to consider uncertainty in assessments - what did they say about this?\nWhen and how to consider uncertainty in decision making - what did they say about this? What did you learn from the akrylamid case study regarding risk communication?\n\n\nActual risk assessments\n\nAll the assessments considered in the case study seminars\nAll the assessment considered in the individual projects\nRead the assessments and see the concepts and methods used in practice\nYou will have access to the final reports by the groups.\nYou have written your own report and reviewed a report by another student.\n\n\n\n\nHealth risk assessment\nThis includes assessment on human endpoints. In the course, we primary focus is exposure to chemicals.\n\nRelevant material from the general parts\nMaterial from lectures and literature seminars\nHealth risk assessment exercise\n\n\n\nEnvironmental risk assessment\nIn this course environmental risk assessment covers\n\nRed list assessments (classification of status of species)\nPest risk assessments (introduction, establishment, spread and impact of pests or invasive species)\nEcological/Environmental risk assessment (effect on ecological systems from chemical exposure)\nRelevant material from the general parts\n\nSee page on canvas Lecture Types of assessment"
-  },
-  {
-    "objectID": "pages/course_overview.html#guiding-study-questions",
-    "href": "pages/course_overview.html#guiding-study-questions",
-    "title": "Course content",
-    "section": "Guiding study questions",
-    "text": "Guiding study questions\nNOTE: THIS IS NOT AN EXHAUSTIVE LIST OF POSSIBLE QUESTIONS THAT CAN BE ASKED AT THE EXAM.\nThis list of guiding study questions has been constructed from the course syllabus (kursplanen)\n\nGive an account of (i.e. describe or explain) a principle or method brought up during the course, e.g. EC50, MOET, model averaging or Monte Carlo simulation!\nGive an account of common risk assessment models used for any of the types of assessments covered in the course (Human risk assessment related to exposure to chemicals, Ecological/Environmental risk assessment, Pest risk assessment, Red list assessment)!\nGive an account of factors explaining differences in risk perception!\nGive an account of recommendations to guide risk communication!\nGive an account of challenges in implementing uncertainty analysis, ensuring public trust and applying the precautionary principle!\nEvaluate an application of an assessment (material will be provided) in light of guidance for that assessment! Were guidelines followed? Reflect on limitations of the assessment. Suggest possible modifications of the assessment.\nEvaluate on the presentation of result of an application of an assessment (material will be provided) in light of recommendations for communication. Were guidelines/recommendations followed. Suggest improvements for communicating results in the assessment. Suggestion communication to the public.\nComment on the role of an application of an assessment (material will be provided) to support a particular risk management decision. How is information from the assessment used to support the decision making? What is the decision problem. Suggest how to handle uncertainty in this particular decision problem."
+    "text": "kern &lt;- function(x,d0,alpha){\n  (1+(x/d0)^alpha)^-1\n}\n\ninv_kern &lt;- function(prob,d0,alpha){\n  (1/prob-1)^(1/alpha)*d0\n} \n\n\none_iter &lt;- function(i){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\nget_ma &lt;- function(x){\n  ma_prob3=w[1]*kern(x,d0_ba,alpha_ba) + \n  w[2]*kern(x,d0_bo,alpha_bo) + \n  w[3]*kern(x,d0_ga,alpha_ga)\n}\n\nx = seq(0,30,by=1)\ndata.frame(x = x,\ny=sapply(x,get_ma),iter=i)\n}\n\n\ndo.call('rbind',lapply(1:20,function(i){one_iter(i)})) %&gt;%\n  ggplot(aes(x=x,y=y,group=iter))+\n  geom_line(alpha=0.2)\n\n\n\n\n\nmc_one_iter &lt;- function(){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\n\ndata.frame(ma_prob3=w[1]*kern(3,d0_ba,alpha_ba) + \n  w[2]*kern(3,d0_bo,alpha_bo) + \n  w[3]*kern(3,d0_ga,alpha_ga), \n\nma_prob10=w[1]*kern(10,d0_ba,alpha_ba) + \n  w[2]*kern(10,d0_bo,alpha_bo) + \n  w[3]*kern(10,d0_ga,alpha_ga), \n\nma_P05 = w[1]*inv_kern(0.05,d0_ba,alpha_ba) + \n  w[2]*inv_kern(0.05,d0_bo,alpha_bo) + \n  w[3]*inv_kern(0.05,d0_ga,alpha_ga) \n)\n}\n\n\nniter = 10^4\noutput &lt;- do.call('rbind',lapply(1:niter,function(i){mc_one_iter()}))\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob3)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob10)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\nquantile(output$ma_P05,probs=0.95)\n\n     95% \n9.500937 \n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_P05)) +\n  geom_density() +\n  geom_vline(xintercept=3,col='red')+\n  geom_vline(xintercept=10,col='red') +\nscale_x_log10()"
   },
   {
     "objectID": "pages/Intro lecture.html#the-first-risk-analysis",
@@ -462,6 +238,27 @@
     "text": "Conceptual models and frameworks\n\n\n\nDirection of cause and effect\nComplexity and system boundaries\nRetro- or prospective, or both"
   },
   {
+    "objectID": "pages/Intro lecture.html#risk-assessment-with-human-endpoints",
+    "href": "pages/Intro lecture.html#risk-assessment-with-human-endpoints",
+    "title": "Introduction to risk assessment",
+    "section": "Risk Assessment with Human Endpoints",
+    "text": "Risk Assessment with Human Endpoints"
+  },
+  {
+    "objectID": "pages/Intro lecture.html#risk-assessments-with-ecological-endpoints",
+    "href": "pages/Intro lecture.html#risk-assessments-with-ecological-endpoints",
+    "title": "Introduction to risk assessment",
+    "section": "Risk assessments with ecological endpoints",
+    "text": "Risk assessments with ecological endpoints\nEnvironmental/Ecological Risk Assessment\nChemical stressor(s) -&gt; Ecological systems Manage stressors\nRed List Assessment Multiple stressors -&gt; Species Conservation of threatened species, Reduce loss of biodiversity\nPest Risk Assessment Spread of invasive species or pests affecting ecological systems"
+  },
+  {
+    "objectID": "pages/Intro lecture.html#risk-assessments-with-human-endpoints",
+    "href": "pages/Intro lecture.html#risk-assessments-with-human-endpoints",
+    "title": "Introduction to risk assessment",
+    "section": "Risk assessments with human endpoints",
+    "text": "Risk assessments with human endpoints\nHuman Health Risk Assessment Chemical stressor(s) -&gt; human health\nPest Risk Assessment Spread of pests or diseases -&gt; human health"
+  },
+  {
     "objectID": "pages/Intro lecture.html#conceptual-models-and-frameworks-1",
     "href": "pages/Intro lecture.html#conceptual-models-and-frameworks-1",
     "title": "Introduction to risk assessment",
@@ -483,59 +280,514 @@
     "text": "Risk assessment as a scientific method\nAgreed guidelines and frameworks\n\nPrinciples to draw scientific conclusions given available data, evidence and expert knowledge considering limitations in this knowledge\n\nScientific assessment - assessment done by organisation providing scientific advice to risk managers and policy makers\n\nhazard, exposure, risk, vulnerability\ntransparency and impartially"
   },
   {
-    "objectID": "pages/Intro lecture.html#introduction-to-case-studies",
-    "href": "pages/Intro lecture.html#introduction-to-case-studies",
-    "title": "Introduction to risk assessment",
-    "section": "Introduction to case studies",
-    "text": "Introduction to case studies\nHuman health assessment:\n\nPer-and PolyFluoroalkyl Substances PFAS\n\nPlant pest assessment:\n\nNavel orangeworm Amyelois transitella\n\nHuman health assessment:\n\nArsenic in food\n\nEcological risk assessment:\n\nAtlantic Bluefin Tuna Thunnus thynnus"
-  },
-  {
-    "objectID": "pages/probability_distribution.html",
-    "href": "pages/probability_distribution.html",
-    "title": "Introduction to probability distributions",
+    "objectID": "pages/exam_environ.html",
+    "href": "pages/exam_environ.html",
+    "title": "Exam MVEN10 October 26th 2023",
     "section": "",
-    "text": "Expert judgement are common in risk assessment. To ensure rigour of the assessment, these judgements should be collected in a structured way. Methods have been developed to reduce linguistic uncertainty and cognitive biases when experts make judgements, and to aggregate judgements by a group of experts.\nQuantitative judgements, e.g. judgements expressed by subjective probabilities are preferable over qualitative expressions of uncertainty. The reasons are that\n\nqualitative judgements have different meanings for different people, and\nquantitative judgements can be combined using probability rules (probability calculations)\n\nEFSA defines Expert Knowledge Elicitation as\n\nA systematic, documented and reviewable process to retrieve expert judgements from a group of experts, often in the form of a probability distribution.\n\nIn general, it is possible to make a quantitative judgement when the question asked to an expert is well-defined.\nThe expert should also feel that she has some basis to make his/her judgement.\n\nA good expert makes judgements where she has domain knowledge and is hesitant to make judgements for questions where she feels there is not enough basis for a judgement.\n\nIt is also important that experts receive training in making probabilistic judgements to ensure they understand them.\n\n\nThis mini-lecture introduces probability distributions for a binary event, a categorical quantity, a discrete quantity and a continuous quantity. The terms cumulative probability function, probability density function, and quantile and boxplot. The aim of the lecture is to that the student understand the terms quantile and percentile."
+    "text": "Write a report with the answers to the questions, discussions or solutions to the tasks provided. You can have appendices to the report. Put your name on the report and all appendices.\nYou are allowed to discuss with others, but at the end, I expect that you do the exam yourself.\nSubmit the report and fill in the certificate on canvas, stating that you have done the exam yourself and, if, and if so for what, you have used any AI tool to help you.\nCited papers and link to the certificate quiz are available in the module Examination on Canvas.\nThe points on this part of the exam will be added to the points from the exam that you did on Oct 25th. You need 50 points to Pass (G) and 75 points to Pass with distinction (VG)."
   },
   {
-    "objectID": "pages/probability_distribution.html#background",
-    "href": "pages/probability_distribution.html#background",
-    "title": "Introduction to probability distributions",
-    "section": "",
-    "text": "Expert judgement are common in risk assessment. To ensure rigour of the assessment, these judgements should be collected in a structured way. Methods have been developed to reduce linguistic uncertainty and cognitive biases when experts make judgements, and to aggregate judgements by a group of experts.\nQuantitative judgements, e.g. judgements expressed by subjective probabilities are preferable over qualitative expressions of uncertainty. The reasons are that\n\nqualitative judgements have different meanings for different people, and\nquantitative judgements can be combined using probability rules (probability calculations)\n\nEFSA defines Expert Knowledge Elicitation as\n\nA systematic, documented and reviewable process to retrieve expert judgements from a group of experts, often in the form of a probability distribution.\n\nIn general, it is possible to make a quantitative judgement when the question asked to an expert is well-defined.\nThe expert should also feel that she has some basis to make his/her judgement.\n\nA good expert makes judgements where she has domain knowledge and is hesitant to make judgements for questions where she feels there is not enough basis for a judgement.\n\nIt is also important that experts receive training in making probabilistic judgements to ensure they understand them.\n\n\nThis mini-lecture introduces probability distributions for a binary event, a categorical quantity, a discrete quantity and a continuous quantity. The terms cumulative probability function, probability density function, and quantile and boxplot. The aim of the lecture is to that the student understand the terms quantile and percentile."
+    "objectID": "pages/exam_environ.html#environmental-risk-assessment-of-a-pharmaceutical",
+    "href": "pages/exam_environ.html#environmental-risk-assessment-of-a-pharmaceutical",
+    "title": "Exam MVEN10 October 26th 2023",
+    "section": "Environmental risk assessment of a pharmaceutical",
+    "text": "Environmental risk assessment of a pharmaceutical\nGo to the page Pharmaceuticals and Environment\n\nWhat organisation is behind this page and what do they want to achieve with it? (1p)\n\nSearch for the pharmaceutical given to you in the database and study the summary of the hazard and risk classification for this pharmaceutical.\n\nMake a short description of the pharmaceutical given to you. (1p)\n\nThe hazard classification considers Persistence, Bioaccumulation and Toxicity.\n\nWhy are these endpoints relevant? (2p)\nConfirm and discuss limitations in the conclusions on these three endpoints and on risk by\n\n\nreferring to information about the classifications\nconsidering data and other information presented on the summary page for the pharmaceutical\n\n(6p)"
   },
   {
-    "objectID": "pages/probability_distribution.html#probability-distributions",
-    "href": "pages/probability_distribution.html#probability-distributions",
-    "title": "Introduction to probability distributions",
-    "section": "Probability distributions",
-    "text": "Probability distributions\n\nA binary event\nThe simplest probability distribution is the probability for a binary event, which is an event having only two outcomes.\nLet us say that we have the events A and not A.\nIf the probability for A is \\(p\\), then the probability for not A is \\(1-p\\).\nWe can illustrate the probability distribution for a binary event as a bar chart\n\n\n\n\n\nAnother useful way is to think of binary events as sections taking up a certain area of the probability scale\n\n\n\n\n\n\n\nMore than two possible outcomes\nProbability is also used for quantities having “more than two possible outcomes”.\nThis can be quantities that are\n\ncategorical - with distinct classes that do not have to come in a particular order\ndiscrete - taking numerical integer values, usually obtained by counts\ncontinuous - taking numerical continuous values for which probability is expressed over ranges instead of specific numbers\n\nThe probabilities for quantities taking different values are summarised by a probability distribution.\nThere are different types of probability distributions depending on the characteristic of the outcome space, i.e. the full set of possible outcomes.\n\n\n\n\n\n\n\n\n\nType of outcome\nDescription of outcomes\nExamples outcome space\nExamples distributions\n\n\n\n\nBinary\ntwo outcomes\n0 or 1\nBernoulli\n\n\n\n\nA or not A\n\n\n\n\n\nTRUE or FALSE\n\n\n\nCategorical\ntwo or more categories\nAdult, Adolescent, Other children\n\n\n\nDiscrete\nwhole numbers\n0, 1, 2, 3, …\nPoisson\n\n\n\n\n0, 1, 2, …, n-1, n\nBinomial\n\n\n\n\nthe number of trials that falls into two or more categories\nMultinomial\n\n\nContinuous\nreal numbers \\(x \\in \\mathbb{R}\\)\n\\(-\\inf &lt; x &lt; \\inf\\)\nNormal\n\n\n\n\n\\(0&lt;x\\)\nExponential\n\n\n\n\n\\(0 &lt; x &lt; 1\\)\nUniform, Beta\n\n\n\nFootnote: The \\(x\\) in the table above is a notation for a random observation from the probability distribution."
+    "objectID": "pages/exam_environ.html#assessment-on-coumarin",
+    "href": "pages/exam_environ.html#assessment-on-coumarin",
+    "title": "Exam MVEN10 October 26th 2023",
+    "section": "Assessment on coumarin",
+    "text": "Assessment on coumarin\n\nHazard assessment\nCoumarin (1,2-benzopyrone, CAS No. 91-64-5) is an ingredient in cinnamon known to e.g. cause liver damages (Abraham et al. 2010).\nAn overall NOAEL for liver toxicity on 10 mg coumarin/kg bw/day has been derived from the most sensitive animal species in a set of toxicological studies.\nThe value for the NOAEL was taken from a study on dogs by Hagan et al. (1967) where coumarin was reported to give hepatotoxic effects in dogs given 25 and 50 mg/kg bw/day coumarin for longer periods, but not in dogs given 10 mg/kg bw/day coumarin for up to 350 days.\nA TDI of 0.1 mg coumarin/kg bw was established by EFSA (2004) by applying a safety factor of 100.\n\nAnswer with complete sentences the following questions:\n\nWhy was a safety factor applied when EFSA derived the TDI and explain what the value 100 comes from? (3p)\nProvide at least three arguments why a TDI on 0.1 mg coumarin/kg bw given the data provided so far is a conservative choice. (3p)\nProvide at least two arguments to why too conservative choices of TDIs might be problematic in general. (2p)\n\nThe frequency as well as the severity of coumarin hepatotoxicity in the human subpopulation is considered as relevant, and therefore the effect of coumarin on humans should be considered in hazard assessment.\nIn 1999, an expert opinion “on the assessment of coumarin in medicinal products with regard to a hepatotoxic effect in humans” was commissioned by the Federal Institute for Drugs and Medical Devices (BfArM) in Germany. This opinion (read assessment) considered 82 case reports of possible coumarin-associated liver damage.\nFive cases (10%) occurred at the lowest doses (25 and 30 mg daily); of the three cases from Germany documented in more detail, two had developed hepatitis. According to the expert report, for part of the population liver damage cannot be ruled out at a daily dose of 25 mg coumarin.\nIn order to extrapolate from this effect level to a human NOAEL, a factor of 5 is considered justified in the case of a severe effect at the lowest observed adverse effect level.\nUsing the established safe daily dose of 5 mg coumarin for an adult weighing 60 kg, a (rounded) TDI of 0.1 mg/kg body weight was derived by the Federal Institute for Risk Assessment (BfR).\nAbraham et al. (2010) concluded that a TDI of 0.1 mg coumarin/kg bw can be justified based on animal as well as human data.\n\nDiscuss in what way is a TDI on 0.1 mg coumarin/kg bw can be seen as a less conservative choice compared to before. (2p)"
   },
   {
-    "objectID": "pages/probability_distribution.html#visualising-probability-distributions",
-    "href": "pages/probability_distribution.html#visualising-probability-distributions",
-    "title": "Introduction to probability distributions",
-    "section": "Visualising probability distributions",
-    "text": "Visualising probability distributions\nA probability distribution for a continuous quantity can be plotted in various formats:\n\nA Box plot\nA Probability Density Function (PDF)\nA Cumulative Probability Distribution (CDF)\n\nHere they are plotted together to show how they are related\n\n\n\n\n\nFigure 1: CDF, PDF and boxplot\n\n\n\n\n\nQuantiles\nTo summarise uncertainty, an assessor might want to find values that divide the range of the quantity into parts containing specified amounts of probability. Such values are known as quantiles.\nA quantile can be denoted with the letter P, together with the associated probability that the quantity would take a value below the quantile. For example, the value that divides a probability distribution into two parts with equal probabilities is the P50 quantile.\nThis value is also known as the median.\nQuartiles divide a probability distribution into four sections of equal probability. The first quartile is P25. The second quartile is the median P50. The third quartile is P75.\nA boxplot visualises quartiles.\nA percentile is another name for a quantile defined by the probability to the left of the quantile.\n\n\nProbability Density Function\nMost continuous quantities have a Probability Density Function (PDF).\nThe Probability Density Function express probabilities as area under its curve. The total area under the curve is 1, corresponding to 100% probability.\nThe area under the PDF curve to the left of the median is 50%.\nThe PDF can be thought of as a smooth histogram for a continuous quantity. Note that when used for a probability distribution, the area for the histogram should be 1.\n\n\nCumulative Distribution Function\nA probability distribution can be represented by its Cumulative Distribution Function (often abbreviated as CDF). The CDF gives the probability that the quantity is less than or equal to any specified value\nThe CDF contains all the information about probabilities for the quantity: for example, it can be used to calculate the probability that the quantity lies in any specified range of values.\nThis is a curve over the possible range of the quantity (on the x-axis) increasing from 0 to 100% probability (on the y-axis)."
+    "objectID": "pages/exam_environ.html#is-cinnamon-safe-to-consume",
+    "href": "pages/exam_environ.html#is-cinnamon-safe-to-consume",
+    "title": "Exam MVEN10 October 26th 2023",
+    "section": "Is cinnamon safe to consume?",
+    "text": "Is cinnamon safe to consume?\n\nHazard assessment\nRevisit the coumarin hazard assessment described above and\n\nConsider the situation where the human NOAEL instead was 205 mg coumarin per kg per day. Propose and justify a new TDI in light of available data! For full points, show equations and the code for your calculations. (3p)\n\n\n\n\nExposure assessment\nThere is a concern that extreme consumption of cinnamon, especially during Christmas season, can result in unacceptable exposure to coumarin. An exposure assessment was carried out for young children by asking parents to children aged between 2 and 5 years to keep food records for two non-consecutive 3-day periods. 140 children ate cinnamon or cinnamon-containing products at least on on of the six days recorded, and 47% of the consumption days were between September and December.\nFor a 4-year-old child weighing 15 kg, a daily consumption of three cinnamon star cookies (“Zimtsterne” weighing about 6 g each) with the maximum level of coumarin measured in this product (Table 1 in Abraham et al. 2010) resulted in a coumarin exposure of 0.13 mg/kg body weight (0.046 mg/kg body weight daily for the cookies with the median level).\nPlease do the following task:\n\nConfirm the calculations of exposure under the maximum and median levels of coumarin measured in cinnamon star cookies (“Zimtsterne”). For full points, show equations and the code for your calculations. (2p)\n\n\n\nRisk assessment\nAbraham et al. (2010) concluded\n\n\nAs is evident from the estimation of exposure, heavy consumers may reach a daily coumarin intake of 0.1 mg/kg body weight corresponding to the TDI just from the consumption of Christmas-related foods during autumn and winter. With an additional consumption of cinnamon, these consumers may exceed the TDI.\n\n\nand\n\n\nTherefore, no risk of hepatotoxicity of coumarin is expected for the vast majority of the population consuming low or moderate amounts of (cassia) cinnamon. However, consumers who really eat a lot may have a risk if they belong to the sensitive subgroup.\n\n\nSo should we be concerned with children eating Christmas cookies or not?\nAs pointed out by Abraham et al. (2010), the exposure might be higher since “other coumarin-containing foods may be consumed simultaneously”.\nYour task is to answer the question: Are 4-year-old children in Germany consuming cinnamon star cookies during Christmas season at risk?\n\nPlan and evaluate a risk assessment for 4-year-old children in Germany that consume cinnamon star cookies during Christmas season using the information provided above in which you include an uncertainty analysis. (15p)\n\nConsider\n\nbetween individual variability in body weights. Justify your choice of values based on information in the ExpoFacts Database (Zenié and Reina, 2007)\nbetween individual variability in consumption. Justify your choice of values using your own experience.\nvariability in levels of coumarin in cookies. Justify your choice of values from data in Table 1 in Abraham et al. (2010) and that cookies can have different weights.\n\nUse the TDI of 0.1 mg/kg bw.\nLet us assume that 4-year-old German children only consume cinnamon star cookies.\nYou are the only expert involved in the assessment.\nRisk managers require you to be at least 75% certain in your answer to be able to use the conclusion as scientific advice. Therefore, communicate your uncertainty in the conclusion in an honest and transparent way.\n\n\n\n\n\n\nReasons for reduction in points from total\n\n\n\nAnalysis is only expressed with reference to code\nSteps in the analysis is not explained or justified\nConclusion is not backed up by the analysis\nAssumptions are not presented\nNo information on the experts uncertainty in the conclusion\nNo graphical visualisation\nOnly worst case analysis (i.e. no refined approach for uncertainty analysis by modelling variability by probability distributions)\n\n\n\n\n\n\n\n\nNote\n\n\n\nNote that you can get up to 10 points on this task if you provide a plan of the assessment even if you do not carry out all parts."
   },
   {
-    "objectID": "pages/probability_distribution.html#uncertainty-and-variability",
-    "href": "pages/probability_distribution.html#uncertainty-and-variability",
-    "title": "Introduction to probability distributions",
-    "section": "Uncertainty and variability",
-    "text": "Uncertainty and variability\nUncertainty refers to the state of knowledge, whereas variability refers to actual variation or heterogeneity in the real world.\nBoth uncertainty and variability can be represented by probability distributions\n\n\n\nUncertainty and variability figure from EFSA\n\n\nThe left you see a probability distribution for a non-variable quantity - Let us call it parameter P. It is a single true value which is uncertain, and the distribution represents uncertainty about P.\nIn the center, you see a probability distribution for a variable quantity. This variable V has multiple true values. The probability distribution represents variability of V.\nTo the right you see a probabilistic model for both variability and uncertainty. We use a probability distribution to represent variability in this variable, but the true distribution for variability is unknown and we use probability distributions to represent our uncertainty about it’s variability. This distribution is sometimes referred to as a spaghetti plot or two-dimensional distribution.\nUncertainty may be altered (either reduced or increased) by further research, because it results from limitations in knowledge.\nVariability cannot be altered by obtaining more knowledge, because it refers to real differences in the world or how the assessors choose to model the world.\nIt is important that assessors distinguish uncertainty and variability because they have different implications for decision-making: informing decisions about whether to invest resources in research aimed at reducing uncertainty or in management options aimed at influencing variability (e.g. to change exposures to subgroups of the population)."
-  },
-  {
-    "objectID": "pages/probability_distribution.html#probability-distributions-1",
-    "href": "pages/probability_distribution.html#probability-distributions-1",
-    "title": "Introduction to probability distributions",
-    "section": "Probability distributions",
-    "text": "Probability distributions\nParametric probability distributions are defined by the Probability Density Function (PDF). The text below is just a starter to describe common distriubtions. We will learn more about them during the course. Wikipedia is a good sourse for the definition of distributions, focus on the graphs of the PDF and CDF, the definition of outcome space and parameters, and if the expected value and variance is a function of the parameters.\n\nUniform\nA quantity that takes any value in an interval with equal probability\nwiki uniform\n\n\nBeta\nA quantity that takes any value in an interval\nwiki beta\n\n\nNormal\nA quantity taking values from \\(-\\inf\\) to \\(\\inf\\) with a symmteric and decaying probability from the central moment.\nwiki normal\n\n\nLogNormal\nA quantity that is normally distribution if you log it. It only takes positive values\nwiki lognormal\nI recommend to log the data and work with the normal distribution instead\n\n\nExponential\nThe time between independent events with equal intensity to occur, where the chance for an event to occur does not depend on when the previous event occurred\nwiki exponential\n\n\nPoisson\nThe number of independent events with equal intensity to occur, that you see during a time period\nwiki poisson\n\n\nBinomial\nThe number of in total N trials that are successful (falls into two categories)\nwiki binomial\n\n\nMultinomial\nThe number of in total N trials that falls into two or more categories\nwiki multinomial"
-  },
-  {
-    "objectID": "pages/probability_distribution.html#references-1",
-    "href": "pages/probability_distribution.html#references-1",
-    "title": "Introduction to probability distributions",
+    "objectID": "pages/exam_environ.html#references",
+    "href": "pages/exam_environ.html#references",
+    "title": "Exam MVEN10 October 26th 2023",
     "section": "References",
-    "text": "References\nEFSA Scientific Committee, 2018. Scientific Opinion on the principles and methods behind EFSA’s Guidance on Uncertainty Analysis in Scientific Assessment. EFSA Journal 2018;16(1):5122, 235 pp. https://doi.org/10.2903/j.efsa.2018.5122"
+    "text": "References\nAbraham et al. (2010). Toxicology and risk assessment of coumarin: focus on human data. Molecular nutrition & food research, 54(2), 228-239.\nHagan et al. (1967). Food flavourings and compounds of related structure. II. Subacute and chronic toxicity. Food and cosmetics toxicology, 5, 141-157.\nEFSA Panel on Food Contact Materials, Enzymes, Flavourings and Processing Aids, 2004. Opinion of the Scientific Panel on food additives, flavourings, processing aids and materials in contact with food (AFC) related to Coumarin. EFSA Journal.\nBfR Health Assessment No. 044/2006, 18 August 2006. High daily intakes of cinnamon: Health risk cannot be ruled out.\nZenié and Reina (2007): ExpoFacts Database. European Commission, Joint Research Centre (JRC) [Dataset] PID: https://data.jrc.ec.europa.eu/dataset/jrc-10114-10001"
+  },
+  {
+    "objectID": "pages/exam.html",
+    "href": "pages/exam.html",
+    "title": "Exam MVEN10 October 26th",
+    "section": "",
+    "text": "Who did the assessment (organisation/institution)?\nWhy was the assessment done?\nWhen was the assessment performed?\n\n\n\n\n\nWhat is the main assessment question? If several, select one.\nWhat is their answer to the main assessment question? If several, the one you selected before.\nDescribe how they reached the answer to the assessment question! Make a list of inputs and methods used."
+  },
+  {
+    "objectID": "pages/exam.html#context-of-the-assessment",
+    "href": "pages/exam.html#context-of-the-assessment",
+    "title": "Exam MVEN10 October 26th",
+    "section": "",
+    "text": "Who did the assessment (organisation/institution)?\nWhy was the assessment done?\nWhen was the assessment performed?"
+  },
+  {
+    "objectID": "pages/exam.html#the-assessment",
+    "href": "pages/exam.html#the-assessment",
+    "title": "Exam MVEN10 October 26th",
+    "section": "",
+    "text": "What is the main assessment question? If several, select one.\nWhat is their answer to the main assessment question? If several, the one you selected before.\nDescribe how they reached the answer to the assessment question! Make a list of inputs and methods used."
+  },
+  {
+    "objectID": "pages/exam.html#is-cinnamon-safe-to-consume",
+    "href": "pages/exam.html#is-cinnamon-safe-to-consume",
+    "title": "Exam MVEN10 October 26th",
+    "section": "Is cinnamon safe to consume?",
+    "text": "Is cinnamon safe to consume?\n\nHazard assessment\nCoumarin (1,2-benzopyrone, CAS No. 91-64-5) is an ingredient in cinnamon known to e.g. cause liver damages (Abraham et al. 2010).\nAn overall NOAEL for liver toxicity on 10 mg coumarin/kg bw/day has been derived from the most sensitive animal species in a set of toxicological studies.\nThe value for the NOAEL was taken from a study on dogs by Hagan et al. (1967) where coumarin was reported to give hepatotoxic effects in dogs given 25 and 50 mg/kg bw/day coumarin for longer periods, but not in dogs given 10 mg/kg bw/day coumarin for up to 350 days.\nA TDI of 0.1 mg coumarin/kg bw was established by applying a safety factor of 100.\nAnswer the following questions:\n\nWhy is a safety factor applied when deriving the TDI and explain what the value 100 comes from and what it represents? Minimum of 10 sentences. (3p)\nProvide at least three arguments why a TDI on 0.1 mg coumarin/kg bw is a conservative choice. Write with complete sentences. (3p)\nProvide at least two arguments to why this a too conservative choice of TDI is problematic. Write with complete sentences. (2p)\n\nThe frequency as well as the severity of coumarin hepatotoxicity in the human subpopulation is considered as relevant, and therefore the effect of coumarin on humans should be considered in hazard assessment.\nIn 1999, an expert opinion “on the assessment of coumarin in medicinal products with regard to a hepatotoxic effect in humans” was commissioned by the Federal Institute for Drugs and Medical Devices (BfArM) in Germany. This opinion (read assessment) considered 82 case reports of possible coumarin-associated liver damage.\nFive cases (10%) occurred at the lowest doses (25 and 30 mg daily); of the three cases from Germany documented in more detail, two had developed hepatitis. According to the expert report, for part of the population liver damage cannot be ruled out at a daily dose of 25 mg coumarin.\nIn order to extrapolate from this effect level to a human NOAEL, a factor of 5 is considered justified in the case of a severe effect at the lowest observed adverse effect level.\nUsing the established safe daily dose of 5 mg coumarin for an adult weighing 60 kg, a (rounded) TDI of 0.1 mg/kg body weight was derived by the Federal Institute for Risk Assessment (BfR).\nPlease do the following task:\n\nDescribe the calculation made by BfR when they derived the TDI expressed as mg coumarin/kg bw. Show the calculation as an equation. You can also complement by a code for the calculation. (1p)\n\nAbraham et al. (2010) concluded that a TDI of 0.1 mg coumarin/kg bw can be justified based on animal as well as human data.\n\n\nExposure assessment\nThere is a concern that extreme consumption of cinnamon, especially during Christmas season, can result in unacceptable exposure to coumarin.\nAn exposure assessment was carried out for young children by asking parents to children aged between 2 and 5 years to keep food records for two non-consecutive 3-day periods. 140 children ate cinnamon or cinnamon-containing products at least on on of the six days recorded, and 47% of the consumption days were between September and December.\nFor a 4-year-old child weighing 15 kg, a daily consumption of three cinnamon star cookies (“Zimtsterne” weighing about 6 g each) with the maximum level of coumarin measured in this product (Table 1 in Abraham et al. 2010) resulted in a coumarin exposure of 0.13 mg/kg body weight (0.046 mg/kg body weight daily for the cookies with the median level).\nPlease do the following task:\n\nConfirm the calculations of exposure, i.e. under the maximum and median levels of coumarin measured in cinnamon star cookies (“Zimtsterne”). For full points, show equations and the code for your calculations. (2p)\n\n\n\nRisk assessment\nYou are now asked to make your own conclusion if a 4-year-old child in Germany consuming cinnamon star cookies a day are at risk:\n\nSet up a risk assessment for 4-year-old children in Germany that consume cinnamon star cookies using the information provided and perform an uncertainty analysis in which you consider\n\n\nbetween individual variability in body weights\nbetween individual variability in consumption and\nvariability in levels of coumarin in cookies.\n\n\n\n\n\n\n\nPrinciples to set maximum points\n\n\n\nAnalysis expressing uncertainty by worst case values (max 3p)\nAnalysis expressing uncertainty by probability distributions (max 7p)\nConclusion expressed with uncertainty (+2p)\n\n\n\n\n\n\n\n\nReasons for reduction in points from total\n\n\n\nAnalysis is only expressed with reference to code\nSteps in the analysis is not explained or justified\nConclusion is not justified by the analysis\nAssumptions are not presented\nNo graphical visualisation\n\n\n\n\n\nReferences\nAbraham et al. (2010). Toxicology and risk assessment of coumarin: focus on human data. Molecular nutrition & food research, 54(2), 228-239.\nHagan et al. (1967). Food flavourings and compounds of related structure. II. Subacute and chronic toxicity. Food and cosmetics toxicology, 5, 141-157.\nlibrary(shinyssdtools) shinyssdtools::run_app()\nInterval analysis using worst case assumptions\nDetermine the Tolerable Daily Intake (TDI) for a Coumarin given the following information:\nhttps://www.bfr.bund.de/en/a-z_index/tdi-187181.html\nhttps://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2022.7584\nEFSA https://efsa.onlinelibrary.wiley.com/doi/epdf/10.2903/j.efsa.2004.104\nTDI coumarin https://pubmed.ncbi.nlm.nih.gov/20024932/\nBMD Norway\nhttps://www.livsmedelsverket.se/livsmedel-och-innehall/oonskade-amnen/vaxtgifter/kumarin-i-kanel\nAn environmental risk assessment of Paracetamol\n\\(\\frac{PEC}{PNEC}\\)\nPersistence. Paracetamol is not considered to be persistent.\nBioaccumulation. Paracetamol has low potential for bioaccumulation.\nToxicity. Paracetamol has moderate chronic toxicity.\nRisk. The use of paracetamol has been considered to result in insignificant environmental risk.\nPerform a Species Sensitivity Distribution modelling for available acute toxicity data"
+  },
+  {
+    "objectID": "pages/Course introduction.html#welcome-to-risk-assessment-in-environment-and-public-health",
+    "href": "pages/Course introduction.html#welcome-to-risk-assessment-in-environment-and-public-health",
+    "title": "Course introduction MVEN10",
+    "section": "Welcome to Risk Assessment in Environment and Public Health",
+    "text": "Welcome to Risk Assessment in Environment and Public Health\n\nCourse coordinator: Ullrika Sahlin\nCourse platform https://canvas.education.lu.se/courses/29367\nCourse syllabus https://kursplaner.lu.se/pdf/kurs/en/MVEN10/1"
+  },
+  {
+    "objectID": "pages/Course introduction.html#why-study-risk-assessment",
+    "href": "pages/Course introduction.html#why-study-risk-assessment",
+    "title": "Course introduction MVEN10",
+    "section": "Why study risk assessment",
+    "text": "Why study risk assessment\n\n\nTo be competitive on the job market\n\nthere is a lot of experts, but fewer experts on risk assessment\n\nTo better understand what expertise is required when assessing risk\n\nmotivation to become an expert\nstrengthen your interdisciplinary perspective\n\nTo be able to contribute to better management, including assessment and communication, of things that matter\nTo become a better decision maker"
+  },
+  {
+    "objectID": "pages/Course introduction.html#risk-assessment-types",
+    "href": "pages/Course introduction.html#risk-assessment-types",
+    "title": "Course introduction MVEN10",
+    "section": "Risk assessment types",
+    "text": "Risk assessment types\n\nHuman health Risk Assessment (HRA)\nEnvironmental/Ecological Risk Assessment (ERA)\nRed List Assessment (RLA)\nPest Risk Assessment (PRA)"
+  },
+  {
+    "objectID": "pages/Course introduction.html#lectures",
+    "href": "pages/Course introduction.html#lectures",
+    "title": "Course introduction MVEN10",
+    "section": "Lectures",
+    "text": "Lectures\n\nEleven lectures\nOccupational and Health Medicine\nEnvironmental Science (CEC)\nBiology"
+  },
+  {
+    "objectID": "pages/Course introduction.html#book-and-literature-seminars",
+    "href": "pages/Course introduction.html#book-and-literature-seminars",
+    "title": "Course introduction MVEN10",
+    "section": "Book and literature seminars",
+    "text": "Book and literature seminars\n\nThree book seminars\nTwo literature seminars\nSeminars are compulsory\nReport according to instructions\nCome prepared!"
+  },
+  {
+    "objectID": "pages/Course introduction.html#exercises",
+    "href": "pages/Course introduction.html#exercises",
+    "title": "Course introduction MVEN10",
+    "section": "Exercises",
+    "text": "Exercises\n\nTen exercise occasions\nYou are expected to use your own computer (notify!)\nMaterial published on canvas\nExercises are compulsory\nReport according to instructions"
+  },
+  {
+    "objectID": "pages/Course introduction.html#team-based-learning-and-case-studies",
+    "href": "pages/Course introduction.html#team-based-learning-and-case-studies",
+    "title": "Course introduction MVEN10",
+    "section": "Team Based Learning and Case studies",
+    "text": "Team Based Learning and Case studies\n\nCase studies: Risk assessments of the four different types\nFirst TBL activity in class:\n\nBecome familiar with four assessment types\nReport reflections on your own learning\n\nSecond TBL activity:\n\nDeepened your understanding of one of the assessment types\nReport as a presentation and written report to be shared with all students\nPadlet"
+  },
+  {
+    "objectID": "pages/Course introduction.html#individual-project",
+    "href": "pages/Course introduction.html#individual-project",
+    "title": "Course introduction MVEN10",
+    "section": "Individual project",
+    "text": "Individual project\n\nReproduce parts of an existing risk assessment, but with a slight modification.\nAssess uncertainty in the conclusion by expert judgement for communication to risk managers\nWritten report\nStudent peer-review"
+  },
+  {
+    "objectID": "pages/Course introduction.html#tools",
+    "href": "pages/Course introduction.html#tools",
+    "title": "Course introduction MVEN10",
+    "section": "Tools",
+    "text": "Tools\n\nOpen source tools for scientific assessment\n\nExcel\nR\nTool of your own choice"
+  },
+  {
+    "objectID": "pages/Course introduction.html#course-literature",
+    "href": "pages/Course introduction.html#course-literature",
+    "title": "Course introduction MVEN10",
+    "section": "Course literature",
+    "text": "Course literature\n\nBurgman, Mark. Risks and decisions for conservation and environmental management. Cambridge University Press, 2005.\nLiterature for seminars\nOther material handed out during the course\nExplicit references from lectures"
+  },
+  {
+    "objectID": "pages/Course introduction.html#non-scheduled-time",
+    "href": "pages/Course introduction.html#non-scheduled-time",
+    "title": "Course introduction MVEN10",
+    "section": "Non-scheduled time",
+    "text": "Non-scheduled time\n\nThis course is 15 credits and assumes 100% study pace\n8 hours per day\nNon-scheduled time implies self studies"
+  },
+  {
+    "objectID": "pages/Course introduction.html#grading-and-compulsory-work",
+    "href": "pages/Course introduction.html#grading-and-compulsory-work",
+    "title": "Course introduction MVEN10",
+    "section": "Grading and compulsory work",
+    "text": "Grading and compulsory work\n\nWritten exam corresponding to 7.5 hp, Grading scale: Fail, Pass, Pass with distinction\nExercises and Assignments corresponding to 4.5 hp, Grading scale: Fail, Pass\nProject work corresponding to 3.0 hp, Grading scale: Fail, Pass\nParticipation in written assignments, exercises, project work and associated parts is compulsory\n\nSeminars and literature seminars are compulsory\nLectures are not compulsory, but highly recommended"
+  },
+  {
+    "objectID": "pages/Course introduction.html#todo",
+    "href": "pages/Course introduction.html#todo",
+    "title": "Course introduction MVEN10",
+    "section": "Todo",
+    "text": "Todo\n\nChoose a course representative\nInform me if you need to borrow a computer during class"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MVEN10 lectures",
+    "section": "",
+    "text": "This is a webpage for sharing information from lectures and other things for the course in Risk assessment fall 2024"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "pages/bi.html",
+    "href": "pages/bi.html",
+    "title": "MVEN10-lectures",
+    "section": "",
+    "text": "What we want to know \\[P(A|+)\\]\nLikelihood - how much to we trust data\n\n\\[P(+|A)\\]\n\\[P(-|A)\\]\n\nBayesian updating\n\n\\[P(A|+)=\\frac{P(+|A)P(A)}{P(+)}\\]\n\nTo make it work we need to express our uncertainty before seeing the data - the prior\n\n\\[P(A)\\]"
+  },
+  {
+    "objectID": "pages/course_overview.html",
+    "href": "pages/course_overview.html",
+    "title": "Course content",
+    "section": "",
+    "text": "The general aim of the course is that the student, on completion of the course, should have advanced principles and methods to identify and assess risks in the fields of environment, nature and health. The course includes risks for humans and other organisms connected to exposure to chemicals and causes and risks connected to the extinction of species. Insights into and understanding of need of scientifically based risk communication to different target groups and the importance of knowledge about risk perception to create relevant risk assessments and communication of risks in society are included as important components. The student should be able to understand on completion of the course describe and work with common risk models or tools that are used in the areas of nature, environment and health and have an understanding of how they are used to inform decision-making.\n\n\nOn completion of the course, the student should be able to:\n\ngive an account of and independently apply principles and methods for risk analysis and common risk assessment models in environment, nature and health\ngive an account of needs and examples of scientifically based risk communication in society and its relation to risk perception\ngive an account of research and development for risk assessment in nature,environment and health\n\n\n\n\nOn completion of the course, the student should be able to:\n\nuse common methods for risk assessment in the fields of nature, environment and health to within given time frames, and in collaboration with experts,identify and analyse risks\npresent result of risk assessments in different applications\ndiscuss different forms of communication of risks and uncertainty in society\n\n\n\n\nOn completion of the course, the student should be able to:\n\ncritically reflect on the possibilities and limitations of risk assessments and its role in risk management in society\ndiscuss ethical aspects at assessment, management and communication of risks\nsuggest needs of additional knowledge to carry out risk assessments in environment, nature and health and take responsibility for their development of knowledge"
+  },
+  {
+    "objectID": "pages/course_overview.html#course-syllabus",
+    "href": "pages/course_overview.html#course-syllabus",
+    "title": "Course content",
+    "section": "",
+    "text": "The general aim of the course is that the student, on completion of the course, should have advanced principles and methods to identify and assess risks in the fields of environment, nature and health. The course includes risks for humans and other organisms connected to exposure to chemicals and causes and risks connected to the extinction of species. Insights into and understanding of need of scientifically based risk communication to different target groups and the importance of knowledge about risk perception to create relevant risk assessments and communication of risks in society are included as important components. The student should be able to understand on completion of the course describe and work with common risk models or tools that are used in the areas of nature, environment and health and have an understanding of how they are used to inform decision-making.\n\n\nOn completion of the course, the student should be able to:\n\ngive an account of and independently apply principles and methods for risk analysis and common risk assessment models in environment, nature and health\ngive an account of needs and examples of scientifically based risk communication in society and its relation to risk perception\ngive an account of research and development for risk assessment in nature,environment and health\n\n\n\n\nOn completion of the course, the student should be able to:\n\nuse common methods for risk assessment in the fields of nature, environment and health to within given time frames, and in collaboration with experts,identify and analyse risks\npresent result of risk assessments in different applications\ndiscuss different forms of communication of risks and uncertainty in society\n\n\n\n\nOn completion of the course, the student should be able to:\n\ncritically reflect on the possibilities and limitations of risk assessments and its role in risk management in society\ndiscuss ethical aspects at assessment, management and communication of risks\nsuggest needs of additional knowledge to carry out risk assessments in environment, nature and health and take responsibility for their development of knowledge"
+  },
+  {
+    "objectID": "pages/course_overview.html#course-content",
+    "href": "pages/course_overview.html#course-content",
+    "title": "Course content",
+    "section": "Course content",
+    "text": "Course content\nThe course deals with:\n\nidentification, assessment, evaluation and management of risks connected to human and other organisms’ exposure to chemicals and risks connected to extinction of species\nmethods in risk analysis such as problem formulation, hazard assessment, statistical modelling, exposure modelling, dose-response modelling, modelling of dispersion of diseases (epidemiology), modelling of uptake, renewal, distributions and secretion of poisons in living organisms (toxicokinetics) and expert assessment and principles and methods for uncertainty analysis\nrisk evaluation, which includes how to in a structured way can evaluate and make tradeoffs to support decision-making\nrisk management, which includes how different societal actors prevent risks, sets regulatory thresholds and communicate risks. In addition the importance to connect risk perception in risk management and communication of risks is included."
+  },
+  {
+    "objectID": "pages/course_overview.html#subcourses-in-mven10",
+    "href": "pages/course_overview.html#subcourses-in-mven10",
+    "title": "Course content",
+    "section": "Subcourses in MVEN10",
+    "text": "Subcourses in MVEN10\n\n“Examination”\n7.5 hp Grading scale: Fail, Pass, Pass with distinction\n\n\nExercises and Assignments\n4.5 hp Grading scale: Fail, Pass\n\n\nProject work\n3.0 hp Grading scale: Fail, Pass"
+  },
+  {
+    "objectID": "pages/course_overview.html#course-material",
+    "href": "pages/course_overview.html#course-material",
+    "title": "Course content",
+    "section": "Course material",
+    "text": "Course material\n\nGeneral about risk and risk assessment\n\nBurgman/Book seminars\nAll material from the course book by Burgman covered at the book seminars. This means that you should skip the chapters that we did not cover in the seminars.\nHere I extracted the terms from the glossary in the book that is applicable for the course:\nADI, acute effect, ALARP principle, algorithm, ambiguity, anchoring, AUC, assessment endpoints, averaging, Bayesian analysis, Bayesian credible intervals, behavioural aggregation, belief, benchmark dose, benefit-cost analysis, beta distribution, binomial distribution, bioconcentration factor, bounded rationality, bounds (statistical), calibration, calibration of models, carrying capacity, central tendency, chance, chronic effects, coefficient of variation, cognitive availability, conceptual models, conditional probabilities (statistics), confidence, confidence intervals, confusion matrix, consensus, context, convergence, correlation (statistical), correlation coefficient, cost-benefit analysis, credibility, credible intervals, cumulative probabilities, decision, decision tables, Delphi technique, demographic variation, demographic stochasticity, density dependence, dependency of a variable (statistical), detectable effect sizes, deterministic model, deterministic sensitivity, dichotomoy, disagreement, dispersal, EC50, ecotoxicology, effect size, endpoints, environmental aspect, environmental effect, environmental uncertainty (in PVAs), enzyme, epistemic uncertainty, equipossible/equiprobable, evidence, expected dose, expected utility, expert, exponential distribution, exposure pathway, false negative/false positive, fecundity (PVA), final acute value, fixed probability, fixed value, free-riding, frequentist statistics, fugacity, goodness of fit, hazard, hazard index, hazard matrices, hazard probability rank, hazard quotient, hedonic pricing, hormesis, hydrolysis, hypothesis, illusofy certainty, incertitude, indeterminacy, indicators, information disagreement, interval arithmetic, interval probabilities, kent scales, LCxx, likelihood, linguistic uncertainty, LOAEL/LOEL, LOEC, management goals, MaxiMin strategy, measurement endpoint, measurement error, median, metapopulation, minimum expected population size, minimum viable population, mixing or averaging probabilities, model averaging, model uncertainty, monitoring, Monte Carlo analysis, motivational bias, multi-criteria decision analysis, natural death (in behavioural aggregation), natural variation, negotiation, NOEL/NOEC, normal distribution, normative expertise, normative theories (of rational consensus), numerical aggregation, odds ration, partitioning coefficient, paternalistic model for stakeholder involvement, photolysis, plausibility, point estiamtes, Poisson distribution, Poisson process, Population viability analysis, possibility, posterior probabilities, power (statistical), precautionary principle, prediction intervals, principle of insufficient reason, prior probabilities, probability, probability density function, problem formulation, procedures guide (for expert elicitation), process model, prosecutor’s fallacy public participation, QSAR, quantiles, quartiles, range (statisical), rank correlations, rational consensus, reasonable maximum exposure, reference dose, reference lottery, regret, relative risk, risk, risk analysis, risk assessment, risk aversion, risk efficiency, risk equity, risk ranking, robust decisions, ROC, scenario analysis, scenarios, semantic disagreement, sensitivity analysis (for models), sigmodial curve, snowballing, Spearman rank correlation, stakeholder, stakeholder expert, stochastic models, strategic risk managment, stressors, SAR, subjective belief, substantive expertise, sure bounds, systematic error, tendency, theory-based inference, transformation, triangular distribution, type I/type II errors, underspecificity, uniform distribution, utilities, utility function, utility-based criteria, vagueness, validation/verification (of a model), variability, volatilization, zero risk strategies.\n\n\nMaterial from exercises\nPrinciples and methods for uncertainty analysis that we have worked with during exercises. Go back and read the exercises.\n\n\nAdditional lecture material provided by Ullrika during the course\nSee page on canvas Lecture Types of assessment\n\n\nLectures about risk, uncertainty and decision making\nGo over the lectures, they were recorded and you have access to presentations and your notes.\nIndividual decision making - how does it work? what is a good choice? How is risk perception linked with individual decision making? Mention some factors explaining differences in risk perception.\nSocietal decision making - what is the difference to individual decision making?\nRational and bounded rationality - difference?\nWhen and how to consider uncertainty in assessments - what did they say about this?\nWhen and how to consider uncertainty in decision making - what did they say about this? What did you learn from the akrylamid case study regarding risk communication?\n\n\nActual risk assessments\n\nAll the assessments considered in the case study seminars\nAll the assessment considered in the individual projects\nRead the assessments and see the concepts and methods used in practice\nYou will have access to the final reports by the groups.\nYou have written your own report and reviewed a report by another student.\n\n\n\n\nHealth risk assessment\nThis includes assessment on human endpoints. In the course, we primary focus is exposure to chemicals.\n\nRelevant material from the general parts\nMaterial from lectures and literature seminars\nHealth risk assessment exercise\n\n\n\nEnvironmental risk assessment\nIn this course environmental risk assessment covers\n\nRed list assessments (classification of status of species)\nPest risk assessments (introduction, establishment, spread and impact of pests or invasive species)\nEcological/Environmental risk assessment (effect on ecological systems from chemical exposure)\nRelevant material from the general parts\n\nSee page on canvas Lecture Types of assessment"
+  },
+  {
+    "objectID": "pages/course_overview.html#guiding-study-questions",
+    "href": "pages/course_overview.html#guiding-study-questions",
+    "title": "Course content",
+    "section": "Guiding study questions",
+    "text": "Guiding study questions\nNOTE: THIS IS NOT AN EXHAUSTIVE LIST OF POSSIBLE QUESTIONS THAT CAN BE ASKED AT THE EXAM.\nThis list of guiding study questions has been constructed from the course syllabus (kursplanen)\n\nGive an account of (i.e. describe or explain) a principle or method brought up during the course, e.g. EC50, MOET, model averaging or Monte Carlo simulation!\nGive an account of common risk assessment models used for any of the types of assessments covered in the course (Human risk assessment related to exposure to chemicals, Ecological/Environmental risk assessment, Pest risk assessment, Red list assessment)!\nGive an account of factors explaining differences in risk perception!\nGive an account of recommendations to guide risk communication!\nGive an account of challenges in implementing uncertainty analysis, ensuring public trust and applying the precautionary principle!\nEvaluate an application of an assessment (material will be provided) in light of guidance for that assessment! Were guidelines followed? Reflect on limitations of the assessment. Suggest possible modifications of the assessment.\nEvaluate on the presentation of result of an application of an assessment (material will be provided) in light of recommendations for communication. Were guidelines/recommendations followed. Suggest improvements for communicating results in the assessment. Suggestion communication to the public.\nComment on the role of an application of an assessment (material will be provided) to support a particular risk management decision. How is information from the assessment used to support the decision making? What is the decision problem. Suggest how to handle uncertainty in this particular decision problem."
+  },
+  {
+    "objectID": "pages/exam_conserv.html",
+    "href": "pages/exam_conserv.html",
+    "title": "Exam MVEN10 October 26th 2023",
+    "section": "",
+    "text": "Write a report with the answers to the questions, discussions or solutions to the tasks provided. You can have appendices to the report. Put your name on the report and all appendices.\nYou are allowed to discuss with others, but at the end, I expect that you do the exam yourself.\nSubmit the report and fill in the certificate on canvas, stating that you have done the exam yourself and, if, and if so for what, you have used any AI tool to help you.\nCited papers and link to the certificate quiz are available in the module Examination on Canvas.\nThe points on this part of the exam will be added to the points from the exam that you did on Oct 25th. You need 50 points to Pass (G) and 75 points to Pass with distinction (VG)."
+  },
+  {
+    "objectID": "pages/exam_conserv.html#a-risk-assessment-of-a-threathened-species",
+    "href": "pages/exam_conserv.html#a-risk-assessment-of-a-threathened-species",
+    "title": "Exam MVEN10 October 26th 2023",
+    "section": "A risk assessment of a threathened species",
+    "text": "A risk assessment of a threathened species\nGo to the page for the IUCN Red list\n\nWhat organisation is behind this page and what do they want to achieve with it? (1p)\n\nSearch for the species given to you in the database and study the summary of the red list assessment for this species.\n\nMake a short description of the species given to you. (1p)\n\nA red list categorisation can be based on a combination of criteria:\n\nPopulation size reduction (past, present and/or projected)\nGeographic range size, and fragmentation, few locations, decline or fluctuations\nSmall and declining population size and fragmentation, fluctuations, or few subpopulations\nVery small population or very restricted distribution\nQuantitative analysis of extinction risk\n\n\nWhy are these criteria relevant? (2p)\nConfirm and discuss limitations in the conclusions on the criteria used for the assessment of the species provided to you by\n\n\nreferring to Guidelines for Using the IUCN Red List Categories and Criteria\nconsidering data and other information presented on the assessment page for the species\n\n(6p)"
+  },
+  {
+    "objectID": "pages/exam_conserv.html#assessment-on-coumarin",
+    "href": "pages/exam_conserv.html#assessment-on-coumarin",
+    "title": "Exam MVEN10 October 26th 2023",
+    "section": "Assessment on coumarin",
+    "text": "Assessment on coumarin\n\nHazard assessment\nCoumarin (1,2-benzopyrone, CAS No. 91-64-5) is an ingredient in cinnamon known to e.g. cause liver damages (Abraham et al. 2010).\nAn overall NOAEL for liver toxicity on 10 mg coumarin/kg bw/day has been derived from the most sensitive animal species in a set of toxicological studies.\nThe value for the NOAEL was taken from a study on dogs by Hagan et al. (1967) where coumarin was reported to give hepatotoxic effects in dogs given 25 and 50 mg/kg bw/day coumarin for longer periods, but not in dogs given 10 mg/kg bw/day coumarin for up to 350 days.\nA TDI of 0.1 mg coumarin/kg bw was established by EFSA (2004) by applying a safety factor of 100.\n\nAnswer with complete sentences the following questions:\n\nWhy was a safety factor applied when EFSA derived the TDI and explain what the value 100 comes from? (3p)\nProvide at least three arguments why a TDI on 0.1 mg coumarin/kg bw given the data provided so far is a conservative choice. (3p)\nProvide at least two arguments to why too conservative choices of TDIs might be problematic in general. (2p)\n\nThe frequency as well as the severity of coumarin hepatotoxicity in the human subpopulation is considered as relevant, and therefore the effect of coumarin on humans should be considered in hazard assessment.\nIn 1999, an expert opinion “on the assessment of coumarin in medicinal products with regard to a hepatotoxic effect in humans” was commissioned by the Federal Institute for Drugs and Medical Devices (BfArM) in Germany. This opinion (read assessment) considered 82 case reports of possible coumarin-associated liver damage.\nFive cases (10%) occurred at the lowest doses (25 and 30 mg daily); of the three cases from Germany documented in more detail, two had developed hepatitis. According to the expert report, for part of the population liver damage cannot be ruled out at a daily dose of 25 mg coumarin.\nIn order to extrapolate from this effect level to a human NOAEL, a factor of 5 is considered justified in the case of a severe effect at the lowest observed adverse effect level.\nUsing the established safe daily dose of 5 mg coumarin for an adult weighing 60 kg, a (rounded) TDI of 0.1 mg/kg body weight was derived by the Federal Institute for Risk Assessment (BfR).\nAbraham et al. (2010) concluded that a TDI of 0.1 mg coumarin/kg bw can be justified based on animal as well as human data.\n\nDiscuss in what way is a TDI on 0.1 mg coumarin/kg bw can be seen as a less conservative choice compared to before. (2p)"
+  },
+  {
+    "objectID": "pages/exam_conserv.html#is-cinnamon-safe-to-consume",
+    "href": "pages/exam_conserv.html#is-cinnamon-safe-to-consume",
+    "title": "Exam MVEN10 October 26th 2023",
+    "section": "Is cinnamon safe to consume?",
+    "text": "Is cinnamon safe to consume?\n\nHazard assessment\nRevisit the coumarin hazard assessment described above and\n\nConsider the situation where the human NOAEL instead was x mg coumarin per kg per day. Propose and justify a new TDI in light of available data! For full points, show equations and the code for your calculations. (3p)\n\n\n\n\nExposure assessment\nThere is a concern that extreme consumption of cinnamon, especially during Christmas season, can result in unacceptable exposure to coumarin. An exposure assessment was carried out for young children by asking parents to children aged between 2 and 5 years to keep food records for two non-consecutive 3-day periods. 140 children ate cinnamon or cinnamon-containing products at least on on of the six days recorded, and 47% of the consumption days were between September and December.\nFor a 4-year-old child weighing 15 kg, a daily consumption of three cinnamon star cookies (“Zimtsterne” weighing about 6 g each) with the maximum level of coumarin measured in this product (Table 1 in Abraham et al. 2010) resulted in a coumarin exposure of 0.13 mg/kg body weight (0.046 mg/kg body weight daily for the cookies with the median level).\nPlease do the following task:\n\nConfirm the calculations of exposure under the maximum and median levels of coumarin measured in cinnamon star cookies (“Zimtsterne”). For full points, show equations and the code for your calculations. (2p)\n\n\n\nRisk assessment\nAbraham et al. (2010) concluded\n\n\nAs is evident from the estimation of exposure, heavy consumers may reach a daily coumarin intake of 0.1 mg/kg body weight corresponding to the TDI just from the consumption of Christmas-related foods during autumn and winter. With an additional consumption of cinnamon, these consumers may exceed the TDI.\n\n\nand\n\n\nTherefore, no risk of hepatotoxicity of coumarin is expected for the vast majority of the population consuming low or moderate amounts of (cassia) cinnamon. However, consumers who really eat a lot may have a risk if they belong to the sensitive subgroup.\n\n\nSo should we be concerned with children eating Christmas cookies or not?\nAs pointed out by Abraham et al. (2010), the exposure might be higher since “other coumarin-containing foods may be consumed simultaneously”.\nYour task is to answer the question: Are 4-year-old children in Germany consuming cinnamon star cookies during Christmas season at risk?\n\nPlan and evaluate a risk assessment for 4-year-old children in Germany that consume cinnamon star cookies during Christmas season using the information provided above in which you include an uncertainty analysis. (15p)\n\nConsider\n\nbetween individual variability in body weights. Justify your choice of values based on information in the ExpoFacts Database (Zenié and Reina, 2007)\nbetween individual variability in consumption. Justify your choice of values using your own experience.\nvariability in levels of coumarin in cookies. Justify your choice of values from data in Table 1 in Abraham et al. (2010) and that cookies can have different weights.\n\nUse the TDI of 0.1 mg/kg bw.\nLet us assume that 4-year-old German children only consume cinnamon star cookies.\nYou are the only expert involved in the assessment.\nRisk managers require you to be at least 75% certain in your answer to be able to use the conclusion as scientific advice. Therefore, communicate your uncertainty in the conclusion in an honest and transparent way.\n\n\n\n\n\n\nReasons for reduction in points from total\n\n\n\nAnalysis is only expressed with reference to code\nSteps in the analysis is not explained or justified\nConclusion is not backed up by the analysis\nAssumptions are not presented\nNo information on the experts uncertainty in the conclusion\nNo graphical visualisation\nOnly worst case analysis (i.e. no refined approach for uncertainty analysis by modelling variability by probability distributions)\n\n\n\n\n\n\n\n\nNote\n\n\n\nNote that you can get up to 10 points on this task if you provide a plan of the assessment even if you do not carry out all parts."
+  },
+  {
+    "objectID": "pages/exam_conserv.html#references",
+    "href": "pages/exam_conserv.html#references",
+    "title": "Exam MVEN10 October 26th 2023",
+    "section": "References",
+    "text": "References\nAbraham et al. (2010). Toxicology and risk assessment of coumarin: focus on human data. Molecular nutrition & food research, 54(2), 228-239.\nHagan et al. (1967). Food flavourings and compounds of related structure. II. Subacute and chronic toxicity. Food and cosmetics toxicology, 5, 141-157.\nEFSA Panel on Food Contact Materials, Enzymes, Flavourings and Processing Aids, 2004. Opinion of the Scientific Panel on food additives, flavourings, processing aids and materials in contact with food (AFC) related to Coumarin. EFSA Journal.\nBfR Health Assessment No. 044/2006, 18 August 2006. High daily intakes of cinnamon: Health risk cannot be ruled out.\nZenié and Reina (2007): ExpoFacts Database. European Commission, Joint Research Centre (JRC) [Dataset] PID: https://data.jrc.ec.europa.eu/dataset/jrc-10114-10001"
+  },
+  {
+    "objectID": "pages/exam_environ_conserv.html",
+    "href": "pages/exam_environ_conserv.html",
+    "title": "Exam MVEN10 October 26th 2023",
+    "section": "",
+    "text": "Write a report with the answers to the questions, discussions or solutions to the tasks provided. You can have appendices to the report. Put your name on the report and all appendices.\nYou are allowed to discuss with others, but at the end, I expect that you do the exam yourself.\nSubmit the report and fill in the certificate on canvas, stating that you have done the exam yourself and, if, and if so for what, you have used any AI tool to help you.\nCited papers and link to the certificate quiz are available in the module Examination on Canvas.\nThe points on this part of the exam will be added to the points from the exam that you did on Oct 25th. You need 50 points to Pass (G) and 75 points to Pass with distinction (VG)."
+  },
+  {
+    "objectID": "pages/exam_environ_conserv.html#option-environmental-risk-assessment-of-a-pharmaceutical",
+    "href": "pages/exam_environ_conserv.html#option-environmental-risk-assessment-of-a-pharmaceutical",
+    "title": "Exam MVEN10 October 26th 2023",
+    "section": "OPTION: Environmental risk assessment of a pharmaceutical",
+    "text": "OPTION: Environmental risk assessment of a pharmaceutical\nGo to the page Pharmaceuticals and Environment\n\nWhat organisation is behind this page and what do they want to achieve with it? (1p)\n\nSearch for the pharmaceutical given to you in the database and study the summary of the hazard and risk classification for this pharmaceutical.\n\nMake a short description of the pharmaceutical given to you. (1p)\n\nThe hazard classification considers Persistence, Bioaccumulation and Toxicity.\n\nWhy are these endpoints relevant? (2p)\nConfirm and discuss limitations in the conclusions on these three endpoints and on risk by\n\n\nreferring to information about the classifications\nconsidering data and other information presented on the summary page for the pharmaceutical (6p)"
+  },
+  {
+    "objectID": "pages/exam_environ_conserv.html#option-a-risk-assessment-of-a-threathened-species",
+    "href": "pages/exam_environ_conserv.html#option-a-risk-assessment-of-a-threathened-species",
+    "title": "Exam MVEN10 October 26th 2023",
+    "section": "OPTION: A risk assessment of a threathened species",
+    "text": "OPTION: A risk assessment of a threathened species\nGo to the page for the IUCN Red list\n\nWhat organisation is behind this page and what do they want to achieve with it? (1p)\n\nSearch for the species given to you in the database and study the summary of the red list assessment for this species.\n\nMake a short description of the species given to you. (1p)\n\nA red list categorisation can be based on a combination of criteria:\n\nPopulation size reduction (past, present and/or projected)\nGeographic range size, and fragmentation, few locations, decline or fluctuations\nSmall and declining population size and fragmentation, fluctuations, or few subpopulations\nVery small population or very restricted distribution\nQuantitative analysis of extinction risk\n\n\nWhy are these criteria relevant? (2p)\nConfirm and discuss limitations in the conclusions on the criteria used for the assessment of the species provided to you by\n\n\nreferring to Guidelines for Using the IUCN Red List Categories and Criteria\nconsidering data and other information presented on the assessment page for the species (6p)"
+  },
+  {
+    "objectID": "pages/exam_environ_conserv.html#assessment-on-coumarin",
+    "href": "pages/exam_environ_conserv.html#assessment-on-coumarin",
+    "title": "Exam MVEN10 October 26th 2023",
+    "section": "Assessment on coumarin",
+    "text": "Assessment on coumarin\n\nHazard assessment\nCoumarin (1,2-benzopyrone, CAS No. 91-64-5) is an ingredient in cinnamon known to e.g. cause liver damages (Abraham et al. 2010).\nAn overall NOAEL for liver toxicity on 10 mg coumarin/kg bw/day has been derived from the most sensitive animal species in a set of toxicological studies.\nThe value for the NOAEL was taken from a study on dogs by Hagan et al. (1967) where coumarin was reported to give hepatotoxic effects in dogs given 25 and 50 mg/kg bw/day coumarin for longer periods, but not in dogs given 10 mg/kg bw/day coumarin for up to 350 days.\nA TDI of 0.1 mg coumarin/kg bw was established by EFSA (2004) by applying a safety factor of 100.\n\nAnswer with complete sentences the following questions:\n\nWhy was a safety factor applied when EFSA derived the TDI and explain what the value 100 comes from? (3p)\nProvide at least three arguments why a TDI on 0.1 mg coumarin/kg bw given the data provided so far is a conservative choice. (3p)\nProvide at least two arguments to why too conservative choices of TDIs might be problematic in general. (2p)\n\nThe frequency as well as the severity of coumarin hepatotoxicity in the human subpopulation is considered as relevant, and therefore the effect of coumarin on humans should be considered in hazard assessment.\nIn 1999, an expert opinion “on the assessment of coumarin in medicinal products with regard to a hepatotoxic effect in humans” was commissioned by the Federal Institute for Drugs and Medical Devices (BfArM) in Germany. This opinion (read assessment) considered 82 case reports of possible coumarin-associated liver damage.\nFive cases (10%) occurred at the lowest doses (25 and 30 mg daily); of the three cases from Germany documented in more detail, two had developed hepatitis. According to the expert report, for part of the population liver damage cannot be ruled out at a daily dose of 25 mg coumarin.\nIn order to extrapolate from this effect level to a human NOAEL, a factor of 5 is considered justified in the case of a severe effect at the lowest observed adverse effect level.\nUsing the established safe daily dose of 5 mg coumarin for an adult weighing 60 kg, a (rounded) TDI of 0.1 mg/kg body weight was derived by the Federal Institute for Risk Assessment (BfR).\nAbraham et al. (2010) concluded that a TDI of 0.1 mg coumarin/kg bw can be justified based on animal as well as human data.\n\nDiscuss in what way is a TDI on 0.1 mg coumarin/kg bw can be seen as a less conservative choice compared to before. (2p)"
+  },
+  {
+    "objectID": "pages/exam_environ_conserv.html#is-cinnamon-safe-to-consume",
+    "href": "pages/exam_environ_conserv.html#is-cinnamon-safe-to-consume",
+    "title": "Exam MVEN10 October 26th 2023",
+    "section": "Is cinnamon safe to consume?",
+    "text": "Is cinnamon safe to consume?\n\nHazard assessment\nRevisit the coumarin hazard assessment described above and\n\nConsider the situation where the human NOAEL instead was 205 mg coumarin per kg per day. Propose and justify a new TDI in light of available data! For full points, show equations and the code for your calculations. (3p)\n\n\n\n\nExposure assessment\nThere is a concern that extreme consumption of cinnamon, especially during Christmas season, can result in unacceptable exposure to coumarin. An exposure assessment was carried out for young children by asking parents to children aged between 2 and 5 years to keep food records for two non-consecutive 3-day periods. 140 children ate cinnamon or cinnamon-containing products at least on on of the six days recorded, and 47% of the consumption days were between September and December.\nFor a 4-year-old child weighing 15 kg, a daily consumption of three cinnamon star cookies (“Zimtsterne” weighing about 6 g each) with the maximum level of coumarin measured in this product (Table 1 in Abraham et al. 2010) resulted in a coumarin exposure of 0.13 mg/kg body weight (0.046 mg/kg body weight daily for the cookies with the median level).\nPlease do the following task:\n\nConfirm the calculations of exposure under the maximum and median levels of coumarin measured in cinnamon star cookies (“Zimtsterne”). For full points, show equations and the code for your calculations. (2p)\n\n\n\nRisk assessment\nAbraham et al. (2010) concluded\n\nAs is evident from the estimation of exposure, heavy consumers may reach a daily coumarin intake of 0.1 mg/kg body weight corresponding to the TDI just from the consumption of Christmas-related foods during autumn and winter. With an additional consumption of cinnamon, these consumers may exceed the TDI.\n\nand\n\nTherefore, no risk of hepatotoxicity of coumarin is expected for the vast majority of the population consuming low or moderate amounts of (cassia) cinnamon. However, consumers who really eat a lot may have a risk if they belong to the sensitive subgroup.\n\nSo should we be concerned with children eating Christmas cookies or not?\nAs pointed out by Abraham et al. (2010), the exposure might be higher since “other coumarin-containing foods may be consumed simultaneously”.\nYour task is to answer the question: Are 4-year-old children in Germany consuming cinnamon star cookies during Christmas season at risk?\n\nPlan and evaluate a risk assessment for 4-year-old children in Germany that consume cinnamon star cookies during Christmas season using the information provided above in which you include an uncertainty analysis. (15p)\n\nConsider\n\nbetween individual variability in body weights. Justify your choice of values based on information in the ExpoFacts Database (Zenié and Reina, 2007)\nbetween individual variability in consumption. Justify your choice of values using your own experience.\nvariability in levels of coumarin in cookies. Justify your choice of values from data in Table 1 in Abraham et al. (2010) and that cookies can have different weights.\n\nUse the TDI of 0.1 mg/kg bw.\nLet us assume that 4-year-old German children only consume cinnamon star cookies.\nYou are the only expert involved in the assessment.\nRisk managers require you to be at least 75% certain in your answer to be able to use the conclusion as scientific advice. Therefore, communicate your uncertainty in the conclusion in an honest and transparent way.\n\n\n\n\n\n\nReasons for reduction in points from total\n\n\n\nAnalysis is only expressed with reference to code\nSteps in the analysis is not explained or justified\nConclusion is not backed up by the analysis\nAssumptions are not presented\nNo information on the experts uncertainty in the conclusion\nNo graphical visualisation\nOnly worst case analysis (i.e. no refined approach for uncertainty analysis by modelling variability by probability distributions)\n\n\n\n\n\n\n\n\nNote\n\n\n\nNote that you can get up to 10 points on this task if you provide a plan of the assessment even if you do not carry out all parts."
+  },
+  {
+    "objectID": "pages/exam_environ_conserv.html#references",
+    "href": "pages/exam_environ_conserv.html#references",
+    "title": "Exam MVEN10 October 26th 2023",
+    "section": "References",
+    "text": "References\nAbraham et al. (2010). Toxicology and risk assessment of coumarin: focus on human data. Molecular nutrition & food research, 54(2), 228-239.\nHagan et al. (1967). Food flavourings and compounds of related structure. II. Subacute and chronic toxicity. Food and cosmetics toxicology, 5, 141-157.\nEFSA Panel on Food Contact Materials, Enzymes, Flavourings and Processing Aids, 2004. Opinion of the Scientific Panel on food additives, flavourings, processing aids and materials in contact with food (AFC) related to Coumarin. EFSA Journal.\nBfR Health Assessment No. 044/2006, 18 August 2006. High daily intakes of cinnamon: Health risk cannot be ruled out.\nZenié and Reina (2007): ExpoFacts Database. European Commission, Joint Research Centre (JRC) [Dataset] PID: https://data.jrc.ec.europa.eu/dataset/jrc-10114-10001"
+  },
+  {
+    "objectID": "pages/individual_projects.html",
+    "href": "pages/individual_projects.html",
+    "title": "Introduction to individual projects",
+    "section": "",
+    "text": "On Monday, you will be assigned one of the following risk assessments. The assignment will consider you preference, but all risk assessments must be chosen at the end as they represent material for the course.\nReproduce the indicated part of the assessment with your choice of modification.\nProduce a report on 2 - 10 pages (min 2 and max 10) including figures and tables.\nProvide your code for the assessment as an appendix.\nInclude references, including reference to suitable guidance documents for this type of risk assessment.\nRefer to sections, figures and tables in the original assessment the when using it as reference.\nSee the template report for further info"
+  },
+  {
+    "objectID": "pages/individual_projects.html#general-instructions",
+    "href": "pages/individual_projects.html#general-instructions",
+    "title": "Introduction to individual projects",
+    "section": "",
+    "text": "On Monday, you will be assigned one of the following risk assessments. The assignment will consider you preference, but all risk assessments must be chosen at the end as they represent material for the course.\nReproduce the indicated part of the assessment with your choice of modification.\nProduce a report on 2 - 10 pages (min 2 and max 10) including figures and tables.\nProvide your code for the assessment as an appendix.\nInclude references, including reference to suitable guidance documents for this type of risk assessment.\nRefer to sections, figures and tables in the original assessment the when using it as reference.\nSee the template report for further info"
+  },
+  {
+    "objectID": "pages/individual_projects.html#a-human-health-risk-assessment-from-chemicals-in-the-food-chain",
+    "href": "pages/individual_projects.html#a-human-health-risk-assessment-from-chemicals-in-the-food-chain",
+    "title": "Introduction to individual projects",
+    "section": "A human health risk assessment from chemicals in the food chain",
+    "text": "A human health risk assessment from chemicals in the food chain\nRisk assessment of N‐nitrosamines in food Link to the assessment\nThis is a typical risk assessment of risk to human health via dietary exposure from a chemical substance in food.\nThe task is to replicate the risk assessment with one of the following modifications\n\na new Benchmark Dose Modelling where you discuss the influence of choices made in the modelling\na quantitative uncertainty analysis on the exposure assessment\n\nAt the end, quantify the level of certainty that exposure of N‐nitrosamines can lead to adverse outcomes for different proportions of the EU population. Use expert judgement where you and two other persons act as experts."
+  },
+  {
+    "objectID": "pages/individual_projects.html#a-pest-categorisation-of-an-invasive-species",
+    "href": "pages/individual_projects.html#a-pest-categorisation-of-an-invasive-species",
+    "title": "Introduction to individual projects",
+    "section": "A pest categorisation of an invasive species",
+    "text": "A pest categorisation of an invasive species\nPest categorisation of the red fire ant Link to the assessment\nThe task is to replicate the assessment of pest potential for entry, establishment and spread in the EU (Section 3.4) with one of the following modifications\n\nmake your own assessment of climate matching e.g. by running the CLIMEX modelling with occurrence data that you retrieve from databases.\n\n\n\nAt the end, quantify the level of certainty that this species will be a problem in Sweden within 20 years from now using expert judgement where you and two other persons act as experts."
+  },
+  {
+    "objectID": "pages/individual_projects.html#an-evaluation-of-control-measures-for-a-disease",
+    "href": "pages/individual_projects.html#an-evaluation-of-control-measures-for-a-disease",
+    "title": "Introduction to individual projects",
+    "section": "An evaluation of control measures for a disease",
+    "text": "An evaluation of control measures for a disease\nThis assessment compares the efficiency of control measures for the Classical Swine Fever Link to the assessment\nThe task is to replicate the assessment of the Minimum radius of restricted zones and duration of the disease control measures in restricted zones (ToR 3) with the following modifications\n\n\n\n\n\n\nwith a quantitative uncertainty analysis considering the impact of uncertainty in parameters of the kernel model and the impact of uncertainty in the model structure by model averaging\n\nAt the end, quantify the level of certainty that the control measures taken for the outbreak of African Swine Fever in Sweden will succeed in containing the outbreak. Consider similarities and differences between AFS and CSF. Use expert judgement where you and two other persons act as experts."
+  },
+  {
+    "objectID": "pages/individual_projects.html#a-red-list-assessment-of-conservation-status",
+    "href": "pages/individual_projects.html#a-red-list-assessment-of-conservation-status",
+    "title": "Introduction to individual projects",
+    "section": "A Red list assessment of conservation status",
+    "text": "A Red list assessment of conservation status\n\nI altered the heading for this assessment after consultation with the students, considering that population viability analysis is one alternative to assess conservation status\n\nThis is an assessment of conservation status based on an population analysis of the polar bear Link to the assessment\nYou can find a description of the assessment in the Supplementary material for Ursus maritimus Red List assessment\nGuidelines for conducting a red list assessment\nReplicate the risk assessment for two scenarios and two subpopulations with the following modifications\n\nconsider uncertainty in generation length by a probability distribution instead of the mean and P95\n\nAt the end, quantify the level of certainty that there will be a decline in at least one of the subpopulations. Use expert judgement where you and two other persons act as experts."
+  },
+  {
+    "objectID": "pages/individual_projects.html#an-environmental-risk-assessment-from-the-use-of-a-chemical-product",
+    "href": "pages/individual_projects.html#an-environmental-risk-assessment-from-the-use-of-a-chemical-product",
+    "title": "Introduction to individual projects",
+    "section": "An environmental risk assessment from the use of a chemical product",
+    "text": "An environmental risk assessment from the use of a chemical product\nThis is an Environmental Risk Assessment of the medicine Felodipine Link to the assessment\nReplicate the risk assessment with one of the following modifications\n\nperform the exposure assessment with a quantitative uncertainty analysis\napply species sensitivity distribution on the ecotoxicological measurements\n\nUseful documents\nERA for medicines\nECHA Guidance. Characterisation of dose[concentration]-response for environment\n\n\n\n\nAt the end, quantify the level of certainty that release of Felodipine into the environment will result in adverse impact on ecosystems. Use expert judgement where you and two other persons act as experts."
+  },
+  {
+    "objectID": "pages/intro_case_studies.html#case-studies",
+    "href": "pages/intro_case_studies.html#case-studies",
+    "title": "Introduction to case studies",
+    "section": "Case studies",
+    "text": "Case studies\nReal risk assessments are usually complex\nStudying with real assessments will\n\nhelp you to better understand contexts and limitations of assessments\nhelp you see where and how concepts and methods are used in assessments\nmake you better prepared to produce or use assessments in the future\n\n\nDo not be disencouraged if you find the real risk assessments to be challenging to read. It takes a lot of experence and knowledge to fully comprehend them."
+  },
+  {
+    "objectID": "pages/intro_case_studies.html#introduction-to-active-learning-in-teams",
+    "href": "pages/intro_case_studies.html#introduction-to-active-learning-in-teams",
+    "title": "Introduction to case studies",
+    "section": "Introduction to Active learning in teams",
+    "text": "Introduction to Active learning in teams\nFirst TBL activity\n\nIndividual pre-work\nIndividual readiness: Multiple choice quiz\nTeam readiness: View results\nClarification session: In class led by teatcher\n\nSecond TBL activity\n\nApplication session: In teams/groups supported by tutors"
+  },
+  {
+    "objectID": "pages/intro_case_studies.html#reporting",
+    "href": "pages/intro_case_studies.html#reporting",
+    "title": "Introduction to case studies",
+    "section": "Reporting",
+    "text": "Reporting\n\nFirst TBL activity\n\nReflection on your own learning (individual report)\n\nSecond TBL activity\n\nPresentation and written report shared among all students"
+  },
+  {
+    "objectID": "pages/intro_case_studies.html#case-study-assessments",
+    "href": "pages/intro_case_studies.html#case-study-assessments",
+    "title": "Introduction to case studies",
+    "section": "Case study assessments",
+    "text": "Case study assessments\nERA: Environmental/Ecological Risk Assessment\nEsomeprazole and Omeprazole\nPRA: Pest Risk Assessment Diaprepes abbreviates\nHRA: Human Health Risk Assessment Inorganic arsenic\nPlain Language Summary for inorganic arsenic\nRLA: Red List Assessment White Shark\n\nRead all four to prepare for the first TBL activity"
+  },
+  {
+    "objectID": "pages/intro_case_studies.html#case-study-assessments-for-the-2nd-tbl-activity",
+    "href": "pages/intro_case_studies.html#case-study-assessments-for-the-2nd-tbl-activity",
+    "title": "Introduction to case studies",
+    "section": "Case study assessments for the 2nd TBL activity",
+    "text": "Case study assessments for the 2nd TBL activity\n\nYou will be assigned into one of the four assessment types\nTask to read a second assessment (presented later) with the purpose to compare them\nSupport offered by tutors\nGive an oral presentation\nProduce a written report to be shared with all students on the Padlet"
+  },
+  {
+    "objectID": "pages/lottery_utility.html#risk-aversion---lottery",
+    "href": "pages/lottery_utility.html#risk-aversion---lottery",
+    "title": "Risk, lottery and utilities",
+    "section": "Risk aversion - lottery",
+    "text": "Risk aversion - lottery\n\nThe probability of winning is \\(p\\).\nA lottery ticket costs \\(1\\) SEK.\nIf you win you get \\(100\\) SEK.\n\nThe expected utility is: \\[ EU = p \\cdot 100 - 1 \\]\nWould you buy a ticket in this lottery?\n\nIf no, why? If yes, why?\n\n\nUtility is measured as Swedish kronor (SEK).\nIf no, you are risk averse If yes, you might enjoy the risk. In reality we do not have the fortune to be able to choose, it is rather about preventing bad things from happening.\nWould you answer change if the ticket was free and you would win 99 SEK"
+  },
+  {
+    "objectID": "pages/lottery_utility.html#two-doors",
+    "href": "pages/lottery_utility.html#two-doors",
+    "title": "Risk, lottery and utilities",
+    "section": "Two doors",
+    "text": "Two doors\nIn this case you are to choose one out of two doors. Behind every door there is a chance of winning \\(X\\) with probability \\(p\\). Thus, each door is a lottery with the expected utility \\(X\\cdot p\\).\n\nWhich lottery do you prefer in the three situations A, B and C?"
+  },
+  {
+    "objectID": "pages/lottery_utility.html#expected-utilities",
+    "href": "pages/lottery_utility.html#expected-utilities",
+    "title": "Risk, lottery and utilities",
+    "section": "Expected utilities",
+    "text": "Expected utilities\n\nA: \\(0.25\\cdot 100 = 25\\) vs \\(0.25\\cdot 10 = 2.5\\)\nB: \\(0.05\\cdot 100 = 5\\) vs \\(0.75\\cdot 10 = 7.5\\)\nC: \\(0.05\\cdot 100 = 5\\) vs \\(0.5\\cdot 10 = 5\\)"
+  },
+  {
+    "objectID": "pages/lottery_utility.html#linquistic-uncertainty",
+    "href": "pages/lottery_utility.html#linquistic-uncertainty",
+    "title": "Risk, lottery and utilities",
+    "section": "Linquistic uncertainty",
+    "text": "Linquistic uncertainty\n\nImpact on biodiversity is high\n\n\nThere is a 30% probability of rain tomorrow\n\n\nProminent in qualitative risk assessment due to the use of qualitative expressions\nCan be avoided by using well defined questions, quantities and outcomes and meaningful scales"
+  },
+  {
+    "objectID": "pages/lottery_utility.html#subjective-risk-assessment",
+    "href": "pages/lottery_utility.html#subjective-risk-assessment",
+    "title": "Risk, lottery and utilities",
+    "section": "Subjective Risk Assessment",
+    "text": "Subjective Risk Assessment\nA tool from Mark and his colleagues to reduce linguistic uncertainty\nSRA tool manual\n\nLikelihood and impact scales"
+  },
+  {
+    "objectID": "pages/lottery_utility.html#subjective-risk-assessment-1",
+    "href": "pages/lottery_utility.html#subjective-risk-assessment-1",
+    "title": "Risk, lottery and utilities",
+    "section": "Subjective Risk Assessment",
+    "text": "Subjective Risk Assessment\nRain - Rain tomorrow\nRocket - Next moon rocket crash on earth\nTrump - Trump becomes the next president of USA\n\nUse these likelihood and impact scalesMake judgements with single scores e.g. 3 or ranges, e.g. 2-4"
+  },
+  {
+    "objectID": "pages/lottery_utility.html#delphi-process-to-aggregate-judgements-from-a-group-of-experts",
+    "href": "pages/lottery_utility.html#delphi-process-to-aggregate-judgements-from-a-group-of-experts",
+    "title": "Risk, lottery and utilities",
+    "section": "Delphi process to aggregate judgements from a group of experts",
+    "text": "Delphi process to aggregate judgements from a group of experts\n\nMake individual judgements\nCompare where there are large differences in judgements. - Discuss and resolve the reason for differences. Here is where linguistic uncertainties can be reduced.\nRedo individual judgements\nAggregate the judgements"
+  },
+  {
+    "objectID": "pages/lottery_utility.html#interpretation-of-probability",
+    "href": "pages/lottery_utility.html#interpretation-of-probability",
+    "title": "Risk, lottery and utilities",
+    "section": "Interpretation of probability",
+    "text": "Interpretation of probability\nTutorial on uncertainty where Ullrika explains probability distribution\n\nthe frequency with which sampled values arise within a specified range or for a specified category\n\n\na quantification of a judgement on the likelihood of a particular range or category\n\n\n\n\n\n\n\nNote\n\n\nThe mathematical theory for probability is the same for both interpretations!"
+  },
+  {
+    "objectID": "pages/lottery_utility.html#probability-distributions",
+    "href": "pages/lottery_utility.html#probability-distributions",
+    "title": "Risk, lottery and utilities",
+    "section": "Probability distributions",
+    "text": "Probability distributions\nVisualising probability distributions"
+  },
+  {
+    "objectID": "pages/lottery_utility.html#uncertainty-and-variability",
+    "href": "pages/lottery_utility.html#uncertainty-and-variability",
+    "title": "Risk, lottery and utilities",
+    "section": "Uncertainty and variability",
+    "text": "Uncertainty and variability"
+  },
+  {
+    "objectID": "pages/report_template.html",
+    "href": "pages/report_template.html",
+    "title": "Report template",
+    "section": "",
+    "text": "This is a reproduction of [write the name of the original assessment here] done as part of a course MVEN10 Risk assessment in environment and public health, Fall 2023.\nThe purpose of the project is to gain more understanding of the inputs and methodology of the original assessment, practice implementing and documenting a quantitative analysis, and practice performing a final assessment of overall uncertainty.\nThe results from this project should not be used to inform decision making."
+  },
+  {
+    "objectID": "pages/report_template.html#disclaimer",
+    "href": "pages/report_template.html#disclaimer",
+    "title": "Report template",
+    "section": "",
+    "text": "This is a reproduction of [write the name of the original assessment here] done as part of a course MVEN10 Risk assessment in environment and public health, Fall 2023.\nThe purpose of the project is to gain more understanding of the inputs and methodology of the original assessment, practice implementing and documenting a quantitative analysis, and practice performing a final assessment of overall uncertainty.\nThe results from this project should not be used to inform decision making."
+  },
+  {
+    "objectID": "pages/report_template.html#introduction",
+    "href": "pages/report_template.html#introduction",
+    "title": "Report template",
+    "section": "Introduction",
+    "text": "Introduction\nDescribe the context and background of the original assessment and the assessment questions.\nAdd a section why this is a relevant topic today and introduce the additional assessment question task presented in the “At the end”-paragraphs for each project."
+  },
+  {
+    "objectID": "pages/report_template.html#data-and-methodology",
+    "href": "pages/report_template.html#data-and-methodology",
+    "title": "Report template",
+    "section": "Data and methodology",
+    "text": "Data and methodology\n\nStructure and type of the original assessment\nDescribe the type and structure of the original assessment. Refer to relevant guidance documents for this type of assessments.\n\n\nQuantitative analysis\nDescribe the data and methods in the quantitative analysis that has been reproduced or added to the original assessment.\nAdd the code for the assessment as an appendix to the report.\n\n\nOverall uncertainty assessment\nDescribe the approach to assess overall uncertainty regarding the answer to the “At the end”-question.\nAdd a report for the expert elicitation of the overall uncertainty assessment as an appendix."
+  },
+  {
+    "objectID": "pages/report_template.html#results",
+    "href": "pages/report_template.html#results",
+    "title": "Report template",
+    "section": "Results",
+    "text": "Results\n\nAssessment results\nPresent the results of the assessment questions, but replace the results from the original assessment with the results from the quantitative analysis.\n\n\nOverall uncertainty\nPresent the outcome of the overall uncertainty assessment."
+  },
+  {
+    "objectID": "pages/report_template.html#conclusion",
+    "href": "pages/report_template.html#conclusion",
+    "title": "Report template",
+    "section": "Conclusion",
+    "text": "Conclusion\nMake a short summary of the conclusion of the assessment."
+  },
+  {
+    "objectID": "pages/report_template.html#discussion",
+    "href": "pages/report_template.html#discussion",
+    "title": "Report template",
+    "section": "Discussion",
+    "text": "Discussion\nDiscuss the following topics:\n\nChallenges you encountered in reproducing the original assessment\nSuggestions for making it easier to read a risk assessment and overcome some of the challenges encountered\nYour view on the benefit and challenges in performing the assessment of overall uncertainty.\n\n\n\n\n\n\n\nTip\n\n\n\nThe assessment of overall uncertainty is the final main step of uncertainty analysis and is well described in the EFSA guidance for uncertainty analysis.\nTake a moment to view section on overall uncertainty in the EFSA tutorial on uncertainty"
+  },
+  {
+    "objectID": "pages/report_template.html#references",
+    "href": "pages/report_template.html#references",
+    "title": "Report template",
+    "section": "References",
+    "text": "References\nAdd references using the APA 7 format."
+  },
+  {
+    "objectID": "pages/report_template.html#appendices",
+    "href": "pages/report_template.html#appendices",
+    "title": "Report template",
+    "section": "Appendices",
+    "text": "Appendices\n\nAppendix A. Code for the assessment\nThis appendix should contain the data and code for all calculations and simulations. Preferably as a rendered qmd document or attached Excel file with explanatory text.\n\n\nAppendix B. Report of the Expert Elicitation of overall uncertainty\nWho were the experts\nDescription of the procedure which should at least consist of\n\nAgreement on the question asked to the experts\nIndividual judgements expressed quantitatively\nComparison and discussion of the individual judgements\n\n\n\n\nExpert\nJudgement\n\n\n\n\nA\n\n\n\nB\n\n\n\nC\n\n\n\nConsensus\n\n\n\n\n\nConsensus judgement\nCollection of the experts justifications for lower and higher probability\n\n\n\n\n\n\n\n\nJustifications for a lower probability\nJustifications for a higher probability"
   }
 ]
