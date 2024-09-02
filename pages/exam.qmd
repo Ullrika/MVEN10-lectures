@@ -1,0 +1,176 @@
+---
+title: "Exam MVEN10 October 26th"
+
+---
+
+# Part I
+
+## Context of the assessment
+
+(@) Who did the assessment (organisation/institution)?
+
+(@) Why was the assessment done? 
+
+(@) When was the assessment performed? 
+
+## The assessment
+
+(@) What is the main assessment question? If several, select one.
+
+(@) What is their answer to the main assessment question? If several, the one you selected before.  
+
+(@) Describe how they reached the answer to the assessment question! Make a list of inputs and methods used. 
+
+
+
+# Part II. 
+
+## Is cinnamon safe to consume? 
+
+### Hazard assessment 
+
+Coumarin (1,2-benzopyrone, CAS No. 91-64-5) is an ingredient in cinnamon known to e.g. cause liver damages (Abraham et al. 2010). 
+
+An  overall  NOAEL  for  liver  toxicity on 10  mg  coumarin/kg  bw/day has been derived from  the  most  sensitive  animal  species in a set of toxicological studies. 
+
+The value for the NOAEL was taken from a study on dogs by Hagan et al. (1967) where coumarin was reported to give hepatotoxic effects in dogs given 25 and 50 mg/kg bw/day coumarin for longer periods, but not in dogs given 10 mg/kg bw/day coumarin for up to 350 days. 
+
+A  TDI  of  0.1  mg  coumarin/kg  bw  was established by applying a safety factor of 100. 
+
+Answer the following questions: 
+
+(@) Why is a safety factor applied when deriving the TDI and explain what the value 100 comes from and what it represents? Minimum of 10 sentences. (3p)
+
+(@) Provide at least three arguments why a TDI on 0.1 mg  coumarin/kg  bw is a conservative choice. Write with complete sentences. (3p)
+
+(@) Provide at least two arguments to why this a too conservative choice of TDI is problematic. Write with complete sentences. (2p)
+
+
+The frequency as well as the severity of coumarin hepatotoxicity in the human subpopulation is considered as relevant, and therefore the effect of coumarin on humans should be considered in hazard assessment.
+
+In 1999, an expert opinion “on the assessment of coumarin in medicinal products with regard to a hepatotoxic effect in humans” was commissioned by the Federal Institute for Drugs and Medical Devices (BfArM) in Germany. This opinion (read assessment) considered 82 case reports of possible coumarin-associated liver damage. 
+
+Five cases (10%) occurred at the lowest doses (25 and 30 mg daily); of the three cases from Germany documented in more detail, two had developed hepatitis. According to the expert report, for part of the population liver damage cannot be ruled out at a daily dose of 25 mg coumarin. 
+
+In order to extrapolate from this effect level to a human NOAEL, a factor of 5 is considered justified in the case of a severe effect at the lowest observed adverse effect level. 
+
+Using the established safe daily dose of 5 mg coumarin for an adult weighing 60 kg, a (rounded) TDI of 0.1 mg/kg body weight was derived by the Federal Institute for Risk Assessment (BfR).
+
+Please do the following task: 
+
+(@) Describe the calculation made by BfR when they derived the TDI expressed as mg coumarin/kg  bw. Show the calculation as an equation. You can also complement by a code for the calculation. (1p)
+
+Abraham et al. (2010) concluded that a TDI of 0.1  mg  coumarin/kg  bw can be justified based on animal as well as human data. 
+
+### Exposure assessment 
+
+There is a concern that extreme consumption of cinnamon, especially during Christmas season, can result in unacceptable exposure to coumarin. 
+
+An exposure assessment was carried out for young children by asking parents to children aged between 2 and 5 years to keep food records for two non-consecutive 3-day periods. 140 children ate cinnamon or cinnamon-containing products at least on on of the six days recorded, and 47% of the consumption days were between September and December. 
+
+For a 4-year-old child weighing 15 kg, a daily consumption of three cinnamon star cookies (“Zimtsterne” weighing about 6 g each) with the maximum level of coumarin measured in this product (Table 1 in Abraham et al. 2010) resulted in a coumarin exposure of 0.13 mg/kg body weight (0.046 mg/kg body weight daily for the cookies with the median level). 
+
+Please do the following task: 
+
+(@) Confirm the calculations of exposure, i.e. under the maximum and median levels of coumarin measured in cinnamon star cookies (“Zimtsterne”). For full points, show equations and the code for your calculations. (2p)
+
+```{r}
+#| eval: false
+#| echo: false
+
+113.3*6/1000*3/15
+
+39.4*6/1000*3/15
+```
+### Risk assessment 
+
+You are now asked to make your own conclusion if a 4-year-old child in Germany consuming cinnamon star cookies a day are at risk: 
+
+(@) Set up a risk assessment for 4-year-old children in Germany that consume cinnamon star cookies using the information provided and perform an uncertainty analysis in which you consider 
+
+- between individual variability in body weights
+
+- between individual variability in consumption and 
+
+- variability in levels of coumarin in cookies.  
+
+
+::: {.callout-note title="Principles to set maximum points"}
+Analysis expressing uncertainty by worst case values (max 3p)
+
+Analysis expressing uncertainty by probability distributions (max 7p)
+
+Conclusion expressed with uncertainty (+2p)
+:::
+
+::: {.callout-warning title="Reasons for reduction in points from total"}
+
+Analysis is only expressed with reference to code
+
+Steps in the analysis is not explained or justified
+
+Conclusion is not justified by the analysis
+
+Assumptions are not presented
+
+No graphical visualisation
+:::
+<!-- To get reliable exposure estimates for the German population, BfR did a directed a telephone survey of adults.  -->
+
+
+
+### References 
+
+Abraham et al. (2010). Toxicology and risk assessment of coumarin: focus on human data. Molecular nutrition & food research, 54(2), 228-239.
+
+Hagan et al. (1967). Food flavourings and compounds of related structure. II. Subacute and chronic toxicity. Food and cosmetics toxicology, 5, 141-157.
+
+
+
+library(shinyssdtools)
+shinyssdtools::run_app()
+
+
+
+Interval analysis using worst case assumptions 
+
+
+
+Determine the Tolerable Daily Intake (TDI) for a Coumarin given the following information: 
+
+
+
+https://www.bfr.bund.de/en/a-z_index/tdi-187181.html
+
+https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2022.7584
+
+
+EFSA https://efsa.onlinelibrary.wiley.com/doi/epdf/10.2903/j.efsa.2004.104
+
+
+TDI coumarin 
+https://pubmed.ncbi.nlm.nih.gov/20024932/
+
+BMD Norway
+
+
+https://www.livsmedelsverket.se/livsmedel-och-innehall/oonskade-amnen/vaxtgifter/kumarin-i-kanel
+
+
+
+An environmental risk assessment of Paracetamol
+
+
+$\frac{PEC}{PNEC}$
+
+Persistence. Paracetamol is not considered to be persistent.
+
+Bioaccumulation. Paracetamol has low potential for bioaccumulation.
+
+Toxicity. Paracetamol has moderate chronic toxicity.
+
+Risk. The use of paracetamol has been considered to result in insignificant environmental risk.
+
+Perform a Species Sensitivity Distribution modelling for available acute toxicity data
+
+

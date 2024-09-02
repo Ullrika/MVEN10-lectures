@@ -1,0 +1,72 @@
+---
+title: "Introduction to case studies"
+subtitle: "Team Based Learning"
+author: "Ullrika Sahlin (Liam Kendal, Annelise Blomberg, Erika Nordin)"
+date: 2024 Sept 2
+format: revealjs
+---
+
+## Case studies
+
+Real risk assessments are usually complex
+
+Studying with real assessments will
+
+-   help you to better understand contexts and limitations of assessments
+
+-   help you see where and how concepts and methods are used in assessments
+
+-   make you better prepared to produce or use assessments in the future
+
+> Do not be disencouraged if you find the real risk assessments to be challenging to read. It takes a lot of experence and knowledge to fully comprehend them.
+
+## Introduction to Active learning in teams
+
+First TBL activity
+
+-   Individual pre-work
+-   Individual readiness: Multiple choice quiz
+-   Team readiness: View results
+-   Clarification session: In class led by teatcher
+
+Second TBL activity
+
+-   Application session: In teams/groups supported by tutors
+
+## Reporting
+
+-   First TBL activity
+
+    -   Reflection on your own learning (individual report)
+
+-   Second TBL activity
+
+    -   Presentation and written report shared among all students
+
+## Case study assessments
+
+ERA: Environmental/Ecological Risk Assessment
+
+[Esomeprazole and Omeprazole](https://www.astrazeneca.com/content/dam/az/PDF/Sustainability/era/Esomeprazole-Omeprazole.pdf)
+
+PRA: Pest Risk Assessment [Diaprepes abbreviates](https://planthealthportal.defra.gov.uk/assets/PRA_Diaprepes_abbreviatus_v5.pdf)
+
+HRA: Human Health Risk Assessment [Inorganic arsenic](https://www.efsa.europa.eu/en/efsajournal/pub/8488)
+
+[Plain Language Summary for inorganic arsenic](https://www.efsa.europa.eu/en/plain-language-summary/update-risk-assessment-inorganic-arsenic-food)
+
+RLA: Red List Assessment [White Shark](https://www.iucnredlist.org/species/3855/212629880#assessment-information)
+
+> Read all four to prepare for the first TBL activity
+
+## Case study assessments for the 2nd TBL activity
+
+-   You will be assigned into one of the four assessment types
+
+-   Task to read a second assessment (presented later) with the purpose to compare them
+
+-   Support offered by tutors
+
+-   Give an oral presentation
+
+-   Produce a written report to be shared with all students on the Padlet

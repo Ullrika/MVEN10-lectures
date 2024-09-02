@@ -1,0 +1,396 @@
+---
+title: "Exam MVEN10 October 26th 2023"
+format: 
+  html:
+    echo: false
+    eval: false
+---
+
+
+Write a report with the answers to the questions, discussions or solutions to the tasks provided. You can have appendices to the report. Put your name on the report and all appendices.
+
+You are allowed to discuss with others, but at the end, I expect that you do the exam yourself.
+
+Submit the report and fill in the certificate on canvas, stating that you have done the exam yourself and, if, and if so for what, you have used any AI tool to help you.
+
+Cited papers and link to the certificate quiz are available in the module Examination on Canvas.
+
+The points on this part of the exam will be added to the points from the exam that you did on Oct 25th. You need 50 points to Pass (G) and 75 points to Pass with distinction (VG). 
+
+
+| Part | Tasks                                             | Task numbers | Points |
+|------|---------------------------------------------------|--------------|--------|
+| I    | Review of an assessment                           |   1-4        | 10     |
+| I    | Review of coumarin hazard assessment              |  5-8         | 10     |
+| II   | Evaluate coumarin hazard and exposure assessment |  9-10        | 5      |
+| II   | Evaluate coumarin risk assessment                  |  11          | 15     |
+
+
+
+# Part I. Review existing assessments
+
+## OPTION: Environmental risk assessment of a pharmaceutical
+
+Go to the page [Pharmaceuticals and Environment](https://janusinfo.se/beslutsstod/lakemedelochmiljo/pharmaceuticalsandenvironment.4.7b57ecc216251fae47487d9a.html)
+
+(@) What organisation is behind this page and what do they want to achieve with it? (1p)
+
+Search for the pharmaceutical given to you in the database and study the summary of the hazard and risk classification for this pharmaceutical. 
+
+(@) Make a short description of the pharmaceutical given to you. (1p)
+
+The hazard classification considers Persistence, Bioaccumulation and Toxicity. 
+
+(@) Why are these endpoints relevant? (2p)
+
+(@) Confirm and discuss limitations in the conclusions on these three endpoints and on risk by 
+
+- referring to [information about the classifications](https://janusinfo.se/beslutsstod/lakemedelochmiljo/pharmaceuticalsandenvironment/environment/classification.5.7b57ecc216251fae47488423.html)
+
+- considering data and other information presented on the summary page for the pharmaceutical (6p)
+
+## OPTION: A risk assessment of a threathened species
+
+Go to the page for the [IUCN Red list](https://www.iucnredlist.org/)
+
+(1) What organisation is behind this page and what do they want to achieve with it? (1p)
+
+Search for the species given to you in the database and study the summary of the red list assessment for this species. 
+
+(2) Make a short description of the species given to you. (1p)
+
+A red list categorisation can be based on a combination of criteria: 
+
+A.	Population size reduction (past, present and/or projected)
+
+B.	Geographic range size, and fragmentation, few locations, decline or fluctuations
+
+C.	Small and declining population size and fragmentation, fluctuations, or few subpopulations
+
+D.	Very small population or very restricted distribution
+
+E.	Quantitative analysis of extinction risk
+
+
+(3) Why are these criteria relevant? (2p)
+
+
+(4) Confirm and discuss limitations in the conclusions on the criteria used for the assessment of the species provided to you by 
+
+- referring to [Guidelines for Using the IUCN Red List Categories and Criteria](https://www.iucnredlist.org/resources/redlistguidelines)
+
+- considering data and other information presented on the assessment page for the species (6p)
+
+## Assessment on coumarin 
+
+### Hazard assessment 
+
+Coumarin (1,2-benzopyrone, CAS No. 91-64-5) is an ingredient in cinnamon known to e.g. cause liver damages (Abraham et al. 2010). 
+
+An  overall  NOAEL  for  liver  toxicity on 10  mg  coumarin/kg  bw/day has been derived from  the  most  sensitive  animal  species in a set of toxicological studies. 
+
+The value for the NOAEL was taken from a study on dogs by Hagan et al. (1967) where coumarin was reported to give hepatotoxic effects in dogs given 25 and 50 mg/kg bw/day coumarin for longer periods, but not in dogs given 10 mg/kg bw/day coumarin for up to 350 days. 
+
+A  TDI  of  0.1  mg  coumarin/kg  bw  was established by EFSA (2004) by applying a safety factor of 100. 
+
+{{< pagebreak >}}
+Answer with complete sentences the following questions: 
+
+(@) Why was a safety factor applied when EFSA derived the TDI and explain what the value 100 comes from? (3p)
+
+(@) Provide at least three arguments why a TDI on 0.1 mg coumarin/kg  bw given the data provided so far is a conservative choice. (3p)
+
+(@) Provide at least two arguments to why too conservative choices of TDIs might be problematic in general. (2p)
+
+
+The frequency as well as the severity of coumarin hepatotoxicity in the human subpopulation is considered as relevant, and therefore the effect of coumarin on humans should be considered in hazard assessment.
+
+In 1999, an expert opinion “on the assessment of coumarin in medicinal products with regard to a hepatotoxic effect in humans” was commissioned by the Federal Institute for Drugs and Medical Devices (BfArM) in Germany. This opinion (read assessment) considered 82 case reports of possible coumarin-associated liver damage. 
+
+Five cases (10%) occurred at the lowest doses (25 and 30 mg daily); of the three cases from Germany documented in more detail, two had developed hepatitis. According to the expert report, for part of the population liver damage cannot be ruled out at a daily dose of 25 mg coumarin. 
+
+In order to extrapolate from this effect level to a human NOAEL, a factor of 5 is considered justified in the case of a severe effect at the lowest observed adverse effect level. 
+
+Using the established safe daily dose of 5 mg coumarin for an adult weighing 60 kg, a (rounded) TDI of 0.1 mg/kg body weight was derived by the Federal Institute for Risk Assessment (BfR).
+
+Abraham et al. (2010) concluded that a TDI of 0.1  mg  coumarin/kg  bw can be justified based on animal as well as human data. 
+
+(@) Discuss in what way is a TDI on 0.1 mg coumarin/kg  bw can be seen as a less conservative choice compared to before. (2p)
+
+# Part II. Evaluate an assessment
+
+## Is cinnamon safe to consume? 
+
+### Hazard assessment 
+
+Revisit the coumarin hazard assessment described above and 
+
+(@) Consider the situation where the human NOAEL instead was 205 mg coumarin per kg per day. Propose and justify a new TDI in light of available data! For full points, show equations and the code for your calculations. (3p)
+
+```{r}
+#| eval: false
+#| echo: false
+
+25/5/60
+300/5/60
+
+```
+
+<!-- (@) Describe the calculation made by BfR when they derived the TDI expressed as mg coumarin/kg  bw. Show the calculation as an equation. You can also complement by a code for the calculation. (1p) -->
+
+### Exposure assessment 
+
+There is a concern that extreme consumption of cinnamon, especially during Christmas season, can result in unacceptable exposure to coumarin. 
+An exposure assessment was carried out for young children by asking parents to children aged between 2 and 5 years to keep food records for two non-consecutive 3-day periods. 140 children ate cinnamon or cinnamon-containing products at least on on of the six days recorded, and 47% of the consumption days were between September and December. 
+
+For a 4-year-old child weighing 15 kg, a daily consumption of three cinnamon star cookies (“Zimtsterne” weighing about 6 g each) with the maximum level of coumarin measured in this product (Table 1 in Abraham et al. 2010) resulted in a coumarin exposure of 0.13 mg/kg body weight (0.046 mg/kg body weight daily for the cookies with the median level). 
+
+Please do the following task: 
+
+(@) Confirm the calculations of exposure under the maximum and median levels of coumarin measured in cinnamon star cookies (“Zimtsterne”). For full points, show equations and the code for your calculations. (2p)
+
+```{r}
+#| eval: false
+#| echo: false
+
+113.3*6/1000*3/15
+
+39.4*6/1000*3/15
+```
+### Risk assessment 
+
+Abraham et al. (2010) concluded 
+
+> As is evident from the estimation of exposure, heavy consumers may reach a daily coumarin intake of 0.1 mg/kg body weight corresponding to the TDI just from the consumption of Christmas-related foods during autumn and winter. With an additional consumption of cinnamon, these consumers may exceed the TDI.
+
+and 
+
+> Therefore, no risk of hepatotoxicity of coumarin is expected for the vast majority of the population consuming low or moderate amounts of (cassia) cinnamon. However, consumers who really eat a lot may have a risk if they belong to the sensitive subgroup.
+
+So should we be concerned with children eating Christmas cookies or not? 
+
+As pointed out by Abraham et al. (2010), the exposure might be higher since "other coumarin-containing foods may be consumed simultaneously".
+
+Your task is to answer the question: **Are 4-year-old children in Germany consuming cinnamon star cookies during Christmas season at risk?** 
+
+(@) Plan and evaluate a risk assessment for 4-year-old children in Germany that consume cinnamon star cookies during Christmas season using the information provided above in which you include an uncertainty analysis. (15p) 
+
+Consider 
+
+- between individual variability in body weights. Justify your choice of values based on information in the ExpoFacts Database (Zenié and Reina, 2007)
+
+- between individual variability in consumption. Justify your choice of values using your own experience. 
+
+- variability in levels of coumarin in cookies. Justify your choice of values from data in Table 1 in Abraham et al. (2010) and that cookies can have different weights. 
+
+
+Use the TDI of 0.1 mg/kg bw.
+
+Let us assume that 4-year-old German children only consume cinnamon star cookies.
+
+You are the only expert involved in the assessment. 
+
+Risk managers require you to be at least 75% certain in your answer to be able to use the conclusion as scientific advice. Therefore, communicate your uncertainty in the conclusion in an honest and transparent way. 
+
+::: {.callout-warning title="Reasons for reduction in points from total"}
+
+Analysis is only expressed with reference to code
+
+Steps in the analysis is not explained or justified
+
+Conclusion is not backed up by the analysis
+
+Assumptions are not presented
+
+No information on the experts uncertainty in the conclusion
+
+No graphical visualisation
+
+Only worst case analysis (i.e. no refined approach for uncertainty analysis by modelling variability by probability distributions)
+
+:::
+
+::: {.callout-note}
+Note that you can get up to 10 points on this task if you provide a plan of the assessment even if you do not carry out all parts. 
+:::
+<!-- To get reliable exposure estimates for the German population, BfR did a directed a telephone survey of adults.  -->
+
+
+
+
+```{r}
+library(readxl)
+library(ggplot2)
+library(dplyr)
+```
+
+
+```{r}
+e_df <- readxl::read_xlsx("../data/ExpoFacts_Physiology.xlsx", sheet = "Sheet5", skip = 121)
+```
+
+
+```{r}
+
+## Fit lognormal to bodyweight
+
+# get data
+df_4 <- e_df %>% 
+  filter(Country == "Germany") %>%
+  filter(`Age (years)` == 4) 
+
+# get summary statistics
+m_bw = mean(df_4$`Mean (kg)`)
+s_bw = mean(df_4$SD)
+P5_bw = mean(df_4$`5th (kg)`)
+P50_bw = mean(df_4$`Median (kg)`)
+P95_bw = mean(df_4$`95th (kg)`)
+
+# specify objective function for fitting
+obj_fun <- function(par){(qlnorm(0.05,exp(par[1]),exp(par[2])) - P5_bw)^2 +
+(qlnorm(0.5,exp(par[1]),exp(par[2])) - P50_bw)^2 +
+(qlnorm(0.95,exp(par[1]),exp(par[2])) - P95_bw)^2}
+
+# find parameters (should be done by thorough investigation of the optimisation and goodness of fit)
+optim(par= c(0,0), fn = obj_fun)
+log_par <- optim(par= c(0,0), fn = obj_fun)$par
+
+# transform to parameters of the lognormal distribution 
+m_logbw = exp(log_par[1])
+s_logbw = exp(log_par[2])
+
+data.frame(pp = ppoints(200)) %>% 
+  mutate(qq = qlnorm(pp,m_logbw,s_logbw)) %>%
+  mutate(qqnorm = qnorm(pp,m_bw,s_bw)) %>%
+  ggplot(aes(x=qq,y=pp)) +
+           geom_line() +
+          geom_line(aes(x=qqnorm,y=pp),col='blue') +
+           geom_point(data=data.frame(x=c(P5_bw,P50_bw,P95_bw),y=c(0.05,0.5,0.95)),aes(x=x,y=y),col='red') 
+          
+```
+
+```{r}
+## Fit lognormal to coumarin levels 
+m_lev = 37.7
+P50_lev = 39.4
+P99_lev = 113.3 #assign 99 to maximum
+
+obj_fun <- function(par){(qlnorm(0.5,exp(par[1]),exp(par[2])) - P50_lev)^2 +
+(qlnorm(0.99,exp(par[1]),exp(par[2])) - P99_lev)^2}
+
+log_par <- optim(par= c(0,0), fn = obj_fun)$par
+
+m_loglev = exp(log_par[1])
+s_loglev = exp(log_par[2])
+
+data.frame(pp = ppoints(200)) %>% 
+  mutate(qq = qlnorm(pp,m_loglev,s_loglev)) %>%
+  ggplot(aes(x=qq,y=pp)) +
+           geom_line() +
+           geom_point(data=data.frame(x=c(P50_lev,P99_lev),y=c(0.5,0.99)),aes(x=x,y=y),col='red') 
+
+```
+
+
+```{r}
+TDI = 0.1 #mg/kw bw per day
+ 
+niter = 10^4
+sim_df <- data.frame(
+  
+body_weight = rlnorm(niter,m_logbw,s_logbw),
+
+number_of_cookies = sample(1:5,size=niter,replace=TRUE),
+
+weight_per_cookie = rnorm(niter,6,0.5),
+
+coumarin_level = rlnorm(niter,m_loglev,s_loglev))
+
+sim_df <- sim_df %>% 
+  mutate(daily_intake = coumarin_level*number_of_cookies*weight_per_cookie/1000/body_weight)
+
+```
+
+
+```{r}
+sim_df %>%
+ggplot(aes(x=body_weight)) +
+  geom_histogram(binwidth = 1) 
+```
+
+```{r}
+sim_df %>%
+ggplot(aes(x=number_of_cookies)) +
+  geom_histogram(binwidth = 1) 
+
+```
+
+
+```{r}
+sim_df %>%
+ggplot(aes(x=weight_per_cookie)) +
+  geom_histogram(binwidth = 0.2) 
+
+```
+
+
+
+```{r}
+sim_df %>%
+ggplot(aes(x=coumarin_level)) +
+  geom_histogram(binwidth = 10) 
+
+```
+
+```{r}
+sim_df %>%
+ggplot(aes(x=daily_intake)) +
+  geom_histogram(binwidth = 0.05) +
+  geom_vline(xintercept=TDI,col='red')
+```
+
+
+```{r}
+TDI
+mean(sim_df$daily_intake>TDI) # consuming uniform 1 to 20 number of cookies each time, a high proportion of children consuming cookies exceed the TDI. If only uniform 1 to 5, then the proportion is much lower.  
+
+quantile(sim_df$daily_intake,probs=0.95) # 95th percentile is above the TDI under both exposure scenarios (1-20 and 1-5)
+```
+
+
+
+```{r}
+# Worst case 
+
+int_df <- data.frame(
+  
+body_weight = c(P95_bw,P5_bw),
+
+number_of_cookies = c(1,20),
+
+weight_per_cookie = c(4,7),
+
+coumarin_level = c(0,P99_lev) ) 
+
+int_df %>% 
+  mutate(daily_intake = coumarin_level*number_of_cookies*weight_per_cookie/1000/body_weight)
+
+# worst case is above TDI but we cannot really say how certain we are that this is the case since we have made conservative assumptions. If it was below the TDI, then we would be able to conclude. 
+```
+
+
+## References 
+
+Abraham et al. (2010). Toxicology and risk assessment of coumarin: focus on human data. Molecular nutrition & food research, 54(2), 228-239.
+
+Hagan et al. (1967). Food flavourings and compounds of related structure. II. Subacute and chronic toxicity. Food and cosmetics toxicology, 5, 141-157.
+
+EFSA Panel on Food Contact Materials, Enzymes, Flavourings and Processing Aids, 2004. Opinion of the Scientific Panel on food additives, flavourings, processing aids and materials in contact with food (AFC) related to Coumarin. EFSA Journal.
+
+BfR Health Assessment No. 044/2006, 18 August 2006. High daily intakes of cinnamon: Health risk cannot be ruled out. 
+
+Zenié and Reina (2007): ExpoFacts Database. European Commission, Joint Research Centre (JRC) [Dataset] PID:
+[https://data.jrc.ec.europa.eu/dataset/jrc-10114-10001](https://data.jrc.ec.europa.eu/dataset/jrc-10114-10001)
+
+
+
