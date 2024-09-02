@@ -18,7 +18,7 @@ format: revealjs
 ::: incremental
 -   To be competitive on the job market
 
-    -   there is a lot of experts, but fewer experts on risk assessment
+    -   there are a lot of experts, but fewer experts on risk assessment
 
 -   To better understand what expertise is required when assessing risk
 
@@ -47,10 +47,11 @@ format: revealjs
 -   Environmental Science (CEC)
 -   Biology
 
-## Book and literature seminars
+## Book and seminars
 
 -   Three book seminars
 -   Two literature seminars
+-   One Role play seminar
 -   Seminars are compulsory
 -   Report according to instructions
 -   Come prepared!
@@ -74,9 +75,9 @@ format: revealjs
 
 -   Second TBL activity:
 
-    -   Deepened your understanding of one of the assessment types
-    -   Report as a presentation and written report to be shared with all students
-    -   Padlet
+    -   Deepen your understanding of one of the assessment types
+    -   Report as a presentation and written report to be shared with all students using the Padlet
+    -   Learn from the other groups
 
 ## Individual project
 

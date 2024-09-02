@@ -102,14 +102,14 @@
     "href": "pages/kernelmodels.html",
     "title": "sf",
     "section": "",
-    "text": "kern &lt;- function(x,d0,alpha){\n  (1+(x/d0)^alpha)^-1\n}\n\ninv_kern &lt;- function(prob,d0,alpha){\n  (1/prob-1)^(1/alpha)*d0\n} \n\n\none_iter &lt;- function(i){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\nget_ma &lt;- function(x){\n  ma_prob3=w[1]*kern(x,d0_ba,alpha_ba) + \n  w[2]*kern(x,d0_bo,alpha_bo) + \n  w[3]*kern(x,d0_ga,alpha_ga)\n}\n\nx = seq(0,30,by=1)\ndata.frame(x = x,\ny=sapply(x,get_ma),iter=i)\n}\n\n\ndo.call('rbind',lapply(1:20,function(i){one_iter(i)})) %&gt;%\n  ggplot(aes(x=x,y=y,group=iter))+\n  geom_line(alpha=0.2)\n\n\n\n\n\nmc_one_iter &lt;- function(){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\n\ndata.frame(ma_prob3=w[1]*kern(3,d0_ba,alpha_ba) + \n  w[2]*kern(3,d0_bo,alpha_bo) + \n  w[3]*kern(3,d0_ga,alpha_ga), \n\nma_prob10=w[1]*kern(10,d0_ba,alpha_ba) + \n  w[2]*kern(10,d0_bo,alpha_bo) + \n  w[3]*kern(10,d0_ga,alpha_ga), \n\nma_P05 = w[1]*inv_kern(0.05,d0_ba,alpha_ba) + \n  w[2]*inv_kern(0.05,d0_bo,alpha_bo) + \n  w[3]*inv_kern(0.05,d0_ga,alpha_ga) \n)\n}\n\n\nniter = 10^4\noutput &lt;- do.call('rbind',lapply(1:niter,function(i){mc_one_iter()}))\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob3)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob10)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\nquantile(output$ma_P05,probs=0.95)\n\n     95% \n9.500937 \n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_P05)) +\n  geom_density() +\n  geom_vline(xintercept=3,col='red')+\n  geom_vline(xintercept=10,col='red') +\nscale_x_log10()"
+    "text": "kern &lt;- function(x,d0,alpha){\n  (1+(x/d0)^alpha)^-1\n}\n\ninv_kern &lt;- function(prob,d0,alpha){\n  (1/prob-1)^(1/alpha)*d0\n} \n\n\none_iter &lt;- function(i){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\nget_ma &lt;- function(x){\n  ma_prob3=w[1]*kern(x,d0_ba,alpha_ba) + \n  w[2]*kern(x,d0_bo,alpha_bo) + \n  w[3]*kern(x,d0_ga,alpha_ga)\n}\n\nx = seq(0,30,by=1)\ndata.frame(x = x,\ny=sapply(x,get_ma),iter=i)\n}\n\n\ndo.call('rbind',lapply(1:20,function(i){one_iter(i)})) %&gt;%\n  ggplot(aes(x=x,y=y,group=iter))+\n  geom_line(alpha=0.2)\n\n\n\n\n\nmc_one_iter &lt;- function(){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\n\ndata.frame(ma_prob3=w[1]*kern(3,d0_ba,alpha_ba) + \n  w[2]*kern(3,d0_bo,alpha_bo) + \n  w[3]*kern(3,d0_ga,alpha_ga), \n\nma_prob10=w[1]*kern(10,d0_ba,alpha_ba) + \n  w[2]*kern(10,d0_bo,alpha_bo) + \n  w[3]*kern(10,d0_ga,alpha_ga), \n\nma_P05 = w[1]*inv_kern(0.05,d0_ba,alpha_ba) + \n  w[2]*inv_kern(0.05,d0_bo,alpha_bo) + \n  w[3]*inv_kern(0.05,d0_ga,alpha_ga) \n)\n}\n\n\nniter = 10^4\noutput &lt;- do.call('rbind',lapply(1:niter,function(i){mc_one_iter()}))\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob3)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob10)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\nquantile(output$ma_P05,probs=0.95)\n\n     95% \n10.08448 \n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_P05)) +\n  geom_density() +\n  geom_vline(xintercept=3,col='red')+\n  geom_vline(xintercept=10,col='red') +\nscale_x_log10()"
   },
   {
     "objectID": "pages/kernelmodels.html#create-kernel-functions",
     "href": "pages/kernelmodels.html#create-kernel-functions",
     "title": "sf",
     "section": "",
-    "text": "kern &lt;- function(x,d0,alpha){\n  (1+(x/d0)^alpha)^-1\n}\n\ninv_kern &lt;- function(prob,d0,alpha){\n  (1/prob-1)^(1/alpha)*d0\n} \n\n\none_iter &lt;- function(i){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\nget_ma &lt;- function(x){\n  ma_prob3=w[1]*kern(x,d0_ba,alpha_ba) + \n  w[2]*kern(x,d0_bo,alpha_bo) + \n  w[3]*kern(x,d0_ga,alpha_ga)\n}\n\nx = seq(0,30,by=1)\ndata.frame(x = x,\ny=sapply(x,get_ma),iter=i)\n}\n\n\ndo.call('rbind',lapply(1:20,function(i){one_iter(i)})) %&gt;%\n  ggplot(aes(x=x,y=y,group=iter))+\n  geom_line(alpha=0.2)\n\n\n\n\n\nmc_one_iter &lt;- function(){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\n\ndata.frame(ma_prob3=w[1]*kern(3,d0_ba,alpha_ba) + \n  w[2]*kern(3,d0_bo,alpha_bo) + \n  w[3]*kern(3,d0_ga,alpha_ga), \n\nma_prob10=w[1]*kern(10,d0_ba,alpha_ba) + \n  w[2]*kern(10,d0_bo,alpha_bo) + \n  w[3]*kern(10,d0_ga,alpha_ga), \n\nma_P05 = w[1]*inv_kern(0.05,d0_ba,alpha_ba) + \n  w[2]*inv_kern(0.05,d0_bo,alpha_bo) + \n  w[3]*inv_kern(0.05,d0_ga,alpha_ga) \n)\n}\n\n\nniter = 10^4\noutput &lt;- do.call('rbind',lapply(1:niter,function(i){mc_one_iter()}))\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob3)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob10)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\nquantile(output$ma_P05,probs=0.95)\n\n     95% \n9.500937 \n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_P05)) +\n  geom_density() +\n  geom_vline(xintercept=3,col='red')+\n  geom_vline(xintercept=10,col='red') +\nscale_x_log10()"
+    "text": "kern &lt;- function(x,d0,alpha){\n  (1+(x/d0)^alpha)^-1\n}\n\ninv_kern &lt;- function(prob,d0,alpha){\n  (1/prob-1)^(1/alpha)*d0\n} \n\n\none_iter &lt;- function(i){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\nget_ma &lt;- function(x){\n  ma_prob3=w[1]*kern(x,d0_ba,alpha_ba) + \n  w[2]*kern(x,d0_bo,alpha_bo) + \n  w[3]*kern(x,d0_ga,alpha_ga)\n}\n\nx = seq(0,30,by=1)\ndata.frame(x = x,\ny=sapply(x,get_ma),iter=i)\n}\n\n\ndo.call('rbind',lapply(1:20,function(i){one_iter(i)})) %&gt;%\n  ggplot(aes(x=x,y=y,group=iter))+\n  geom_line(alpha=0.2)\n\n\n\n\n\nmc_one_iter &lt;- function(){\nd0_ba = rnorm(1,1,0.1)\nalpha_ba = rnorm(1,2.2,0.2)\n\nd0_bo = rnorm(1,0.55,(0.73-0.55)/2)\nalpha_bo = rnorm(1,2.27,(2.4-2.27)/2)\n\nd0_ga = rlnorm(1,-1.2,1.29)\nalpha_ga = rlnorm(1,0.545,0.402)\n\nw = c(1,1,1)\nw = w/sum(w)\n\ndata.frame(ma_prob3=w[1]*kern(3,d0_ba,alpha_ba) + \n  w[2]*kern(3,d0_bo,alpha_bo) + \n  w[3]*kern(3,d0_ga,alpha_ga), \n\nma_prob10=w[1]*kern(10,d0_ba,alpha_ba) + \n  w[2]*kern(10,d0_bo,alpha_bo) + \n  w[3]*kern(10,d0_ga,alpha_ga), \n\nma_P05 = w[1]*inv_kern(0.05,d0_ba,alpha_ba) + \n  w[2]*inv_kern(0.05,d0_bo,alpha_bo) + \n  w[3]*inv_kern(0.05,d0_ga,alpha_ga) \n)\n}\n\n\nniter = 10^4\noutput &lt;- do.call('rbind',lapply(1:niter,function(i){mc_one_iter()}))\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob3)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_prob10)) +\n  geom_density() +\n  geom_vline(xintercept=0.05,col='red')\n\n\n\n\n\nquantile(output$ma_P05,probs=0.95)\n\n     95% \n10.08448 \n\n\n\noutput %&gt;% \n  ggplot(aes(x=ma_P05)) +\n  geom_density() +\n  geom_vline(xintercept=3,col='red')+\n  geom_vline(xintercept=10,col='red') +\nscale_x_log10()"
   },
   {
     "objectID": "pages/Intro lecture.html#the-first-risk-analysis",
@@ -266,6 +266,20 @@
     "text": "Conceptual models and frameworks\n\n\n\n\nWhat to assess?\nHow to characterise risk?\n\nQualitative\nQuantitative\n\nHow to assess it?\n\nExpert opinion\nData analysis\nSimulation modelling\n\n\n\n\n\nHolsman et al 2017"
   },
   {
+    "objectID": "pages/Intro lecture.html#risk-perception",
+    "href": "pages/Intro lecture.html#risk-perception",
+    "title": "Introduction to risk assessment",
+    "section": "Risk perception",
+    "text": "Risk perception\n\nHow people (the public, experts, risk managers) perceive risk\nIt might not be the same as “objective” risk estimates"
+  },
+  {
+    "objectID": "pages/Intro lecture.html#risk-perception-1",
+    "href": "pages/Intro lecture.html#risk-perception-1",
+    "title": "Introduction to risk assessment",
+    "section": "Risk perception",
+    "text": "Risk perception\n\nWhat is right or wrong\nRisk as feelings theory"
+  },
+  {
     "objectID": "pages/Intro lecture.html#risk-perception---example-world-economic-forum",
     "href": "pages/Intro lecture.html#risk-perception---example-world-economic-forum",
     "title": "Introduction to risk assessment",
@@ -278,6 +292,13 @@
     "title": "Introduction to risk assessment",
     "section": "Risk assessment as a scientific method",
     "text": "Risk assessment as a scientific method\nAgreed guidelines and frameworks\n\nPrinciples to draw scientific conclusions given available data, evidence and expert knowledge considering limitations in this knowledge\n\nScientific assessment - assessment done by organisation providing scientific advice to risk managers and policy makers\n\nhazard, exposure, risk, vulnerability\ntransparency and impartially"
+  },
+  {
+    "objectID": "pages/Intro lecture.html#guidelines-and-standards",
+    "href": "pages/Intro lecture.html#guidelines-and-standards",
+    "title": "Introduction to risk assessment",
+    "section": "Guidelines and standards",
+    "text": "Guidelines and standards\n\nAn expert on risk assessment must be familiar with reading guidelines or standards of how to perform assessment\nThese may differ between different organisations"
   },
   {
     "objectID": "pages/exam_environ.html",
@@ -354,7 +375,7 @@
     "href": "pages/Course introduction.html#why-study-risk-assessment",
     "title": "Course introduction MVEN10",
     "section": "Why study risk assessment",
-    "text": "Why study risk assessment\n\n\nTo be competitive on the job market\n\nthere is a lot of experts, but fewer experts on risk assessment\n\nTo better understand what expertise is required when assessing risk\n\nmotivation to become an expert\nstrengthen your interdisciplinary perspective\n\nTo be able to contribute to better management, including assessment and communication, of things that matter\nTo become a better decision maker"
+    "text": "Why study risk assessment\n\n\nTo be competitive on the job market\n\nthere are a lot of experts, but fewer experts on risk assessment\n\nTo better understand what expertise is required when assessing risk\n\nmotivation to become an expert\nstrengthen your interdisciplinary perspective\n\nTo be able to contribute to better management, including assessment and communication, of things that matter\nTo become a better decision maker"
   },
   {
     "objectID": "pages/Course introduction.html#risk-assessment-types",
@@ -371,11 +392,11 @@
     "text": "Lectures\n\nEleven lectures\nOccupational and Health Medicine\nEnvironmental Science (CEC)\nBiology"
   },
   {
-    "objectID": "pages/Course introduction.html#book-and-literature-seminars",
-    "href": "pages/Course introduction.html#book-and-literature-seminars",
+    "objectID": "pages/Course introduction.html#book-and-seminars",
+    "href": "pages/Course introduction.html#book-and-seminars",
     "title": "Course introduction MVEN10",
-    "section": "Book and literature seminars",
-    "text": "Book and literature seminars\n\nThree book seminars\nTwo literature seminars\nSeminars are compulsory\nReport according to instructions\nCome prepared!"
+    "section": "Book and seminars",
+    "text": "Book and seminars\n\nThree book seminars\nTwo literature seminars\nOne Role play seminar\nSeminars are compulsory\nReport according to instructions\nCome prepared!"
   },
   {
     "objectID": "pages/Course introduction.html#exercises",
@@ -389,7 +410,7 @@
     "href": "pages/Course introduction.html#team-based-learning-and-case-studies",
     "title": "Course introduction MVEN10",
     "section": "Team Based Learning and Case studies",
-    "text": "Team Based Learning and Case studies\n\nCase studies: Risk assessments of the four different types\nFirst TBL activity in class:\n\nBecome familiar with four assessment types\nReport reflections on your own learning\n\nSecond TBL activity:\n\nDeepened your understanding of one of the assessment types\nReport as a presentation and written report to be shared with all students\nPadlet"
+    "text": "Team Based Learning and Case studies\n\nCase studies: Risk assessments of the four different types\nFirst TBL activity in class:\n\nBecome familiar with four assessment types\nReport reflections on your own learning\n\nSecond TBL activity:\n\nDeepen your understanding of one of the assessment types\nReport as a presentation and written report to be shared with all students using the Padlet\nLearn from the other groups"
   },
   {
     "objectID": "pages/Course introduction.html#individual-project",

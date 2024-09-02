@@ -170,9 +170,6 @@ Involved in planning:
 :::
 :::
 
-
-
-
 ## Ecological risk assessment
 
 ::: columns
@@ -278,7 +275,6 @@ Assessors should
 :::
 :::
 
-
 ## Risk Assessment with Human Endpoints
 
 ![](/img/erika1.png)
@@ -339,7 +335,6 @@ Assessors should
 
 ![](/img/erika15.png)
 
-
 ## Risk assessments with ecological endpoints
 
 Environmental/Ecological Risk Assessment
@@ -355,7 +350,6 @@ Pest Risk Assessment Spread of invasive species or pests affecting ecological sy
 Human Health Risk Assessment Chemical stressor(s) -\> human health
 
 Pest Risk Assessment Spread of pests or diseases -\> human health
-
 
 ## Conceptual models and frameworks
 
@@ -383,6 +377,23 @@ Pest Risk Assessment Spread of pests or diseases -\> human health
 [Holsman et al 2017](https://spj.science.org/doi/10.1002/ehs2.1256)
 :::
 :::
+
+## Risk perception 
+
+- How people (the public, experts, risk managers) perceive risk
+
+- It might not be the same as "objective" risk estimates
+
+![](../img/burgman_4_14.png)
+
+## Risk perception
+
+- What is right or wrong
+
+- [Risk as feelings theory](https://thedecisionlab.com/reference-guide/psychology/risk-as-feelings-theory)
+
+![](https://imgs.xkcd.com/comics/conditional_risk.png)
+
 
 ## Risk perception - example World Economic Forum
 
@@ -414,3 +425,13 @@ Agreed guidelines and frameworks
 
 -   hazard, exposure, risk, vulnerability
 -   transparency and impartially
+
+## Guidelines and standards
+
+- An expert on risk assessment must be familiar with reading guidelines or standards of how to perform assessment
+
+- These may differ between different organisations
+
+
+
+![](https://imgs.xkcd.com/comics/standards.png)
