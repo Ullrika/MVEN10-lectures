@@ -23,19 +23,18 @@ website:
         - href: pages/intro_case_studies.qmd
           text: Introduction to case studies
           target: "_blank"
+      - section: "Useful stuff"
+        contents:
+        - href: pages/lottery_utility.qmd
+          text: Risk, Lottery and Utility
+          target: "_blank"
+        - href: pages/risk_ranking.qmd
+          text: Risk ranking, Linguistic uncertainty and subjective risk assessment
+          target: "_blank"
+        - href: pages/probability_distribution.qmd
+          text: Introduction to probability distributions
+          target: "_blank"
 
-      # - section: "Later"
-      #   contents:
-      #   - href: pages/lottery_utility.qmd          
-      #     text: Risk, Lottery and Utility
-      #     target: "_blank"
-      #   - href: pages/risk_ranking.qmd          
-      #     text: Risk ranking, Linguistic uncertainty and subjective risk assessment
-      #     target: "_blank"
-      #   - href: pages/probability_distribution.qmd          
-      #     text: Introduction to probability distributions
-      #     target: "_blank"
-     
      
       #- href: pages/individual_projects.qmd          
       #  text: Introduction to individual projects
